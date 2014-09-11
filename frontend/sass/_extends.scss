@@ -140,6 +140,58 @@ This is borrowed from Bootstrap.
 
 
 
+// -----------------------------------------------------------------------------
+// Text helpers
+// -----------------------------------------------------------------------------
+
+%text-center { text-align:center; }
+%text-left { text-align:left; }
+%text-right { text-align:right; }
+
+.text-center { @extend %text-center; }
+.text-left { @extend %text-left;}
+.text-right { @extend %text-right;}
+
+
+%uppercase { text-transform:uppercase; }
+%lowercase { text-transform:lowercase; }
+
+.uppercase { @extend %uppercase; }
+.lowercase { @extend %lowercase; }
+
+
+%font-weight-bold { font-weight:600; }
+%font-weight-normal { font-weight:400; }
+%font-weight-light { font-weight:300; }
+%font-italic { font-style:italic;}
+
+.font-bold { @extend %font-weight-bold; }
+.font-light { @extend %font-weight-light; }
+.font-italic { @extend %font-italic; }
+
+.font-bold-italic { 
+    @extend %font-italic; 
+    @extend %font-bold;
+}
+
+.font-light-italic { 
+    @extend %font-italic; 
+    @extend %font-light; 
+}
+
+//to add to fred
+%text--overflow {
+    @extend %inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+
+
+
+
 
 
 
@@ -187,27 +239,17 @@ This is borrowed from Bootstrap.
 
 
 
+
 // -----------------------------------------------------------------------------
-// Text helpers
+// Floating 
 // -----------------------------------------------------------------------------
 
-%text-center { text-align:center; }
-%text-left { text-align:left; }
-%text-right { text-align:right; }
 
-%uppercase { text-transform:uppercase; }
-%lowercase { text-transform:lowercase; }
+%left { float:left; }
+%right { float:right; }
 
-%text--overflow {
-    @extend %inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 100%;
-}
-
-
-
+.left { @extend %left; }
+.right { @extend %right; }
 
 // -----------------------------------------------------------------------------
 // Positioning - Absolute, Floating and Clearfixing
@@ -216,9 +258,8 @@ This is borrowed from Bootstrap.
 %relative { position: relative; }
 %absolute { position: absolute; }
 
-%left { float:left; }
-%right { float:right; }
-
+.relative { @extend %relative; }
+.absolute { @extend %absolute; }
 
     %absolute--bottom-left {
         @extend %absolute;
@@ -244,39 +285,39 @@ This is borrowed from Bootstrap.
         right:0;
     }
 
+.absolute--bottom-left { @extend %absolute--bottom-left; }  
+.absolute--bottom-right { @extend %absolute--bottom-right; }  
+.absolute--top-left { @extend %absolute--top-left; }  
+.absolute--top-right { @extend %absolute--top-right; } 
+
 %center-element {
     margin-left:auto;
     margin-right:auto;
 }
 
 
-// Vertical alignment utilities
+
+.center-element { @extend %center-element; } 
+
 
 %align--top {vertical-align: top;}
 %align--middle {vertical-align: middle;}
 %align--baseline {vertical-align: baseline;}
 %align--bottom {vertical-align: bottom;}
 
-//positioning handy helpers
-%left-0 { left:0; }
-%right-0 { right:0; }
-%top-0 { top:0; }
-%bottom-0 { bottom:0; }
-
-//usefull for content attributes
-%width-0 {width:0;}
-%height-0 { height:0; }
-
-
-%border {
-    border-width: 1px;
-    border-style: solid;
-}
-
-
+.align--top { @extend %align--top; } 
+.align--middle { @extend %align--middle; } 
+.align--baseline { @extend %align--baseline; } 
+.align--bottom { @extend %align--bottom; } 
 
 
 %overflow-hidden { overflow: hidden; }
+
+
+
+
+
+
 
 
 
@@ -344,6 +385,11 @@ This is borrowed from Bootstrap.
 // -----------------------------------------------------------------------------
 // Border and border radius helpers
 // -----------------------------------------------------------------------------
+
+%border {
+    border-width: 1px;
+    border-style: solid;
+}
 
 %br-xxs { @include rem(border-radius, $space-xxs);}
 

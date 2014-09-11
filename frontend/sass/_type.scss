@@ -184,41 +184,12 @@ li {
     }
 }
 
-.uppercase { @extend %uppercase;}
-.lowercase { @extend %lowercase; }
-
 
 .emphasis { @extend %font-size-l;}
 .small { @extend %font-size-s; }
 .tiny { @extend %font-size-xs; }
 
-.text-center { @extend %text-center;}
-.text-left { @extend %text-left; }
-.text-right { @extend %text-right; }
-.text-right--medium {
-    @include medium {
-        text-align: right;
-    }
-}
 
-%font-weight-bold { font-weight:600; }
-%font-weight-normal { font-weight:400; }
-%font-weight-light { font-weight:300; }
-%font-italic { font-style:italic;}
-
-.font-bold { @extend %font-weight-bold; }
-.font-light { @extend %font-weight-light; }
-.font-italic { @extend %font-italic; }
-
-.font-bold-italic { 
-    @extend %font-italic; 
-    @extend %font-bold;
-}
-
-.font-light-italic { 
-    @extend %font-italic; 
-    @extend %font-light; 
-}
 
 strong, 
 b { @extend %font-weight-bold; }

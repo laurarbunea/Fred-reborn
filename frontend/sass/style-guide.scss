@@ -233,9 +233,9 @@ pre > code {
         .styleguide__api__code-view:after,
         .styleguide__api__code-view.showhide-active:after {
             @extend %absolute;
-            @extend %right-0;
-            @extend %width-0;
-            @extend %height-0;
+            right:0;
+            width:0;
+            height:0;
             content:"";
             top:47%;
             border-left: 6px solid transparent;
@@ -286,7 +286,7 @@ pre > code {
         &:before {
             @extend %absolute;
             @extend %font-size-xl;
-            @extend %left-0;
+            left:0;
             top: -24px;
             content: '✁';
             color: $mid-grey;

@@ -17,6 +17,32 @@
     }
 }
 
+.text-right--medium {
+    @include medium {
+        text-align: right;
+    }
+}
+
+
+
+
+
+
+
+//uwould this be usefull to have in core??
+
+.test {
+    content: '';
+    width:0;
+    height:0;
+}
+
+
+
+
+
+
+
 %ratio {
     position: relative;
     height: 0;

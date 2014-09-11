@@ -36,7 +36,7 @@
 
     &:after {
         @extend %inline-block;
-        @extend %height-0; //height: 0
+        height: 0;
         width: 100%;
         content: '';
     }
@@ -58,9 +58,9 @@
     
     %grid:after,
     %grid__break {
-        @extend %inline-block; // This extend is found in core
-        @extend %height-0; //height: 0
+        @extend %inline-block; // This extend is found in core 
         @extend %col; //100% width
+        height: 0;
         content: '';
     }
 
