@@ -19,7 +19,6 @@
 }
 
 
-
 // -----------------------------------------------------------------------------
 // First child helpers  
 // -----------------------------------------------------------------------------
@@ -34,7 +33,56 @@
     border-top: none;
 }
 
+// -----------------------------------------------------------------------------
+// Fix webkit bug
+// -----------------------------------------------------------------------------
 
+%font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    .isWindowsChrome & {
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+}
+
+%fix-webkit-font-rendering {
+    @extend %font-smoothing;
+    text-rendering: optimizeLegibility;
+}
+
+%antialiased {
+    @extend %font-smoothing;
+}
+.antialiased {
+    @extend %antialiased;
+}
+
+/**
+
+### Append and Prepend
+
+Place something before or after an element
+
+```html
+<p class="prepend" data-prepend="email:">&nbsp;email@gmail.com</p>
+<p class="append" data-append="is my email">email@gmail.com&nbsp;</p>
+```
+
+*/
+
+.prepend{
+    &:before{
+        content: attr(data-prepend);
+        display: inline-block;
+    }
+}
+
+.append{
+    &:after{
+        content: attr(data-append);
+        display: inline-block;
+    }
+}
 
 // -----------------------------------------------------------------------------
 // Clearfix
@@ -90,6 +138,15 @@ This is borrowed from Bootstrap.
 .sr-only {  @extend %sr-only; }
 
 
+
+
+
+
+
+
+
+
+
 // -----------------------------------------------------------------------------
 // Lists
 // -----------------------------------------------------------------------------
@@ -127,6 +184,9 @@ This is borrowed from Bootstrap.
     }
 }
 
+
+
+
 // -----------------------------------------------------------------------------
 // Text helpers
 // -----------------------------------------------------------------------------
@@ -145,6 +205,8 @@ This is borrowed from Bootstrap.
     white-space: nowrap;
     max-width: 100%;
 }
+
+
 
 
 // -----------------------------------------------------------------------------
@@ -206,23 +268,10 @@ This is borrowed from Bootstrap.
 %height-0 { height:0; }
 
 
-
-
-
 %border {
     border-width: 1px;
     border-style: solid;
 }
-
-//Remove top margin
-%first-child-no-top:first-child {
-    margin-top: 0;
-}
-//Remove top border
-%first-child-no-top-border:first-child {
-    border-top: none;
-}
-
 
 
 
@@ -249,29 +298,7 @@ This is borrowed from Bootstrap.
 }
 
 
-// -----------------------------------------------------------------------------
-// Fix webkit bug
-// -----------------------------------------------------------------------------
 
-%font-smoothing {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    .isWindowsChrome & {
-        -webkit-font-smoothing: subpixel-antialiased;
-    }
-}
-
-%fix-webkit-font-rendering {
-    @extend %font-smoothing;
-    text-rendering: optimizeLegibility;
-}
-
-%antialiased {
-    @extend %font-smoothing;
-}
-.antialiased {
-    @extend %antialiased;
-}
 
 @include breakpoint-sizer($margin-breakpoints, $margin-types);
 @include breakpoint-sizer($padding-breakpoints, $padding-types);
@@ -306,44 +333,6 @@ This is borrowed from Bootstrap.
     background-position: 0 100%;
 }
 
-%custom-line-color {
-//    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
-//    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
-//    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
-}
-
-
-%remove-anchor-decoration {
-    //sorry dirty hack having issues with selecter inheritance 
-    background-image: none!important;
-}
-
-%section--breakline {
-    position:relative;
-    $color-section-breakline: #2575AE;
-
-    &:before {
-        height: 2px;
-        display: block;
-        width: 22.5%;
-        background: transparentize($color-section-breakline, .5);
-        content: '';
-        position:absolute;
-        top:0;
-        left:0;
-    }
-    &:after {
-        display: block;
-        content: '';
-        background: transparentize($color-section-breakline, .75);
-        height: 1px;
-        width: 72.5%;
-        top:0;
-        right:0;
-        position:absolute;
-    }
-}
 
 
 %cursor-on-hover {

@@ -87,6 +87,36 @@
         border-radius: 30px;
     }
 }
+%custom-line-color {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
+}
+
+
+%section--breakline {
+    position:relative;
+    $color-section-breakline: #2575AE;
+
+    &:before {
+        height: 2px;
+        display: block;
+        width: 22.5%;
+        background: transparentize($color-section-breakline, .5);
+        content: '';
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    &:after {
+        display: block;
+        content: '';
+        background: transparentize($color-section-breakline, .75);
+        height: 1px;
+        width: 72.5%;
+        top:0;
+        right:0;
+        position:absolute;
+    }
+}
 
 
 .code-example {
