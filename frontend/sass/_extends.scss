@@ -2,6 +2,93 @@
     #EXTENDS
 \*------------------------------------*/
 
+// -----------------------------------------------------------------------------
+// Inline block and block
+// -----------------------------------------------------------------------------
+// zoom fix for IE6/7 so they correctly display inline-block elements
+// (forces hasLayout)
+
+%inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+%block-element {
+    display:block;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// First child helpers  
+// -----------------------------------------------------------------------------
+
+//Remove top margin
+%first-child-no-top:first-child {
+    margin-top: 0;
+}
+
+//Remove top border
+%first-child-no-top-border:first-child {
+    border-top: none;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Clearfix
+// -----------------------------------------------------------------------------
+
+%clearfix {
+    /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    *zoom: 1;
+}
+
+%clearfix:before {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+%clearfix:after {
+    clear: both;
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix { @extend %clearfix; }
+
+/**
+
+###Screen reader content
+
+We've found some odd bugs with the -999px textindent hack. 
+Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.
+
+This is borrowed from Bootstrap.
+
+```html
+ <a class="sr-only" href="#content">Skip to main content</a>
+```
+
+*/
+
+%sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.sr-only {  @extend %sr-only; }
+
 
 // -----------------------------------------------------------------------------
 // Lists
@@ -119,22 +206,8 @@
 %height-0 { height:0; }
 
 
-// -----------------------------------------------------------------------------
-// Inline block and block
-// -----------------------------------------------------------------------------
-// zoom fix for IE6/7 so they correctly display inline-block elements
-// (forces hasLayout)
 
 
-%block-element {
-    display:block;
-}
-
-%inline-block {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-}
 
 %border {
     border-width: 1px;
@@ -152,43 +225,11 @@
 
 
 
-// -----------------------------------------------------------------------------
-// Clearfix
-// -----------------------------------------------------------------------------
-
-%clearfix {
-    /**
-     * For IE 6/7 only
-     * Include this rule to trigger hasLayout and contain floats.
-     */
-    *zoom: 1;
-}
-
-%clearfix:before {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-%clearfix:after {
-    clear: both;
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
 
 
 %overflow-hidden { overflow: hidden; }
 
-//Screen reader content
-%sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-}
+
 
 //Showing and hiding things with a pre-emptive `important` 
 
@@ -227,6 +268,9 @@
 
 %antialiased {
     @extend %font-smoothing;
+}
+.antialiased {
+    @extend %antialiased;
 }
 
 @include breakpoint-sizer($margin-breakpoints, $margin-types);

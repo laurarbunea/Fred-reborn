@@ -1,9 +1,9 @@
 /**
 ---------------------------------------
-NZTA Core stylesheet
+Fred stylesheet
 ---------------------------------------
 
-Front-end architecture for NZTA web properties.
+Front-end architecture for Fred.
 With a nod to inuit.css (https://github.com/inuitcss)
 
 
@@ -1457,7 +1457,7 @@ li ul, li ol, .segmented-control label {
   padding-top: 0.5rem;
   /* fallback  times by 6 */ }
 
-.device .device__menu, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control--timeslots label {
+.device .device__menu, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control--timeslots label {
   padding-top: 12px;
   padding-top: 0.75rem;
   /* fallback  times by 6 */ }
@@ -1542,7 +1542,7 @@ li ul, li ol, .segmented-control label {
   padding-bottom: 0.5rem;
   /* fallback  times by 6 */ }
 
-.device .device__menu, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control label, .segmented-control--timeslots label {
+.device .device__menu, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control label, .segmented-control--timeslots label {
   padding-bottom: 12px;
   padding-bottom: 0.75rem;
   /* fallback  times by 6 */ }
@@ -1622,7 +1622,7 @@ li ul, li ol, .segmented-control label {
   padding-left: 0.5rem;
   /* fallback  times by 6 */ }
 
-.list--home, .device .device__menu, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
+.list--home, .device .device__menu, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
   padding-left: 12px;
   padding-left: 0.75rem;
   /* fallback  times by 6 */ }
@@ -1702,7 +1702,7 @@ li ul, li ol, .segmented-control label {
   padding-right: 0.5rem;
   /* fallback  times by 6 */ }
 
-.device .device__menu, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
+.device .device__menu, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
   padding-right: 12px;
   padding-right: 0.75rem;
   /* fallback  times by 6 */ }
@@ -3227,11 +3227,11 @@ blockquote {
   .theme--fred a {
     color: #fff; }
 
-.theme--dark, .device, .traffic-info__header, .map-nav, .map-nav--icon, .webcam-list {
+.theme--dark, .device, .code-example, .traffic-info__header, .map-nav, .map-nav--icon, .webcam-list {
   border-color: #293f54;
   background-color: #293f54;
   color: #fff; }
-  .theme--dark a, .device a, .traffic-info__header a, .webcam-list a {
+  .theme--dark a, .device a, .code-example a, .traffic-info__header a, .webcam-list a {
     color: #fff; }
 
 .theme--white {
@@ -3690,6 +3690,30 @@ Place something before or after an element
       border-radius: 30px; } }
 
 /**
+
+###Screen reader content
+
+We've found some odd bugs with the -999px textindent hack. 
+Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.
+
+This is borrowed from Bootstrap.
+
+```html
+ <a class="sr-only" href="#content">Skip to main content</a>
+```
+
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+/**
 ## Components
 */
 /*------------------------------------*\
@@ -4067,8 +4091,6 @@ button {
 
 Try and avoid using `<input type='submit' value='Go'>` in favour of
 `<button type='submit'>Go</button>` as it's easier to style.
-
-
 */
 .btn--block + .btn--block {
   margin-left: 0; }
@@ -4610,8 +4632,6 @@ input.search__input {
   text-align: left; }
   .table > thead {
     background-color: #fafafa; }
-
-@media only screen and (max-width: 37.49em) { }
 
 .table td, .table th {
   padding: 0.75em;

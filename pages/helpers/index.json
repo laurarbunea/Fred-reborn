@@ -1,0 +1,350 @@
+{
+    "title": "helpers",
+    "headline": "Helpers",
+    "template":"/pages/helpers.j2",
+    "data": [
+        {
+            "type": "container",
+            "external_theme":"theme--neutral",
+            "layout":"layout",
+            "section":"section-s",
+            "data": [
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "helpers"
+                                },
+                                "This section explains the bare bones of the sass structure."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "Blocks"
+                                },
+                                { 
+                                    "type": "h4",
+                                    "data": "Inline blocks"
+                                },
+                                "Inline blocks are handy for everything. We don't often support projects in IE7 and below, but since it's trivial to hack it in, we've included it here.",
+                                "To cut down on rules in your stylesheet, you can extend this placeholder in your code.",
+                                {
+                                    "type": "code",
+                                    "data": [
+                                        "%inline-block { display: inline-block; *display: inline; *zoom: 1;}\n.my-icon { @extend %inline-block; }"
+                                    ]
+                                },
+                                { 
+                                    "type": "h4",
+                                    "data": "Block elements"
+                                },
+                                "Blocks are handy for everything",
+                                {
+                                    "type": "code",
+                                    "data": [
+                                        "%block-element { display: block; }\n.my-anchor { @extend %block-element; }"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "First child helpers"
+                                },
+                                { 
+                                    "type": "h4",
+                                    "data": "Remove top margin from first-child elements"
+                                },
+                                {
+                                    "type": "code",
+                                    "data": [
+                                        "h2 { @extend %first-child-no-top; }"
+                                    ]
+                                },
+                                { 
+                                    "type": "h4",
+                                    "data": "Remove top border from first-child elements"
+                                },
+                                {
+                                    "type": "code",
+                                    "data": [
+                                        "h2 { @extend %first-child-no-top-border; }"
+                                    ]
+                                }
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "Fixing Chrome/WebKit type rendering"
+                                },
+                               "Since v22, Chrome makes fat sausage horrible web typography. Fix it with these properties right here:",
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<div class='my-black-box antialiased'>\n <h1>Knocked out white text!</h1> \n</div>"
+                                    ]
+                                },
+                                "But wait! That screws with everything on Windows Vista Chrome... right?",
+                                "Yeah, it does. If you're using our <a href=''>Browser.js </a>., it'll automatically add isWindowsChrome to the documentElement, and we set the antialiasing back to classic sub-pixel mode:",
+                                {
+                                    "type": "code",
+                                    "data": [
+                                        ".isWindowsChrome %font-smoothing  { -webkit-font-smoothing: subpixel-antialiased; }"
+                                    ]
+                                },
+                                "In yoru  markup:",
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<html class='isWindowsChrome'>\n <!-- some time later -->\n <div class='my-black-box antialiased'>\n  <h1>Hey i'll look good on Vista!</h1>\n </div>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "Append and Prepend"
+                                },
+                                "Place something before or after an element",
+                               
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<p class='prepend' data-prepend='email:'>\n email@gmail.com\n</p>\n<p class='append' data-append='is my email'>\n email@gmail.com\n</p>"
+                                    ]
+                                }
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "typography-helpers",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+
+                                { 
+                                    "type": "h4",
+                                    "data": "Clearfixing"
+                                },
+                                "Table-pseudo element clearfix. It is good.",
+                                {
+                                    "type": "code",
+                                    "data": [
+                                        "my-floater { @extend %clearfix; }"
+                                    ]
+                                },
+                                "Or, heaven forbid, in your markup:",
+                                {
+                                    "type": "code",
+                                    "data": [
+                                        "<div class='clearfix'>\n  <div class='left'>\n    Hey I'm floating!\n  </div>\n</div>"
+                                    ]
+                                }
+
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "typography-helpers",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+
+                                { 
+                                    "type": "h4",
+                                    "data": "Screen reader content"
+                                },
+                                "We've found some odd bugs with the -999px textindent hack. Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.",
+                                "This is borrowed from Bootstrap.",
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<a class='sr-only' href='#content'>Skip to main content</a>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+           
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "typography-helpers",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "Typography helpers"
+                                },
+                                "Here are some handy little classes that will come in useful when building modules for this site.",
+                                {
+                                    "type": "h4",
+                                    "data": "Text alignment classes"
+                                },
+                                {
+                                    "type": "p",
+                                    "class":"text-center theme--neutral",
+                                    "data": "text-center"
+                                },
+                                {
+                                    "type": "p",
+                                    "class":"text-left theme--neutral",
+                                    "data": "text-left"
+                                },
+                                {
+                                    "type": "p",
+                                    "class":"text-right theme--neutral",
+                                    "data": "text-right"
+                                },
+                                {
+                                    "type": "code",
+                                    "data": [
+                                        "<p class='text-center'> text-center </p>\n",
+                                        "<p class='text-left'> text-left </p>\n",
+                                        "<p class='text-right'> text-right </p>"
+                                    ]
+                                },
+                                {
+                                    "type": "section",
+                                    "data": [
+                                        {
+                                            "type": "h4",
+                                            "data": "Uppercase and lowercase"
+                                        },
+                                        {
+                                            "type": "p",
+                                            "class":"uppercase theme--neutral",
+                                            "data": "uppercase"
+                                        },
+                                        {
+                                            "type": "p",
+                                            "class":"lowercase theme--neutral",
+                                            "data": "lowercase"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "data": [
+                                                "<p class='uppercase'> uppercase </p>\n",
+                                                "<p class='lowercase'> lowercase </p>"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "h4",
+                                    "data": "Font weights "
+                                },
+                                {
+                                    "type": "p",
+                                    "class":"font-bold theme--neutral",
+                                    "data": "font-bold"
+                                },
+                                {
+                                    "type": "p",
+                                    "class":"font-light theme--neutral",
+                                    "data": "font-light"
+                                },
+                                {
+                                    "type": "p",
+                                    "class":"font-italic theme--neutral",
+                                    "data": "font-italic"
+                                },
+                                {
+                                    "type": "p",
+                                    "class":"font-italic font-bold theme--neutral",
+                                    "data": "font-italic and font-bold"
+                                },
+                                {
+                                    "type": "p",
+                                    "class":"font-italic font-light theme--neutral",
+                                    "data": "font-italic and font-light"
+                                },
+                                {
+                                    "type": "code",
+                                    "data": ["<p class='font-bold'> font-bold </p>"]
+                                },
+                                {
+                                    "type": "code",
+                                    "data": [ "<p class='font-light'> font-light </p>" ]
+                                },
+                                {
+                                    "type": "code",
+                                    "data": [ "<p class='font-italic '> font-italic </p>" ]
+                                },
+                                {
+                                    "type": "code",
+                                    "data": [ "<p class='font-bold font-italic'> font-italic and font-bold</p>" ]
+                                },
+                                {
+                                    "type": "code",
+                                    "data": [ "<p class='font-light font-italic'> font-italic and font-light </p>" ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+              
+    ]
+}

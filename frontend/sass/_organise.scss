@@ -1,3 +1,22 @@
+//responsive helpers 
+@include media(medium) {
+    .append--q-medium {
+        &:after{
+            content: attr(data-append-medium);
+            display: inline-block;
+        }
+    }
+}
+
+@include media(small) {
+    .append--q-small {
+        &:after{
+            content: attr(data-append-small);
+            display: inline-block;
+        }
+    }
+}
+
 %ratio {
     position: relative;
     height: 0;
@@ -32,32 +51,7 @@
     }
 
 
-/**
 
-### Append and Prepend
-
-Place something before or after an element
-
-```html
-<p class="prepend" data-prepend="email:">&nbsp;email@gmail.com</p>
-<p class="append" data-append="is my email">email@gmail.com&nbsp;</p>
-```
-
-*/
-
-.prepend{
-    &:before{
-        content: attr(data-prepend);
-        display: inline-block;
-    }
-}
-
-.append{
-    &:after{
-        content: attr(data-append);
-        display: inline-block;
-    }
-}
 .left { @extend %left;}
 .right { @extend %right;}
 
@@ -72,22 +66,7 @@ Place something before or after an element
         float:right;
         clear:left;
     }
-@include media(medium) {
-    .append--q-medium {
-        &:after{
-            content: attr(data-append-medium);
-            display: inline-block;
-        }
-    }
-}
-@include media(small) {
-    .append--q-small {
-        &:after{
-            content: attr(data-append-small);
-            display: inline-block;
-        }
-    }
-}
+
 
 
 .device {
@@ -107,4 +86,13 @@ Place something before or after an element
     @include media(medium-down) {
         border-radius: 30px;
     }
+}
+
+
+.code-example {
+    @extend %theme--dark; 
+    @extend %pt-s; 
+    @extend %pb-s;
+    @extend %pl-s;
+    @extend %pr-s;
 }
