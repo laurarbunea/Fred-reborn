@@ -1,0 +1,7 @@
+<a href="{{ name }}" class="list__link"><h4>{{ name }}
+{%- for item in label  %}
+    {% if loop.first %}<span class="location-list__split">{% endif %}
+    <span class="pill pill--{{ item.type }}"><i class="i i-{{ item.type }}"></i> {{ item.text }}</span>
+    {% if loop.last %}</span>{% endif %}
+{%- endfor -%}
+</h4></a>

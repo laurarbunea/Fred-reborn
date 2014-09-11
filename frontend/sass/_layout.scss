@@ -1,0 +1,272 @@
+/*------------------------------------*\
+    #PAGE LAYOUT
+\*------------------------------------*/
+
+.wrapper {
+    @include rem(max-width, 1152);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// ----------------------------------------------------------------------------
+// vertical spacing
+// ----------------------------------------------------------------------------
+
+%section-top-xxxxl { @include rem(padding-top, $space-xxxxl);}
+%section-top-xxxl { @include rem(padding-top, $space-xxxl); }
+%section-top-xxl { @include rem(padding-top, $space-xxl);}
+%section-top-xl { @include rem(padding-top, $space-xl);}
+%section-top-l { @include rem(padding-top, $space-l);}
+%section-top-m { @include rem(padding-top, $space-m);}
+%section-top-s { @include rem(padding-top, $space-s);}
+%section-top-xs { @include rem(padding-top, $space-xs);}
+
+%section-bottom-xxxxl { @include rem(padding-bottom, $space-xxxxl);}
+%section-bottom-xxxl { @include rem(padding-bottom, $space-xxxl); }
+%section-bottom-xxl { @include rem(padding-bottom, $space-xxl);}
+%section-bottom-xl { @include rem(padding-bottom, $space-xl);}
+%section-bottom-l { @include rem(padding-bottom, $space-l);}
+%section-bottom-m { @include rem(padding-bottom, $space-m);}
+%section-bottom-s { @include rem(padding-bottom, $space-s);}
+%section-bottom-xs { @include rem(padding-bottom, $space-xs);}
+
+.section-xxxxl, 
+.section {
+    @extend %section-top-xxxxl;
+    @extend %section-bottom-xxxxl;
+
+    //responsinate
+    @include media("small-down") {
+        & {
+            @include rem(padding-top, $space-xxxl);
+            @include rem(padding-bottom, $space-xxxl);
+        }
+    }
+}
+
+%section-xxxl {
+    @extend %section-top-xxxl;
+    @extend %section-bottom-xxxl;
+}
+
+%section-xxl {
+    @extend %section-top-xxl;
+    @extend %section-bottom-xxl;
+}
+
+%section-xl {
+    @extend %section-top-xl;
+    @extend %section-bottom-xl;
+}
+
+%section-l {
+    @extend %section-top-l;
+    @extend %section-bottom-l;
+}
+
+%section-m {
+    @extend %section-top-m;
+    @extend %section-bottom-m;
+}
+
+%section-s {
+    @extend %section-top-s;
+    @extend %section-bottom-s;
+}
+
+%section-xs {
+    @extend %section-top-xs;
+    @extend %section-bottom-xs;
+}
+
+.section-xxxxl { @extend %section-xxxxl;}
+.section-xxxl { @extend %section-xxxl;}
+.section-xxl { @extend %section-xxl;}
+.section-xl { @extend %section-xl;}
+.section-l { @extend %section-l;}
+.section-m { @extend %section-m;}
+.section-s { @extend %section-s;}
+.section-xs { @extend %section-xs;}
+
+%remove-section {
+    padding-bottom:0;
+    padding-top:0;
+}
+
+.section--stacked { padding-bottom:0; }
+
+//do we need top and bottom extenders??
+
+
+
+
+
+
+// ----------------------------------------------------------------------------
+// horizontal spacing - work on this 
+// ----------------------------------------------------------------------------
+
+%layout-left-xxxxl { @include rem(padding-left, $space-xxxxl);}
+%layout-left-xxxl { @include rem(padding-left, $space-xxxl); }
+%layout-left-xxl { @include rem(padding-left, $space-xxl);}
+%layout-left-xl { @include rem(padding-left, $space-xl);}
+%layout-left-l { @include rem(padding-left, $space-l);}
+%layout-left-m { @include rem(padding-left, $space-m);}
+%layout-left-s { @include rem(padding-left, $space-s);}
+%layout-left-xs { @include rem(padding-left, $space-xs);}
+
+%layout-right-xxxxl { @include rem(padding-right, $space-xxxxl);}
+%layout-right-xxxl { @include rem(padding-right, $space-xxxl); }
+%layout-right-xxl { @include rem(padding-right, $space-xxl);}
+%layout-right-xl { @include rem(padding-right, $space-xl);}
+%layout-right-l { @include rem(padding-right, $space-l);}
+%layout-right-m { @include rem(padding-right, $space-m);}
+%layout-right-s { @include rem(padding-right, $space-s);}
+%layout-right-xs { @include rem(padding-right, $space-xs);}
+
+.layout-xxxxl {
+    @extend %layout-left-xxxxl;
+    @extend %layout-right-xxxxl;
+
+    //responsinate
+    @include media("small-down") {
+        & {
+            @include rem(padding-left, $space-xxxl);
+            @include rem(padding-right, $space-xxxl);
+        }
+    }
+}
+
+%layout-xxxl {
+    @extend %layout-left-xxxl;
+    @extend %layout-right-xxxl;
+}
+
+%layout-xxl {
+    @extend %layout-left-xxl;
+    @extend %layout-right-xxl;
+}
+
+%layout-xl {
+    @extend %layout-left-xl;
+    @extend %layout-right-xl;
+}
+
+%layout-l {
+    @extend %layout-left-l;
+    @extend %layout-right-l;
+}
+
+%layout-m {
+    @extend %layout-left-m;
+    @extend %layout-right-m;
+}
+
+%layout-s {
+    @extend %layout-left-s;
+    @extend %layout-right-s;
+}
+
+%layout-xs {
+    @extend %layout-left-xs;
+    @extend %layout-right-xs;
+}
+
+.layout-xxxxl { @extend %layout-xxxxl;}
+.layout-xxxl { @extend %layout-xxxl;}
+.layout-xxl { @extend %layout-xxl;}
+.layout-xl { @extend %layout-xl;}
+.layout-l { @extend %layout-l;}
+.layout-m { @extend %layout-m;}
+.layout-s { @extend %layout-s;}
+.layout-xs { @extend %layout-xs;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%layout-left {
+    padding-left: 1rem;
+    @include medium {
+        & {
+            padding-left: 4%;
+        }
+    }
+    @include large {
+        & {
+            padding-left: 8.3333333%;
+        }
+    }
+}
+
+%layout-right {
+    padding-right: 1rem;
+    @include medium {
+        & {
+            padding-right: 4%;
+        }
+    }
+    @include large {
+        & {
+            padding-right: 8.3333333%;
+        }
+    }
+}
+
+
+
+
+.layout {
+    @extend %border-box;
+    @extend %layout-left;
+    @extend %layout-right;
+}
+
+
+.layout--left { @extend %layout-left; }
+
+.layout--right { @extend %layout-right; }
+
+
+.layout--half {
+    @include large() {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+%remove-layout {
+    padding-left:0;
+    padding-right:0;
+}
+
+/******************************
+    layout modifiers
+******************************/
+.layout--nudge {
+    @extend %relative;
+
+    @include large() {
+        margin-top: -2em;
+    }
+    
+    + .layout--nudge { margin-top: 0; }
+}

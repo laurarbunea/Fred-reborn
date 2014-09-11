@@ -1,0 +1,15 @@
+{
+    "api": {
+        "type": "text-tiny",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "text-tiny",
+                "data": " I’m paragraph of tiny text. Only use me as a label on small UI controls, and then only when small text just doesn’t work."
+            }
+        }
+    ]
+}

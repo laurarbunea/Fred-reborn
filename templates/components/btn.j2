@@ -1,0 +1,8 @@
+<a class='btn {% if item.theme %}btn--{{ item.theme }}{% endif %} {% if item.size %}btn--{{ item.size }}{% endif %} {% if item.block %}btn--block{% endif %} {% if item.mobile %}btn--block-mobile{% endif %} {% if item.bounce %}btn--bounce{% endif %}' {% if item.href %}href="{{item.href}}"{% endif %}>
+    {{ item.label }}
+
+    {% if item.icon %}
+        <i class='i i-{{item.icon.name}} {% if item.icon.color %}i--{{item.icon.color}}{% endif %}'></i>
+    {% endif %}
+
+</a>

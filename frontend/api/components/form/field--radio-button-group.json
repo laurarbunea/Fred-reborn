@@ -1,0 +1,75 @@
+{
+    "api": {
+        "type": "form/field--radio-button-group",
+        "label": "",
+        "label_note": "",
+        "name": "",
+        "default_value": "",
+        "values": []
+    },
+    "examples": [
+        {
+            "title": "10-up radio group",
+            "example": {
+                "type": "form/field--radio-button-group",
+                "label": "Registration period",
+                "label_note": "(months)",
+                "name": "registration-period",
+                "default_value": "3",
+                "values": [
+                    {
+                        "label": "3",
+                        "secondary_label": "months",
+                        "value": "3"
+                    },
+                    {
+                        "label": "4",
+                        "secondary_label": "months",
+                        "value": "4"
+                    },
+                    {
+                        "label": "5",
+                        "secondary_label": "months",
+                        "value": "5"
+                    },
+                    {
+                        "label": "6",
+                        "secondary_label": "months",
+                        "value": "6"
+                    },
+                    {
+                        "label": "7",
+                        "secondary_label": "months",
+                        "value": "7"
+                    },
+                    {
+                        "label": "8",
+                        "secondary_label": "months",
+                        "value": "8"
+                    },
+                    {
+                        "label": "9",
+                        "secondary_label": "months",
+                        "value": "9"
+                    },
+                    {
+                        "label": "10",
+                        "secondary_label": "months",
+                        "value": "10"
+                    },
+                    {
+                        "label": "11",
+                        "secondary_label": "months",
+                        "value": "11"
+                    },
+                    {
+                        "label": "12",
+                        "secondary_label": "months",
+                        "value": "12"
+                    }
+                ]
+            }
+        }
+    ]
+}
+

@@ -1,0 +1,199 @@
+{
+    "title": "traffic_info",
+    "headline": "Traffic info",
+    "template":"pattern-library/traffic-info.j2",
+    "data": [
+        {
+            "type": "section",
+            "size": "s",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "intro",
+                            "data": "blah intro here"
+                        }
+                 
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "messages",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Traffic messages"
+                        },
+                        "These are used to highlight alerts, estimated travel times and issues with a particular route.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/traffic/messages"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "highway-sign",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Highway signs"
+                        },
+                        "This provides a shield with the required state highway number on it",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/traffic/highway"
+                        },
+                        {
+                            "type": "h4",
+                            "data": "The highway icons are available in all our theme colours by passing a 'style' to the component:"
+                        },
+                        {
+                            "type": "p",
+                            "data": [
+                                {
+                                    "type": "traffic/highway",
+                                    "data":"56"
+                                },
+                                {
+                                    "type": "traffic/highway",
+                                    "data":"12",
+                                    "style": "blue"
+                                },
+                                {
+                                    "type": "traffic/highway",
+                                    "data":"21",
+                                    "style": "orange"
+                                },
+                                {
+                                    "type": "traffic/highway",
+                                    "data":"89",
+                                    "style": "green"
+                                },
+                                {
+                                    "type": "traffic/highway",
+                                    "data":"2",
+                                    "style": "dark-grey"
+                                },
+                                {
+                                    "type": "traffic/highway",
+                                    "data":"4",
+                                    "style": "grey"
+                                },
+                                {
+                                    "type": "traffic/highway",
+                                    "data":"7",
+                                    "style": "dark-blue"
+                                },
+                                {
+                                    "type": "traffic/highway",
+                                    "data":"24",
+                                    "style": "white"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "location-list",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Region list"
+                        },
+                        "This provides a list of regions, with optional pills.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/traffic/regions"
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "route",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Route information"
+                        },
+                        "This provides drive times, destinations and webcams for routes.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/traffic/route"
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "share",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Share buttons"
+                        },
+                        "These are social buttons for Transport Agency maps.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/share"
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "share",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Webcams"
+                        },
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/traffic/webcam"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

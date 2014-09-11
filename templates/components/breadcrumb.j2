@@ -1,0 +1,13 @@
+<ol class="breadcrumb">
+
+    {% for crumb in item.data %}
+
+        <li>
+
+            <a href="{{ crumb.url }}">{{ crumb.title }}</a>
+
+        </li>
+
+    {% endfor %}
+    
+</ol>

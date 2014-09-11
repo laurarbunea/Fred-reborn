@@ -1,0 +1,24 @@
+.subnav--tertiary {
+
+    @extend %mb-xxl;
+    @extend %grid__item;
+
+    & h3 {
+        @extend %section--breakline;
+        @extend %pt-m;
+    }
+
+    & .subnav__content { @extend %col; }
+
+    & h2 { @extend %font-size-l; }
+
+    & .subnav__child__link { @extend %font-size-s; }
+
+    & .breakline--hatched {
+        @extend %mt-m;
+        @extend %pt-l;
+        &:before {
+        @include rem(height, $space-xs);
+        }
+    }
+}

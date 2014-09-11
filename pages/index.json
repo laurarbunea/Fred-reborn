@@ -1,0 +1,16 @@
+{
+    "title": "Home",
+    "template": "pages/home.j2",
+    "order": "0",
+    "show_in_menu": false,
+    "section": [
+        {
+            "type": "h1",
+            "data": "Test heading 1"
+        },
+        {
+            "type": "p",
+            "data": "Paragraph 1"
+        }
+    ]
+}

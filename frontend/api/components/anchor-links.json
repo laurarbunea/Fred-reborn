@@ -1,0 +1,33 @@
+{
+    "api": {
+        "type": "anchor-links",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "anchor-links",
+                "data": [
+                    {
+                        "href": "about-driver-licences",
+                        "text": "About driver licences"
+                    },
+                    {
+                        "href": "booking-a-licence-test",
+                        "text": "Booking a licence test"
+                    },
+                    {
+                        "href": "types-of-licence",
+                        "text": "Types of licence"
+                    },
+                    {
+                        "href": "booking-agents",
+                        "text": "Booking agents"
+                    }
+                ]
+            }
+        }
+    ]
+}
+

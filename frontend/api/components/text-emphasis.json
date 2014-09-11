@@ -1,0 +1,15 @@
+{
+    "api": {
+        "type": "text-emphasis",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "text-emphasis",
+                "data": " text here"
+            }
+        }
+    ]
+}

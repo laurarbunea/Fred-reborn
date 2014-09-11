@@ -1,0 +1,175 @@
+//   ==========================================================================
+//   HTML5 display definitions
+//   ==========================================================================
+
+
+// Correct `inline-block` display not defined in IE 8/9.
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+//
+// Prevent modern browsers from displaying `audio` without controls.
+// Remove excess height in iOS 5 devices.
+//
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+//
+// Address `[hidden]` styling not present in IE 8/9.
+// Hide the `template` element in IE, Safari, and Firefox < 22.
+//
+
+[hidden],
+template {
+    display: none;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+
+// Address styling not present in IE 8/9, Safari 5, and Chrome.
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+// Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+
+b,
+strong {
+    font-weight: bold;
+}
+
+// Address styling not present in Safari 5 and Chrome.
+
+dfn {
+    font-style: italic;
+}
+
+// Address differences between Firefox and other browsers.
+
+hr {
+    height: 0;
+}
+
+// Address styling not present in IE 8/9.
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+// Correct font family set oddly in Safari 5 and Chrome.
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+// Improve readability of pre-formatted text in all browsers.
+
+pre {
+    white-space: pre-wrap;
+}
+
+// Set consistent quote types.
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+// Address inconsistent and variable font size in all browsers.
+
+small {
+    font-size: 80%;
+}
+
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+del {
+    text-decoration:line-through;
+}
+
+// -----------------------------------------------------------------------------
+// Embedded content
+// -----------------------------------------------------------------------------
+
+// Remove border when inside `a` element in IE 8/9.
+
+img {
+    border: 0;
+}
+
+// Correct overflow displayed oddly in IE 9.
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+// -----------------------------------------------------------------------------
+// Figures
+// -----------------------------------------------------------------------------
+
+// Address margin not present in IE 8/9 and Safari 5.
+
+figure {
+    display: block;
+    margin: 0;
+}
+
+// -----------------------------------------------------------------------------
+// Tables
+// -----------------------------------------------------------------------------
+
+// Remove most spacing between table cells.
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+// -----------------------------------------------------------------------------
+// Blockquotes
+// -----------------------------------------------------------------------------
+
+blockquote {
+    quotes:none;
+}
+
+blockquote:before,
+blockquote:after {
+    content:none;
+}
+
+

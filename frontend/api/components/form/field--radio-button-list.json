@@ -1,0 +1,39 @@
+{
+    "api": {
+        "type": "form/field--radio-button-list",
+        "label": "",
+        "label_note": "",
+        "name": "",
+        "default_value": "",
+        "values": []
+    },
+    "examples": [
+        {
+            "title": "Radio button list",
+            "example": {
+                "type": "form/field--radio-button-list",
+                        "name": "region",
+                        "label": "What part of New Zealand do you live in?",
+                        "default_value": "",
+                        "values": [
+                            { "label": "Northland",             "value": "Northland"            },
+                            { "label": "Auckland",              "value": "Auckland"             },
+                            { "label": "Waikato",               "value": "Waikato"              },
+                            { "label": "Bay Of Plenty",         "value": "Bay Of Plenty"        },
+                            { "label": "Gisborne",              "value": "Gisborne"             },
+                            { "label": "Hawke’s Bay",           "value": "Hawke’s Bay"          },
+                            { "label": "Taranaki",              "value": "Taranaki"             },
+                            { "label": "Manawatu / Wanganui",   "value": "Manawatu / Wanganui"  },
+                            { "label": "Wellington",            "value": "Wellington"           },
+                            { "label": "Nelson / Tasman",       "value": "Nelson / Tasman"      },
+                            { "label": "Marlborough",           "value": "Marlborough"          },
+                            { "label": "West Coast",            "value": "West Coast"           },
+                            { "label": "Canterbury",            "value": "Canterbury"           },
+                            { "label": "Otago",                 "value": "Otago"                },
+                            { "label": "Southland",             "value": "Southland"            }
+                        ]
+            }
+        }
+    ]
+}
+

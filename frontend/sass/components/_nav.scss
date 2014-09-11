@@ -1,0 +1,224 @@
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+$ease-out-circ: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+
+
+@keyframes navIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.anim-nav-in {
+    animation: navIn .2s $ease-out-circ;
+}
+
+.anim-nav-out {
+    animation: navIn .2s $ease-out-circ reverse;
+}
+
+
+
+
+.section--nav {
+    @extend %absolute;
+    z-index: 10;
+    top: 80px;
+    left: 0;
+    right: 0;
+
+    
+
+    @include up-to(small) {
+        top: 64px;
+    }
+
+    @extend %section;
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-color: #C7D900;
+    border-bottom-width: 4px;
+    box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, .25);
+
+    & > .section__content {
+        @extend %relative;
+        @extend %grid;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    display: none;
+
+    // show in footer, if js is disabled
+    .no-js & {
+        position: static;
+        display: block;
+    }
+
+}
+    .section--nav__content {
+        @include up-to(medium) {
+            padding-left:0;
+            padding-right:0;
+            
+        }
+    }
+
+body:after {
+    @extend %absolute;
+    @extend %full-width;
+    content: "";
+    height: 0;
+    background: rgba(0, 0, 0, 0.15);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .15s ease .1s, height 0s .25s;
+}
+
+
+.menu--active {
+
+    &:after {
+        opacity: 1;
+        height: 100%;
+        transition: opacity .2s $ease-out-circ, height 0s;
+        z-index: 1;
+    }
+
+    & .global-nav__menu {
+        &:after {
+            bottom: 0;
+        }
+    }
+}
+
+
+%nav-main-icon {
+    display: inline-block;
+    text-align:center;
+
+    @include rem(margin-right, 16);
+    @include at-least(large) {
+        & {
+            text-align:right;
+        }
+    }
+    @include up-to(small) {
+        & {
+            width: auto;
+            @include rem(margin-left, 16);
+        }
+    }
+}
+
+
+.nav-list {
+    @include rem('padding-top', $space-xxs);
+    @extend %list-unstyled;
+
+    & > li {
+        @extend %pb-xl;
+        min-width: 50%;
+    }
+
+    .i {
+        margin-right: .5em;
+    }
+
+    a {
+        display: block;
+        &:hover {
+            .i-section {
+                background-color: $dark-blue;
+            }
+        }
+    }
+}
+
+
+
+
+.nav-transaction,
+.nav-about, 
+.nav-main {
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    & li:last-child {
+        padding-bottom: 0;
+    }
+    @include media(medium) {
+        @include rem('padding-left', $space-xxxl);
+        @include rem('padding-right', $space-xxxl);
+    }
+    @include media(medium-only) {
+        @include rem('padding-bottom', $space-xxxl);
+    }
+    @include media(small-down) {
+        @include rem('padding-top', $space-m);
+        @include rem('padding-bottom', $space-xxxl);
+        
+    }
+}
+
+.nav-main {
+    @include media(large) {
+        padding-left: 0;
+    }
+}
+
+
+
+.nav-transaction__label {
+    vertical-align: middle;
+    margin-left: .5em;
+}
+
+
+
+.nav-transaction__title {
+    @extend %mb-xs;
+    display: inline-block;
+    width: 100%;
+    @extend %font-weight-bold;
+}
+
+.nav-transaction {
+
+    ul {
+        & > li {
+            @include rem(padding-left, 50);
+        @extend %pb-m;
+            text-align: left;
+            & a {
+                @extend %font-size-s;
+            }
+            & .nav-main__icon {
+                width: 33.3333333%;
+                display: inline-block;
+                text-align:center;
+                & i {
+                    @extend %i--dark-blue;
+                }
+            }
+        }
+    }
+}

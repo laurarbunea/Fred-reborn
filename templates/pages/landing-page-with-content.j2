@@ -1,0 +1,33 @@
+
+{% extends "containers/content-container-wide.j2" %}
+{% import "macros.j2" as macros %}
+{% import "components/subnav.j2" as subnav %}
+
+{% block header %}
+    {{ macros.site_header(breadcrumb, headline, step_name, image, false, "fullwidth") }}
+{% endblock %}
+
+{% block content %}
+
+    {% if stub %}
+        <div class="grid">
+            <div class="[ col large-8 ]  ">
+                <p class="intro">
+                   {{ stub }}
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% for item in data %}
+        {{ item|component }}
+    {% endfor %}
+
+    {{ macros.subnav(children) }}
+    
+    {{ macros.subnav_tertiary(children) }}
+
+{% endblock %}
+
+{% block anchor %}
+{% endblock %}

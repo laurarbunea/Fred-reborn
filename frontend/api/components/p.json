@@ -1,0 +1,14 @@
+{
+    "api": {
+        "type": "=",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "data": "I’m just a regular old paragraph of body copy. I’m just a regular old paragraph of body copy. I’m just a regular old paragraph of body copy. I’m just a regular old paragraph of body copy. I’m just a regular old paragraph of body copy."
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{% extends "template.j2" %}
+
+{% block container %}
+
+    <div class='theme--neutral'>
+
+        <div class='wrapper'>
+
+            {% block messages %}
+            {% endblock %}
+
+            <div class='[ section layout layout--half layout--nudge ] theme--white '>
+
+                {% block content %}
+                
+                {% endblock  %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

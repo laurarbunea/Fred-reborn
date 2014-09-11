@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    #BREADCRUMBS
+\*------------------------------------*/
+
+
+.breadcrumb {
+    @extend %list--inline;
+    @extend %mb-s;
+    font-weight: 100;
+    letter-spacing: .03em;
+    
+    > li {
+        @extend %mt-0;
+        @extend %text--overflow;
+        display: none;
+
+        a { @extend %remove-anchor-decoration;}
+        
+        &:last-child {
+            @extend %inline-block;
+        }
+
+        @include media(medium) {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+        }
+
+        & a:after {
+            @extend %pl-xxs;
+            @extend %pr-xxs;
+            content: ' › ';
+            color: #C7D900;
+        }
+
+        & .back:before,
+        & .close:before {
+            @extend %pl-xxs;
+            @extend %pr-xxs;
+            content: ' ‹ ';
+            color: #C7D900;
+        }
+        & .close:before {
+            content: '\d7';
+        }
+        & .back:after,
+        & .close:after {
+            content: none;
+        }
+
+    }
+
+    a {
+        @extend %remove-dashed-border;
+        @extend %font-size-xxs;
+    }
+}

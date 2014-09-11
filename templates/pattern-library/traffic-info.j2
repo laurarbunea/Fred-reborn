@@ -1,0 +1,56 @@
+{% extends "/pattern-library/index.j2" %}
+{% import "macros.j2" as macros %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="/css/style-guide.css">
+{% endblock %}
+
+{% block content %}
+
+    
+    <div class=' [ wrapper ] '>
+        <div class='[ layout ] styleguide-anchors'>
+            <div class='[ grid ]'>
+                <ul class='nav [ col ]'>
+                    <li>
+                        <a href='#traffic-messages' class='pill'>
+                            Traffic messages 
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#highway-signs' class='pill'>
+                            Highway Signs 
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#region-list' class='pill'>
+                            Region list 
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#route-information' class='pill'>
+                            Route information 
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#route-information' class='pill'>
+                            Share buttons information 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class='theme--neutral'>
+        <div class=' [ wrapper ] '>
+
+            {% for item in data %}
+                {{ item|component }}
+            {% endfor %}
+
+        </div>
+    </div>
+
+{% endblock %}

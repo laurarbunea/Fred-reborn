@@ -1,0 +1,44 @@
+/**
+ *  Share navigation
+**/
+
+.share-nav {
+
+    @extend %clearfix;
+    margin: 0;
+    @extend %section-m;
+
+    > li {
+        @extend %font-size-s;
+        color: #fff;
+        display: block;
+        float: left;
+        background-color: $color-bg-header;
+        margin: 0;
+        @include rem(line-height, 36);
+        @include rem(height, 38);
+    }
+    > li + li {
+        border-left: 1px solid #fff;
+    }
+    > li:first-child {
+        @include rem(padding-left, 32);
+        @include rem(padding-right, 16);
+    }
+    > li:last-child {
+        overflow: hidden;
+        @include vendor(border-radius, 0 5px 5px 0);
+    }
+
+    > li > a {
+        @extend %inline-block;
+        height: 100%;
+        padding-left: .75em;
+        padding-right: .75em;
+    }
+
+    .i {
+        background-position: 0 $icon-bg-white;
+    }
+
+}

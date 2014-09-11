@@ -1,0 +1,110 @@
+%ratio {
+    position: relative;
+    height: 0;
+    & > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.ratio-square {
+    @extend %ratio;
+    padding-bottom: 100%;
+}
+
+.ratio-filmic { @extend %ratio; }
+.crop {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+    .crop--bottom {
+        > img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+
+/**
+
+### Append and Prepend
+
+Place something before or after an element
+
+```html
+<p class="prepend" data-prepend="email:">&nbsp;email@gmail.com</p>
+<p class="append" data-append="is my email">email@gmail.com&nbsp;</p>
+```
+
+*/
+
+.prepend{
+    &:before{
+        content: attr(data-prepend);
+        display: inline-block;
+    }
+}
+
+.append{
+    &:after{
+        content: attr(data-append);
+        display: inline-block;
+    }
+}
+.left { @extend %left;}
+.right { @extend %right;}
+
+
+.split {
+    text-align:left;
+    list-style:none;
+    margin-left:0;
+}
+    .split__right {
+        text-align:right;
+        float:right;
+        clear:left;
+    }
+@include media(medium) {
+    .append--q-medium {
+        &:after{
+            content: attr(data-append-medium);
+            display: inline-block;
+        }
+    }
+}
+@include media(small) {
+    .append--q-small {
+        &:after{
+            content: attr(data-append-small);
+            display: inline-block;
+        }
+    }
+}
+
+
+.device {
+    @extend %mb-xxxxl;
+
+    .device__menu {
+        @extend %pt-s;
+        @extend %pb-s;
+        @extend %pl-s;
+        @extend %pr-s;
+        @extend %mb-0;
+        @extend %text-small;
+        @extend %theme--grey;
+    }
+    @extend %theme--dark;
+    border-radius: 50px;
+    @include media(medium-down) {
+        border-radius: 30px;
+    }
+}

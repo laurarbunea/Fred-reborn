@@ -1,0 +1,13 @@
+<div class='[ grid {{item.grid_modifier }} ]'>
+
+    {% for item in item.columns %}
+
+        <div class="[ col {{item.col_size }} ] {{item.theme }} {{item.class }}">
+
+            {{ item|children }}
+
+        </div>
+
+    {% endfor %}
+
+</div>

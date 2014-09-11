@@ -1,0 +1,26 @@
+
+<div class='[ grid ] icon-block' >
+
+    {% for icon in item.data %}
+
+        <div class="[ col large-2 medium-half ] icon-block__item ">
+
+            <div class='swatch__top theme--neutral icons--large' >
+
+                <i class="i i-{{icon.name}} "></i>
+
+            </div>
+
+            <div class='swatch__bottom theme--dark'>
+
+                <p>
+                    {{icon.name}}
+                </p>
+
+            </div>
+
+        </div>
+
+    {% endfor %}
+    
+</div>

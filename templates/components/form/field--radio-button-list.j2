@@ -1,0 +1,38 @@
+<div class="field--radio-button-list">
+
+    {% include "components/form/field__label.j2" %}
+
+    {% include "components/form/field__note.j2" %}
+
+    <div class='field__input'>
+
+        {% set length = item.values|length %}
+
+        <ul class='radio-button-list'>
+
+            {% for obj in item.values %}
+
+                <li>
+                    <input type='radio' value='{{ obj.value }}' name='{{ item.name }}' id='{{ item.name }}-{{ obj.value }}'  {% if obj.value == item.default_value %} checked='checked' {% endif %} >
+
+                    <label class='split' for='{{ item.name }}-{{ obj.value }}'>
+
+                        {{ obj.label|safe }}
+
+                        {% if obj.secondary_label %}
+
+                            <span class='split__right'>{{ obj.secondary_label|safe }}</span>
+
+                        {% endif %}
+
+                    </label>
+
+                </li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+    
+</div>

@@ -1,0 +1,17 @@
+<div class='field--details'>
+
+    {% if item.data|iterable %}
+
+        {% for item in item.data %}
+
+            {{ item|component }}
+            
+        {% endfor %}
+
+    {% else %}
+
+        {{ item.data|safe }}
+
+    {% endif %} 
+
+</div>

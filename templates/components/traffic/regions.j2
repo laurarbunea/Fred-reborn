@@ -1,0 +1,7 @@
+<ul data-items="" class="location-list">
+    {% for listItem in item.data %}
+    <li class="list__item">
+        <a href="#"><h4>{{ listItem.region }}{% if listItem.data %}<span class="location-list__split">{{ listItem|children }}</span>{% endif %}</h4></a>
+    </li>
+    {% endfor %}
+</ul>

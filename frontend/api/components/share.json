@@ -1,0 +1,18 @@
+{
+    "api": {
+        "type": "share"
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "share",
+                "data": {
+                    "twitter": "http://twitter.com/share-this-url",
+                    "facebook": "http://facebook.com/share-this-url",
+                    "google": "http://google.com/share-this-url"
+                }
+            }
+        }
+    ]
+}

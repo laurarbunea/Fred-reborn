@@ -1,0 +1,24 @@
+{
+    "api": {
+        "type": "breadcrumb",
+        "data": []
+    },
+    "examples": [
+        {
+            "example":
+            {
+                "type": "breadcrumb",
+                "data": [
+                    {
+                        "url": "#",
+                        "title": "Link 1"
+                    },
+                    {
+                        "url": "#",
+                        "title": "Link 2"
+                    }
+                ]
+            }
+        }
+    ]
+}

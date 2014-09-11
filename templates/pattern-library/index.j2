@@ -1,0 +1,44 @@
+{% extends "template.j2" %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" type="text/css" href="/css/style-guide.css">
+
+{% endblock %}
+
+
+
+{% set page = title %}
+
+{% block header %}
+    {{ macros.site_header(breadcrumb, headline, false, false, true, "fullwidth", page) }}
+{% endblock  %}
+
+
+
+
+{% block content %}
+
+<div class='section'>
+
+    <div class="theme--neutral">
+        
+        <div class=" [ wrapper ] ">
+
+            <div class="[ layout  ] theme--white">
+
+                {% for item in data %}
+                    {{ item|component }}
+                {% endfor %}
+             
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+

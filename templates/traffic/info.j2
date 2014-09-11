@@ -1,0 +1,77 @@
+
+<div class="traffic-info">
+
+    <div class="traffic-info__header">
+        <ol class="breadcrumb">
+            <li>
+                {% if data.road %}
+                    {#<a href="/traffic/" data-back>{% if data.road %}{{ data.road }}{% elseif data.motorway %}{{ data.motorway }}{% elseif data.region %}{{ data.region }}{% endif %}</a>#}
+                    <a  data-back>{{ data.road }}</a>
+                {% elif data.region or data.motorway %}
+                    <a  class="back" data-back>Back</a>
+                {% else %}
+                    <a href="#" class="close" data-close>Close</a>
+                {% endif %}
+                {#<a href="#" class="back" data-back>Back</a>#}
+
+            </li>
+        </ol>
+
+        <h1>
+            {{ data.info }}
+        </h1>
+
+        <h2>
+            Expect delays
+        </h2>
+
+        <p>18 Jun – 6 Jul 2014</p>
+
+        <p>Due to traffic light fault at the intersection with brougham and antigua street, all right turns into and out of antigua street are closed until the fault will be repaired. Motorists are advised to take extra care.</p>
+
+    </div>
+
+    <div class="traffic-info__body">
+
+        <ul class="location-list" data-items>
+
+            <li class="list__item block-theme--yellow">
+                <a href="#" data-href="Auckland/North-Western%20Motorway/Tristram%20Ave" class="list__link theme__background">
+                    <h3>
+                        Alternative route
+                        <span class="location-list__split">
+                            <i class="i i-route"></i>
+                        </span>
+                    </h3>
+                    <p><strong>30 min</strong> Upper Harbour Motorway</p>
+                </a>
+            </li>
+
+            <li class="list__item full-width">
+
+                <ul class="share-nav">
+                    <li><span>Share</span></li>
+                    <li>
+                        <a href="#" class="link-theme--twitter">
+                            <i class="i i-twitter"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-theme--facebook">
+                            <i class="i i-facebook"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-theme--google">
+                            <i class="i i-google"></i>
+                            <span class="sr-only">Google</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+

@@ -1,0 +1,17 @@
+{
+    "api": {
+        "type": "banner",
+        "data": []
+    },
+    "examples": [
+        {
+            "example": {
+                "type": "banner",
+                "theme":"theme--family",
+                "subtitle":"Delivering New Zealand",
+                "title":"A thriving transport network",
+                "img":"/images/home/banner-bikes.jpg"       
+            }
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    #PILLS
+\*------------------------------------*/
+
+%pill {
+    @extend %font-size-s;
+    @extend %align--middle;
+    @include vendor(border-radius, 2px);
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    padding: .428571429em .571428571em;
+    & strong {
+        @extend %font-weight-bold;
+        margin-left: .1em;
+        margin-right: .2em;
+    }
+    & i {
+        font-size: 1.142857143em;
+        width: 1em;
+        height: 1em;
+        margin-top: -.125em;
+    }
+    margin-right: .142857143em;
+    margin-top: .142857143em;
+    margin-bottom: .142857143em;
+}
+
+.pill {
+    @extend %pill;
+    @extend %inline-theme--dark-blue;
+}
+
+.pill {
+    @extend %link-theme--dark-blue;
+}
+
+.pill--roadworks,
+.pill--orange {
+    @extend %pill;
+    @extend %inline-theme--orange;
+}
+.pill--roadworks,
+.pill--orange {
+    @extend %link-theme--orange;
+}
+
+.pill.pill--warning {
+    @extend %inline-theme--warning;
+}
+.pill.pill--warning {
+    @extend %link-theme--warning;
+}
+
+.pill.pill--confirm {
+    @extend %inline-theme--confirm;
+}
+.pill.pill--confirm {
+    @extend %link-theme--confirm;
+}
+
+.pill.pill--grey {
+    background-color: #333;
+    background-color: rgba(0,0,0, .6);
+    color: inherit;
+}
+
+//.theme__background .pill {
+//    background-color: #333;
+//    background-color: rgba(0,0,0, .6);
+//    color: inherit;
+//}
+

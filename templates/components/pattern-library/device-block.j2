@@ -1,0 +1,30 @@
+{% if item.external_theme %}
+
+    <div class="{{item.external_theme}}">
+
+{% endif %}
+
+    <div class='[ wrapper ] {{ item.class }}' >
+
+        <div class='[ {{ item.layout }} {{item.section }} ] device'>
+            
+            <p class='split append append--q-small append--q-medium device__menu' data-append="computer" data-append-medium="tablet" data-append-small="iphone" >
+
+            &#63743; Fred's awesome
+                <span class='split__right uppercase'>
+                    12:00am
+                </span>
+            </p>
+
+            <div class='theme--white'>
+                {{ item|children }}
+            </div>
+        </div>
+
+    </div>
+
+{% if item.external_theme %}
+
+    </div>
+
+{% endif %}

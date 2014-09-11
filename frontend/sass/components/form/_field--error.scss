@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    #Field error
+\*------------------------------------*/
+
+.field--error {
+    color:$error-red;
+    
+    .field__label, 
+    label { color:$error-red; }
+}
+
+.field--error [type='text'],
+.field--error [type='date'],
+.field--error [type='email'],
+.field--error [type='number'] { color:$dark-grey; }
+
+// ----------------------------------------------------------------------------
+// When the form has been submitted this only shows the components with errors
+// ----------------------------------------------------------------------------
+
+.form--has-errors %field { display:none; }
+
+.form--has-errors .field--error,
+.form--has-errors .field--submit { display:block; }

@@ -1,0 +1,128 @@
+{
+    "api": {
+        "type": "subnav",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "Primary navigation block",
+            "example": {
+                "type": "subnav",
+                "data": [
+                    {
+                        "data": {
+                            "priority":"primary",
+                            "title":"I’m the title of a subpage", 
+                            "stub":"I’m a stub from the same subpage.",
+                            "thumbnail":"/images/test-picture.jpg",
+                            "action":[
+                                {
+                                    "icon":"i-section-driver-licences",
+                                    "text":"Where to take an advanced driving course",
+                                    "href":"/driver-licences/licensing-agents-and-approved-course-providers/"
+                                }    
+                            ]
+                        },
+                        "children": [
+                            {
+                                "data":{ "title":"child page" },
+                                "path":"/clickme"
+                            },
+                            {
+                                "data":{ "title":"another child page" },
+                                "path":"/clickme"
+                            },
+                            {
+                                "data":{ "title":"another child page" },
+                                "path":"/clickme"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Secondary navigation block",
+            "example": {
+                "type": "subnav",
+                "data": [
+                    {
+                        "data": {
+                            "priority":"secondary",
+                            "title":"I’m the title of a subpage", 
+                            "stub":" I’m a stub from the same subpage.",
+                            "thumbnail":"/images/test-picture.jpg",
+                            "action":[
+                                {
+                                    "icon":"i-section-driver-licences",
+                                    "text":"Where to take an advanced driving course",
+                                    "href":"/driver-licences/licensing-agents-and-approved-course-providers/"
+                                }    
+                            ]
+                        },
+                        "children": [
+                            {
+                                "data":{ "title":"child page" },
+                                "path":"/clickme"
+                            },
+                            {
+                                "data":{ "title":"another child page" },
+                                "path":"/clickme"
+                            },
+                            {
+                                "data":{ "title":"another child page" },
+                                "path":"/clickme"
+                            }
+                        ]
+                        
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Primary and secondary navigation blocks, without an image",
+            "notes":"If no image is specified, the text in the navigation block moves over to the left.",
+            "example": {
+                "type": "subnav",
+                "data": [
+                    {
+                        "data": {
+                            "priority":"primary",
+                            "title":"I’m the title of a subpage", 
+                            "stub":" I’m a stub from the same subpage.",
+                            "action":[
+                                {
+                                    "icon":"i-section-driver-licences",
+                                    "text":"Where to take an advanced driving course",
+                                    "href":"/driver-licences/licensing-agents-and-approved-course-providers/"
+                                }    
+                            ] 
+                        },
+                        "children": [
+                            {
+                                "data":{ "title":"child page" },
+                                "path":"/clickme"
+                            },
+                            {
+                                "data":{ "title":"another child page" },
+                                "path":"/clickme"
+                            },
+                            {
+                                "data":{ "title":"another child page" },
+                                "path":"/clickme"
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "priority":"secondary",
+                            "title":"I’m the title of a subpage", 
+                            "stub":"I’m a stub from the same subpage."
+                            
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

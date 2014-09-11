@@ -1,0 +1,100 @@
+<div class='header {% if item.theme %}{{ item.theme }}{% else %}theme--dark{% endif %}'>
+
+    {% if item.image %}
+        
+        <div class="header__image">
+            <img src="{{ item.image }}" alt=""/>
+        </div>
+
+    {% endif %}
+    
+    <div class="[ section ]">
+
+        <div class='wrapper'>
+
+        {% if item.layout == "forms" %}
+
+            <div class='[ layout layout--half ]'>
+        
+                <div class='[ grid ]'>
+                    
+                    <div class='[ col ]'>
+
+                        <ol class='breadcrumb'>
+
+                            <li>
+                                <a href="../">
+                                    Transaction centre
+                                </a>
+                            </li>
+
+                        </ol>
+
+                        {% if item.headline %}
+
+                            <h1>
+                                {{ item.headline|safe }}
+                            </h1>
+
+                        {% endif %}
+
+                        {% if item.step_name %}
+                            <h2 >
+                                {{ item.step_name|safe }}
+                            </h2>
+                        {% endif %}
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        {% else %}
+
+            <div class="layout ">
+
+                <div class="grid">
+
+                    <div class="[ col medium-8 ]">
+
+                        <ol class="breadcrumb">
+                
+                            {% for crumb in item.breadcrumb %}
+
+                                {% if not loop.last %}
+                                    <li>
+                                        <a href="{{ crumb.path }}">{{ crumb.data.title }}</a>
+                                    </li>
+                                {% endif %}
+
+                            {% endfor %}
+
+                        </ol>
+
+                        {% if item.headline %}
+                            <h1>
+                                {{ item.headline|safe }}
+                            </h1>
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        {% endif %}
+                    
+        </div>
+
+        {% if item.subnav == true %}
+
+        {% set title =  item.title %}
+        {% include "/pattern-library/subnav.j2" %} 
+
+        {% endif %}
+
+    </div>
+  
+</div>

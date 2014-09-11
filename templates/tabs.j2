@@ -1,0 +1,56 @@
+{#
+    Tabs
+    ---------------------
+
+      blocks:
+        - type: tabs
+          in_banner: true|false
+          data:
+            - title:
+              content:
+                - data:
+                  type:
+
+#}
+{% import "macros.j2" as macros %}
+{%- if item.in_banner -%}
+</div>
+<div class="kb-bleed block--light">
+    <div class="kb-content gutters top-m">
+{% endif %}
+
+
+        <ul class="nav tabs-nav no-js__hide">
+            {% for node in item.data %}
+                {% if node.data %}
+                    {% set node = node.data %}
+                {% endif -%}
+                <li id="{{ node.title|slugify }}-trigger" class="tabs-nav__item{% if loop.first %} is-active{% endif %}">
+                    <a href="#{{ node.title|slugify }}">{{ node.title }}</a>
+                </li>
+            {%- endfor %}
+        </ul>
+
+{% if item.in_banner %}
+    </div>
+    <div class="tabs-nav__keyline"></div>
+</div>
+<div class="kb-content gutters">
+{% endif %}
+
+    <div class="tabs-content">
+        {% for node in item.data %}
+            {% if node.data %}
+                {% set node = node.data %}
+            {% endif %}
+            <h2 id="{{ node.title|slugify }}" class="tabs-content__title no-js__show">{{ node.title }}</h2>
+            <div id="{{ node.title|slugify }}-content" class='tabs-content__item{% if not loop.first %} is-hidden{% endif %}'>
+                {% if node.content|is_list %}
+                    {{ macros.parse_blocks( node.content ) }}
+                {% else %}
+                    {{ node.content }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+

@@ -1,0 +1,146 @@
+{
+    "title": "grid",
+    "headline": "Grid",
+    "template":"/pattern-library/grid.j2",
+    "data": [ 
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "section",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "anchor": "grid",
+                    "data": [
+                        {
+                            "type":"intro",
+                            "data":"Use the grid system to create page layouts with a series of rows (‘.grid’) and columns (‘.col’)."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "grid-rules",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "anchor": "grid-rules",
+                    "data": [
+                        
+                        {
+                            "type": "h3",
+                            "data": "Grid rules"
+                        },
+                        {
+                            "type": "list",
+                            "class": "list-unstyled",
+                            "data":[
+
+                                "Columns have predefined gutters of 0.5rem, which increases to 1rem above the medium breakpoint.",
+                                "Place ‘.col’ elements inside a ‘.grid’ wrapper:",
+                                "<pre>&lt;div class='[ grid ]'&gt;<br />&nbsp;&lt;div class='[ col half ]'&gt;<br />&nbsp;&lt;/div&gt;&nbsp;<br />&nbsp;&lt;div class='[ col half ]'&gt;<br />&nbsp;&lt;/div&gt;<br />&lt;/div&gt;</pre> ",
+                                "Place content elements inside the grid columns:",
+                                "<pre>&lt;div class='[ grid ]'&gt;<br />&nbsp;&lt;div class='[ col ]'&gt;<br />&nbsp;&nbsp;&lt;p&gt; I’m some content&lt;/p&gt;<br />&nbsp;&lt;/div&gt;<br />&lt;/div&gt;</pre>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "grid-types",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "anchor": "grid",
+                    "data": [
+                        
+                        {
+                            "type": "h3", 
+                            "data": "Grid types"
+                        },
+                        "There are three grid types:",
+                        {
+                            "type": "list", 
+                            "data": [
+                                "<a href='#fraction-grid'>fractional grid</a>",
+                                "<a href='#percentage-grid'>percentage grid</a>",
+                                "<a href='#responsive-grid'>responsive grid</a>"
+                            ]
+                        },
+                        {
+                            "type": "raw",
+                            "data": "<hr class='hr--bleed'/>"
+                        },
+                        {
+                            "type": "/pattern-library/grid-fractional"
+                        },
+                        {
+                            "type": "raw",
+                            "data": "<hr class='hr--bleed'/>"
+                        },
+                        {
+                            "type": "/pattern-library/grid-percentage"
+                        },
+                        {
+                            "type": "raw",
+                            "data": "<hr class='hr--bleed'/>"
+                        },
+                        {
+                            "type": "/pattern-library/grid-responsive"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "nested-grid",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "anchor": "grid",
+                    "data": [
+                        {
+                            "type": "/pattern-library/grid-nested"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "grid-modifiers",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "anchor": "grid",
+                    "data": [
+                        
+                        {
+                            "type": "h3", 
+                            "data": "Grid modifiers"
+                        },
+                        "There are a few modifiers available to change the layout behaviour of individual grid instances. Add the modifiers next to the ‘.grid’ class, like the examples below.",
+                        
+                        {
+                            "type": "raw",
+                            "data": "<hr class='hr--bleed'/>"
+                        },
+                        {
+                            "type": "pattern-library/code",
+                            "component": "components/grid"
+                        }
+                    ]
+                }
+            ]
+        } 
+    ]
+}

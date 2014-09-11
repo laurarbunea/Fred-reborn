@@ -1,0 +1,247 @@
+{
+    "title": "forms",
+    "headline": "Forms",
+    "template":"pattern-library/form.j2",
+    "data": [
+        
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "field-details",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        
+                        "To build a form, choose the components you want from the list below, then copy and paste the component code inside the following block:",
+                        "<pre>&lt;form method='post' action='' class=''&gt; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--copy component's code here --&gt; <br />&lt;/form&gt;</pre>",
+                        "<a href='/pattern-library/pages/#transactions'>View</a> some examples of Transport Agency forms."
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "field-details",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Field details"
+                        },
+                        "Use this when the form has extra information or help text.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--details"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "number-input",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Number input"
+                        },
+                        "Use this for input fields that should contain a numeric value. On a touchscreen device the number keys will show by default when the field is focused.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--number"
+                        },
+                        {
+                            "type": "h4",
+                            "data": "Number input with error state"
+                        },
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--number--error"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",  
+            "anchor":"text-input",
+            "data": [
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Text input"
+                        },
+                        "Use this for input fields that contain regular text.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--text"
+                        },
+                        {
+                            "type": "h4",
+                            "data": "Text input with error state"
+                        },
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--text--error"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "email-input",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Email input"
+                        },
+                        "This should be used for input fields that contain an email address. The email keyboard will show by default on touchscreen devices that support it.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--email"
+                        },
+                        {
+                            "type": "h4",
+                            "data": "Email input with error state"
+                        },
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--email--error"
+                        }
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor":"email-input-with-button",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Email input with submit button"
+                        },
+                        "This is a single-field form for submitting an email address. When the form includes more than one field, use a regular <a href='#email-input'>email input</a> instead.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--email-plus-submit"
+                        },
+                        {
+                            "type": "h4",
+                            "data": "Email input with button error state"
+                        },
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--email-plus-submit--error"
+                        }
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "radio-button-list",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Radio button list"
+                        },
+                        "This component should be used when you want users to select one input from either a list of long descriptions or a list of more than 12 items. If you have short item descriptions or numbers the <a href='#radio-button-group'>radio button group</a> may be better suited.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--radio-button-list"
+                        } 
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "prev-next-buttons",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Previous and Next links"
+                        },
+                        "These should be used when a page or component gets too long, for example when <a href='/forms/book-a-test/times1'>choosing a time for your driving test</a>.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--prev-next"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "radio-button-group",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Radio button group"
+                        },
+                        "This component should be used when you want users to select one input from a group of short descriptions or numbers. If you have long descriptions or numbers, or a list of more than 12 items, the <a href='#radio-button-list'>radio button list</a> may be a better option.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--radio-button-group"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "size": "s",
+            "anchor": "submit-button",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Submit button"
+                        },
+                        "This should be used when you want to submit the form data.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/form/field--submit"
+                        } 
+                    ]
+                }
+            ]
+        }
+    ]
+}

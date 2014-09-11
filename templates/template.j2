@@ -1,0 +1,172 @@
+{% import "macros.j2" as macros %}
+<!doctype html>
+<html class="no-js">
+<head>
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/screen.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style-guide.css">
+    {% block stylesheets %}{% endblock %}
+    <script>
+    /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+        window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+        grunticon(["/css/icons-data-svg.css", "/css/icons-data-png.css", "/css/icons-fallback.css"]);
+    </script>
+    <noscript>
+        <link href="/css/icons-fallback.css" rel="stylesheet">
+    </noscript>
+</head>
+<body class="theme--neutral {{ body_class }}">
+    <a class="access access-skip" accesskey="2" href="#nzta-main-content">
+        Skip to content
+    </a>
+    <a class="access access-skip" accesskey="0" href="#nzta-access-keys"></a>
+    
+    {% set accesskeys = [
+            {"key":"h", "page":"Home"},
+            {"key":"m", "page":"Menu"},
+            {"key":"0", "page":"Show list of access keys"},
+            {"key":"2", "page":"Skip to content"},
+            {"key":"3", "page":"Skip to top"}
+        ]
+    %}
+
+    
+    {{ macros.accesibility_container(accesskeys, "Access keys for nzta.govt.nz") }}
+
+    
+    {% block header_wrap %}
+
+        
+    <div class="global-nav theme--white">
+
+        <div class="[ wrapper ]">
+
+            <div class="[ layout ]">
+
+                <div class="[ grid grid--middle ]">
+                    
+                    <div class='[ col large-4 medium-3 small-5 ] '>
+                        <img src='/images/fred-logo.png'>
+                    
+
+                    </div>
+
+                    <div class='[ col large-6 medium-7 small-5 ] global-nav__items '>
+                        
+                        <a href='/pages/' class='btn btn--primary btn--bounce  ml-m mb-0'>
+                            
+                            Pages
+
+                        </a>
+                        <a href='/pattern-library/' class='btn btn--primary btn--bounce  ml-m mb-0'>
+                            Flego
+                        </a>
+
+
+
+                        <a href='/freds-closet/' class='btn btn--primary btn--bounce ml-m mb-0'>
+                            
+                            Fred's closet
+
+                        </a>
+
+                        <a href='http://springload.github.io/Fred.scss/' class='btn btn--primary btn--bounce  ml-m mb-0'>
+                            
+                            Fred.scss
+
+                        </a>
+
+                    </div>
+          
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+            
+
+    {% block header %}
+    {% endblock %}
+
+
+    {% endblock %}
+ 
+
+    {% block nav_ %}
+    {% endblock %}
+
+    <a name="nzta-main-content" id="nzta-main-content"></a>
+    
+    
+
+    {% block container %}
+
+        {% block messages %}
+        {% endblock %}
+
+        {% block content %}
+            {% for item in data %}
+                {{ item|component }}
+            {% endfor %}
+        {% endblock %}
+
+    {% endblock %}
+
+
+    {% block nav %}
+
+       {% include "nav.j2" %}
+       {#{{ macros.get_api_example('menu')}}#}
+
+    {% endblock %}
+
+
+
+    {% block footer %}
+    <div class="global-nav theme--white">
+
+        <div class="[ wrapper ]">
+
+            <div class="[ layout ]">
+
+                <div class="[ grid grid--middle ]">
+                    
+                    <div class='[ col ] '>
+
+                        <p>
+                             Made with &nbsp; &hearts; &nbsp; by friendly Feds
+                             <span class='split__right'>
+                                 © 2014. All rights reserved.
+                             </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% endblock %}
+
+    {% block anchor %}
+       <a href='#' class='fixed--bottom back-to-top-anchor icons--large'><i class='i i--white i-map-caret-up'></i></a>
+    {% endblock %}
+
+    <a class="access access-skip" accesskey="3" href="#">Top</a>
+
+
+    <script src="/js/site.js"></script>
+    <script src="/js/showhide.js"></script>
+    {% block scripts %}{% endblock %}
+    <script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

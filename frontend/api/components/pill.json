@@ -1,0 +1,15 @@
+{
+    "api": {
+        "type": "pill",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "pill",
+                "data": "I'm a pill"
+            }
+        }
+    ]
+}

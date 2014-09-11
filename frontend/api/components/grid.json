@@ -1,0 +1,141 @@
+{
+    "api": {
+        "type": "container",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "Grid middle",
+            "notes":"This centres columns vertically within the parent grid.",
+            "example": {
+
+                "type":"grid",
+                "grid_modifier":"grid--middle",
+                "columns":[
+                    {
+                        "col_size":"quarter",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ quarter col ]. Here is a long paragraph so you can see how grid middle Vertically centers columns."
+                    }, 
+                    {
+                        "col_size":"three-quarters",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ three-quarters col ]"
+                    }
+                ]  
+            } 
+        },
+        {
+            "title": "Grid bottom ",
+            "notes":"This aligns columns vertically with the bottom of the parent grid.",
+            "example": {
+
+                "type":"grid",
+                "grid_modifier":"grid--bottom",
+                "columns":[
+                    {
+                        "col_size":"quarter",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ quarter col ]. Here is a long paragraph so you can see how grid bottom aligns columns to the bottom of the parent."
+                    }, 
+                    {
+                        "col_size":"three-quarters",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ three-quarters col ]"
+                    }
+                ]    
+            } 
+        },
+        {
+            "title": "Grid centre ",
+            "notes":"This aligns columns horizontally with the centre of the parent grid. ",
+            "example": {
+                
+                "type":"grid",
+                "grid_modifier":"grid--center",
+                "columns":[
+                    {
+                        "col_size":"half",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ col half ]"
+                    } 
+                    
+                ]     
+            } 
+        },
+        {
+            "title": "Grid justify",
+            "notes":"Evenly distributes columns across the width of the parent grid.",
+            "example": {
+                
+                "type":"grid",
+                "grid_modifier":"grid--justify",
+                "columns":[
+                    {
+                        "col_size":"quarter",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ col quarter ]"
+                    },
+                    {
+                        "col_size":"quarter",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ col quarter ]"
+                    },
+                    {
+                        "col_size":"quarter",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ col quarter ]"
+                    }
+                    
+                ]    
+            } 
+        },
+        {
+            "title": "Grid table",
+            "notes":"This forces columns to occupy the full height of the parent grid. It is only to be used if the columns don't break when resized. If you want ‘grid--table’ applied to the large breakpoint, you need to use the class 'large-grid--table'. If you want ‘grid--table’ applied to the medium breakpoint and above, you need to use the class 'medium-grid--table'.",
+            "example": {
+
+                "type":"grid",
+                "grid_modifier":"grid--table",
+                "columns":[
+                    {
+                        "col_size":"third",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ col third ]. This example needs some really really long text that forces the height of this column to be longer than the other column "
+                    },
+                    {
+                        "col_size":"third",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ col third ]"
+                    },
+                    {
+                        "col_size":"third",
+                        "theme":"theme--grid-debug", 
+                        "data":"[ col third ]"
+                    } 
+                ]
+            } 
+        },
+        {
+            "title": "Grid flip small",
+            "notes":"This modifier swaps the direction of the columns on the small breakpoint. Squish your browser window horizontally to see it in effect. ",
+            "example": {
+
+                "type":"grid",
+                "grid_modifier":"grid--flip-small",
+                "columns":[
+                    {
+                        "col_size":"half",
+                        "theme":"theme--grid-debug", 
+                        "data":"a) [ col half ]"
+                    },
+                    {
+                        "col_size":"half",
+                        "theme":"theme--grid-debug", 
+                        "data":"b) [ col half ]"
+                    }
+                ]      
+            } 
+        } 
+    ]
+}

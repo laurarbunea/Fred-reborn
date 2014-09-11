@@ -1,0 +1,24 @@
+{
+    "api": {
+        "type": "form/field--email-plus-submit",
+        "name": "email",
+        "label": "Your email address",
+        "placeholder": "email@example.com",
+        "field_note": "You won’t get any junk email from us.",
+        "submit_label": "Send"
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "form/field--email-plus-submit",
+                "name": "email",
+                "label": "Your email address",
+                "placeholder": "email@example.com",
+                "field_note": "You won’t get any junk email from us.",
+                "submit_label": "Send"
+            }
+        }
+    ]
+}
+

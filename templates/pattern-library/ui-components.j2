@@ -1,0 +1,102 @@
+{% extends "/pattern-library/index.j2" %}
+{% import "macros.j2" as macros %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="/css/style-guide.css">
+{% endblock %}
+
+{% block content %}
+
+
+    <div class='theme--neutral'>
+
+        <div class=' [ wrapper ] '>
+
+            <div class='[ layout ] styleguide-anchors'>
+
+                <div class='[ grid ]'>
+               
+                    <ul class='nav [ col ]'>
+
+                        <li>
+                            <a href='#action' class='pill'>
+                                Action links
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#anchor-links' class='pill'>
+                                Anchor links
+                            </a>
+                        </li>
+
+                        <!--<li>
+                            <a href='#pills' class='pill'>
+                                Pills
+                            </a>
+                        </li>-->
+
+                        <li>
+                            <a href='#breadcrumbs' class='pill'>
+                                Breadcrumbs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#stat-block' class='pill'>
+                                Statistics block
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#tables' class='pill'>
+                                Tables
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#buttons' class='pill'>
+                                Buttons
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#icons' class='pill'>
+                                Icons
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#images' class='pill'>
+                                Images
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#containers' class='pill'>
+                                Containers
+                            </a>
+                        </li>
+                         
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class='theme--neutral'>
+
+        <div class=' [ wrapper ] '>
+            
+            {% for item in data %}
+                {{ item|component }}
+            {% endfor %}
+
+        </div>
+    </div>
+            
+{% endblock %}

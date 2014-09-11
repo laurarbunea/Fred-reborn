@@ -1,0 +1,105 @@
+/*------------------------------------*\
+    #SUBNAV
+\*------------------------------------*/
+
+$height-breakline: $space-s;
+$margin-top-breakline: $space-xxl;
+$padding-top-breakline: $space-xxxl;
+
+.breakline--hatched {
+    position: relative;
+    width: 100%;
+    @include rem(padding-top, $padding-top-breakline);
+
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        @include rem(height, $height-breakline);
+        left: 0;
+        right: 0;
+        background-repeat: repeat-x !important;
+        opacity: .5;
+    }
+}
+
+
+.subnav {
+
+    & h2, 
+    & h3 {
+        @extend %section--breakline;
+        @extend %pt-l;
+        & > .i-arrow-r {
+            @extend %i;
+            @extend %i--link;
+            width: .6em;
+            height: .6em;
+            
+        }
+    }
+    & .link-complex > h2 {
+        @extend %link-complex__link;
+        @extend %pt-xxl;
+    }
+    & .subnav__intro {
+        @extend %font-size-l;
+        @extend %mb-xxl;
+        @extend %font-weight-normal;
+    }
+
+}
+
+
+    .subnav__children {
+        // @extend %list-styled;
+    }
+        .subnav__child {
+            // margin-left:-0.45em;
+            @extend %pt-xxs;
+            @extend %pb-xs;
+            @extend %mt-0;
+            @include rem(padding-left, $space-xl);
+            &:before {
+                content:"•";
+                position: absolute;
+                left:.25em;
+            }
+        }
+            .subnav__child__link {
+                @extend %font-weight-bold;
+                @extend %link-underline;
+                @extend %link-hover-color;
+            }
+
+        .subnav__sidebar {
+            @include media ('small-down') {
+              .action:first-child  {
+                padding-top:0;
+              }
+            }
+        }
+
+
+
+.primary-subnav,
+.secondary-subnav {
+
+    @extend %mb-xxxl;
+
+    &:first-child { margin-top: 0; }
+
+    & .subnav__image {
+
+        @include up-to(medium) {
+            display: none;
+        }
+    }
+
+    & .subnav__sidebar {
+        @include medium {
+            @include rem(padding-top, $space-m);
+        }
+    }
+
+}

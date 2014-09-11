@@ -1,0 +1,14 @@
+<ul class="route">
+    {% for listItem in item.data %}
+
+        <li class="route__item  {% if listItem.style %} route__item--{{ listItem.style }}{% endif %}">
+            <a href="#">
+                <div class="route__figure">
+                    <img src="{{ listItem.image }}" alt="" class="figure__image">
+                </div>
+                <h4>{{ listItem.label }} <i class="i i-arrow-r"></i></h4>
+                {% if listItem.time %}<p class="icon-text"><i class="i i-time"></i>{{ listItem.time }}</p>{% endif %}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

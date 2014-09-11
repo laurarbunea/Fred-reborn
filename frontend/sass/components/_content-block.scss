@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #CONTENT BLOCK
+\*------------------------------------*/
+
+.content-block {
+    @extend %section-bottom-s;
+
+    .layout &:last-child { @extend %mb-0;}
+    .content-block__icon { @extend %pt-l--q-medium-down; }
+    h2 {
+        @extend %pt-xxxl;
+        @extend %section--breakline;
+    }
+}

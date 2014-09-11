@@ -1,0 +1,16 @@
+{
+    "title": "Language",
+    "headline": "Language",
+    "template":"pattern-library/index.j2",
+    "data": [
+        {
+            "type": "section",
+            "data": [
+                {
+                    "type": "h2",
+                    "data": "Language info"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "api": {
+        "type": "accessibility",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "accessibility",
+                "title":"Access keys for nzta.govt.nz",
+                "data": [
+                    {
+                        "key": "h",
+                        "page": "Home"
+                    },
+                    {
+                        "key": "m",
+                        "page": "Menu"
+                    },
+                    {
+                        "key": "0",
+                        "page": "Show list of access keys"
+                    },
+                    {
+                        "key": "2",
+                        "page": "Skip to content"
+                    },
+                    {
+                        "key": "3",
+                        "page": "Skip to top"
+                    }
+                ]
+            }
+        }
+    ]
+}

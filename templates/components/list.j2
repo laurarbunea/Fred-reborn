@@ -1,0 +1,23 @@
+<ul class='{% if item.modifier %} list--{{item.modifier}}{% endif %} {% if item.class %}{{item.class}}{% endif %}'>
+	
+    {% for item in item.data %}
+		
+        <li {% if item|iterable %}class='list--nested'{% endif %}>
+            
+        {% if item|iterable %}
+          
+            {{ item.text|safe }}
+
+           {{ item|component }}
+        
+        {% else %}
+
+           {{ item|safe }}
+
+        {% endif %}
+
+		</li>
+
+	{% endfor %}
+
+</ul>

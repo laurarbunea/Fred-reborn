@@ -1,0 +1,19 @@
+{
+    "api": {
+        "type": "form/field__input",
+        "label": "Submit"
+    },
+    "examples": [
+        {
+            "title": "Field note",
+            "example": {
+                "type": "form/field__input",
+                "name": "name",
+                "inputtype": "email",
+                "maxlength":"",
+                "value":"im a value",
+                "placeholder": "placeholder"
+            }
+        }
+    ]
+}

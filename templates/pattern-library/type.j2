@@ -1,0 +1,121 @@
+{% extends "/pattern-library/index.j2" %}
+{% import "macros.j2" as macros %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" type="text/css" href="/css/style-guide.css">
+    
+{% endblock %}
+
+{% block content %}
+
+    <div class='theme--neutral'>
+
+        <div class=' [ wrapper ] '>
+
+            <div class='[ layout ] styleguide-anchors'>
+
+                <div class='[ grid ]'>
+               
+                    <ul class='nav [ col ]'>
+                        
+                        <li>
+                            <a href='#h1' class='pill'>
+                                Heading 1
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#h2' class='pill'>
+                                Heading 2
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#h3' class='pill'>
+                                Heading 3
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#h4' class='pill'>
+                                Heading 4
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#h5' class='pill'>
+                                Heading 5
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#h6' class='pill'>
+                                Heading 6
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#p-intro' class='pill'>
+                                Intro paragraph
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#p' class='pill'>
+                                Paragraph
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#text-small' class='pill'>
+                                Small type
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#text-tiny' class='pill'>
+                                Tiny type
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#ul' class='pill'>
+                                Unordered list
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#ol' class='pill'>
+                                Ordered list
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#dl' class='pill'>
+                                Definition list
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class='theme--neutral'>
+
+        <div class=' [ wrapper ] '>
+            
+            {% for item in data %}
+                {{ item|component }}
+            {% endfor %}
+
+        </div>
+    </div>
+            
+{% endblock %}

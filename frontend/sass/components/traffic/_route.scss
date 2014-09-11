@@ -1,0 +1,162 @@
+/*
+    route list
+*/
+
+$color-green: $confirmation-green;
+$color-red: $warning-red;
+
+$route-offset-left: 2.5em;
+$route-offset-top: .45em;
+$route-stop-width: .75em;
+$route-offset-line-pull-back: .2em;
+$route-stop-icon-width: 1.5em;
+
+$width-figure: 64;
+$margin-figure: 50;
+
+.route {
+
+    @extend %list-unstyled;
+    @include rem(padding-top, $margin-traffic-info-side*1.5);
+
+}
+
+
+.route__item {
+
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        @include rem(left, ($width-figure + ($margin-figure/2) ) );
+
+        margin-left: -1px;
+        top: ($route-offset-top + $route-stop-width - $route-offset-line-pull-back);
+        bottom: -($route-offset-top + $route-offset-line-pull-back);
+        border-left: 2px solid $color-green;
+    }
+    &:after {
+        position: absolute;
+        @extend %inline-block;
+        content: "";
+        @include rem(left, ($width-figure + ($margin-figure/2) ) );
+        margin-left: -($route-stop-width/2);
+        top: $route-offset-top;
+        width: $route-stop-width;
+        height: $route-stop-width;
+        background-position: 0 $icon-bg-green;
+    }
+    &:last-child:before {
+        content: none;
+    }
+
+
+    & > * {
+        min-height: 4.5em;
+        @extend %section-bottom-xs;
+        position: relative;
+        display: block;
+        & p {
+            color: $base-font-color;
+        }
+        & p > i {
+            @extend %i--dark-grey;
+            width: 1em;
+            height: 1em;
+
+        }
+    }
+
+    &  h4 {
+        margin-bottom: 0;
+    }
+
+    & h4,
+    & > a > * {
+
+        @include rem(padding-left, ($width-figure + $margin-figure) );
+        & .i-arrow-r {
+            float: none;
+            width: .8em;
+            height: .8em;
+            @extend %i--link;
+        }
+    }
+    & .route__figure {
+        position: absolute;
+        left: 0;
+        @include rem(top, -($width-figure/2)+12 );
+        @include rem(width, $width-figure + 10);
+        @include rem(height, $width-figure);
+        overflow: hidden;
+        line-height: 0;
+        padding: 0;
+        & img {
+            height: 100%;
+            width: auto;
+            @include vendor(border-radius, 5px);
+        }
+        &:after {
+            content: "";
+            background-size: cover;
+            position: absolute;
+            right: -1px;
+            bottom: 0;
+            top: 0;
+            width: 10px;
+        }
+    }
+
+}
+
+    .route__item--red {
+        &:before {
+            border-left-color: $color-red;
+        }
+        &:after {
+            background-position: 0 $icon-bg-red;
+        }
+    }
+    .route__item--orange {
+        &:before {
+            border-left-color: $color-orange;
+        }
+        &:after {
+            background-position: 0 $icon-bg-orange;
+        }
+    }
+
+    // specific icons
+    .route__item--roadworks,
+    .route__item--warning {
+        &:after {
+            width: $route-stop-icon-width;
+            height: $route-stop-icon-width;
+            margin-top: -($route-stop-icon-width/4);
+            margin-left: -($route-stop-icon-width/2);
+            border-width: .25em;
+            border-style: solid;
+            @include vendor(border-radius, 3px);
+        }
+    }
+    .route__item--roadworks {
+        &:before {
+            border-left-color: $color-orange;
+        }
+        &:after {
+            background-position: 0 $icon-bg-dark-grey !important;
+            background-color: $color-orange;
+            border-color: $color-orange;
+        }
+    }
+    .route__item--warning {
+        &:before {
+            border-left-color: $color-red;
+        }
+        &:after {
+            background-position: 0 $icon-bg-white !important;
+            background-color: $color-red;
+            border-color: $color-red;
+        }
+    }

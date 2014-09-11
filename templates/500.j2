@@ -1,0 +1,35 @@
+{% extends "containers/content-container-wide.j2" %}
+{% import "macros.j2" as macros %}
+
+
+{% block header %}
+
+    {{ macros.site_header(breadcrumb, "500 - internal server error") }}  
+
+{% endblock %}
+
+
+
+{% block messages %}
+    
+    {% set message = { "body":error } %}
+    {{ macros.message(message, "theme--error") }}
+
+{% endblock %}
+
+
+
+{% block content %}
+    
+    <div class="[ grid ]">
+        <div class="col">
+            <p>
+                Well, that's embarassing. Some developer is going to get a rap over the knuckles for this...
+            </p>
+            <p>
+                <a href="/">Go home</a>
+            </p>
+        </div>
+    </div>
+            
+{% endblock %}

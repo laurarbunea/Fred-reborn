@@ -1,0 +1,21 @@
+{
+    "api":{
+        "type": "form/field--prev-next",
+        "next_href": "",
+        "next_label": "",
+        "prev_href": "",
+        "prev_label": ""
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "form/field--prev-next",
+                "next_href": "/imalink.co.nz",
+                "next_label": "Next page",
+                "prev_href": "/imalink.co.nz",
+                "prev_label": "Prev page"
+            }
+        }
+    ]
+}

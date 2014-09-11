@@ -1,0 +1,59 @@
+{
+    "api": {
+        "type": "message",
+        "error": "Please enter your licence plate number."
+    },
+    "examples": [
+        {
+            "title": "Confirmation message",
+            "notes": "This is used for transactions.",
+            "example": {
+                "type": "message",
+                "layout": "layout--half",
+                "theme": "theme--confirmation",
+                "message":{
+                    "title": "Confirmation",
+                    "body": "I’m a message that confirms something.",
+                    "action": {
+                        "label":"This is an optional action link.", 
+                        "href":"/"
+                    }
+                }
+            }
+        },
+        {
+            "title": "Error message",
+            "notes": "This is used for transactions.",
+            "example": {
+                "type": "message",
+                "layout": "layout--half",
+                "theme": "theme--error",
+                "message":{
+                    "title": "Error",
+                    "body": "Something has gone terribly, horribly wrong.",
+                    "action": {
+                        "label":"Return to homepage", 
+                        "href":"/"
+                    }
+                }
+            }
+        },
+        {
+            "title": "404 page",
+            "example": {
+                "type": "message",
+                "theme": "theme--error",
+                "message":{
+                    "title": "404: not found",
+                    "body": "The page you’re after doesn’t seem to be here anymore.",
+                    "action": {
+                        "label":"Return to homepage", 
+                        "href":"/"
+                    }
+                }
+            }
+        }
+    ]
+}
+
+

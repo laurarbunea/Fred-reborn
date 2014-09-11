@@ -1,0 +1,53 @@
+<div class='{{item.class}}'>
+
+    <div class='wrapper'>
+
+        <div class='[ section-xxxxl layout ]' {% if item.anchor %}id='{{ item.anchor }}'{% endif %}>
+
+            <div class='[ grid ]'>
+
+                <div class=' [ col ]'>
+
+                    <div class='section__intro text-center'>
+
+                        {% if item.title %}
+
+                            <h2>
+                                {{ item.title }}
+                            </h2>
+
+                        {% endif %}
+
+                        {% if item.intro %}
+
+                            <p class='intro'>
+                                {{ item.intro }}
+                            </p>
+
+                        {% endif %}
+
+                        {% if item.notes %}
+
+                            <p >
+                                {{ item.notes }}
+                            </p>
+
+                        {% endif %}
+
+                    </div>
+
+                    <div class='section__example'>
+
+                        {{ item|children }}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

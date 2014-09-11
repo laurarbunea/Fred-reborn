@@ -1,0 +1,22 @@
+{
+    "api": {
+        "type": "pill",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "traffic/highway",
+                "data":"1"
+            }
+        },
+        {
+            "title": "",
+            "example": {
+                "type": "traffic/highway",
+                "data":"18"
+            }
+        }
+    ]
+}

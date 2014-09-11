@@ -1,0 +1,46 @@
+// ----------------------------------------------------------------------------
+// Complex links shouldn't be overwritten by themes
+// ----------------------------------------------------------------------------
+
+.link-complex {
+    @extend %remove-anchor-decoration;
+    @extend %block-element;
+    color: inherit;
+    
+    & + .link-complex  { 
+        @extend %mt-xl;
+    }
+
+    .noTouchEvents &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.link-complex:hover .link-complex__link {
+    text-decoration: underline;
+}
+
+%link-complex__link {
+    color: $base-link-color;
+}
+.link-complex .link-complex__link {
+    @extend %link-complex__link;
+}
+
+
+
+.link--disabled {
+    pointer-events: none;
+
+    & > * {
+        color: #aaa;
+    }
+
+    & .link-complex__link {
+        color: #777;
+    }
+
+}

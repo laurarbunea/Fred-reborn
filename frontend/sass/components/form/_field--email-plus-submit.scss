@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #Field email plus submit
+\*------------------------------------*/
+
+.field--email-plus-submit { @extend %field; }
+
+%email-btn-height { height:44px; }
+
+.email-wrapper {
+    
+    [type='email'] {
+        @extend %left;
+        @extend %email-btn-height;
+        @include rem(border-top, $space-xxs);
+        @include rem(border-left, $space-xxs);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        width:70%;
+    }
+    
+    input[type='submit'] {
+        @extend %btn;
+        @extend %btn-primary;
+        @extend %email-btn-height;
+        @include rem(padding, $space-xxs);
+        @include rem(line-height, $space-m);
+        @include rem(border-top-left-radius, 0);
+        @include rem(border-bottom-left-radius, 0);
+        @include rem(border-top-right-radius, $space-xxs);
+        @include rem(border-bottom-right-radius, $space-xxs);
+        width: 30%;
+        margin-top:0;
+        margin-bottom:0;
+    }
+}

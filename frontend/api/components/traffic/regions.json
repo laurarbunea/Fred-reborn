@@ -1,0 +1,50 @@
+{
+    "examples": [
+        {
+            "title": "Region list",
+            "example": {
+                "type": "traffic/regions",
+                "data": [
+                    {
+                        "region": "Northland"
+                    },
+                    {
+                        "region": "Auckland",
+                        "data": [{
+                            "type": "traffic/roadworks",
+                            "data": { "action": "2" }
+                        }]
+                    },
+                    {
+                        "region": "Waikato"
+                    },
+                    {
+                        "region": "Central North Island"
+                    },
+                    {
+                        "region": "Wellington",
+                        "data": [
+                            {
+                                "type": "traffic/roadworks",
+                                "data": { "action": "2" }
+                            },
+                            {
+                                "type": "traffic/warning",
+                                "data": { "action": "4" }
+                            }
+                        ]
+                    },
+                    {
+                        "region": "Nelson & Marlborough"
+                    },
+                    {
+                        "region": "Canterbury & West Coast"
+                    },
+                    {
+                        "regions": "Otago & Southland"
+                    }
+                ]
+            }
+        }
+    ]
+}

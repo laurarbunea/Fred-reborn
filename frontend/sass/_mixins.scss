@@ -1,0 +1,401 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+
+// Check if an item is contained in a list
+@function contains($list,$var) {
+    $_out: false;
+    @each $item in $list { @if $item == $var { $_out: true; } }
+    @return $_out;
+    //    @return (false == index($list, $var));
+}
+
+
+// a save way to return the nth value of a list
+@function save-nth-list-value($list, $position) {
+    $value: null;
+    @for $i from 1 through length($list) {
+        @if $i == $position {
+            $value: nth($list, $i);
+        }
+    }
+    @return $value;
+}
+
+
+@mixin media($breakpoint) {
+    // Get the width from the keyword `$breakpoint`
+    @if $breakpoint == "default" {
+        @content;
+    } @else {
+        @each $query in $breakpoints {
+            @if $breakpoint == nth($query, 1) {
+                @media #{nth($query, 2)} {
+                    @content;
+                }
+            }
+        }
+    }
+}
+
+
+@mixin at-least($breakpoint) {
+    $min-width: null;
+    @each $query in $breakpoints {
+        @if $breakpoint == nth($query, 1) {
+            $min-width: save-nth-list-value($query, 3);
+        }
+    }
+    @if($min-width) {
+        @media only screen and (min-width: $min-width ) {
+            @content;
+        }
+    }
+}
+@mixin up-to($breakpoint) {
+    $max-width: null;
+    @each $query in $breakpoints {
+        @if $breakpoint == nth($query, 1) {
+            $max-width: save-nth-list-value($query, 4);
+        }
+    }
+    @if($max-width) {
+        @media only screen and (max-width: $max-width ) {
+            @content;
+        }
+    }
+}
+@mixin between($breakpoint-start, $breakpoint-end) {
+    $min-width: null;
+    $max-width: null;
+    @each $query in $breakpoints {
+        @if $breakpoint-start == nth($query, 1) {
+            $min-width: save-nth-list-value($query, 3);
+        }
+        @if $breakpoint-end == nth($query, 1) {
+            $max-width: save-nth-list-value($query, 4);
+        }
+    }
+    @if($min-width and $max-width) {
+        @media only screen and (min-width: $min-width ) and (max-width: $max-width ) {
+            @content;
+        }
+    }
+}
+
+// Placeholder colour mixin
+
+@mixin input-placeholder($color, $weight: false, $smoothing: false, $transition: false) {
+
+    &::-webkit-input-placeholder {
+        color: $color;
+        @if $weight {
+            font-weight: $weight;
+        }
+        @if $transition {
+            -webkit-transition: color 500ms ease-in;
+        }
+        @if $smoothing {
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+    }
+    &:-moz-placeholder {
+        color: $color;
+        @if $weight {
+            font-weight: $weight;
+        }
+        @if $transition {
+            -moz-transition: color 500ms ease-in;
+        }
+    }
+    &::-moz-placeholder {
+        color: $color;
+        @if $weight {
+            font-weight: $weight;
+        }
+        @if $transition {
+            -moz-transition: color 500ms ease-in;
+        }
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+        @if $weight {
+            font-weight: $weight;
+        }
+        @if $transition {
+            -ms-transition: color 500ms ease-in;
+        }
+    }
+
+}
+
+
+// Hover
+@mixin hover($property, $value, $active: false, $sub-selector: "") {
+    .noTouchEvents &:hover #{$sub-selector} {
+        #{$property}:$value;
+    }
+    @if $active {
+        &:active {
+            #{$property}:$value;
+        }
+    }
+}
+
+// Cross-browser opacity down to IE 5
+@mixin opacity($trans) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+    filter: alpha(opacity=#{$trans * 100});
+    -moz-opacity: $trans;
+    -khtml-opacity: $trans;
+    opacity: $trans;
+}
+
+// add vendor prefix to values
+@mixin vendor($property, $value...){
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+}
+
+
+
+@mixin transition($value...){
+    -webkit-transition: #{$value};
+       -moz-transition: #{$value};
+        -ms-transition: #{$value};
+         -o-transition: #{$value};
+            transition: #{$value};
+}
+
+// ----------------------------------------------------------------------------
+// Animation
+// ----------------------------------------------------------------------------
+
+///*
+//### Keyframe
+//
+//Create CSS keyframe animations for all vendors in one go.
+//
+//To use it:
+//
+//```
+//@include keyframe(fadeIn) {
+//    0% {
+//        opacity: 0;
+//    }
+//    100% {
+//        opacity: 1;
+//    }
+//}
+//```
+//
+//Courtesy of [@integralist](twitter.com/integralist/status/260484115315437569)
+//
+//*/
+//
+//@mixin keyframe ($animation-name){
+//    @-webkit-keyframes #{$animation-name} {
+//        @content;
+//    }
+//
+//    @-moz-keyframes #{$animation-name} {
+//        @content;
+//    }
+//
+//    @-ms-keyframes #{$animation-name} {
+//        @content;
+//    }
+//
+//    @-o-keyframes #{$animation-name} {
+//        @content;
+//    }
+//
+//    @keyframes #{$animation-name} {
+//        @content;
+//    }
+//}
+
+
+// Simple theme mixins
+// ----------------------------------------------------------------------------
+
+@mixin theme-block($bg-color, $txt-color, $border-color){
+    background-color:$bg-color;
+    color:$txt-color;
+    border-color:$border-color;
+}
+
+
+// Make nice media query namespaces from the variables file
+@function prefixed-breakpoint($name) {
+    @if $name == "default" {
+        @return "";
+    } @else {
+        @return $breakpoint-classname-prefix + unquote($name);
+    }
+}
+
+// Spacing helpers
+@mixin sizer($class: false, $sizePrefixes: false, $mediaQuery: false, $property: false, $array: false) {
+    $index:1;
+    @each $size in $sizePrefixes {
+        $className: $class + $size;
+        @if $mediaQuery {
+            $className: $className + prefixed-breakpoint($mediaQuery);
+        }
+        %#{$className} {
+            #{$property}: #{nth($array, $index)}px;
+            #{$property}: #{nth($array, $index) / 16 }rem  ;/* fallback  times by 6 */ 
+        }
+        .#{$className} {
+            #{$property}: #{nth($array, $index)}px;
+            #{$property}: #{nth($array, $index) / 16 }rem  ;/* fallback  times by 6 */ 
+        }
+        $index: $index + 1;
+    }
+}
+// Spacing helpers
+@mixin block-sizer($class: false, $sizePrefixes: false, $mediaQuery: false, $property: false, $array: false) {
+    $index:1;
+    @each $size in $sizePrefixes {
+        $className: $class + $size;
+        @if $mediaQuery {
+            $className: $className + prefixed-breakpoint($mediaQuery);
+        }
+        %#{$className} {
+            #{$property}: #{nth($array, $index)}px #{nth($array, $index)}px;
+            #{$property}: #{nth($array, $index) / 16 }rem #{nth($array, $index) / 16 }rem ;/* fallback  times by 6 */ 
+        }
+        .#{$className} {
+            #{$property}: #{nth($array, $index)}px #{nth($array, $index)}px;
+            #{$property}: #{nth($array, $index) / 16 }rem #{nth($array, $index) / 16 }rem;/* fallback  times by 6 */ 
+        }
+        $index: $index + 1;
+    }
+}
+
+// Get property names
+@function property-by-shorthand($val) {
+    @if $val == "mt" {
+        @return "margin-top";
+    }
+    @if $val == "mb" {
+        @return "margin-bottom";
+    }
+    @if $val == "mr" {
+        @return "margin-right";
+    }
+    @if $val == "ml" {
+        @return "margin-left";
+    }
+    @if $val == "pt" {
+        @return "padding-top";
+    }
+    @if $val == "pb" {
+        @return "padding-bottom";
+    }
+    @if $val == "pr" {
+        @return "padding-right";
+    }
+    @if $val == "pl" {
+        @return "padding-left";
+    }
+    @else {
+        @return "padding";
+    }
+}
+@mixin breakpoint-sizer($breakpointList, $classList) {
+    @each $size in $breakpointList {
+        @if $size == "default" {
+            @each $class in $classList {
+                @include sizer($class, $sizePrefixes, $size, property-by-shorthand($class), $sizes);
+            }
+        } @else {
+            @include media($size) {
+                @each $class in $classList {
+                    @include sizer($class, $sizePrefixes, $size, property-by-shorthand($class), $sizes);
+                }
+            }
+        }
+    }
+}
+
+// Hover
+@mixin hover($property, $value, $active: false, $sub-selector: "") {
+    .noTouchEvents &:hover #{$sub-selector} {
+        #{$property}:$value;
+    }
+    @if $active {
+        &:active {
+            #{$property}:$value;
+        }
+    }
+}
+
+// Cross-browser opacity down to IE 5
+@mixin opacity($trans) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+    filter: alpha(opacity=#{$trans * 100});
+    -moz-opacity: $trans;
+    -khtml-opacity: $trans;
+    opacity: $trans;
+}
+
+// font-size in px and rem units
+@mixin font-size($size-in-px) {
+    font-size: #{$size-in-px}px;
+    font-size: pxrem($size-in-px);
+}
+
+@function pxrem($size, $context: 16) {
+    @return #{($size / $context)}rem;
+}
+
+
+@function remify($pxval) {
+    @return #{$pxval / 16}rem;
+}
+
+@mixin rem($prop, $pxval) {
+    #{$prop}: #{$pxval}px;
+    #{$prop}: remify($pxval);
+}
+
+@mixin custom-line-color--modified($hex-color) {
+//    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, $hex-color 50%);
+//    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, $hex-color 50%);
+//    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, $hex-color 50%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $hex-color 50%);
+}
+
+@mixin dashed-border($dashlength, $spacelength, $borderwidth, $color, $position: top) {
+    $per: percentage($dashlength / ($dashlength + $spacelength));
+    background-image: linear-gradient(to right, $color 0%, $color $per, rgba(0, 0, 0, 0) $per);
+    background-position: 0 $position;
+    background-size: ($dashlength + $spacelength) $borderwidth;
+    background-repeat: repeat-x;
+}
+
+
+@mixin keyframe ($animation-name){
+    @-webkit-keyframes $animation-name{
+        @content;
+    }
+    @-moz-keyframes $animation-name{
+         @content;
+    }
+    @-ms-keyframes $animation-name{
+         @content;
+    }
+    @-o-keyframes $animation-name{
+         @content;
+    }
+    @keyframes $animation-name{
+        @content;
+    }
+}

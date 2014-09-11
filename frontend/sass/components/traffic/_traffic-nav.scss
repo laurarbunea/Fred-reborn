@@ -1,0 +1,152 @@
+/*
+    map controls
+*/
+
+.map-controls {
+    z-index: 1;
+    position: absolute;
+    top: $offset-map-top;
+    right: $offset-map-side;
+    text-align: right;
+
+    .list-active & {
+        z-index: auto;
+    }
+    @include up-to(small) {
+        top: $offset-map-top-mobile;
+    }
+}
+
+%map-nav {
+    @extend %nav;
+    @extend %map-box-shadow;
+    @include vendor(border-radius, 2px);
+    overflow: hidden;
+
+    @extend %theme--dark;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    @extend %font-size-m;
+}
+
+.map-nav {
+    @extend %map-nav;
+}
+
+    .map-nav__item {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0;
+        & > a {
+            color: #fff;
+            padding: .4em 0 .5em;
+            display: block;
+            line-height: 1;
+            & .i {
+                background-position: 0 $icon-bg-white;
+            }
+            &:hover {
+                background-color: darken($color-bg-header, 5%);
+            }
+        }
+        &.active > a {
+            color: #000;
+        }
+        & > a > span {
+            @extend %font-size-s;
+            @extend %inline-block;
+        }
+
+        border-top: 1px solid lighten($color-bg-header, 7%);
+
+        &:first-child {
+            border-top: 0;
+        }
+    }
+
+
+.section--view-type-nav {
+    margin-bottom: .5em;
+    display: none;
+    @include up-to(small) {
+        display: block;
+    }
+}
+.section--map-nav {
+    width: 2.6em;
+    @extend %inline-block;
+    @include up-to(small) {
+        width: 2em;
+    }
+}
+
+.map-nav--icon {
+    @extend %map-nav;
+    margin-top: 1em;
+    @include up-to(small) {
+        margin-top: .5em;
+    }
+}
+
+.map-nav--view-type {
+    z-index: 2;
+    position: relative;
+    @extend %switch-nav;
+}
+
+
+
+/**
+ *   Taffic navigation
+**/
+
+
+.map-nav--tools {
+
+    overflow:hidden;
+    max-height: 0;
+    @include vendor(transition, max-height .2s ease-out);
+    .tools-active & {
+        max-height: 15em;
+    }
+
+    @extend %nav;
+    @include vendor(border-radius, 2px);
+    @include vendor(border-top-right-radius, 0);
+
+    @include rem(width, 230);
+
+    background-color: #ffffff;
+    float: right;
+
+    & .map-nav__item {
+
+        text-align: left;
+        margin: 0 .75em 0 3em;
+        @extend %font-weight-bold;
+
+        & > label {
+            color: $base-font-color;
+            padding: 1.2em 0;
+            @extend %font-size-s;
+            position: relative;
+        }
+        & > label > i {
+            position: absolute;
+            @include rem(left,-36);
+        }
+
+        & > label > input {
+            float: right;
+        }
+        & + .map-nav__item {
+            border-top: 1px solid $primary-border-color;
+        }
+
+    }
+
+}
+

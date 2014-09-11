@@ -1,0 +1,15 @@
+{
+    "api": {
+        "type": "form/field__note",
+        "label": "Submit"
+    },
+    "examples": [
+        {
+            "title": "Field note",
+            "example": {
+                "type": "form/field__note",
+                "field_note": "I am a note"
+            }
+        }
+    ]
+}

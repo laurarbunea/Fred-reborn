@@ -1,0 +1,15 @@
+{% set examples = item.component|describe %}
+
+{% for item in examples %}
+    
+    <pre class='styleguide--html' >
+    {{ item.example|component|pretty_html|escape|safe }}
+    </pre>
+    </div>
+    <div class='styleguide__example '>
+        {{ item.example|component }}
+    </div>
+
+{% endfor %}
+
+

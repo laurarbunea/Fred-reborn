@@ -1,0 +1,15 @@
+{% if item.errors %}
+    {% set errors = "error" %}
+{% endif %}
+
+<div class="field--text{% if errors %} field--error{% endif %}">
+
+    {% include "components/form/field__label.j2" %}
+
+    {% set inputtype = "email" %}
+
+    {% include "components/form/field__input.j2" %}
+
+    {% include "components/form/field__note.j2" %}
+    
+</div>

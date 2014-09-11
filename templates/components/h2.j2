@@ -1,0 +1,3 @@
+<h2 id="{% if item.slug %}{{ item.slug }}{% else %}{{item.data|slug}}{% endif %}" {% if item.class %}class='{{item.class}}'{% endif %}>
+    {{ item|children }}
+</h2>

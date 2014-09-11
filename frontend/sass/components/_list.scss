@@ -1,0 +1,40 @@
+// ----------------------------------------------------------------------------
+// LISTS
+// ----------------------------------------------------------------------------
+
+%list-styled {
+    @extend %mb-xl;
+    @extend %pl-m;
+    padding-top:0;
+    margin-left: 0;
+    margin-top: 0;
+
+    & > li {
+        margin-left: 0;
+        position: relative;
+        list-style:disc; 
+    }
+}
+
+ul,
+ol { @extend %list-styled; }
+
+li ul, 
+li ol {
+    @extend %pt-xs;
+    @extend %ml-l;
+    @extend %mb-0;
+    padding-left:0;
+}
+
+.list-styled--disc { @extend %list-styled--disc; }
+.list-unstyled { @extend %list-unstyled; }
+.list-inline { @extend %list--inline; }
+.block-list { @extend %block-list; }
+
+.nav {
+    @extend %list--inline;
+    & > li {
+        margin-right: .5em;
+    }
+}

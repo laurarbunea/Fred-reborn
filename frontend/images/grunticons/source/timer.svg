@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+
+<defs><style type="text/css"><![CDATA[
+#timer > path {
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+
+#timer > path:nth-child(2) {
+  -webkit-animation-name: show-2;
+  animation-name: show-2; }
+
+@-webkit-keyframes show-2 {
+  0% {
+    opacity: 0; }
+
+  4.16667% {
+    opacity: 0; }
+
+  8.33333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-2 {
+  0% {
+    opacity: 0; }
+
+  4.16667% {
+    opacity: 0; }
+
+  8.33333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(3) {
+  -webkit-animation-name: show-3;
+  animation-name: show-3; }
+
+@-webkit-keyframes show-3 {
+  0% {
+    opacity: 0; }
+
+  8.33333% {
+    opacity: 0; }
+
+  12.5% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-3 {
+  0% {
+    opacity: 0; }
+
+  8.33333% {
+    opacity: 0; }
+
+  12.5% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(4) {
+  -webkit-animation-name: show-4;
+  animation-name: show-4; }
+
+@-webkit-keyframes show-4 {
+  0% {
+    opacity: 0; }
+
+  12.5% {
+    opacity: 0; }
+
+  16.66667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-4 {
+  0% {
+    opacity: 0; }
+
+  12.5% {
+    opacity: 0; }
+
+  16.66667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(5) {
+  -webkit-animation-name: show-5;
+  animation-name: show-5; }
+
+@-webkit-keyframes show-5 {
+  0% {
+    opacity: 0; }
+
+  16.66667% {
+    opacity: 0; }
+
+  20.83333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-5 {
+  0% {
+    opacity: 0; }
+
+  16.66667% {
+    opacity: 0; }
+
+  20.83333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(6) {
+  -webkit-animation-name: show-6;
+  animation-name: show-6; }
+
+@-webkit-keyframes show-6 {
+  0% {
+    opacity: 0; }
+
+  20.83333% {
+    opacity: 0; }
+
+  25% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-6 {
+  0% {
+    opacity: 0; }
+
+  20.83333% {
+    opacity: 0; }
+
+  25% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(7) {
+  -webkit-animation-name: show-7;
+  animation-name: show-7; }
+
+@-webkit-keyframes show-7 {
+  0% {
+    opacity: 0; }
+
+  25% {
+    opacity: 0; }
+
+  29.16667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-7 {
+  0% {
+    opacity: 0; }
+
+  25% {
+    opacity: 0; }
+
+  29.16667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(8) {
+  -webkit-animation-name: show-8;
+  animation-name: show-8; }
+
+@-webkit-keyframes show-8 {
+  0% {
+    opacity: 0; }
+
+  29.16667% {
+    opacity: 0; }
+
+  33.33333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-8 {
+  0% {
+    opacity: 0; }
+
+  29.16667% {
+    opacity: 0; }
+
+  33.33333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(9) {
+  -webkit-animation-name: show-9;
+  animation-name: show-9; }
+
+@-webkit-keyframes show-9 {
+  0% {
+    opacity: 0; }
+
+  33.33333% {
+    opacity: 0; }
+
+  37.5% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-9 {
+  0% {
+    opacity: 0; }
+
+  33.33333% {
+    opacity: 0; }
+
+  37.5% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(10) {
+  -webkit-animation-name: show-10;
+  animation-name: show-10; }
+
+@-webkit-keyframes show-10 {
+  0% {
+    opacity: 0; }
+
+  37.5% {
+    opacity: 0; }
+
+  41.66667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-10 {
+  0% {
+    opacity: 0; }
+
+  37.5% {
+    opacity: 0; }
+
+  41.66667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(11) {
+  -webkit-animation-name: show-11;
+  animation-name: show-11; }
+
+@-webkit-keyframes show-11 {
+  0% {
+    opacity: 0; }
+
+  41.66667% {
+    opacity: 0; }
+
+  45.83333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-11 {
+  0% {
+    opacity: 0; }
+
+  41.66667% {
+    opacity: 0; }
+
+  45.83333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(12) {
+  -webkit-animation-name: show-12;
+  animation-name: show-12; }
+
+@-webkit-keyframes show-12 {
+  0% {
+    opacity: 0; }
+
+  45.83333% {
+    opacity: 0; }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-12 {
+  0% {
+    opacity: 0; }
+
+  45.83333% {
+    opacity: 0; }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(13) {
+  -webkit-animation-name: show-13;
+  animation-name: show-13; }
+
+@-webkit-keyframes show-13 {
+  0% {
+    opacity: 0; }
+
+  50% {
+    opacity: 0; }
+
+  54.16667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-13 {
+  0% {
+    opacity: 0; }
+
+  50% {
+    opacity: 0; }
+
+  54.16667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(14) {
+  -webkit-animation-name: show-14;
+  animation-name: show-14; }
+
+@-webkit-keyframes show-14 {
+  0% {
+    opacity: 0; }
+
+  54.16667% {
+    opacity: 0; }
+
+  58.33333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-14 {
+  0% {
+    opacity: 0; }
+
+  54.16667% {
+    opacity: 0; }
+
+  58.33333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(15) {
+  -webkit-animation-name: show-15;
+  animation-name: show-15; }
+
+@-webkit-keyframes show-15 {
+  0% {
+    opacity: 0; }
+
+  58.33333% {
+    opacity: 0; }
+
+  62.5% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-15 {
+  0% {
+    opacity: 0; }
+
+  58.33333% {
+    opacity: 0; }
+
+  62.5% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(16) {
+  -webkit-animation-name: show-16;
+  animation-name: show-16; }
+
+@-webkit-keyframes show-16 {
+  0% {
+    opacity: 0; }
+
+  62.5% {
+    opacity: 0; }
+
+  66.66667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-16 {
+  0% {
+    opacity: 0; }
+
+  62.5% {
+    opacity: 0; }
+
+  66.66667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(17) {
+  -webkit-animation-name: show-17;
+  animation-name: show-17; }
+
+@-webkit-keyframes show-17 {
+  0% {
+    opacity: 0; }
+
+  66.66667% {
+    opacity: 0; }
+
+  70.83333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-17 {
+  0% {
+    opacity: 0; }
+
+  66.66667% {
+    opacity: 0; }
+
+  70.83333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(18) {
+  -webkit-animation-name: show-18;
+  animation-name: show-18; }
+
+@-webkit-keyframes show-18 {
+  0% {
+    opacity: 0; }
+
+  70.83333% {
+    opacity: 0; }
+
+  75% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-18 {
+  0% {
+    opacity: 0; }
+
+  70.83333% {
+    opacity: 0; }
+
+  75% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(19) {
+  -webkit-animation-name: show-19;
+  animation-name: show-19; }
+
+@-webkit-keyframes show-19 {
+  0% {
+    opacity: 0; }
+
+  75% {
+    opacity: 0; }
+
+  79.16667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-19 {
+  0% {
+    opacity: 0; }
+
+  75% {
+    opacity: 0; }
+
+  79.16667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(20) {
+  -webkit-animation-name: show-20;
+  animation-name: show-20; }
+
+@-webkit-keyframes show-20 {
+  0% {
+    opacity: 0; }
+
+  79.16667% {
+    opacity: 0; }
+
+  83.33333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-20 {
+  0% {
+    opacity: 0; }
+
+  79.16667% {
+    opacity: 0; }
+
+  83.33333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(21) {
+  -webkit-animation-name: show-21;
+  animation-name: show-21; }
+
+@-webkit-keyframes show-21 {
+  0% {
+    opacity: 0; }
+
+  83.33333% {
+    opacity: 0; }
+
+  87.5% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-21 {
+  0% {
+    opacity: 0; }
+
+  83.33333% {
+    opacity: 0; }
+
+  87.5% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(22) {
+  -webkit-animation-name: show-22;
+  animation-name: show-22; }
+
+@-webkit-keyframes show-22 {
+  0% {
+    opacity: 0; }
+
+  87.5% {
+    opacity: 0; }
+
+  91.66667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-22 {
+  0% {
+    opacity: 0; }
+
+  87.5% {
+    opacity: 0; }
+
+  91.66667% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(23) {
+  -webkit-animation-name: show-23;
+  animation-name: show-23; }
+
+@-webkit-keyframes show-23 {
+  0% {
+    opacity: 0; }
+
+  91.66667% {
+    opacity: 0; }
+
+  95.83333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-23 {
+  0% {
+    opacity: 0; }
+
+  91.66667% {
+    opacity: 0; }
+
+  95.83333% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+#timer > path:nth-child(24) {
+  -webkit-animation-name: show-24;
+  animation-name: show-24; }
+
+@-webkit-keyframes show-24 {
+  0% {
+    opacity: 0; }
+
+  95.83333% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show-24 {
+  0% {
+    opacity: 0; }
+
+  95.83333% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+
+]]></style>
+	</defs>
+
+<path fill="#ffffff" d="M8,0.5C3.8,0.5,0.5,3.8,0.5,8s3.3,7.5,7.5,7.5s7.5-3.3,7.5-7.5S12.2,0.5,8,0.5z M8,14.4
+	c-3.5,0-6.4-2.9-6.4-6.4S4.5,1.6,8,1.6s6.4,2.9,6.4,6.4S11.5,14.4,8,14.4z"/>
+<g id="timer">
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="1" d="M8,8V1.3c0.6,0,1.1,0.1,1.7,0.2L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l1.7-6.4c0.6,0.2,1.1,0.4,1.6,0.7L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l3.3-5.8c0.5,0.3,0.9,0.6,1.4,1.1L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l4.7-4.7c0.4,0.4,0.8,0.8,1.1,1.4L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l5.8-3.3c0.3,0.5,0.5,1,0.7,1.6L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l6.4-1.7c0.2,0.6,0.2,1.1,0.2,1.7H8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8h6.7c0,0.6-0.1,1.1-0.2,1.7L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l6.4,1.7c-0.2,0.6-0.4,1.1-0.7,1.6L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l5.8,3.3c-0.3,0.5-0.6,0.9-1.1,1.4L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l4.7,4.7c-0.4,0.4-0.8,0.8-1.4,1.1L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l3.3,5.8c-0.5,0.3-1,0.5-1.6,0.7L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l1.7,6.4c-0.6,0.2-1.1,0.2-1.7,0.2V8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8v6.7c-0.6,0-1.1-0.1-1.7-0.2L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l-1.7,6.4c-0.6-0.2-1.1-0.4-1.6-0.7L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l-3.3,5.8c-0.5-0.3-0.9-0.6-1.4-1.1L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l-4.7,4.7c-0.4-0.4-0.8-0.8-1.1-1.4L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8l-5.8,3.3c-0.3-0.5-0.5-1-0.7-1.6L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8L1.6,9.7C1.4,9.1,1.4,8.6,1.4,8H8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8H1.3c0-0.6,0.1-1.1,0.2-1.7L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8L1.6,6.3C1.8,5.7,2,5.2,2.3,4.7L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8L2.2,4.7c0.3-0.5,0.6-0.9,1.1-1.4L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8L3.3,3.3c0.4-0.4,0.8-0.8,1.4-1.1L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8L4.7,2.2c0.5-0.3,1-0.5,1.6-0.7L8,8z"/>
+	<path fill="#ffffff" stroke-width="0.2" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" opacity="0" d="M8,8L6.3,1.6C6.9,1.4,7.4,1.4,8,1.4V8z"/>
+</g>
+</svg>

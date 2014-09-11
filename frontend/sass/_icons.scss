@@ -1,0 +1,181 @@
+/*------------------------------------*\
+    #ICONS
+\*------------------------------------*/
+
+%i {
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.i {
+
+    @extend %i;
+
+    .icon-text &,
+    .btn--icon & {
+        margin-right: $base-spacing-unit/4;
+    }
+    .icon-text--rev &,
+    .btn--icon-rev & {
+        margin-left: $base-spacing-unit/4;
+    }
+
+}
+
+
+// -----------------------------------------------------------------------------
+// Icon Sizing
+// -----------------------------------------------------------------------------
+
+.i--large {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.i--xlarge {
+    width: 2em;
+    height: 2em;
+}
+
+.i-circle-arrow {
+    @extend %i;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.i-arrow-r {
+    @extend %i;
+    width: 1em;
+    height: 1em;
+}
+
+%round { border-radius: 50em; }
+
+// rounded section icons, that can be white or blue
+.i-section {
+    @include rem(width, 40);
+    @include rem(height, 40);
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    @extend %round;
+    background-position: 0 $icon-bg-dark-blue;
+    background-color: #fff;
+    .section--nav &,
+    &.-blue {
+        background-position: 0 $icon-bg-white;
+        background-color: $color-bg-header;
+    }
+    .nav-about & {
+        background-color: $base-link-color;
+    }
+}
+
+.i-search {
+    width:1em;
+    height:1em;
+}
+
+.i-menu,
+.i-search {
+    .global-nav & {
+        opacity: .5;
+        &:hover {
+            opacity: .75;
+        }
+    }
+    background-position: 0 $icon-bg-white;
+}
+
+.i-nzta-logo, 
+.i-nzta-logo-coloured {
+    @include rem(height, 32);
+    @include rem(width, 144);
+}
+
+.i-newzealand-government {
+    width: 12em;
+    height: 1.25em;
+}
+
+.i-nzgovt {
+    width: 7.56em;
+    height: 1em; 
+}
+
+.i-nav-section {
+    background-color: transparent;
+    border: solid 2px #fff;
+}
+
+.i-nav-caret {
+    margin-left: .5em;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+
+
+
+
+.i-facebook-grey {
+    width: 1.25em;
+    height: 1.25em; 
+}
+.i-youtube-grey {
+    width: 1.5em;
+    height: 1.125em;  
+}
+.i-twitter-grey {
+    width: 1.375em;
+    height: 1.125em; 
+}
+.i-linkedin-grey {
+    width: 1.25em;
+    height: 1.25em; 
+}
+.i-pinterest-grey {
+    width: 1.25em;
+    height: 1.375em; 
+}
+.i-about-grey {
+    width: 1.5em;
+    height: 1em; 
+}
+
+.i-contact-grey {
+    width: 1.4375em;
+    height: 1.125em; 
+}
+.i-search-grey {
+    width: 1.125em;
+    height: 1.125em;
+}
+// -----------------------------------------------------------------------------
+// Icon colouring
+// -----------------------------------------------------------------------------
+
+/* colourised icons */
+
+%i--link,
+%i--blue { background-position: 0 $icon-bg-blue; }
+%i--dark-blue { background-position: 0 $icon-bg-dark-blue; }
+%i--grey { background-position: 0 $icon-bg-grey; }
+%i--dark-grey { background-position: 0 $icon-bg-dark-grey; }
+%i--green { background-position: 0 $icon-bg-green; }
+%i--red { background-position: 0 $icon-bg-red;}
+%i--orange { background-position: 0 $icon-bg-orange; }
+%i--white { background-position: 0 $icon-bg-white; }
+
+.i--dark-blue { @extend %i--dark-blue; }
+.i--blue { @extend %i--blue; }
+.i--grey { @extend %i--grey; }
+.i--dark-grey { @extend %i--dark-grey; }
+.i--red { @extend %i--red; }
+.i--orange { @extend %i--orange; }
+.i--green { @extend %i--green; }
+.i--white { @extend %i--white; }

@@ -1,0 +1,350 @@
+/*------------------------------------*\
+    #EXTENDS
+\*------------------------------------*/
+
+
+// -----------------------------------------------------------------------------
+// Lists
+// -----------------------------------------------------------------------------
+
+%list-unstyled {
+    list-style: none;
+    padding-left: 0;
+
+    & > li {
+        list-style: none;
+        margin:0;
+    }
+}
+
+%list--inline {
+    @extend %clearfix;
+    @extend %list-unstyled;
+
+    & > li {
+        margin-top:0;
+        display: inline-block;
+        padding-left: 0;
+    }
+}
+
+%list-styled--disc {
+    @extend %list-styled;
+    list-style-type: disc;
+}
+
+%block-list {
+    @extend %list-unstyled;
+    > li {
+        display: block;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Text helpers
+// -----------------------------------------------------------------------------
+
+%text-center { text-align:center; }
+%text-left { text-align:left; }
+%text-right { text-align:right; }
+
+%uppercase { text-transform:uppercase; }
+%lowercase { text-transform:lowercase; }
+
+%text--overflow {
+    @extend %inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+
+// -----------------------------------------------------------------------------
+// Positioning - Absolute, Floating and Clearfixing
+// -----------------------------------------------------------------------------
+
+%relative { position: relative; }
+%absolute { position: absolute; }
+
+%left { float:left; }
+%right { float:right; }
+
+
+    %absolute--bottom-left {
+        @extend %absolute;
+        bottom:0;
+        left:0;
+    }
+
+    %absolute--bottom-right {
+        @extend %absolute;
+        bottom:0;
+        right:0;
+    }
+
+    %absolute--top-left {
+        @extend %absolute;
+        top:0;
+        left:0;
+    }
+
+    %absolute--top-right {
+        @extend %absolute;
+        top:0;
+        right:0;
+    }
+
+%center-element {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+// Vertical alignment utilities
+
+%align--top {vertical-align: top;}
+%align--middle {vertical-align: middle;}
+%align--baseline {vertical-align: baseline;}
+%align--bottom {vertical-align: bottom;}
+
+//positioning handy helpers
+%left-0 { left:0; }
+%right-0 { right:0; }
+%top-0 { top:0; }
+%bottom-0 { bottom:0; }
+
+//usefull for content attributes
+%width-0 {width:0;}
+%height-0 { height:0; }
+
+
+// -----------------------------------------------------------------------------
+// Inline block and block
+// -----------------------------------------------------------------------------
+// zoom fix for IE6/7 so they correctly display inline-block elements
+// (forces hasLayout)
+
+
+%block-element {
+    display:block;
+}
+
+%inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+%border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+//Remove top margin
+%first-child-no-top:first-child {
+    margin-top: 0;
+}
+//Remove top border
+%first-child-no-top-border:first-child {
+    border-top: none;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Clearfix
+// -----------------------------------------------------------------------------
+
+%clearfix {
+    /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    *zoom: 1;
+}
+
+%clearfix:before {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+%clearfix:after {
+    clear: both;
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+
+%overflow-hidden { overflow: hidden; }
+
+//Screen reader content
+%sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+//Showing and hiding things with a pre-emptive `important` 
+
+%hide { display: none; }
+%show { display: block; }
+
+.hide { @extend %hide; }
+.show { @extend %show; }
+
+%visible {visibility: visible !important;}
+%hidden {visibility: hidden !important;}
+.visible { @extend %visible; }
+.hidden { @extend %hidden; }
+
+%border-box {
+    @include vendor(box-sizing, border-box);
+}
+
+
+// -----------------------------------------------------------------------------
+// Fix webkit bug
+// -----------------------------------------------------------------------------
+
+%font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    .isWindowsChrome & {
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+}
+
+%fix-webkit-font-rendering {
+    @extend %font-smoothing;
+    text-rendering: optimizeLegibility;
+}
+
+%antialiased {
+    @extend %font-smoothing;
+}
+
+@include breakpoint-sizer($margin-breakpoints, $margin-types);
+@include breakpoint-sizer($padding-breakpoints, $padding-types);
+
+
+// -----------------------------------------------------------------------------
+// Reset helpers
+// -----------------------------------------------------------------------------
+
+%padding-0 {
+    padding:0;
+}
+
+%margin-0 {
+    margin:0;
+}
+
+
+%border {
+    border-width:1px;
+    border-style:solid;
+}
+
+%custom-line {
+    text-decoration: none;
+    background-repeat: repeat-x;
+    background-size: .125em .125em;
+}
+
+%underline {
+    @extend %custom-line;
+    background-position: 0 100%;
+}
+
+%custom-line-color {
+//    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
+//    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
+//    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
+}
+
+
+%remove-anchor-decoration {
+    //sorry dirty hack having issues with selecter inheritance 
+    background-image: none!important;
+}
+
+%section--breakline {
+    position:relative;
+    $color-section-breakline: #2575AE;
+
+    &:before {
+        height: 2px;
+        display: block;
+        width: 22.5%;
+        background: transparentize($color-section-breakline, .5);
+        content: '';
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    &:after {
+        display: block;
+        content: '';
+        background: transparentize($color-section-breakline, .75);
+        height: 1px;
+        width: 72.5%;
+        top:0;
+        right:0;
+        position:absolute;
+    }
+}
+
+
+%cursor-on-hover {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Border and border radius helpers
+// -----------------------------------------------------------------------------
+
+%br-xxs { @include rem(border-radius, $space-xxs);}
+
+%br-bottom-xxs {
+    @include rem(border-bottom-left-radius, $space-xxs);
+    @include rem(border-bottom-right-radius, $space-xxs);
+}
+
+%br-top-xxs {
+    @include rem(border-top-left-radius, $space-xxs);
+    @include rem(border-top-right-radius, $space-xxs);
+}
+
+%br-left-xxs {
+    @include rem(border-top-left-radius, $space-xxs);
+    @include rem(border-bottom-left-radius, $space-xxs);
+}
+
+%br-right-xxs {
+    @include rem(border-top-right-radius, $space-xxs);
+    @include rem(border-bottom-right-radius, $space-xxs);
+}
+
+%br-top-right-xxs { @include rem(border-top-right-radius, $space-xxs);}
+
+%br-bottom-right-xxs { @include rem(border-bottom-right-radius, $space-xxs);}
+
+%br-top-left-xxs { @include rem(border-top-left-radius, $space-xxs); }
+
+%br-bottom-left-xxs { @include rem(border-bottom-left-radius, $space-xxs);}
+
+//move to themes
+%bt--primary { border-top: 1px solid $primary-border-color; }
+
+%bb--primary { border-bottom: 1px solid $primary-border-color; }
+
+%full-width { width: 100%; }

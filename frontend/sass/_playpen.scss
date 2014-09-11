@@ -1,0 +1,188 @@
+/*------------------------------------*\
+    #PLAYPEN
+    The place where we solve design 
+    problems without dirtying up the 
+    sass structure 
+\*------------------------------------*/
+
+.relative {
+    @extend %relative;
+}
+
+.document--overlay:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: .6;
+}
+
+@include at-least("medium") {
+    .document--overlay--bps:after {
+        display: none;
+    }
+}
+
+
+.hatched-line {
+
+    $height-line: 24;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+
+        @include medium {
+            & {
+               left: 4%;
+            }
+        }
+        @include large {
+            & {
+                left: 8.3333333%;
+            }
+        }
+        width: 65%;
+        height: 1em;
+        background-repeat: repeat-x !important;
+        opacity: 1;
+        @include up-to(small) {
+            content: none;
+        }
+    }
+}
+
+
+.img--responsive {
+    max-width:100%;
+}
+
+.styleguide__example .header__image {
+    margin-top:0;
+}
+
+.styleguide__example .theme--confirmation, 
+.styleguide__example .theme--error {
+    @extend %mb-l;
+}
+
+.styleguide__example .access {
+    width:100%;
+    height:auto;
+    position: relative;
+}
+
+//clean up from here down :) 
+.horizontal-icon-list {
+    @extend %mb-0;
+    li {
+        @extend %mb-l;
+    }
+}
+
+.fixed--bottom {
+    position:fixed; 
+    bottom:0;
+}
+
+.back-to-top-anchor {
+    @extend %br-top-xxs ;
+    background-color: #004771;
+    padding: 0 1rem;
+    right:2em;
+    margin-bottom:0;
+
+}
+
+.icon-link i { @extend %mr-m; }
+.icon-link--reversed i { @extend %ml-m; }
+
+.header-search {
+    @extend %mb-xxxl;
+}
+
+//clean usedon homepage
+.list--home {
+    @extend %mb-0;
+    @extend %pl-s;
+    @extend %font-size-s;
+    li {
+        @extend %mb-s;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @include small-only {
+        @include rem(padding-left, 68);
+        @include rem(padding-bottom, $space-l);
+    }
+}
+
+
+.small-block-list {
+    @include media('small-down') {
+        list-style: none;
+        padding-left: 0;
+
+        & > li {
+            list-style: none;
+            margin:0;
+            display: block;
+        }
+    }
+    
+}
+
+.footer_social-links {
+    @extend %right;
+    a {
+        @extend %ml-l;
+    }
+    @include media('medium-down') {
+        float:left;
+        a {
+            margin-left:0;
+            margin-right:1.75em;
+        }
+    }
+    
+}
+
+.footer_pages {
+    a {
+        @extend %mr-l;
+        @extend %mb-s;
+        @extend %inline-block;
+        @extend %font-size-s;
+
+    }
+    span {
+        @extend %pl-xs; 
+    }
+    @include media('small-down') {
+        .icon-wrapper {
+            width:4em;
+            text-align: center;
+        }
+    }
+}
+
+.transaction_links {
+    @extend %pb-m;
+    @extend %bb--primary;
+}
+
+.icon-wrapper {
+    display:inline-block;
+}
+
+.grid.large-grid--table,
+.grid.medium-grid--table {
+    margin-left:0;
+    margin-right:0;
+}

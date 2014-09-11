@@ -1,0 +1,19 @@
+<div class="field--prev-next">
+
+	{% if item.prev_href %}
+
+		<a class="prev-link" href="{{item.prev_href}}">
+			{{ item.prev_label }}
+		</a>
+
+	{% endif %}
+
+	{% if item.next_href %}
+
+		<a class="next-link" href="{{item.next_href}}">
+			{{ item.next_label }}
+		</a>
+
+	{% endif %}
+
+</div>

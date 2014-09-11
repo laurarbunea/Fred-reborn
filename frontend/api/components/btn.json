@@ -1,0 +1,90 @@
+{
+    "api": {
+        "type": "button",
+        "label": "",
+        "theme": ["primary", "secondary","tertiary"]
+    },
+    "examples": [
+        {
+            "title": "Simple button",
+            "example": {
+                "data": [
+                    {
+                        "type": "btn",
+                        "label": "Primary button",
+                        "theme": "primary"
+                    },
+                    {
+                        "type": "btn",
+                        "label": "Secondary button",
+                        "theme": "secondary"
+                    },
+                    {
+                        "type": "btn",
+                        "label": "Tertiary button",
+                        "theme": "tertiary"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Button with block modifier",
+            "notes":"Block buttons stretch to the full width of their parent.",
+            "example": {
+                "type": "btn",
+                "label": "Hello",
+                "theme": "primary",
+                "block": true
+            }
+        },
+        {
+            "title": "Button with a block modifier for small devices",
+            "example": {
+                "type": "btn",
+                "label": "Shrink the screen and see me stretch",
+                "theme": "primary",
+                "mobile": true
+            }
+        },
+        {
+            "title": "Button with a bounce modifier",
+            "example": {
+                "type": "btn",
+                "label": "Hover over me and see me bounce",
+                "theme": "primary",
+                "bounce": true
+            }
+        },
+        {
+            "title": "Button with an icon",
+            "notes":"Using this type of button assumes there’s an inline-block element with a class of .i inside the button element.",
+            "example": {
+                "type": "btn",
+                "label": "I’m a button with an icon",
+                "theme": "secondary",
+                "icon": 
+                    {
+                        "name":"caret-down",
+                        "color":"dark-blue"
+                    }
+                
+            }
+        },
+        { 
+            "notes":"Buttons can also be icons only:",
+            "example": {
+                "type": "btn",
+                "theme": "secondary",
+                "href": "#",
+                "icon": 
+                    {
+                        "name":"caret-down",
+                        "color":"dark-blue"
+                    }
+                
+            }
+        }
+        
+    ]
+}
+

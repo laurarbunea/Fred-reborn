@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 7 + Rectangle 166</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="M-•-L1" sketch:type="MSArtboardGroup" transform="translate(-40.000000, -16.000000)">
+            <g id="Top-nav" sketch:type="MSLayerGroup">
+                <g id="Current-section-icon" transform="translate(40.000000, 16.000000)" sketch:type="MSShapeGroup">
+                    <g id="Oval-7-+-Rectangle-166">
+                        <circle id="Oval-7" fill="#FFFFFF" cx="24" cy="24" r="24"></circle>
+                        <path d="M11.9912443,15 C10.8915104,15 10,15.8926228 10,16.9950893 L10,31.0049107 C10,32.1067681 10.8998975,33 11.9912443,33 L36.0087557,33 C37.1084896,33 38,32.1073772 38,31.0049107 L38,16.9950893 C38,15.8932319 37.1001025,15 36.0087557,15 L11.9912443,15 Z M24,21 L24,22 L28,22 L28,21 L24,21 Z M24,24 L24,25 L34,25 L34,24 L24,24 Z M24,27 L24,28 L34,28 L34,27 L24,27 Z M17,23 C18.1045695,23 19,22.1045695 19,21 C19,19.8954305 18.1045695,19 17,19 C15.8954305,19 15,19.8954305 15,21 C15,22.1045695 15.8954305,23 17,23 Z M18.7324356,25 L19.4952612,25 C20.3316845,25 21,25.6715729 21,26.5 L21,28 L13,28 L13,26.5 C13,25.6657972 13.6736945,25 14.5047388,25 L15.2675644,25 C15.6133738,25.5978014 16.2597176,26 17,26 C17.7402824,26 18.3866262,25.5978014 18.7324356,25 L18.7324356,25 Z" id="Rectangle-166" fill="#295B78"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

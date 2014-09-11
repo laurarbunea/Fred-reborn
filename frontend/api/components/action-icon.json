@@ -1,0 +1,96 @@
+{
+    "api": {
+        "type": "action-icon",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/"
+                    }    
+                ]
+            }
+        },
+        {
+            "title": "Action link with a theme modifier ",
+            "example": {
+                "type": "action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "theme":"action--green"
+                    }    
+                ]
+            }
+        },
+        {
+            "title": "Action link with a size modifier ",
+            "example": {
+                "type": "action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "size":"action--small"
+                    }    
+                ]
+            }
+        },
+        {
+            "title": "Action link with a tiny size modifier ",
+            "example": {
+                "type": "action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "size":"action--tiny"
+                    }    
+                ]
+            }
+        },
+        {
+            "title": "Horizontal action link ",
+            "example": {
+                "type": "action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "size":"action--small",
+                        "horizontal":true
+                    }    
+                ]
+            }
+        },
+        {
+            "title": "Bold action link ",
+            "example": {
+                "type": "action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "size":"action--small",
+                        "bold":true
+                    }    
+                ]
+            }
+        }
+    ]
+}
+
+
+

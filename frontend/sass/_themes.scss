@@ -1,0 +1,131 @@
+
+/**
+    Themed blocks here once we get some styles sorted we need to do a big clean up of this page
+*/
+
+// Theme blocks
+// ----------------------------------------------------------------------------
+
+
+$dark-bg-color: #293f54;
+$dark-border-color: $dark-bg-color;
+$dark-font-color: $white;
+$dark-link-color: inherit;
+
+$hot-bg-color: #FF6961;
+$hot-border-color: $hot-bg-color;
+$hot-font-color: $white;
+$hot-link-color: inherit;
+
+//orange
+$warm-bg-color: #f07e5c;
+$warm-border-color: $warm-bg-color;
+$warm-font-color: $white;
+$warm-link-color: inherit;
+
+//blue
+$cool-bg-color: #779ecb;
+$cool-border-color: $cool-bg-color;
+$cool-font-color: $white;
+$cool-link-color: inherit;
+
+//yellow
+$sunny-bg-color: #fdfd96;
+$sunny-border-color: $sunny-bg-color;
+$sunny-font-color: $white;
+$sunny-link-color: inherit;
+
+
+//green
+$fred-bg-color: #37b67f;
+$fred-border-color: $fred-bg-color;
+$fred-font-color: $white;
+$fred-link-color: inherit;
+
+//pink
+$soft-bg-color: #F49AC2;
+$soft-border-color: $soft-bg-color;
+$soft-font-color: $white;
+$soft-link-color: inherit;
+
+
+$theme-names:
+  soft,
+  cool,
+  warm,
+  sunny,
+  hot,
+  fred,
+  dark;
+
+
+$bg-color:
+  $soft-bg-color,
+  $cool-bg-color,
+  $warm-bg-color,
+  $sunny-bg-color,
+  $hot-bg-color,
+  $fred-bg-color,
+  $dark-bg-color;
+
+$border-color:
+  $soft-border-color,
+  $cool-border-color,
+  $warm-border-color,
+  $sunny-border-color,
+  $hot-border-color,
+  $fred-border-color,
+  $dark-border-color;
+
+$font-color:
+  $soft-font-color,
+  $cool-font-color,
+  $warm-font-color,
+  $sunny-font-color,
+  $hot-font-color,
+  $fred-font-color,
+  $dark-font-color;
+
+$link-color:
+  $soft-link-color,
+  $cool-link-color,
+  $warm-link-color,
+  $sunny-font-color,
+  $hot-font-color,
+  $fred-font-color,
+  $dark-font-color;
+
+@for $i from 1 through length($theme-names) {
+
+  %theme--#{nth($theme-names, $i)} {
+
+    border-color: nth($border-color, $i);
+    background-color: nth($bg-color, $i);
+    color: nth($font-color, $i);
+
+    a {
+        color: nth($link-color, $i);
+    }
+  }
+
+  .theme--#{nth($theme-names, $i)} {
+    @extend %theme--#{nth($theme-names, $i)};
+  }
+
+}
+.theme--white {
+  background-color:#fff;
+  color:#3d4c54;
+}
+
+.theme--light {
+  background-color:#f0f0f0;
+  color:#3d4c54;
+}
+
+%theme--grey {
+  background-color:#D7D7D7;
+  color:#3d4c54;
+}
+
+.theme--grey { @extend %theme--grey;}

@@ -1,0 +1,17 @@
+{
+    "api": {
+        "type": "form/field__label",
+        "label": "Submit"
+    },
+    "examples": [
+        {
+            "title": "Field label",
+            "example": {
+                "type": "form/field__label",
+                "name": "name",
+                "label": "label",
+                "note": "note"
+            }
+        }
+    ]
+}

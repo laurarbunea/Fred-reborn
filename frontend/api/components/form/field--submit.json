@@ -1,0 +1,15 @@
+{
+    "api": {
+        "type": "form/field--submit",
+        "label": "Submit"
+    },
+    "examples": [
+        {
+            "title": "Submit button",
+            "example": {
+                "type": "form/field--submit",
+                "label": "Submit"
+            }
+        }
+    ]
+}

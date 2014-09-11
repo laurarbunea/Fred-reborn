@@ -1,0 +1,27 @@
+{
+    "api": {
+        "type": "dl",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "dl",
+                "heading":"Full licence costs",
+                "data": [
+                    {
+                        "left": "Application fee",
+                        "right": "$50"
+                    },
+                    {
+                        "left": "Test fee",
+                        "right": "$61.70"
+                    }
+                ],
+                "total":"<strong>$111.70</strong>"
+            }
+        }
+    ]
+}
+

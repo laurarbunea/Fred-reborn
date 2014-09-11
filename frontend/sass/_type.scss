@@ -1,0 +1,363 @@
+// ----------------------------------------------------------------------------
+// Typography
+// ----------------------------------------------------------------------------
+
+%body-type-size {
+    @include font-size($font-size-m);
+    line-height: $line-height-m;
+}
+
+%body-type-spacing { @include rem(margin-bottom, $space-m); }
+
+%list-item-spacing {
+    @include rem(margin-top, $space-xs);
+    margin-bottom: 0;
+}
+
+%block-default-spacing { @include rem(margin-top, $space-m);}
+%block-default-spacing:first-child { margin-top: 0; }
+
+
+// ----------------------------------------------------------------------------
+// Font sizing
+// ----------------------------------------------------------------------------
+
+%font-size-xxxxl {
+    @include font-size($font-size-xxxxl);
+    line-height: $line-height-xxxl;
+    @include media('small-down') {
+        & {
+            @include font-size($font-size-xxxl);
+            line-height: $line-height-xxxl;
+        }
+    }
+}
+
+%font-size-xxxl {
+    @include font-size($font-size-xxxl);
+    line-height: $line-height-xxxl;
+    @include media('small-down') {
+        & {
+            @include font-size($font-size-xxl);
+            line-height: $line-height-xxl;
+        }
+    }
+}
+
+%font-size-xxl {
+    @include font-size($font-size-xxl);
+    line-height: $line-height-xxl;
+    @include media('small-down') {
+        & {
+            @include font-size($font-size-xl);
+            line-height: $line-height-xl;
+        }
+    }
+}
+
+%font-size-xl {
+    @include font-size($font-size-xl);
+    line-height: $line-height-xl;
+    @include media('small-down') {
+        & {
+            @include font-size($font-size-l);
+            line-height: $line-height-l;
+        }
+    }
+}
+
+%font-size-l {
+    @include font-size($font-size-l);
+    line-height: $line-height-l;
+}
+
+%font-size-m {
+    @include font-size($font-size-m);
+    line-height: $line-height-m;
+}
+
+%font-size-s {
+    @include font-size($font-size-s);
+    line-height: $line-height-s;
+}
+
+%font-size-xs {
+    @include font-size($font-size-xs);
+    line-height: $line-height-xs;
+}
+
+
+// ----------------------------------------------------------------------------
+// Headings
+// ----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li {
+    @extend %mt-0;
+    @extend %first-child-no-top;
+}
+
+h1 {
+    @extend %mb-xxxl;
+    @extend %font-size-xxxl;
+    @extend %font-weight-normal;
+}
+
+h2 {
+    @extend %mb-m;
+    @include media ('small-down') {
+        @include rem('margin-bottom', $space-s);
+    }
+    @extend %font-size-xxl;
+    @extend %font-weight-normal;
+}
+
+h3 {
+    @extend %mb-m;
+    @extend %font-weight-bold;
+    @extend %font-size-xl;
+    @include media ('small-down') { 
+        @include rem('margin-bottom', $space-s);
+    }
+}
+
+h4 {
+    @extend %mb-m;
+    @include media ('small-down') {
+        @include rem('margin-bottom', $space-s);
+    }
+    @extend %font-size-l;
+    @extend %font-weight-bold;
+}
+
+h5 {
+    @extend %mb-m;
+    @include media ('small-down') {
+        @include rem('margin-bottom', $space-s);
+    }
+    @extend %font-size-m;
+    @extend %font-weight-bold;
+}
+
+h6 {
+    @extend %mb-m;
+    @include media ('small-down') {
+        @include rem('margin-bottom', $space-s);
+    }
+    @extend %font-size-m;
+    @extend %font-weight-normal;
+}
+
+p, .text, code, blockquote, caption, address {
+    @extend %mt-0;
+    @extend %font-size-m;
+    @extend %font-weight-normal;
+}
+
+
+// ----------------------------------------------------------------------------
+// body copy
+// ----------------------------------------------------------------------------
+
+p, .text, code, dt, dd, td, th {
+    @extend %body-type-size;
+}
+p, .text, code, dt, dd, td {
+    @extend %first-child-no-top;
+}
+p, .text, code, td, blockquote, caption, li {
+    @extend %body-type-spacing;
+}
+ol, dl, ul {
+    @extend %body-type-spacing;
+}
+li {
+    @extend %list-item-spacing;
+}
+
+.intro {
+    @extend %font-size-xl;
+    @extend %font-weight-light;
+    @extend %mb-m;
+    
+    &:last-child {
+        @extend %mb-xxxl;
+    }
+}
+
+.uppercase { @extend %uppercase;}
+.lowercase { @extend %lowercase; }
+
+
+.emphasis { @extend %font-size-l;}
+.small { @extend %font-size-s; }
+.tiny { @extend %font-size-xs; }
+
+.text-center { @extend %text-center;}
+.text-left { @extend %text-left; }
+.text-right { @extend %text-right; }
+.text-right--medium {
+    @include medium {
+        text-align: right;
+    }
+}
+
+%font-weight-bold { font-weight:600; }
+%font-weight-normal { font-weight:400; }
+%font-weight-light { font-weight:300; }
+%font-italic { font-style:italic;}
+
+.font-bold { @extend %font-weight-bold; }
+.font-light { @extend %font-weight-light; }
+.font-italic { @extend %font-italic; }
+
+.font-bold-italic { 
+    @extend %font-italic; 
+    @extend %font-bold;
+}
+
+.font-light-italic { 
+    @extend %font-italic; 
+    @extend %font-light; 
+}
+
+strong, 
+b { @extend %font-weight-bold; }
+em, i, cite { @extend %font-italic;}
+
+%underline-on-hover {
+    &:hover{
+        text-decoration:underline;
+    }
+}
+
+// ----------------------------------------------------------------------------
+// Links
+// ----------------------------------------------------------------------------
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: $base-link-color;
+    &:hover {
+        color: darken($base-link-color, 10%);
+    }
+}
+
+// lets some link styles only to more specific elements, not all links
+.body-copy a,
+.textlink {
+    @extend %underline;
+    @include custom-line-color--modified($base-link-color);
+    &:hover{
+        background-image:none;
+    }
+}
+
+%link-underline {
+//    @extend %underline;
+//    @include custom-line-color--modified($base-link-color);
+    text-decoration: underline;
+    @extend %underline-on-hover;
+}
+
+%link-hover-color {
+    &:hover {
+        color: darken($base-link-color, 10%);
+//        @include custom-line-color--modified(darken($base-link-color, 10%));
+
+        &.link--action  > div {
+            background-color: darken($base-link-color, 5%);
+        }
+        & .nav-main__icon > i {
+            background-color: darken($color-bg-header, 4%);
+        }
+    }
+}
+
+.link-more {
+    //font-weight: normal;
+    font-style: italic;
+    &:after {
+        content: "...";
+    }
+}
+
+
+.linedText {
+  
+    border-bottom: 1px dashed;
+    text-decoration: none;
+
+    background-color: #ffffff;
+
+    background: linear-gradient(top, #000000 0%, #ffffff 1%) 0 -1px;
+
+    -webkit-background-size: 100% 24px;
+    -moz-background-size: 100% 24px;
+    -ms-background-size: 100% 24px;
+    -o-background-size: 100% 24px;
+    background-size: 100% 24px;
+
+}
+
+// ----------------------------------------------------------------------------
+// Definition lists
+// ----------------------------------------------------------------------------
+
+dl dt {
+    @extend %left; 
+    font-weight: bold;
+    @include rem(padding-top, 12);
+    @include rem(padding-right, 12);
+    @include rem(padding-bottom, 12);
+}
+
+dd {
+    @extend %bt--primary;  
+    @extend %mt-0;
+    @extend %ml-0;
+    @extend %text-left;
+    @include rem(padding-top, 12);
+    @include rem(padding-bottom, 12);
+    text-align:right;
+
+}
+
+ @include media('small-down') {
+     dt {
+        border-top: 1px solid $primary-border-color;
+        float:none!important;
+      
+     }
+    dd {
+         text-align:left!important;
+     }
+ }
+
+
+
+
+
+// ----------------------------------------------------------------------------
+// HR
+// ----------------------------------------------------------------------------
+
+hr {
+    @extend %mt-xxl;
+    @extend %mb-xxl;
+    height: 1px;
+    border: none;
+    background-color: #ddd;
+}
+
+
+// ----------------------------------------------------------------------------
+// blockquote
+// ----------------------------------------------------------------------------
+blockquote {
+    margin:0;
+    padding:0;
+    @include rem(padding-left, $space-xxl);
+    border-left:0 solid $ultra-light-grey;
+    @include rem(border-width, $space-xs);
+}

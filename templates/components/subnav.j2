@@ -1,0 +1,158 @@
+{% macro navimage(img) %}
+
+    {% if img %}
+
+        {% set item = { "src": img, "responsive":true } %}
+        {% include "/components/img.j2" %}
+
+    {% endif %}
+
+{% endmacro %}
+
+
+{% macro subnav_link(child) %}
+
+    {% if child.data.title or child.data.stub %}
+
+        <a class="link-complex" href="{{ child.path }}">
+
+            {% if child.data.title %}
+
+                <h2 class="link-complex__link">
+                    {{ child.data.title|safe }} <i class="i-arrow-r"></i>
+                </h2>
+
+            {% endif %}
+           
+            {% if child.data.stub %}
+                
+                <p class='subnav__intro'>
+                  {{child.data.stub|safe}}
+                </p>
+
+            {% endif %}
+       
+        </a>
+    {% endif %}
+
+    {% if child.children %}
+
+        <div class="breakline--hatched">
+
+            <ul class="grid subnav__children">
+
+
+                {% for child in child.children %}
+
+                    <li class="[ col small-half ] subnav__child ">
+                        <a class="subnav__child__link" href="{{ child.path }}">{{ child.data['title']|safe }}</a>
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+    {% endif %}
+
+{% endmacro %}
+
+{% macro subnav_right(child) %}
+
+    <div class='subnav__sidebar col medium-3 large-2'>
+
+        {% for child in child.data.action %}
+
+            {% set item  = { "action": [{"href":child.href,"text":child.text,"icon":child.icon }] } %}
+            {% include "components/action-icon.j2" %}
+
+        {% endfor %}
+
+    </div>
+
+{% endmacro %}
+
+{% macro subnav_item(child) %}
+
+        {% if child.data.priority == "primary" %}
+
+            {% if child.data.thumbnail %}
+
+                <div class='subnav__image col large-3'>
+
+                    {{ navimage(child.data.thumbnail) }}
+
+                </div>
+
+                <div class='subnav__content col medium-7 large-5'>
+
+                   {{ subnav_link(child) }}
+
+                </div>
+
+            {% else %}
+
+                <div class='subnav__content col medium-7 large-8'>
+
+                   {{ subnav_link(child) }}
+
+                </div>
+
+            {% endif %}
+
+            {{ subnav_right(child) }}
+
+        {% elif child.data.priority == "secondary" %}
+
+            {% if child.data.thumbnail %}
+
+                <div class='subnav__image col large-2'>
+
+                    {{ navimage(child.data.thumbnail) }}
+
+                </div>
+
+                <div class='subnav__content col medium-7 large-6'>
+
+                    {{ subnav_link(child) }}
+
+                </div>
+
+            {% else %}
+
+                <div class='subnav__content col medium-7 large-8'>
+
+                    {{ subnav_link(child) }}
+
+                </div>
+
+            {% endif %}
+
+            {{ subnav_right(child) }}
+
+        {% else %}
+
+            {{ subnav_link(child) }}
+
+        {% endif %}
+
+{% endmacro %}
+
+
+{% for child in item.data %}
+
+    {% if child.data.priority == "primary" or child.data.priority == "secondary" %}
+
+        <div class='subnav {{ child.data.priority }}-subnav grid'>
+
+            {{ subnav_item(child) }}
+
+        </div>
+
+    {% endif %}
+    
+{% endfor %}
+
+
+

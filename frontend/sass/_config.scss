@@ -1,0 +1,291 @@
+// ----------------------------------------------------------------------------
+// Typography
+// ----------------------------------------------------------------------------
+
+$sans-serif-stack: "Source Sans Pro", "Helvetica Neue", sans-serif;
+$base-line-height: 1.5;
+$base-font-size: 16;
+  
+// Specify some font sizes to get your project rolling. These are predominantly
+// used by _typography.scss
+
+
+$font-size-xxxxl: 64;       // big statistics figures and the like
+$font-size-xxxl: 48;        // h1
+$font-size-xxl: 32;         // h2
+$font-size-xl: 24;          // h3
+$font-size-l: 18;           // h4
+$font-size-m: 16;           // p, h5, h6
+$font-size-s: 14;           // small
+$font-size-xs: 12;          // x-small
+
+$line-height-xxxxl: 88/64;  // big statistics figures and the like
+$line-height-xxxl: 56/48;   // h1
+$line-height-xxl: 40/32;    // h2
+$line-height-xl: 36/24;     // h3
+$line-height-l: 28/18;      // h4
+$line-height-m: 24/16;      // p, h5, h6
+$line-height-s: 20/14;      // small
+$line-height-xs: 16/12;     // x-small
+
+
+// -----------------------------------------------------------------------------
+// Media queries
+// -----------------------------------------------------------------------------
+
+// General approach to media queries:
+// - Assume `no media` as the first query.
+// - The `small` breakpoint just gets @media only screen { @content }
+// - `small-only` applies a max-width to prevent an upward cascade.
+//
+// Sizing guide:
+//
+// xsmall       | small mobiles, fridges, watches etc
+// small        | mobiles, some internet-of-things displays
+// medium       | tablet devices, netbooks, mobiles in landscape
+// large        | screens > 960px
+// xlarge       | wide screen devices > 1200px
+// xxlarge      | in our experience, things need adjusting > 1440px
+// xxxlarge     | Full HD
+
+$breakpoint-none: "";
+$breakpoint-xxlarge-name: "xxlarge";
+$breakpoint-xlarge-name: "xlarge";
+$breakpoint-large-name: "large";
+$breakpoint-medium-name: "medium";
+$breakpoint-small-name: "small";
+$breakpoint-classname-prefix: "--q-";
+
+// Set media queries in ems. If you're wondering, we remove 0.01em
+// from the next breakpoint up, so that the breakpoints don't
+// overlap. For instance:
+//
+// @media only screen and (max-width: 47.99em);
+// @media only screen and (min-width: 48em);
+
+$breakpoint-xsmall:     25em;   // The mighty LG Android!
+$breakpoint-small:      30em;   // Portrait regular mobiles//480px
+$breakpoint-small-max:  37.49em;
+$breakpoint-medium:     37.5em;   // Skinny 600px
+$breakpoint-medium-max: 59.99em;
+$breakpoint-large:      60em;   // Desktop 960px
+$breakpoint-large-max:  74.99em;
+$breakpoint-xlarge:     75em;   // Wide 1200px
+$breakpoint-xxlarge:    90em;   // Wide 1440px
+$breakpoint-xxxlarge:   120em;  // Full HD
+
+
+$breakpoints:
+        (
+            small "only screen"  $breakpoint-small ($breakpoint-medium - 0.01)
+        ),
+        (
+            small-down "only screen and (max-width: #{$breakpoint-small-max})"
+        ),
+        (
+            medium "only screen and (min-width: #{$breakpoint-medium})" $breakpoint-medium ($breakpoint-large - 0.01)
+        ),
+        (
+            medium-only "only screen and (min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-medium-max})"
+        ),
+        (
+            medium-down "only screen and (max-width: #{$breakpoint-medium-max})"
+        ),
+        (
+            large "only screen and (min-width: #{$breakpoint-large})" 
+        ),
+        (
+            large-only "only screen and (min-width: #{$breakpoint-large}) and (max-width: #{$breakpoint-large-max})"
+        ),
+        (
+            large-down "only screen and (max-width: #{$breakpoint-large})"
+        ),
+        (
+            xlarge "only screen and (min-width: #{$breakpoint-xlarge})" $breakpoint-xlarge ($breakpoint-xxlarge - 0.01)
+        ),
+        (
+            screen "only screen"
+        ),
+        (
+            landscape "only screen and (orientation: landscape)"
+        ),
+        (
+            portrait "only screen and (orientation: portrait)"
+        )
+;
+
+
+// Media shortcuts
+
+@mixin small() {
+    @media only screen and (min-width:#{$breakpoint-small}) {
+        @content;
+    }
+}
+
+
+@mixin small-only() {
+    @media only screen and (max-width: #{$breakpoint-small-max}) {
+        @content;
+    }
+}
+
+@mixin medium() {
+    @media only screen and (min-width: #{$breakpoint-medium}) {
+        @content;
+    }
+}
+
+@mixin large() {
+    @media only screen and (min-width: #{$breakpoint-large}) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+// -----------------------------------------------------------------------------
+// Grid
+// -----------------------------------------------------------------------------
+
+$grid-breakpoints: default, small-down, small, medium, medium-only, medium-down, large, xlarge;
+$grid-column-name: "col";
+$grid-divisions: 3, 4, 5, 8, 10, 12;
+$grid-float-padding: 1em; // false to disable.
+//$grid-responsive-breakpoints: small-only, medium-only, large;
+$grid-responsive-breakpoints: default, small-down, medium-only, large;
+$grid-responsive-margin: 6%;
+$grid-responsive-columns: 1, 2, 3, 4, 6;
+
+// ----------------------------------------------------------------------------
+// Spacing
+// ----------------------------------------------------------------------------
+
+
+$base-spacing-unit: 1.5em;
+
+$space: 16; //px
+
+$space-0: 0;
+$space-xxs: $space * .25;   //4px
+$space-xs: $space * .5;     //8px
+$space-s: $space * .75;     //12px
+$space-m: $space;           //16px
+$space-l: $space * 1.25;    //20px
+$space-xl: $space * 1.5;    //24px
+$space-xxl: $space * 1.75;  //28px
+$space-xxxl: $space * 2;    //32px
+$space-xxxxl: $space * 3;   //48px
+
+
+$sizePrefixes:
+    "-0",
+    "-xxs",
+    "-xs",
+    "-s",
+    "-m",
+    "-l",
+    "-xl",
+    "-xxl",
+    "-xxxl",
+    "-xxxxl";
+
+$sizes:
+    $space-0,
+    $space-xxs,
+    $space-xs, 
+    $space-s, 
+    $space-m, 
+    $space-l, 
+    $space-xl, 
+    $space-xxl, 
+    $space-xxxl,
+    $space-xxxxl;
+
+// Generate margin classes for the given breakpoints
+//
+// mt   | margin-top
+// mb   | margin-bottom
+// mr   | margin-right
+// ml   | margin-left
+
+$margin-breakpoints: default, small, medium, medium-down, large, xlarge;
+$margin-types: "mt", "mb", "ml", "mr";
+
+// Generate padding classes for the given breakpoints
+//
+// pt   | padding-top
+// pb   | padding-bottom
+// pr   | padding-right
+// pl   | padding-left
+
+$padding-breakpoints: default, small, medium, medium-down, large, xlarge;
+$padding-types: "pt", "pb", "pl", "pr";
+
+
+
+// -----------------------------------------------------------------------------
+// Colours
+// -----------------------------------------------------------------------------
+
+$ultra-dark-grey: #444;
+$dark-grey: #555;
+$mid-grey: #999;
+$light-grey: #ddd;
+$ultra-light-grey: #F2F4F7;
+$white: #fff;
+$dark-blue:#00456B;
+$teal: #008b97;
+
+
+$color-focus: rgb(255, 92, 0);
+
+
+$error-red: #c44;
+$warning-red: #CA4142;
+$confirmation-green: #59B359;
+$color-orange: #FF8C19;
+
+/* base colours */
+$base-font-color: $dark-grey;
+$base-bg-color: $ultra-light-grey;
+
+/* link colours */
+$base-link-color: #236FA6;
+$base-link-hover-color: darken($base-link-color, 15%);
+$base-link-visited-color: lighten($base-link-color, 5%); //#c3c;
+
+$base-link-color-reversed: #83BFEB;
+$base-link-hover-color-reversed: lighten($base-link-color-reversed, 15%);
+$base-link-visited-color-reversed: lighten($base-link-color-reversed, 15%);
+
+$primary-border-color: #F2F2EB;
+
+
+// header colour
+$color-bg-header: #004771; // lighten(#00456B, 5%);
+
+// form colours
+$form-input-color: #F2F2EB;
+$form-label-color: $dark-blue;
+
+// -----------------------------------------------------------------------------
+// Icon colouring
+// -----------------------------------------------------------------------------
+// these need to to in steps of 100/(number_of_colours-1)
+// -----------------------------------------------------------------------------
+
+$icon-bg-black: 0;
+$icon-bg-white: 12.5%; // 100% / (no. colours-1)
+$icon-bg-blue: 25%;
+$icon-bg-dark-blue: 37.5%;
+$icon-bg-grey: 50%;
+$icon-bg-dark-grey: 62.5%;
+$icon-bg-green: 75%;
+$icon-bg-orange: 87.5%;
+$icon-bg-red: 100%;

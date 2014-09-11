@@ -1,0 +1,64 @@
+{
+    "api": {
+        "type": "container",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "Main content container",
+    
+            "example": {
+                "type": "container",
+                "external_theme":"theme--neutral",
+                "internal_theme":"theme--white hatched-line",
+                "layout":"layout layout--nudge",
+                "section":"section",
+                "data": "[Components go here]"            
+            }
+        },
+        {
+            "title": "Main content container with an error theme",
+            "example": {
+                "type": "container",
+                "external_theme":"theme--neutral",
+                "internal_theme":"theme--error",
+                "layout":"layout layout--nudge",
+                "section":"section",
+                "data": "[Components go here]"            
+            }
+        },
+        {
+            "title": "Secondary content container",
+            "notes":"This container is used through out transactions.",
+            "example": {
+                "type": "container",
+                "external_theme":"theme--neutral",
+                "internal_theme":"theme--white ",
+                "layout":"layout layout--half layout--nudge",
+                "section":"section",
+                "data": "[Components go here]" 
+            }
+        },
+        {
+            "title": "Secondary content container with an error theme",
+            "example": {
+                "type": "container",
+                "internal_theme":"theme--error ",
+                "layout":"layout layout--half layout--nudge",
+                "section":"section",
+                "data": "[Components go here]" 
+            }
+        },
+        {
+            "title": "Secondary content container with a confirmation theme",
+            "example": {
+                "type": "container",
+                "internal_theme":"theme--confirmation ",
+                "layout":"layout layout--half layout--nudge",
+                "section":"section",
+                "data": "[Components go here]" 
+            }
+        }
+    ]
+}
+

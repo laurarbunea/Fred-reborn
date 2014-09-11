@@ -1,0 +1,33 @@
+<div class="access section access-keys" id="nzta-access-keys">
+
+    <div class="wrapper">
+
+        <div class="[ layout ]">
+
+            <div class="[ grid ]">
+
+                <div class="[ col ]">
+
+                    <h4>
+                        {{item.title}}
+                    </h4>
+                   
+                    <ul class="list-unstyled">
+
+                       {% for item in item.data %}
+
+                            <li><strong class="access-keys__key">{{item.key}}</strong>   {{item.page}}</li>
+
+                        {% endfor %}
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

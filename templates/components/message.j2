@@ -1,0 +1,40 @@
+<div class=" [ section layout {{item.layout}} layout--nudge ] {{ item.theme }}">
+
+    <div class='grid'>
+        
+        <div class='col'>
+            
+            <div class='theme--details'>
+                {% if item.message.title %}
+
+                    <h2>
+                    {{ item.message.title }}
+                    </h2>
+
+                {% endif %}
+
+                {% if item.message.body %}
+
+                    <p>
+                    {{ item.message.body }}
+                    </p>
+
+                {% endif %}
+
+                {% if item.message.action %}
+
+                    <p>
+                        <a href="{{ item.data.action.href }}">
+                            {{ item.message.action.label }}
+                        </a>
+                    </p>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>

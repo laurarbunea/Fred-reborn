@@ -1,0 +1,234 @@
+/*------------------------------------*\
+    #GRID STYLES
+\*------------------------------------*/
+
+.grid {
+    font-size: 0;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    
+    @include medium {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    & > * {
+        @extend %inline-block;
+        font-size: medium;
+    }
+
+    & > .grid {
+        @extend %inline-block;
+        font-size: 0;  
+    }
+}
+
+.grid--justify {
+    text-align: justify;
+    font-size: 0;
+
+    & > * {
+        @extend %text-left;
+        @extend %inline-block;
+        float: none;
+        font-size: medium;
+    }
+
+    &:after {
+        @extend %inline-block;
+        @extend %height-0; //height: 0
+        width: 100%;
+        content: '';
+    }
+}
+
+
+    // Font-size medium reset the block to the context of body (ie, 16px)
+    %grid__item {
+        @extend %inline-block;
+        @extend %align--top;
+        @extend %text-left;
+        font-size: medium;
+        text-justify: auto;                 /* [3] */
+    }
+    .grid > *,
+    .grid__item {
+        @extend %align--top;
+    }
+    
+    %grid:after,
+    %grid__break {
+        @extend %inline-block; // This extend is found in core
+        @extend %height-0; //height: 0
+        @extend %col; //100% width
+        content: '';
+    }
+
+
+// ----------------------------------------------------------------------------
+// grid modififers
+// ----------------------------------------------------------------------------
+
+.grid--center { @extend %text-center;}
+
+.grid--middle {
+    > * { @extend %align--middle; }
+}
+.grid--bottom {
+    > * { @extend %align--bottom; }
+}
+
+.grid--flip-small {
+    @include small-only {
+        direction: rtl;
+        & > * {
+            direction: ltr;
+        }
+    }
+}
+
+.grid--table {
+//do we need this to be just above large and why the 100% as this breaks with nested grids 
+    //@include large {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        .col & {
+            //if the grid is nested reset the width
+            width:auto;
+        }
+        & > * {
+            display: table-cell;
+
+        }
+    //}
+
+}
+
+.medium-grid--table {
+
+    @include medium {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        & > * {
+            display: table-cell;
+        }
+    }
+}
+
+.large-grid--table {
+    @include large {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        & > * {
+            display: table-cell;
+        }
+    }
+}
+// ----------------------------------------------------------------------------
+// Column classes
+// ----------------------------------------------------------------------------
+
+
+.full-width { @extend %full-width; }
+.half { width: 50%; }
+.third { width: 33.3333333%; }
+.two-thirds { width: 66.666666%; }
+.quarter { width: 25%; }
+.three-quarters { width: 75%; }
+.fifth { width: 20%; }
+
+
+@include small() {
+    .small-full-width { width: 100%; }
+    .small-half { width: 50%; }
+    .small-third { width: 33.3333333%; }
+    .small-two-thirds { width: 66.666666%; }
+    .small-quarter { width: 25%; }
+    .small-three-quarters { width: 75%; }
+}
+
+@include medium() {
+    .medium-full-width { width: 100%; }
+    .medium-half { width: 50%; }
+    .medium-third { width: 33.3333333%; }
+    .medium-two-thirds { width: 66.666666%; }
+    .medium-quarter { width: 25%; }
+    .medium-three-quarters { width: 75%; }
+    .medium-fifth { width: 20%; }
+}
+
+@include large() {
+    .large-full-width { width: 100%; }
+    .large-half { width: 50%; }
+    .large-third { width: 33.3333333%; }
+    .large-two-thirds { width: 66.666666%; }
+    .large-quarter { width: 25%; }
+    .large-three-quarters { width: 75%; }
+    .large-fifth { width: 20%; }
+}
+
+
+$cols-large: 10;
+
+@for $i from 1 to $cols-large+1 {
+    $width: #{ (((1/$cols-large) * $i) * 100)  + "%"};
+    %small-#{$i} {
+      
+        width: $width;
+        
+    }
+    .small-#{$i} {
+        @extend %small-#{$i};
+    }
+}
+
+@for $i from 1 to $cols-large+1 {
+    $width: #{ (((1/$cols-large) * $i) * 100)  + "%"};
+    %medium-#{$i} {
+        @include medium() {
+            & {
+                width: $width;
+            }
+        }
+    }
+    .medium-#{$i} {
+        @extend %medium-#{$i};
+    }
+}
+
+
+@for $i from 1 to $cols-large+1 {
+    $width: #{ (((1/$cols-large) * $i) * 100)  + "%"};
+    %large-#{$i} {
+        @include large() {
+            & {
+                width: $width;
+            }
+        }
+    }
+
+    .large-#{$i} {
+        @extend %large-#{$i};
+    }
+}
+
+%col {
+    @extend %full-width;
+    @include rem(padding-left, $space-m);
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    @include medium {
+        & {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.col {
+    @extend %col;
+}

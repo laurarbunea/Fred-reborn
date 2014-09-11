@@ -1,0 +1,15 @@
+{
+    "api": {
+        "type": "h4",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "h4",
+                "data": " H4 heading "
+            }
+        }
+    ]
+}

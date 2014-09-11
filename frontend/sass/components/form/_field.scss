@@ -1,0 +1,111 @@
+/*------------------------------------*\
+    #FIELD
+\*------------------------------------*/
+
+%field { 
+    @extend %mb-xxxl;
+    @include media('small-down') {
+
+       & { 
+            @include rem('margin-bottom', $space-l);
+       }
+    }
+}
+
+.field,
+.field--select { @extend %field; }
+
+.field__label,
+.field__input { @extend %block-element; }
+
+.field__label {
+    @extend %font-weight-bold;
+    span { @extend %font-weight-normal; }
+}
+
+.field__note { @extend %font-size-s; }
+
+.field__label + 
+.field__input,
+.field__note +
+.field__note,
+.field__input + 
+.field__note { @extend %mt-xs; }
+
+.field__note + 
+.field__input { @extend %mt-s;}
+
+    .field__label + 
+    .field__note { @extend %mt-xxs; }
+
+// native controls
+%text-input {
+    @extend %margin-0;
+    @extend %pt-s;
+    @extend %pb-s;
+    @extend %pl-s;
+    @extend %pr-s;
+    @extend %block-element;
+    @extend %border-box;
+    @extend %col;
+    @include rem(border-radius, $space-xxs);
+    -webkit-appearance:none;
+    border:1px solid $form-input-color;
+    background-color:$form-input-color;
+    font-family: inherit;
+    font-size: inherit;
+    color:inherit;
+    line-height:1;
+}
+
+
+.field,
+[type='text'],
+[type='email'],
+[type='date'],
+[type='number'] { @extend %text-input; }
+
+
+.field--bare {
+    @extend %inline-block;
+    border: none;
+    background-color: transparent;
+    border-radius: none;
+}
+
+
+//.field--lift {
+//    box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+//    &:focus,
+//   &:active {
+//        box-shadow: 0 2px 1px rgba(0,0,0,0.3);
+//    }
+//}
+
+
+.field--knockout {
+    color: #555;
+    transition: background-color .1s, box-shadow .1s;
+    border-width: 3px;
+    border-color: transparent;
+
+    &:focus,
+    &:active {
+        outline: none;
+        border: solid 3px $color-focus;
+        background-color: #fff;
+    }
+}
+
+label {
+    @extend %block-element;
+    color:$form-label-color;
+}
+
+select {
+    @extend %block-element;
+    @extend %col;
+    padding:.5rem;
+    font-family: inherit;
+    font-size: inherit;
+}

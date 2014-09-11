@@ -1,0 +1,53 @@
+<div class='[ grid ] font-size-container '>
+
+    {% for item in item.intro %}
+
+        <div class=' [ col ] '>
+
+            {{item|component}}
+
+        </div>
+
+    {% endfor %}  
+
+    <div class='[ col large-half ] font-size__left' >
+
+        {% for item in item.left %}  
+
+            {% for item in item.intro %}
+
+                {{item|component}}
+
+            {% endfor %}
+            
+            <div class='theme--white swatch' >
+
+                {{item|component }}
+
+            </div>
+
+        {% endfor %}
+         
+    </div>
+
+    <div class=' [ col large-half ] font-size__right' >
+
+        {% for item in item.right %}  
+
+            {% for item in item.intro %}
+
+                {{item|component}}
+
+            {% endfor %}
+            
+            <div class='theme--white swatch' >
+
+                {{item|component }}
+
+            </div>
+            
+        {% endfor %}
+
+    </div>
+
+</div>

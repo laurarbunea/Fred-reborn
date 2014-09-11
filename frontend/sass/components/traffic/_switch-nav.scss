@@ -1,0 +1,48 @@
+
+/*
+    switch navigation
+*/
+
+$color-switch-nav: #fff;
+$color-switch-nav-active: #236FA6;
+
+
+%switch-nav {
+    @extend %nav;
+    @extend %clearfix;
+    @extend %inline-block;
+    @include vendor(border-radius, 2px);
+    overflow: hidden;
+    background-color: $color-bg-header;
+    border: 1px solid $color-switch-nav-active;
+    list-style: none;
+    @extend %font-size-s;
+
+    & .nav__item {
+        float: left;
+        border-top: 0;
+        margin-top: 0;
+    }
+
+    & .nav__item > a {
+        //        padding: 1em 1.75em;
+        padding: .35em 1em;
+        display: inline-block;
+        color: $color-switch-nav;
+        &:hover,
+        &.active {
+            background-color: $color-switch-nav-active;
+        }
+    }
+
+}
+
+.switch-nav {
+    @extend %switch-nav;
+}
+
+.toggle-tools {
+    .tools-active & a {
+        background-color: $color-switch-nav-active;
+    }
+}

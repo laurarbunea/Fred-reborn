@@ -1,0 +1,59 @@
+<div class='subnav tertiary-subnav grid'>
+
+    {% for child in item.data %}
+
+        {% if not child.data.priority %}
+
+            <div class="col small-half large-4 subnav subnav--tertiary">
+
+                {% if child.data.title or child.data.stub %}
+
+                    <a class="link-complex" href="{{ child.path }}">
+
+                        {% if child.data.title %}
+                            
+                            <h3 class="link-complex__link">
+                                {{ child.data.title|safe }}
+                                <i class="i-arrow-r"></i>
+                            </h3>
+
+                        {% endif %}
+                       
+                        {% if child.data.stub %}
+                            
+                            {% set item = { "data": child.data.stub } %}
+                            {% include "/components/text-small.j2" %}
+                            
+                        {% endif %}
+                   
+                    </a>
+
+                {% endif %}
+
+                {% if child.children  %}
+
+                    <div class="breakline--hatched">
+
+                        <ul class="subnav__nav  grid">
+
+                            {% for child in child.children %}
+
+                                <li class="subnav__child [ col small-half ]">
+                                    <a class="subnav__child__link" href="{{ child.path }}">{{ child.data['title']|safe }}</a>
+                                </li>
+
+                            {% endfor %}
+
+                        </ul>
+
+                    </div>
+
+                {% endif %}
+
+            </div>
+
+        {% endif %}
+
+    {% endfor %}
+
+</div>

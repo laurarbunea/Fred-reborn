@@ -1,0 +1,151 @@
+/*------------------------------------*\
+    #GLOBAL NAV
+\*------------------------------------*/
+
+.global-nav {
+    @extend %pt-m;
+    @extend %pb-m;
+    @extend %pt-l--q-medium;
+    @extend %pb-l--q-medium;
+    
+    @extend %relative;
+    z-index: 11;
+}
+
+    .global-nav__items   {
+        
+        & > * {
+            @extend %right;
+        }
+    }
+
+    %nav-pill {
+ 
+        @extend %font-size-s;
+        @include vendor(border-radius, 2px);
+        padding: 0.2em .6em;
+    }
+
+    .nav-pill { @extend %nav-pill; }
+    
+    //to fix the height
+    .menu, 
+    .search__input {  
+
+        line-height:25px;
+        height:30px;
+
+    }
+
+    .menu {
+        background-color:#1a689d;
+        &:hover {background-color:darken(#1a689d, 2%);}
+    }
+
+    input.search__input {
+        @extend %font-size-s;
+        background-color:#00446a;
+        border-color:#00446a;
+        color:#ffffff;
+        i {
+            background-position: 0 $icon-bg-white;
+        }
+    }
+
+//themes
+.theme--full-colour {
+    & .menu { 
+        background-color:#f2f4f7;
+        &:hover {
+            background-color:darken(#f2f4f7, 2%);
+        }
+        i {
+            background-position: 0 $icon-bg-dark-blue;
+        }
+    }
+    & .search__input {
+        background-color:#f2f2eb;
+        border-color:#f2f2eb;
+        color:$dark-grey;
+        i {
+            background-position: 0 $icon-bg-dark-blue;
+        }
+    }
+}
+
+
+
+.search-container {
+    @extend %mr-m;
+    position:relative;
+    width:60%;
+
+    @include small-only {
+        position: absolute;
+        top: 100%;
+        z-index: 10;
+        margin-top: -1.5em;
+        right: 1em;
+        left: 1em;
+        width: 80%;
+    }
+}
+    .search__input {
+        @extend %font-size-s;
+        padding-left: 2em;
+    }
+
+    .search__icon {
+        display: block;
+        position: absolute;
+        left: 1em;
+        top: 1em;
+        //background-position: 0 $icon-bg-dark-blue;
+
+        &:hover {
+            background-position: 0 $icon-bg-black;
+        }
+    }
+
+    .search-small { @extend %pr-l; }
+    .menu-small { @extend %pl-l; }
+
+
+
+//clean up
+
+.theme--full-colour {
+    background-color: #fff;
+
+    a {
+        color:$base-link-color;
+    }
+    .nav-btn__search {
+        background-color:#f2f2eb;
+    }
+}
+
+
+
+.global-nav--home {
+    & + * {
+        margin-top: -5.5em;
+        padding-top: 5.5em;
+        background-color: #7196a8;
+    }
+}
+
+
+// this little snippet is code for the search page 
+
+.site-search-container {
+    position:relative
+}
+    .site-search__button {
+        position:absolute;
+        top:1.5em; 
+        left:1.5em;
+    }
+    .site-search__input {
+        padding-left:2.5em;
+    }

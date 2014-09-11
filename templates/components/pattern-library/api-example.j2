@@ -1,0 +1,44 @@
+{% set examples = item.component|getApi %}
+
+{% for item in examples %}
+
+<h4>
+    {{ item.title }} 
+</h4>
+
+{{ item.notes }} 
+
+{#<div class="styleguide__api">
+
+    <strong>Try it out:</strong>
+
+   
+    <a data-showhide-trigger='{{item.example.type}}-{{loop.index}}' class='styleguide__api__code-view'>
+        Code
+    </a>
+
+</div>
+
+<div class='showhide-hidden code-container' data-showhide-container='{{item.example.type}}-{{loop.index}}'> 
+
+<pre class="styleguide__code">
+
+{{ item.example|json }}
+
+</pre>
+
+<pre class='styleguide--html' >
+
+{{ item.example|component|pretty_html|escape|safe }}
+
+</pre>
+
+</div>#}
+
+<div class='styleguide__example '>
+
+    {{ item.example|component }}
+
+</div>
+
+{% endfor %}

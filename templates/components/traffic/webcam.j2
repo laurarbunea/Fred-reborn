@@ -1,0 +1,12 @@
+<div class="[ horizontal-scroll ]">
+    <ul class="webcam-list">
+        {% for camera in item.data %}
+        <li>
+            <a href="{{ camera.href|default("#") }}" class="webcam">
+                <img src="{{ camera.image }}" alt="" class="webcam__image">
+                <p class="webcam__caption">{{ camera.label }}</p>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,30 @@
+ <div class='[ grid ] spacing-section'>
+
+    {% for item in item.sizes %}
+
+        <div class='[ col large-1 ]'>
+        
+            <div class='swatch__top theme--grey' >
+               
+                -{{item.name}}
+              
+            </div>
+
+            <div class='swatch__middle theme--white text-center small pt-s pb-s'>
+
+                {{item.px}}px
+
+            </div>
+
+            <div class='swatch__bottom theme--fred '>
+
+                <div class='pt-{{item.name}}'>
+                </div>
+
+            </div> 
+
+        </div>
+
+    {% endfor %}
+
+</div>

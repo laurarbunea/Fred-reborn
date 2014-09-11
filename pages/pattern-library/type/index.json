@@ -1,0 +1,280 @@
+{
+    "title": "type",
+    "headline": "Type",
+    "template":"pattern-library/type.j2",
+    "data": [
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h2",
+                            "data": "Heading 1"
+                        },
+                        "H1 is always used for the most important headline on the page—but nowhere else.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/h1"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h2",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h2",
+                            "data": "Heading 2"
+                        },
+                        "H2 is used as a break between sections of content.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/h2"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h3",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h3",
+                            "data": "Heading 3"
+                        },
+                        "H3 is used for subsection headings.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/h3"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h4",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h2",
+                            "data": "Heading 4"
+                        },
+                         "If you find yourself needing an H4 heading, you might want to consider reorganising the content or editing it for length. If that’s not possible this style will serve you nicely.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/h4"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h5",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h2",
+                            "data": "Heading 5"
+                        },
+                         "If you find yourself needing an H5 heading, you might want to consider reorganising the content or editing it for length. If that’s not possible this style will serve you nicely.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/h5"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h6",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "h2",
+                            "data": "Heading 6"
+                        },
+                         "If you find yourself needing an H6 heading, you might want to consider reorganising the content or editing it for length. If that’s not possible this style will serve you nicely.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/h6"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "p-intro",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [ 
+                        {
+                            "type": "h2",
+                            "data": "Intro paragraph"
+                        },
+                        "Use an intro paragraph to introduce and summarise the content of a page.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/intro"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "p",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [ 
+                        {
+                            "type": "h2",
+                            "data": "Paragraph"
+                        },
+                        "A good old-fashioned, vanilla-flavoured body copy paragraph.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/p"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "text-small",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [ 
+                        {
+                            "type": "h2",
+                            "data": "Small type"
+                        },
+                        "Small text is used mainly for UI elements where space is limited or the information is of secondary importance.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/text-small"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "text-tiny",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [ 
+                        {
+                            "type": "h2",
+                            "data": "Tiny type"
+                        },
+                        "We don’t recommend you use tiny text as it’s more difficult to read — unless it’s a word or two on a UI label and regular old small text just isn’t small enough.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/text-small"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "ul",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [ 
+                        {
+                            "type": "h2",
+                            "data": "Unordered list"
+                        },
+                        "Use this when the order of items doesn’t matter.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/list"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "ol",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [ 
+                        {
+                            "type": "h2",
+                            "data": "Ordered list"
+                        },
+                        "A list of items, the order of which does explicitly matter.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/ol"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "dl",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [ 
+                        {
+                            "type": "h2",
+                            "data": "Definition list"
+                        },
+                        "Use this for a list of terms and their definitions. This is a useful alternative to tables for marking up simple lists of name/value pairs.",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/dl"
+                        }
+                    ]
+                } 
+            ]
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+/*------------------------------------*\
+    #RADIO BUTTON GROUP
+\*------------------------------------*/
+
+.field--radio-button-group {
+    @extend %field;
+    @extend %clearfix;
+
+    .field__note {
+        @include media('small-down') {
+            @include rem('margin-bottom', $space-xxs);
+        }
+    }
+}
+    
+.segmented-control,
+.segmented-control--1-segments,
+.segmented-control--2-segments,
+.segmented-control--3-segments,
+.segmented-control--4-segments,
+.segmented-control--5-segments,
+.segmented-control--6-segments,
+.segmented-control--7-segments,
+.segmented-control--8-segments,
+.segmented-control--9-segments,
+.segmented-control--10-segments,
+.segmented-control--11-segments, 
+.segmented-control--12-segments {
+    @extend %list-unstyled;
+}
+
+    .segmented-control {
+        @extend %clearfix;
+        & > li {
+            @extend %inline-block;
+            @extend %margin-0;
+            @extend %left;
+            @extend %relative;
+            border: 1px solid $base-link-color;
+            margin-right: -1px;
+            margin-bottom: -1px;
+            
+            &:first-child { @extend %br-top-left-xxs;}
+            &:last-child { @extend %br-bottom-right-xxs;}
+        }
+
+        input {
+            @extend %absolute;
+            @extend %hidden;
+        }
+
+        label {
+            @extend %cursor-on-hover;
+            @extend %pt-xs;
+            @extend %pb-s;
+            @extend %text-center;
+            @extend %font-weight-bold;
+            color: $base-link-color;
+            
+            span {
+                @extend %block-element;
+                @extend %font-weight-normal;
+                @extend %font-size-xs;
+                cursor:pointer;
+            }
+        }
+        
+        input:checked + label {
+            background: $base-link-color; 
+            color: $white;
+        }
+    }
+
+    .segmented-control--timeslots {
+        & label {
+            @extend %text-left;
+            @extend %pt-s;
+            @extend %pb-s;
+            @extend %pl-s;
+            @extend %pr-s;
+        }
+        & label span {
+            @extend %right;
+            @extend %pt-xxs;
+        }
+    }
+    
+    li {
+        .segmented-control--1-segments & {
+            @extend %br-xxs;
+        }
+        .segmented-control--2-segments & {
+            width:50%;
+            &:first-child { @extend %br-left-xxs; }
+            &:last-child { @extend %br-right-xxs; }
+        }
+        .segmented-control--3-segments & {
+            width: 33.33333333%;
+            &:first-child { @extend %br-left-xxs; }
+            &:last-child { @extend %br-right-xxs; }
+        }
+        .segmented-control--4-segments & {
+            width: 25%;
+            &:first-child { @extend %br-left-xxs; }
+            &:last-child { @extend %br-right-xxs; }
+        }
+        .segmented-control--5-segments & {
+            width:20%;
+            &:first-child { @extend %br-left-xxs; }
+            &:last-child { @extend %br-right-xxs; }
+        }
+        .segmented-control--6-segments & {
+            width: 33.33333333%;
+            &:nth-child(3) { @extend %br-top-right-xxs;}
+            &:nth-child(4) { @extend %br-bottom-left-xxs;}
+        }
+        .segmented-control--7-segments & {
+            width:25%;
+            &:nth-child(4) { @extend %br-right-xxs;}
+            &:nth-child(5) { @extend %br-bottom-left-xxs;}
+        }
+        .segmented-control--8-segments & {
+            width:25%;
+            &:nth-child(4) { @extend %br-top-right-xxs;}
+            &:nth-child(5) { @extend %br-bottom-left-xxs;}
+        }
+        .segmented-control--9-segments & {
+            width: 33.33333333%;
+            &:nth-child(3) { @extend %br-top-right-xxs;}
+            &:nth-child(7) { @extend %br-bottom-left-xxs;}
+        }
+        .segmented-control--10-segments & {
+            width:20%;
+            &:nth-child(5) { @extend %br-top-right-xxs;}
+            &:nth-child(6) { @extend %br-bottom-left-xxs;}
+        }
+        .segmented-control--11-segments & {
+            width:25%;
+            &:nth-child(4) { @extend %br-top-right-xxs;}
+            &:nth-child(8) { @extend %br-bottom-right-xxs;}
+            &:nth-child(9) { @extend %br-bottom-left-xxs;}
+        }
+        .segmented-control--12-segments & {
+            width:25%;
+            &:nth-child(4) { @extend %br-top-right-xxs; }
+            &:nth-child(9) { @extend %br-bottom-left-xxs; }
+        }
+    }

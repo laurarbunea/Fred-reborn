@@ -1,0 +1,51 @@
+<div class="global-nav {{ item.theme }}">
+
+    <div class="[ wrapper ]">
+
+        <div class="[ layout ]">
+
+            <div class="[ grid grid--middle ]">
+                
+                <div class='[ col large-4 medium-3 small-5 ] '>
+                    <img src='/images/fred-logo.png'>
+                    {#<a href='/' class='i i-{{ item.logo|default("nzta-logo") }}' accesskey="h">
+                        <span class="sr-only">NZ Transport Agency</span>
+                    </a>#}
+
+                </div>
+
+                <div class='[ col large-6 medium-7 small-5 ] global-nav__items '>
+
+                    <a href="#menu" data-navigation class="hide-medium menu-small">
+                        
+                        <i class="i i-menu i--{{ item.icon_color }} "></i>
+
+                        <span class="hide-small ">Menu</span>
+
+                    </a>
+
+                    <a data-navigation href='#menu' class=" hide-small nav-pill menu" accesskey="m">
+            
+                        <i class="i i-menu i--{{ item.icon_color }} "></i>
+                        Menu 
+            
+                    </a>
+
+                    <form action="/search" method="GET" class="search-container hide-small">
+                       
+                        <input placeholder="What are you looking for?" type="text" name="term" class="nav-pill search__input"/>
+                        <button class="[ i i--small i-search i--{{ item.icon_color }} ] search__icon" type="submit"></button>
+                    
+                    </form>
+
+                    <a href='/search' class='hide-medium search-small'><i class="i i-search i--{{ item.icon_color }} "></i></a>
+
+                </div>
+      
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

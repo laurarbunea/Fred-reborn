@@ -1,0 +1,20 @@
+{
+  "name": "NZTA",
+  "version": "0.0.1",
+  "description": "NZTA prototype",
+  "main": "src/js/site.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "nunjucks": "~1.0.5",
+      "backbone": "*",
+      "marionette": "*"
+  }
+}

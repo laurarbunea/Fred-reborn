@@ -1,0 +1,40 @@
+{
+    "api": {
+        "type": "list",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "list",
+                "data": [
+                    "first list item",
+                    "second list item",
+                    "third list item"
+                
+                ]
+            }
+        },
+        {
+            "title": "If you need a nested list:",
+            "example": {
+                "type": "list",
+                "data": [
+                    "first list item",
+                    "second list item",
+      
+                    {
+                        "type": "list",
+                        "text":"third list item",
+                        "data": [
+                            "a nested list item",
+                            "another nested list item"                              
+                        ]
+                    },
+                    "fourth list item"
+                ]
+            }
+        }
+    ]
+}

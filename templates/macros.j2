@@ -1,0 +1,113 @@
+{% macro print(dir) %}
+    <ul>
+        {% for page in dir %}
+            <li>
+                <a href="{{ page.path }}">{{ page.data['title'] }}</a>
+
+                {% if page.children %}
+                    {{ print(page.children) }}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+{% macro nav_children(dir, current) %}
+    <ul>
+        {% for page in dir %}
+            <li>
+                {% if page.path != current %}<a href="{{ page.path }}">{% endif %}
+                    {{ page.data['title'] }}
+                    {% if page.path != current %}</a>{% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+
+{% macro get_api_example(name) %}
+ 
+    {{name|laura}}
+
+{% endmacro %}
+
+
+{% macro subnav_tertiary(dir) %}
+
+    {% set item = { type:"subnav-tertiary", data: dir }  %}
+    
+    {{ item|component }}
+
+{% endmacro %}
+
+
+{% macro global_nav( theme, logo, icon_color) %}
+
+    {% set item = { type:"global-nav", theme: theme, logo:logo, icon_color:icon_color }  %}
+    
+    {{ item|component }}
+
+{% endmacro %}
+
+
+{% macro banner( img, title, subtitle, theme ) %}
+
+    {% set item = { type:"banner", img:img, title:title, subtitle:subtitle, theme:theme }  %}
+    
+    {{ item|component }}
+
+{% endmacro %}
+
+{% macro action_icon( icon, text, href, theme, size ) %}
+
+    {% set item = { type:"action-icon", action:[{ icon:icon, text:text, href:href, theme:theme, size:size} }]  %}
+
+    {{ item|component }}
+
+{% endmacro %}
+
+{% macro subnav(dir) %}
+
+    {% set item = { type:"subnav", data: dir }  %}
+    
+    {{ item|component }}
+
+{% endmacro %}
+
+{% macro message(message, theme, layout) %}
+
+    {% set item = { type:"message", message:message, theme:theme, layout:layout }  %}
+    
+    {{ item|component }}
+
+{% endmacro %}
+
+{% macro accesibility_container(data, title) %}
+
+    {% set item = { type:"accessibility", data:data, title:title }  %}
+    
+    {{ item|component }}
+
+{% endmacro %}
+
+
+{% macro site_header(breadcrumb, headline, step_name, image, subnav, layout, title) %}
+
+    {% set item = { type:"header", breadcrumb:breadcrumb, "headline":headline,"step_name":step_name, "image":image, subnav:subnav, "layout":layout, title:title}  %}
+    
+    {{ item|component }}
+
+{% endmacro %}
+
+
+{% macro pattern_library_subnav(dir) %}
+
+    {% set item = { type:"header-subnav", data: dir }  %}
+    
+    {{ item|component }}
+
+{% endmacro %}
+
+{% macro nav_parent(parent) %}
+    <a href="{{ parent.path }}">{{ parent.data.title }}</a>
+{% endmacro %}

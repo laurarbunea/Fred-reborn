@@ -1,0 +1,37 @@
+<div class=''>
+    {% if item.heading %}
+
+        <h3>
+            {{ item.heading|safe }}
+        </h3>
+
+    {% endif %}
+    <dl>
+
+    {% for item in item.data %}
+
+        <dt>
+            {{ item.left|safe }}
+        </dt>
+
+        <dd>
+            {{ item.right|safe }}
+        </dd>
+
+    {% endfor %}
+
+    {% if item.total %}
+ 
+        <dt>
+             Total
+        </dt>
+
+        <dd>
+           {{ item.total|safe }}
+        </dd>
+
+    {% endif %}
+
+    </dl>
+    
+</div>

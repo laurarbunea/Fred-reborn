@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #FIELD PREV AND NEXT BUTTONS
+\*------------------------------------*/
+
+.field--prev-next {
+    @extend %field; 
+    @extend %clearfix;
+    @extend %relative;
+}
+
+    .prev-link:before,
+    .next-link:after {
+        @extend %absolute;
+        @extend %width-0;
+        @extend %height-0;
+        @include rem(margin-top, -($space-xxs/2));
+        @include rem(border-width, $space-xxs);
+        top:50%;
+        content: '';
+        border-color:transparent; 
+        border-style:solid;
+    }
+    
+    .prev-link {
+        @extend %left;
+        @extend %mt-0;
+        @extend %pl-m;
+        &:before {
+            @extend %left-0;
+            border-right-color: $base-link-color;
+        }
+    }
+
+    .next-link {
+        @extend %right;
+        @extend %mt-0;
+        @extend %pr-m;
+        &:after {
+            @extend %right-0;
+            border-left-color: $base-link-color;
+        }
+    }

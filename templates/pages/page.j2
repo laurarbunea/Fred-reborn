@@ -1,0 +1,19 @@
+{% extends "containers/content-container-wide.j2" %}
+{% import "macros.j2" as macros %}
+
+{% block header %}
+
+    {{ macros.site_header(breadcrumb, headline) }}
+    
+{% endblock  %}
+
+{% block content %}
+
+    {% for item in data %}
+        {{ item|component }}
+    {% endfor %}
+       
+{% endblock %}
+
+{% block anchor %}
+{% endblock %}

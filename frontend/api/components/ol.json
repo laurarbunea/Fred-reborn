@@ -1,0 +1,39 @@
+{
+    "api": {
+        "type": "ol",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "",
+            "example": {
+                "type": "ol",
+                "data": [
+                    "Start by doing this.",
+                    "Then do this.",
+                    "Finish with this."
+                ]
+            }
+        },
+        {
+            "title": "If you need a nested list:",
+            "example": {
+                "type": "ol",
+                "data": [
+                    "Start by doing this.",
+                    "Then do this.",
+      
+                    {
+                        "type": "ol",
+                        "text":"I am a second list item",
+                        "data": [
+                            "Do this.",
+                            "And this."                              
+                        ]
+                    },
+                    "Finish with this."
+                ]
+            }
+        }
+    ]
+}
