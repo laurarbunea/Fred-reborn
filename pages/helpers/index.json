@@ -21,7 +21,7 @@
                                     "type": "h3",
                                     "data": "helpers"
                                 },
-                                "This section explains the bare bones of the sass structure."
+                                "Here are some handy little classes that will come in useful when building modules for this site."
                             ]
                         }
                     ]
@@ -271,7 +271,55 @@
                                     "data": [
                                         "<p class='font-bold'>font-bold</p>\n<p class='font-light'>font-light</p>\n<p class='font-italic'>font-italic</p>\n<p class='font-italic font-bold'>font-italic and font bold</p>\n<p class='font-italic font-light'>font-italic and font light</p>"
                                     ]
+                                },
+                                {
+                                    "type": "section",
+                                    "data": [
+                                        {
+                                            "type": "h4",
+                                            "data": "Tetx overflow"
+                                        },
+                                        "to add"
+                                    ]
                                 }
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "layout-helpers",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "Layout helpers"
+                                },
+                                "blah",
+                                {
+                                    "type": "h4",
+                                    "data": "Floating helpers"
+                                },
+                                {
+                                    "type": "h4",
+                                    "data": "Absolute and Relative helpers"
+                                },
+                                {
+                                    "type": "h4",
+                                    "data": "Centering elements"
+                                },
+                                {
+                                    "type": "h4",
+                                    "data": "Alligning elements"
+                                },
+                                {
+                                    "type": "h4",
+                                    "data": "Overflow"
+                                } 
                             ]
                         }
                     ]
