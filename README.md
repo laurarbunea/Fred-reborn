@@ -1,16 +1,8 @@
-# NZTA Front-end Prototype
+# Fred Prototype
 
 Hello,
 
-If you're reading this, then you're probably building something great for the NZTA. 
-
-This repository contains the prototypes that Optimal Usability and Springload have been testing with users. It's a work in progress, and will be finalised over the coming weeks.
-
-Visit the live prototype here:
-
-## [http://nzta.springload.co.nz/pattern-library/](http://nzta.springload.co.nz/pattern-library/)
-
-(Username and password required)
+If you're reading this, your awesome. 
 
 
 ## Setup
@@ -22,13 +14,6 @@ The prototype is a super light-weight node.js application. Getting up and runnin
 * Run `npm install`
 * Start the site with `grunt`
 * Visit `http://localhost:3012` in your browser
-
-
-### Pattern library
-
-The pattern library lives at `/pattern-library/`. From here you can access the CSS and JS required to build the components, as well as seeing examples of the forms, iconography, type and grid. 
-
-This documentation will grow in the coming weeks as we migrate the learnings from the Driver Licences and Traffic Info sections into the CSS. For now, there should be enough to start building out transactional forms.
 
 ### Templates
 
@@ -54,7 +39,4 @@ Most of the pages have a template, these live in `templates/pages`
 * `grunt sass` to compile sass
 * `grunt icon` to compile icons (via grunticon)
 * `grunt all` to generate everything
-
-
-
 
