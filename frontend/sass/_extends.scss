@@ -57,18 +57,10 @@
     @extend %antialiased;
 }
 
-/**
 
-### Append and Prepend
-
-Place something before or after an element
-
-```html
-<p class="prepend" data-prepend="email:">&nbsp;email@gmail.com</p>
-<p class="append" data-append="is my email">email@gmail.com&nbsp;</p>
-```
-
-*/
+// -----------------------------------------------------------------------------
+// Append and prepend
+// -----------------------------------------------------------------------------
 
 .prepend{
     &:before{
@@ -109,20 +101,12 @@ Place something before or after an element
 
 .clearfix { @extend %clearfix; }
 
-/**
 
-###Screen reader content
 
-We've found some odd bugs with the -999px textindent hack. 
-Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.
+// -----------------------------------------------------------------------------
+// Screen reader content -------------- This is borrowed from Bootstrap.
+// -----------------------------------------------------------------------------
 
-This is borrowed from Bootstrap.
-
-```html
- <a class="sr-only" href="#content">Skip to main content</a>
-```
-
-*/
 
 %sr-only {
     position: absolute;
@@ -179,6 +163,20 @@ This is borrowed from Bootstrap.
     @extend %font-light; 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //to add to fred
 %text--overflow {
     @extend %inline-block;
@@ -187,7 +185,9 @@ This is borrowed from Bootstrap.
     white-space: nowrap;
     max-width: 100%;
 }
-
+.text-overflow {
+    @extend %text-overflow;
+}
 
 
 
@@ -294,8 +294,6 @@ This is borrowed from Bootstrap.
     margin-left:auto;
     margin-right:auto;
 }
-
-
 
 .center-element { @extend %center-element; } 
 
