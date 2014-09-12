@@ -16,7 +16,7 @@ $margin-figure: 50;
 
 .route {
 
-    @extend %list-unstyled;
+    @extend %list--unstyled;
     @include rem(padding-top, $margin-traffic-info-side*1.5);
 
 }

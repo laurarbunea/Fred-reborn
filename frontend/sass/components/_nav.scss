@@ -132,7 +132,7 @@ body:after {
 
 .nav-list {
     @include rem('padding-top', $space-xxs);
-    @extend %list-unstyled;
+    @extend %list--unstyled;
 
     & > li {
         @extend %pb-xl;

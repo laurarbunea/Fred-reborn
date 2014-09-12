@@ -47,7 +47,7 @@ $height-webcam-image: 64;
     padding-top: 0;
     @extend %theme--dark;
     @extend %inline-block;
-    @extend %list-unstyled;
+    @extend %list--unstyled;
     white-space: nowrap;
     overflow: hidden;
     @include vendor(border-radius, 5px);

@@ -178,6 +178,11 @@
 
 
 //to add to fred
+
+.text--hidden {
+//see fred
+}
+
 %text--overflow {
     @extend %inline-block;
     overflow: hidden;
@@ -203,7 +208,7 @@
 // Lists
 // -----------------------------------------------------------------------------
 
-%list-unstyled {
+%list--unstyled {
     list-style: none;
     padding-left: 0;
 
@@ -215,7 +220,7 @@
 
 %list--inline {
     @extend %clearfix;
-    @extend %list-unstyled;
+    @extend %list--unstyled;
 
     & > li {
         margin-top:0;
@@ -224,20 +229,16 @@
     }
 }
 
-%list-styled--disc {
-    @extend %list-styled;
-    list-style-type: disc;
-}
-
-%block-list {
-    @extend %list-unstyled;
+%list--block {
+    @extend %list--unstyled;
     > li {
         display: block;
     }
 }
 
-
-
+.list--block { @extend %list--block; }
+.list--inline { @extend %list--inline; }
+.list--unstyled { @extend %list--unstyled; }
 
 
 // -----------------------------------------------------------------------------

@@ -317,7 +317,7 @@ $margin-traffic-info-side: 32;
 
 .location-list {
 
-    @extend %list-unstyled;
+    @extend %list--unstyled;
 
     .level-1 & {
         @include rem(margin-left,$margin-traffic-info-side);

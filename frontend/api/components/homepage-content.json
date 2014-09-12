@@ -49,7 +49,7 @@
                                                 "data":[
                                                     {
                                                         "type": "list",
-                                                        "class": "list-unstyled list--home",
+                                                        "class": "list--unstyled list--home",
                                                         "data": [
                                                             "<a href='/transaction-centre/vehicle-registration/'>Relicence your vehicle (rego)</a>",
                                                             "<a href='/transaction-centre/book-a-test/'>Book, change or cancel a driving test</a>",

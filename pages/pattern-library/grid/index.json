@@ -36,7 +36,7 @@
                         },
                         {
                             "type": "list",
-                            "class": "list-unstyled",
+                            "class": "list--unstyled",
                             "data":[
 
                                 "Columns have predefined gutters of 0.5rem, which increases to 1rem above the medium breakpoint.",

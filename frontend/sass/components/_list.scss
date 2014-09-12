@@ -27,10 +27,6 @@ li ol {
     padding-left:0;
 }
 
-.list-styled--disc { @extend %list-styled--disc; }
-.list-unstyled { @extend %list-unstyled; }
-.list-inline { @extend %list--inline; }
-.block-list { @extend %block-list; }
 
 .nav {
     @extend %list--inline;

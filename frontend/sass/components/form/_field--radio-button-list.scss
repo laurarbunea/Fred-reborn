@@ -5,7 +5,7 @@
 .field--radio-button-list { @extend %field; }
 
     .radio-button-list {
-        @extend %list-unstyled;
+        @extend %list--unstyled;
         @extend %bb--primary;
         
         & > li {

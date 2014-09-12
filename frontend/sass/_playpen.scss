@@ -124,7 +124,7 @@
 }
 
 
-.small-block-list {
+.small-list--block {
     @include media('small-down') {
         list-style: none;
         padding-left: 0;
