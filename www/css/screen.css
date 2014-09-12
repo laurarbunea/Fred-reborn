@@ -185,23 +185,60 @@ blockquote:before, blockquote:after {
 /*------------------------------------*\
     #EXTENDS
 \*------------------------------------*/
-.breadcrumb, .list-inline, .nav, .block-list, .anchor-links, .list-unstyled, .nav-list, .radio-button-list, .segmented-control, .segmented-control--1-segments, .segmented-control--2-segments, .segmented-control--3-segments, .segmented-control--4-segments, .segmented-control--5-segments, .segmented-control--6-segments, .segmented-control--7-segments, .segmented-control--8-segments, .segmented-control--9-segments, .segmented-control--10-segments, .segmented-control--11-segments, .segmented-control--12-segments, .location-list, .route, .webcam-list {
-  list-style: none;
-  padding-left: 0; }
-  .anchor-links > li, .list-unstyled > li, .nav-list > li, .radio-button-list > li, .segmented-control > li, .segmented-control--1-segments > li, .segmented-control--2-segments > li, .segmented-control--3-segments > li, .segmented-control--4-segments > li, .segmented-control--5-segments > li, .segmented-control--6-segments > li, .segmented-control--7-segments > li, .segmented-control--8-segments > li, .segmented-control--9-segments > li, .segmented-control--10-segments > li, .segmented-control--11-segments > li, .segmented-control--12-segments > li, .location-list > li, .route > li, .webcam-list > li {
-    list-style: none;
-    margin: 0; }
-
-.breadcrumb > li, .list-inline > li, .nav > li {
-  margin-top: 0;
+.breadcrumb > li, .footer_pages a, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .subnav--tertiary, .section--nav > .section__content:after, .breadcrumb > li:last-child, .btn, .btn--submit, .email-wrapper input[type='submit'], .share-nav > li > a, .field--bare, .segmented-control > li, .traffic-metrics > *, .map-nav__item > a > span, .section--map-nav, .route__item:after, .webcam-list, .webcam-list > li, .map-nav--view-type, .switch-nav {
   display: inline-block;
-  padding-left: 0; }
+  *display: inline;
+  *zoom: 1; }
 
-.list-styled--disc {
-  list-style-type: disc; }
-
-.block-list > li {
+.link-complex, .statistics__sub-label, .header__image img, .field__label, .field__input, .field, [type='text'], [type='email'], [type='date'], [type='number'], label, select, .radio-button-list label span, .segmented-control label span {
   display: block; }
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, .text:first-child, li:first-child, code:first-child, .intro:first-child, ul:first-child, li:first-child, p:first-child, .text:first-child, code:first-child, dt:first-child, dd:first-child, td:first-child, .btn--block:first-child, .btn--submit:first-child {
+  margin-top: 0; }
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .isWindowsChrome .antialiased {
+    -webkit-font-smoothing: subpixel-antialiased; }
+
+.prepend:before {
+  content: attr(data-prepend);
+  display: inline-block; }
+
+.append:after {
+  content: attr(data-append);
+  display: inline-block; }
+
+.clearfix, .list--inline, .breadcrumb, .nav, .share-nav, .field--link, .field--prev-next, .radio-button-list > li, .field--radio-button-group, .segmented-control, .traffic-info__body h3, .traffic-info__body h4, .map-nav--view-type, .switch-nav {
+  /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+  *zoom: 1; }
+
+.clearfix:before, .list--inline:before, .breadcrumb:before, .nav:before, .share-nav:before, .field--link:before, .field--prev-next:before, .radio-button-list > li:before, .field--radio-button-group:before, .segmented-control:before, .traffic-info__body h3:before, .traffic-info__body h4:before, .map-nav--view-type:before, .switch-nav:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after, .list--inline:after, .breadcrumb:after, .nav:after, .share-nav:after, .field--link:after, .field--prev-next:after, .radio-button-list > li:after, .field--radio-button-group:after, .segmented-control:after, .traffic-info__body h3:after, .traffic-info__body h4:after, .map-nav--view-type:after, .switch-nav:after {
+  clear: both;
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
 
 .text-center, .grid--center, .btn, .btn--submit, .email-wrapper input[type='submit'], .segmented-control label {
   text-align: center; }
@@ -218,75 +255,82 @@ blockquote:before, blockquote:after {
 .lowercase {
   text-transform: lowercase; }
 
+.font-bold, h3, h4, h5, strong, b, .btn--submit, .btn--primary, .email-wrapper input[type='submit'], .btn--secondary, .nav-transaction__title, .action--bold span, .statistics__label, .subnav__child__link, .field__label, .segmented-control label, .map-nav--tools .map-nav__item, .webcam__caption, h1 > .highway, h2 > .highway, h3 > .highway {
+  font-weight: 600; }
+
+h1, h2, h6, p, .text, code, blockquote, caption, address, .statistics__sub-label, .subnav .subnav__intro, .field__label span, .segmented-control label span, .webcam__last-update {
+  font-weight: 400; }
+
+.font-light, .intro, .statistics__figure {
+  font-weight: 300; }
+
+.font-italic, .font-bold-italic, .font-light-italic, em, i, cite {
+  font-style: italic; }
+
 .breadcrumb > li {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%; }
 
-.layout--nudge, .relative, .anchor-links li, .section--nav > .section__content, .global-nav, .field--prev-next, .radio-button-list > li, .segmented-control > li {
-  position: relative; }
+.list--inline, .breadcrumb, .nav, .list--block, .list--unstyled, .anchor-links, .nav-list, .radio-button-list, .segmented-control, .segmented-control--1-segments, .segmented-control--2-segments, .segmented-control--3-segments, .segmented-control--4-segments, .segmented-control--5-segments, .segmented-control--6-segments, .segmented-control--7-segments, .segmented-control--8-segments, .segmented-control--9-segments, .segmented-control--10-segments, .segmented-control--11-segments, .segmented-control--12-segments, .location-list, .route, .webcam-list {
+  list-style: none;
+  padding-left: 0; }
+  .list--unstyled > li, .anchor-links > li, .nav-list > li, .radio-button-list > li, .segmented-control > li, .segmented-control--1-segments > li, .segmented-control--2-segments > li, .segmented-control--3-segments > li, .segmented-control--4-segments > li, .segmented-control--5-segments > li, .segmented-control--6-segments > li, .segmented-control--7-segments > li, .segmented-control--8-segments > li, .segmented-control--9-segments > li, .segmented-control--10-segments > li, .segmented-control--11-segments > li, .segmented-control--12-segments > li, .location-list > li, .route > li, .webcam-list > li {
+    list-style: none;
+    margin: 0; }
 
-.anchor-links li:before, .anchor-links li:after, .section--nav, body:after, .header__image + .header__title, .prev-link:before, .next-link:after, .radio-button-list input, .segmented-control input {
-  position: absolute; }
+.list--inline > li, .breadcrumb > li, .nav > li {
+  margin-top: 0;
+  display: inline-block;
+  padding-left: 0; }
 
-dl dt, .left, .prev-link, .email-wrapper [type='email'], .segmented-control > li {
-  float: left; }
-
-.footer_social-links, .right, .global-nav__items > *, .next-link, .segmented-control--timeslots label span {
-  float: right; }
-
-.subnav--tertiary, .grid > *, .grid__item {
-  vertical-align: top; }
-
-.grid--middle > *, .pill, .pill--roadworks, .pill--orange {
-  vertical-align: middle; }
-
-.grid--bottom > * {
-  vertical-align: bottom; }
-
-.anchor-links li:before, .prev-link:before, .radio-button-list input {
-  left: 0; }
-
-.next-link:after {
-  right: 0; }
-
-.anchor-links li:before, .anchor-links li:after, .prev-link:before, .next-link:after {
-  width: 0; }
-
-.grid--justify:after, .section--nav > .section__content:after, .anchor-links li:before, .anchor-links li:after, .prev-link:before, .next-link:after {
-  height: 0; }
-
-.link-complex, .statistics__sub-label, .header__image img, .field__label, .field__input, .field, [type='text'], [type='email'], [type='date'], [type='number'], label, select, .radio-button-list label span, .segmented-control label span {
+.list--block > li {
   display: block; }
 
-.breadcrumb > li, .footer_pages a, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .subnav--tertiary, .section--nav > .section__content:after, .breadcrumb > li:last-child, .btn, .btn--submit, .email-wrapper input[type='submit'], .share-nav > li > a, .field--bare, .segmented-control > li, .traffic-metrics > *, .map-nav__item > a > span, .section--map-nav, .route__item:after, .webcam-list, .webcam-list > li, .map-nav--view-type, .switch-nav {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
+.left, dl dt, .left, .prev-link, .email-wrapper [type='email'], .segmented-control > li {
+  float: left; }
 
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, .text:first-child, li:first-child, code:first-child, .intro:first-child, ul:first-child, li:first-child, p:first-child, .text:first-child, code:first-child, dt:first-child, dd:first-child, td:first-child, .btn--block:first-child, .btn--submit:first-child {
-  margin-top: 0; }
+.right, .footer_social-links, .right, .global-nav__items > *, .next-link, .segmented-control--timeslots label span {
+  float: right; }
 
-.breadcrumb, .list-inline, .nav, .share-nav, .field--link, .field--prev-next, .radio-button-list > li, .field--radio-button-group, .segmented-control, .traffic-info__body h3, .traffic-info__body h4, .map-nav--view-type, .switch-nav {
-  /**
-     * For IE 6/7 only
-     * Include this rule to trigger hasLayout and contain floats.
-     */
-  *zoom: 1; }
+.relative, .layout--nudge, .relative, .anchor-links li, .section--nav > .section__content, .global-nav, .field--prev-next, .radio-button-list > li, .segmented-control > li {
+  position: relative; }
 
-.breadcrumb:before, .list-inline:before, .nav:before, .share-nav:before, .field--link:before, .field--prev-next:before, .radio-button-list > li:before, .field--radio-button-group:before, .segmented-control:before, .traffic-info__body h3:before, .traffic-info__body h4:before, .map-nav--view-type:before, .switch-nav:before {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right, .anchor-links li:before, .anchor-links li:after, .section--nav, body:after, .header__image + .header__title, .prev-link:before, .next-link:after, .radio-button-list input, .segmented-control input {
+  position: absolute; }
 
-.breadcrumb:after, .list-inline:after, .nav:after, .share-nav:after, .field--link:after, .field--prev-next:after, .radio-button-list > li:after, .field--radio-button-group:after, .segmented-control:after, .traffic-info__body h3:after, .traffic-info__body h4:after, .map-nav--view-type:after, .switch-nav:after {
-  clear: both;
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+.absolute--bottom-left {
+  bottom: 0;
+  left: 0; }
+
+.absolute--bottom-right {
+  bottom: 0;
+  right: 0; }
+
+.absolute--top-left {
+  top: 0;
+  left: 0; }
+
+.absolute--top-right {
+  top: 0;
+  right: 0; }
+
+.center-element {
+  margin-left: auto;
+  margin-right: auto; }
+
+.align--top, .subnav--tertiary, .grid > *, .grid__item {
+  vertical-align: top; }
+
+.align--middle, .grid--middle > *, .pill, .pill--roadworks, .pill--orange {
+  vertical-align: middle; }
+
+.align--baseline {
+  vertical-align: baseline; }
+
+.align--bottom, .grid--bottom > * {
+  vertical-align: bottom; }
 
 .hide {
   display: none; }
@@ -447,7 +491,7 @@ h2, h3, h4, h5, h6, .intro {
   margin-bottom: 1.25rem;
   /* fallback  times by 6 */ }
 
-.list-styled--disc, ul, ol {
+ul, ol {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
   /* fallback  times by 6 */ }
@@ -1632,7 +1676,7 @@ li ul, li ol, .segmented-control label {
   padding-left: 0.75rem;
   /* fallback  times by 6 */ }
 
-.anchor-links, .list-styled--disc, ul, ol, .prev-link {
+.anchor-links, ul, ol, .prev-link {
   padding-left: 16px;
   padding-left: 1rem;
   /* fallback  times by 6 */ }
@@ -2588,30 +2632,6 @@ fieldset, .field, [type='text'], [type='email'], [type='date'], [type='number'],
 .body-copy a, .textlink {
   background-position: 0 100%; }
 
-.breadcrumb > li a, .btn, .btn--submit, .email-wrapper input[type='submit'], .link-complex {
-  background-image: none !important; }
-
-.subnav h2, .subnav h3, .subnav--tertiary h3, .content-block h2 {
-  position: relative; }
-  .subnav h2:before, .subnav h3:before, .subnav--tertiary h3:before, .content-block h2:before {
-    height: 2px;
-    display: block;
-    width: 22.5%;
-    background: rgba(37, 117, 174, 0.5);
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .subnav h2:after, .subnav h3:after, .subnav--tertiary h3:after, .content-block h2:after {
-    display: block;
-    content: '';
-    background: rgba(37, 117, 174, 0.25);
-    height: 1px;
-    width: 72.5%;
-    top: 0;
-    right: 0;
-    position: absolute; }
-
 .btn--submit:hover, .segmented-control label:hover {
   cursor: pointer; }
 
@@ -2760,22 +2780,6 @@ h5, h6, p, .text, code, blockquote, caption, address, .statistics__label, .map-n
   h6 {
     margin-bottom: 12px;
     margin-bottom: 0.75rem; } }
-
-@media only screen and (min-width: 37.5em) {
-  .text-right--medium {
-    text-align: right; } }
-
-h3, h4, h5, .font-bold, strong, b, .btn--submit, .btn--primary, .email-wrapper input[type='submit'], .btn--secondary, .nav-transaction__title, .action--bold span, .statistics__label, .subnav__child__link, .field__label, .segmented-control label, .map-nav--tools .map-nav__item, .webcam__caption, h1 > .highway, h2 > .highway, h3 > .highway {
-  font-weight: 600; }
-
-h1, h2, h6, p, .text, code, blockquote, caption, address, .statistics__sub-label, .subnav .subnav__intro, .field__label span, .segmented-control label span, .webcam__last-update {
-  font-weight: 400; }
-
-.intro, .font-light, .statistics__figure {
-  font-weight: 300; }
-
-.font-italic, .font-bold-italic, .font-light-italic, em, i, cite {
-  font-style: italic; }
 
 .subnav__child__link:hover {
   text-decoration: underline; }
@@ -3592,10 +3596,10 @@ blockquote {
     padding-bottom: 1.25rem; } }
 
 @media only screen and (max-width: 37.49em) {
-  .small-block-list {
+  .small-list--block {
     list-style: none;
     padding-left: 0; }
-    .small-block-list > li {
+    .small-list--block > li {
       list-style: none;
       margin: 0;
       display: block; } }
@@ -3618,6 +3622,25 @@ blockquote {
 .grid.large-grid--table, .grid.medium-grid--table {
   margin-left: 0;
   margin-right: 0; }
+
+@media only screen and (min-width: 37.5em) {
+  .append--q-medium:after {
+    content: attr(data-append-medium);
+    display: inline-block; } }
+
+@media only screen {
+  .append--q-small:after {
+    content: attr(data-append-small);
+    display: inline-block; } }
+
+@media only screen and (min-width: 37.5em) {
+  .text-right--medium {
+    text-align: right; } }
+
+.test {
+  content: '';
+  width: 0;
+  height: 0; }
 
 .ratio-square, .ratio-filmic {
   position: relative;
@@ -3643,26 +3666,6 @@ blockquote {
   position: absolute;
   bottom: 0; }
 
-/**
-
-### Append and Prepend
-
-Place something before or after an element
-
-```html
-<p class="prepend" data-prepend="email:">&nbsp;email@gmail.com</p>
-<p class="append" data-append="is my email">email@gmail.com&nbsp;</p>
-```
-
-*/
-.prepend:before {
-  content: attr(data-prepend);
-  display: inline-block; }
-
-.append:after {
-  content: attr(data-append);
-  display: inline-block; }
-
 .split {
   text-align: left;
   list-style: none;
@@ -3673,45 +3676,32 @@ Place something before or after an element
   float: right;
   clear: left; }
 
-@media only screen and (min-width: 37.5em) {
-  .append--q-medium:after {
-    content: attr(data-append-medium);
-    display: inline-block; } }
-
-@media only screen {
-  .append--q-small:after {
-    content: attr(data-append-small);
-    display: inline-block; } }
-
 .device {
   border-radius: 50px; }
   @media only screen and (max-width: 59.99em) {
     .device {
       border-radius: 30px; } }
 
-/**
-
-###Screen reader content
-
-We've found some odd bugs with the -999px textindent hack. 
-Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.
-
-This is borrowed from Bootstrap.
-
-```html
- <a class="sr-only" href="#content">Skip to main content</a>
-```
-
-*/
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0; }
+.subnav h2, .subnav h3, .subnav--tertiary h3, .content-block h2 {
+  position: relative; }
+  .subnav h2:before, .subnav h3:before, .subnav--tertiary h3:before, .content-block h2:before {
+    height: 2px;
+    display: block;
+    width: 22.5%;
+    background: rgba(37, 117, 174, 0.5);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .subnav h2:after, .subnav h3:after, .subnav--tertiary h3:after, .content-block h2:after {
+    display: block;
+    content: '';
+    background: rgba(37, 117, 174, 0.25);
+    height: 1px;
+    width: 72.5%;
+    top: 0;
+    right: 0;
+    position: absolute; }
 
 /**
 ## Components
@@ -3739,6 +3729,7 @@ This is borrowed from Bootstrap.
     float: none;
     font-size: medium; }
   .grid--justify:after {
+    height: 0;
     width: 100%;
     content: ''; }
 
@@ -3748,6 +3739,7 @@ This is borrowed from Bootstrap.
   /* [3] */ }
 
 .section--nav > .section__content:after {
+  height: 0;
   content: ''; }
 
 @media only screen and (max-width: 37.49em) {
@@ -3992,9 +3984,12 @@ This is borrowed from Bootstrap.
 .anchor-links {
   background-color: #f4f8fb; }
   .anchor-links li:before, .anchor-links li:after {
+    width: 0;
+    height: 0;
     top: 12px;
     top: 0.75rem; }
   .anchor-links li:before {
+    left: 0;
     content: '';
     border: 4px solid transparent;
     border-top: 4px solid #555; }
@@ -4121,7 +4116,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   .link--disabled .link-complex__link {
     color: #777; }
 
-.list-styled--disc, ul, ol {
+ul, ol {
   padding-top: 0;
   margin-left: 0;
   margin-top: 0; }
@@ -4812,15 +4807,19 @@ select {
   margin-top: -0.125rem;
   border-width: 4px;
   border-width: 0.25rem;
+  width: 0;
+  height: 0;
   top: 50%;
   content: '';
   border-color: transparent;
   border-style: solid; }
 
 .prev-link:before {
+  left: 0;
   border-right-color: #236FA6; }
 
 .next-link:after {
+  right: 0;
   border-left-color: #236FA6; }
 
 /*------------------------------------*\
@@ -4858,6 +4857,7 @@ select {
     #RADIO BUTTON LIST
 \*------------------------------------*/
 .radio-button-list input {
+  left: 0;
   top: 32%; }
 
 /*------------------------------------*\

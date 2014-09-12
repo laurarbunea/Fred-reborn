@@ -9,6 +9,53 @@
 /*------------------------------------*\
     #EXTENDS
 \*------------------------------------*/
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, .text:first-child, li:first-child, code:first-child, .intro:first-child, ul:first-child, li:first-child, p:first-child, .text:first-child, code:first-child, dt:first-child, dd:first-child, td:first-child {
+  margin-top: 0; }
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .isWindowsChrome .antialiased {
+    -webkit-font-smoothing: subpixel-antialiased; }
+
+.prepend:before {
+  content: attr(data-prepend);
+  display: inline-block; }
+
+.append:after {
+  content: attr(data-append);
+  display: inline-block; }
+
+.clearfix, .list--inline {
+  /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+  *zoom: 1; }
+
+.clearfix:before, .list--inline:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after, .list--inline:after {
+  clear: both;
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
 .text-center, .swatch__top, .swatch__bottom {
   text-align: center; }
 
@@ -24,29 +71,76 @@
 .lowercase {
   text-transform: lowercase; }
 
-.styleguide__api__code-view, .anatomy-block {
-  position: relative; }
+.font-bold, h3, h4, h5, strong, b {
+  font-weight: 600; }
 
-.styleguide__api__code-view:after, .styleguide__api__code-view.showhide-active:after, .anatomy-block:before {
-  position: absolute; }
+h1, h2, h6, p, .text, code, blockquote, caption, address {
+  font-weight: 400; }
 
-dl dt {
+.font-light, .intro, .styleguide__navigation li {
+  font-weight: 300; }
+
+.font-italic, .font-bold-italic, .font-light-italic, em, i, cite {
+  font-style: italic; }
+
+.list--inline, .list--block, .list--unstyled {
+  list-style: none;
+  padding-left: 0; }
+  .list--unstyled > li {
+    list-style: none;
+    margin: 0; }
+
+.list--inline > li {
+  margin-top: 0;
+  display: inline-block;
+  padding-left: 0; }
+
+.list--block > li {
+  display: block; }
+
+.left, dl dt {
   float: left; }
 
-.anatomy-block:before {
+.right {
+  float: right; }
+
+.relative, .styleguide__api__code-view, .anatomy-block {
+  position: relative; }
+
+.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right, .styleguide__api__code-view:after, .styleguide__api__code-view.showhide-active:after, .anatomy-block:before {
+  position: absolute; }
+
+.absolute--bottom-left {
+  bottom: 0;
   left: 0; }
 
-.styleguide__api__code-view:after, .styleguide__api__code-view.showhide-active:after {
+.absolute--bottom-right {
+  bottom: 0;
   right: 0; }
 
-.styleguide__api__code-view:after, .styleguide__api__code-view.showhide-active:after {
-  width: 0; }
+.absolute--top-left {
+  top: 0;
+  left: 0; }
 
-.styleguide__api__code-view:after, .styleguide__api__code-view.showhide-active:after {
-  height: 0; }
+.absolute--top-right {
+  top: 0;
+  right: 0; }
 
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, .text:first-child, li:first-child, code:first-child, .intro:first-child, ul:first-child, li:first-child, p:first-child, .text:first-child, code:first-child, dt:first-child, dd:first-child, td:first-child {
-  margin-top: 0; }
+.center-element {
+  margin-left: auto;
+  margin-right: auto; }
+
+.align--top {
+  vertical-align: top; }
+
+.align--middle {
+  vertical-align: middle; }
+
+.align--baseline {
+  vertical-align: baseline; }
+
+.align--bottom {
+  vertical-align: bottom; }
 
 .hide {
   display: none; }
@@ -2231,9 +2325,6 @@ dd {
 .body-copy a, .textlink {
   background-position: 0 100%; }
 
-.styleguide__api__code-view {
-  background-image: none !important; }
-
 .styleguide__api__code-view:hover {
   cursor: pointer; }
 
@@ -2347,22 +2438,6 @@ h5, h6, p, .text, code, blockquote, caption, address {
   h6 {
     margin-bottom: 12px;
     margin-bottom: 0.75rem; } }
-
-@media only screen and (min-width: 37.5em) {
-  .text-right--medium {
-    text-align: right; } }
-
-h3, h4, h5, .font-bold, strong, b {
-  font-weight: 600; }
-
-h1, h2, h6, p, .text, code, blockquote, caption, address {
-  font-weight: 400; }
-
-.intro, .font-light, .styleguide__navigation li {
-  font-weight: 300; }
-
-.font-italic, .font-bold-italic, .font-light-italic, em, i, cite {
-  font-style: italic; }
 
 a {
   outline: 0;
@@ -2613,6 +2688,9 @@ pre > code {
       padding-right: 4%; } }
 
 .styleguide__api__code-view:after, .styleguide__api__code-view.showhide-active:after {
+  right: 0;
+  width: 0;
+  height: 0;
   content: "";
   top: 47%;
   border-left: 6px solid transparent;
@@ -2638,6 +2716,7 @@ pre > code {
   .anatomy-block:first-child:before {
     content: none; }
   .anatomy-block:before {
+    left: 0;
     top: -24px;
     content: '✁';
     color: #999; }
