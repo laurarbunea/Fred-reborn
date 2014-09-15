@@ -9,6 +9,11 @@
 /*------------------------------------*\
     #EXTENDS
 \*------------------------------------*/
+.text--overflow {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, .text:first-child, li:first-child, code:first-child, .intro:first-child, ul:first-child, li:first-child, p:first-child, .text:first-child, code:first-child, dt:first-child, dd:first-child, td:first-child {
   margin-top: 0; }
 
@@ -83,6 +88,12 @@ h1, h2, h6, p, .text, code, blockquote, caption, address {
 .font-italic, .font-bold-italic, .font-light-italic, em, i, cite {
   font-style: italic; }
 
+.text--overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%; }
+
 .list--inline, .list--block, .list--unstyled {
   list-style: none;
   padding-left: 0; }
@@ -104,11 +115,11 @@ h1, h2, h6, p, .text, code, blockquote, caption, address {
 .right {
   float: right; }
 
-.relative, .styleguide__api__code-view, .anatomy-block {
-  position: relative; }
-
 .absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right, .styleguide__api__code-view:after, .styleguide__api__code-view.showhide-active:after, .anatomy-block:before {
   position: absolute; }
+
+.relative, .styleguide__api__code-view, .anatomy-block {
+  position: relative; }
 
 .absolute--bottom-left {
   bottom: 0;

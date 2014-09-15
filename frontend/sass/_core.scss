@@ -165,24 +165,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//to add to fred
-
-.text--hidden {
-//see fred
-}
-
 %text--overflow {
     @extend %inline-block;
     overflow: hidden;
@@ -190,17 +172,9 @@
     white-space: nowrap;
     max-width: 100%;
 }
-.text-overflow {
-    @extend %text-overflow;
+.text--overflow {
+    @extend %text--overflow;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -256,8 +230,9 @@
 // Positioning - Absolute, Floating and Clearfixing
 // -----------------------------------------------------------------------------
 
-%relative { position: relative; }
+
 %absolute { position: absolute; }
+%relative { position: relative; }
 
 .relative { @extend %relative; }
 .absolute { @extend %absolute; }

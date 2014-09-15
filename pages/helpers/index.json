@@ -19,7 +19,7 @@
                             "data": [
                                 { 
                                     "type": "h3",
-                                    "data": "helpers"
+                                    "data": "Core"
                                 },
                                 "Here are some handy little classes that will come in useful when building modules for this site."
                             ]
@@ -277,12 +277,54 @@
                                     "data": [
                                         {
                                             "type": "h4",
-                                            "data": "Tetx overflow"
+                                            "data": "Text overflow"
                                         },
-                                        "to add"
+                                        {
+                                            "type": "code-and-example",
+                                            "data": [
+                                                "<p class='text--overflow'>I am a really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
+                                            ]
+                                        }
                                     ]
                                 }
                                 
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "list-helpers",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "List helpers"
+                                },
+                                "blah",
+                                {
+                                    "type": "h4",
+                                    "data": "Inline list"
+                                },
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<ul class='list--inline'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
+                                    ]
+                                },
+                                {
+                                    "type": "h4",
+                                    "data": "Block lists"
+                                },
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<ul class='list--block'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -305,21 +347,51 @@
                                     "data": "Floating helpers"
                                 },
                                 {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<div class='clearfix'>\n  <p class='right'/>I'm floating left</p>\n  <p>I'm floating right</p>\n</div>"
+                                    ]
+                                },
+                                {
                                     "type": "h4",
                                     "data": "Absolute and Relative helpers"
+                                },
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<div class='relative' style='height:100px; width:100%'>\n  <p class='absolute--top-right'/>I'm positioned top right</p>\n  <p class='absolute--top-left'/>I'm positioned top left</p>\n  <p class='absolute--bottom-left'/>I'm positioned bottom left</p>\n  <p class='absolute--bottom-right'/>I'm positioned bottom right</p>\n</div>"
+                                    ]
                                 },
                                 {
                                     "type": "h4",
                                     "data": "Centering elements"
                                 },
                                 {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<div class='center-element' style='width:100px;' >\n   <p>I am centered</p>\n</div>"
+                                    ]
+                                },
+                                {
                                     "type": "h4",
                                     "data": "Alligning elements"
                                 },
                                 {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "example here please"
+                                    ]
+                                },
+                                {
                                     "type": "h4",
                                     "data": "Overflow"
-                                } 
+                                },
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<div class=clearfix'>\n  <p class='right'/>I'm floating left</p>\n  <p>I'm floating right</p>\n</div>"
+                                    ]
+                                }
                             ]
                         }
                     ]

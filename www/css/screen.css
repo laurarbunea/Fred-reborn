@@ -185,7 +185,7 @@ blockquote:before, blockquote:after {
 /*------------------------------------*\
     #EXTENDS
 \*------------------------------------*/
-.breadcrumb > li, .footer_pages a, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .subnav--tertiary, .section--nav > .section__content:after, .breadcrumb > li:last-child, .btn, .btn--submit, .email-wrapper input[type='submit'], .share-nav > li > a, .field--bare, .segmented-control > li, .traffic-metrics > *, .map-nav__item > a > span, .section--map-nav, .route__item:after, .webcam-list, .webcam-list > li, .map-nav--view-type, .switch-nav {
+.text--overflow, .breadcrumb > li, .footer_pages a, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .subnav--tertiary, .section--nav > .section__content:after, .breadcrumb > li:last-child, .btn, .btn--submit, .email-wrapper input[type='submit'], .share-nav > li > a, .field--bare, .segmented-control > li, .traffic-metrics > *, .map-nav__item > a > span, .section--map-nav, .route__item:after, .webcam-list, .webcam-list > li, .map-nav--view-type, .switch-nav {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -267,7 +267,7 @@ h1, h2, h6, p, .text, code, blockquote, caption, address, .statistics__sub-label
 .font-italic, .font-bold-italic, .font-light-italic, em, i, cite {
   font-style: italic; }
 
-.breadcrumb > li {
+.text--overflow, .breadcrumb > li {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -294,11 +294,11 @@ h1, h2, h6, p, .text, code, blockquote, caption, address, .statistics__sub-label
 .right, .footer_social-links, .right, .global-nav__items > *, .next-link, .segmented-control--timeslots label span {
   float: right; }
 
-.relative, .layout--nudge, .relative, .anchor-links li, .section--nav > .section__content, .global-nav, .field--prev-next, .radio-button-list > li, .segmented-control > li {
-  position: relative; }
-
 .absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right, .anchor-links li:before, .anchor-links li:after, .section--nav, body:after, .header__image + .header__title, .prev-link:before, .next-link:after, .radio-button-list input, .segmented-control input {
   position: absolute; }
+
+.relative, .layout--nudge, .relative, .anchor-links li, .section--nav > .section__content, .global-nav, .field--prev-next, .radio-button-list > li, .segmented-control > li {
+  position: relative; }
 
 .absolute--bottom-left {
   bottom: 0;
