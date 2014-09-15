@@ -74,6 +74,7 @@
 .grid--middle {
     > * { @extend %align--middle; }
 }
+
 .grid--bottom {
     > * { @extend %align--bottom; }
 }
@@ -105,6 +106,13 @@
 
 }
 
+.grid--float {
+    @extend %clearfix;
+    & > * {
+        @extend %inline-block;
+        @extend %left;
+    } 
+}
 .medium-grid--table {
 
     @include medium {

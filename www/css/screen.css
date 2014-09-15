@@ -185,7 +185,7 @@ blockquote:before, blockquote:after {
 /*------------------------------------*\
     #EXTENDS
 \*------------------------------------*/
-.text--overflow, .breadcrumb > li, .footer_pages a, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .subnav--tertiary, .section--nav > .section__content:after, .breadcrumb > li:last-child, .btn, .btn--submit, .email-wrapper input[type='submit'], .share-nav > li > a, .field--bare, .segmented-control > li, .traffic-metrics > *, .map-nav__item > a > span, .section--map-nav, .route__item:after, .webcam-list, .webcam-list > li, .map-nav--view-type, .switch-nav {
+.text--overflow, .breadcrumb > li, .footer_pages a, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .subnav--tertiary, .section--nav > .section__content:after, .grid--float > *, .breadcrumb > li:last-child, .btn, .btn--submit, .email-wrapper input[type='submit'], .share-nav > li > a, .field--bare, .segmented-control > li, .traffic-metrics > *, .map-nav__item > a > span, .section--map-nav, .route__item:after, .webcam-list, .webcam-list > li, .map-nav--view-type, .switch-nav {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -210,20 +210,20 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
   content: attr(data-append);
   display: inline-block; }
 
-.clearfix, .list--inline, .breadcrumb, .nav, .share-nav, .field--link, .field--prev-next, .radio-button-list > li, .field--radio-button-group, .segmented-control, .traffic-info__body h3, .traffic-info__body h4, .map-nav--view-type, .switch-nav {
+.clearfix, .list--inline, .breadcrumb, .nav, .grid--float, .share-nav, .field--link, .field--prev-next, .radio-button-list > li, .field--radio-button-group, .segmented-control, .traffic-info__body h3, .traffic-info__body h4, .map-nav--view-type, .switch-nav {
   /**
      * For IE 6/7 only
      * Include this rule to trigger hasLayout and contain floats.
      */
   *zoom: 1; }
 
-.clearfix:before, .list--inline:before, .breadcrumb:before, .nav:before, .share-nav:before, .field--link:before, .field--prev-next:before, .radio-button-list > li:before, .field--radio-button-group:before, .segmented-control:before, .traffic-info__body h3:before, .traffic-info__body h4:before, .map-nav--view-type:before, .switch-nav:before {
+.clearfix:before, .list--inline:before, .breadcrumb:before, .nav:before, .grid--float:before, .share-nav:before, .field--link:before, .field--prev-next:before, .radio-button-list > li:before, .field--radio-button-group:before, .segmented-control:before, .traffic-info__body h3:before, .traffic-info__body h4:before, .map-nav--view-type:before, .switch-nav:before {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, .list--inline:after, .breadcrumb:after, .nav:after, .share-nav:after, .field--link:after, .field--prev-next:after, .radio-button-list > li:after, .field--radio-button-group:after, .segmented-control:after, .traffic-info__body h3:after, .traffic-info__body h4:after, .map-nav--view-type:after, .switch-nav:after {
+.clearfix:after, .list--inline:after, .breadcrumb:after, .nav:after, .grid--float:after, .share-nav:after, .field--link:after, .field--prev-next:after, .radio-button-list > li:after, .field--radio-button-group:after, .segmented-control:after, .traffic-info__body h3:after, .traffic-info__body h4:after, .map-nav--view-type:after, .switch-nav:after {
   clear: both;
   content: " ";
   /* 1 */
@@ -288,7 +288,7 @@ h1, h2, h6, p, .text, code, blockquote, caption, address, .statistics__sub-label
 .list--block > li {
   display: block; }
 
-.left, dl dt, .left, .prev-link, .email-wrapper [type='email'], .segmented-control > li {
+.left, dl dt, .left, .grid--float > *, .prev-link, .email-wrapper [type='email'], .segmented-control > li {
   float: left; }
 
 .right, .footer_social-links, .right, .global-nav__items > *, .next-link, .segmented-control--timeslots label span {
@@ -3267,6 +3267,12 @@ blockquote {
   background-color: #D7D7D7;
   color: #3d4c54; }
 
+.theme--music {
+  background-color: #fff;
+  color: #000; }
+  .theme--music h1, .theme--music h2, .theme--music h3, .theme--music h4, .theme--music h5, .theme--music a {
+    color: #37b67f; }
+
 /*------------------------------------*\
     #THEMING
 \*------------------------------------*/
@@ -3653,6 +3659,9 @@ blockquote {
 @media only screen and (min-width: 37.5em) {
   .text-right--medium {
     text-align: right; } }
+
+.text-muted {
+  color: grey; }
 
 .test {
   content: '';
