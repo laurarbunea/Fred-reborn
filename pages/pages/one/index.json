@@ -1,0 +1,46 @@
+{
+    "title": "Page one",
+    "headline": "Page one",
+    "template":"/pages/device.j2",
+    "data": [ 
+        {
+          "type":"grid-one-col",
+          "grid_modifier":"grid--middle",
+          "data":[
+            {
+              "type": "breadcrumb",
+              "data": [
+                {
+                  "url": "#",
+                  "title": "Link 1"
+                },
+                {
+                  "url": "#",
+                  "title": "Link 2"
+                }
+              ]
+            }
+        
+          ]
+        },  
+        {
+          "type":"grid-half",
+          "grid_modifier":"grid--middle",
+          "theme":"theme--white",
+          "column_one":[
+              {
+                 
+                  "data":"hi there"
+              }
+              
+          ],
+          "column_two":[
+              {
+        
+                  "data":"hello"
+              }
+             
+          ] 
+        }  
+    ]
+}

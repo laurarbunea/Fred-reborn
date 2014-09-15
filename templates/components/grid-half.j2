@@ -1,0 +1,23 @@
+<div class='[ grid {{item.grid_modifier }} ]'>
+
+    
+
+        <div class="[ col half ] {{item.theme }} {{item.class }}">
+            {% for item in item.column_one %}
+                {{ item|children }}
+            {% endfor %}
+        </div>
+
+   
+
+    
+
+        <div class="[ col half ] {{item.theme }} {{item.class }}">
+            {% for item in item.column_two %}
+                {{ item|children }}
+            {% endfor %}
+        </div>
+
+   
+
+</div>

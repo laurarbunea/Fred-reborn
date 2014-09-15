@@ -426,6 +426,11 @@ hr, .field--link {
   margin-top: 1.75rem;
   /* fallback  times by 6 */ }
 
+.code-example + h3 {
+  margin-top: 32px;
+  margin-top: 2rem;
+  /* fallback  times by 6 */ }
+
 .mt-xxxl {
   margin-top: 32px;
   margin-top: 2rem;
@@ -1666,7 +1671,7 @@ li ul, li ol, .segmented-control label {
   padding-left: 0.5rem;
   /* fallback  times by 6 */ }
 
-.list--home, .device .device__menu, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
+.list--home, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
   padding-left: 12px;
   padding-left: 0.75rem;
   /* fallback  times by 6 */ }
@@ -1746,7 +1751,7 @@ li ul, li ol, .segmented-control label {
   padding-right: 0.5rem;
   /* fallback  times by 6 */ }
 
-.device .device__menu, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
+.code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
   padding-right: 12px;
   padding-right: 0.75rem;
   /* fallback  times by 6 */ }
@@ -3258,7 +3263,7 @@ blockquote {
   background-color: #f0f0f0;
   color: #3d4c54; }
 
-.theme--grey, .device .device__menu {
+.theme--grey {
   background-color: #D7D7D7;
   color: #3d4c54; }
 

@@ -18,7 +18,7 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h1",
                                     "data": "Core"
                                 },
                                 "Here are some handy little classes that will come in useful when building modules for this site.",
@@ -42,7 +42,6 @@
                         }
                     ]
                 },
-                
                 {
                     "type" : "section",
                     "size": "s",
@@ -52,11 +51,11 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h2",
                                     "data": "Blocks"
                                 },
                                 { 
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Inline blocks"
                                 },
                                 "Inline blocks are handy for everything. We don't often support projects in IE7 and below, but since it's trivial to hack it in, we've included it here.",
@@ -68,7 +67,7 @@
                                     ]
                                 },
                                 { 
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Block elements"
                                 },
                                 "Blocks are handy for everything",
@@ -91,11 +90,11 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h2",
                                     "data": "First child helpers"
                                 },
                                 { 
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Remove top margin from first-child elements"
                                 },
                                 {
@@ -105,7 +104,7 @@
                                     ]
                                 },
                                 { 
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Remove top border from first-child elements"
                                 },
                                 {
@@ -128,7 +127,7 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h2",
                                     "data": "Fixing Chrome/WebKit type rendering"
                                 },
                                "Since v22, Chrome makes fat sausage horrible web typography. Fix it with these properties right here:",
@@ -166,7 +165,7 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h2",
                                     "data": "Append and Prepend"
                                 },
                                 "Place something before or after an element",
@@ -192,7 +191,7 @@
                             "data": [
 
                                 { 
-                                    "type": "h4",
+                                    "type": "h2",
                                     "data": "Clearfixing"
                                 },
                                 "Table-pseudo element clearfix. It is good.",
@@ -225,7 +224,7 @@
                             "data": [
 
                                 { 
-                                    "type": "h4",
+                                    "type": "h2",
                                     "data": "Screen reader content"
                                 },
                                 "We've found some odd bugs with the -999px textindent hack. Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.",
@@ -250,12 +249,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h2",
                                     "data": "Typography helpers"
                                 },
                                 "Here are some handy little classes that will come in useful when building modules for this site.",
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Text alignment classes"
                                 },
                                 {
@@ -265,22 +264,17 @@
                                     ]
                                 },        
                                 {
-                                    "type": "section",
-                                    "data": [
-                                        {
-                                            "type": "h4",
-                                            "data": "Uppercase and lowercase"
-                                        },
-                                        {
-                                            "type": "code-and-example",
-                                            "data": [
-                                                "<p class='uppercase'>uppercase</p>\n<p class='lowercase'>lowercase</p>"
-                                            ]
-                                        }
-                                    ]
+                                    "type": "h3",
+                                    "data": "Uppercase and lowercase"
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<p class='uppercase'>uppercase</p>\n<p class='lowercase'>lowercase</p>"
+                                    ] 
+                                },
+                                {
+                                    "type": "h3",
                                     "data": "Font weights "
                                 },
                                 {
@@ -289,21 +283,18 @@
                                         "<p class='font-bold'>font-bold</p>\n<p class='font-light'>font-light</p>\n<p class='font-italic'>font-italic</p>\n<p class='font-italic font-bold'>font-italic and font bold</p>\n<p class='font-italic font-light'>font-italic and font light</p>"
                                     ]
                                 },
+                               
                                 {
-                                    "type": "section",
+                                    "type": "h3",
+                                    "data": "Text overflow"
+                                },
+                                {
+                                    "type": "code-and-example",
                                     "data": [
-                                        {
-                                            "type": "h4",
-                                            "data": "Text overflow"
-                                        },
-                                        {
-                                            "type": "code-and-example",
-                                            "data": [
-                                                "<p class='text--overflow'>I am a really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
-                                            ]
-                                        }
+                                        "<p class='text--overflow'>I am a really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
                                     ]
                                 }
+                                    
                                 
                             ]
                         }
@@ -318,12 +309,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h2",
                                     "data": "List helpers"
                                 },
                                 "blah",
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Inline list"
                                 },
                                 {
@@ -333,7 +324,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Block lists"
                                 },
                                 {
@@ -355,12 +346,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h2",
                                     "data": "Layout helpers"
                                 },
                                 "blah",
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Floating helpers"
                                 },
                                 {
@@ -370,7 +361,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Absolute and Relative helpers"
                                 },
                                 {
@@ -380,7 +371,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Centering elements"
                                 },
                                 {
@@ -390,7 +381,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Alligning elements"
                                 },
                                 {
@@ -400,7 +391,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Overflow"
                                 },
                                 {
@@ -422,12 +413,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h3",
+                                    "type": "h2",
                                     "data": "Link helpers"
                                 },
                                 "blah",
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Disabled link"
                                 },
                                 {
@@ -437,7 +428,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Draggable link"
                                 },
                                 {
@@ -447,7 +438,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "h3",
                                     "data": "Clean link"
                                 },
                                 {

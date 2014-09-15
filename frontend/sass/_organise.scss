@@ -39,7 +39,9 @@
 
 
 
-
+.code-example + h3 {
+    @extend %mt-xxxl;
+}
 
 
 
@@ -101,11 +103,9 @@
     .device__menu {
         @extend %pt-s;
         @extend %pb-s;
-        @extend %pl-s;
-        @extend %pr-s;
         @extend %mb-0;
         @extend %text-small;
-        @extend %theme--grey;
+
     }
     @extend %theme--dark;
     border-radius: 50px;
