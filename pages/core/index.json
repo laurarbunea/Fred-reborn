@@ -32,9 +32,10 @@
                                         "<a href='' class='pill'>Append and Prepend </a>",
                                         "<a href='' class='pill'>Clearfixing</a>",
                                         "<a href='' class='pill'>Screen reader content </a>",
-                                        "<a href='' class='pill'>Typography helpers </a>",
-                                        "<a href='' class='pill'>List helpers </a>",
-                                        "<a href='' class='pill'>Layout helpers </a>"
+                                        "<a href='typography-helpers' class='pill'>Typography helpers </a>",
+                                        "<a href='list-helpers' class='pill'>List helpers </a>",
+                                        "<a href='layout-helpers' class='pill'>Layout helpers </a>",
+                                        "<a href='link-helpers' class='pill'>Links</a>"
                                     ]
                                 }
                             ]
@@ -408,6 +409,54 @@
                                         "<div class=clearfix'>\n  <p class='right'/>I'm floating left</p>\n  <p>I'm floating right</p>\n</div>"
                                     ]
                                 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "section",
+                    "size": "s",
+                    "anchor" : "link-helpers",
+                    "data": [
+                        {
+                            "type" : "/pattern-library/section-block",
+                            "data": [
+                                { 
+                                    "type": "h3",
+                                    "data": "Link helpers"
+                                },
+                                "blah",
+                                {
+                                    "type": "h4",
+                                    "data": "Disabled link"
+                                },
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<a href='' class='is-disabled'>I'm a disabled link</a>"
+                                    ]
+                                },
+                                {
+                                    "type": "h4",
+                                    "data": "Draggable link"
+                                },
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<a href='' class='is-draggable'>I'm a disabled link</a>"
+                                    ]
+                                },
+                                {
+                                    "type": "h4",
+                                    "data": "Clean link"
+                                },
+                                {
+                                    "type": "code-and-example",
+                                    "data": [
+                                        "<a href='' class='clean-link'>I'm a clean link</a>"
+                                    ]
+                                }
+                              
                             ]
                         }
                     ]

@@ -279,6 +279,8 @@
 %align--baseline {vertical-align: baseline;}
 %align--bottom {vertical-align: bottom;}
 
+
+//add to docs
 .align--top { @extend %align--top; } 
 .align--middle { @extend %align--middle; } 
 .align--baseline { @extend %align--baseline; } 
@@ -355,6 +357,38 @@
         cursor: pointer;
     }
 }
+// -----------------------------------------------------------------------------
+// Anchors
+// -----------------------------------------------------------------------------
+
+
+.is-draggable {
+    cursor: move;
+}
+
+// Link states
+// http://www.thecssninja.com/javascript/pointer-events-60fps
+.is-disabled,
+.is-disabled * {
+    cursor: default;
+    pointer-events: none !important;
+}
+
+// A link without any text-decoration at all.
+%clean-link {
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+    text-decoration: none;
+}
+// A link with out any text decoration
+.clean-link {
+    @extend %clean-link;
+}
+
+
 
 // -----------------------------------------------------------------------------
 // Border and border radius helpers

@@ -2635,6 +2635,18 @@ fieldset, .field, [type='text'], [type='email'], [type='date'], [type='number'],
 .btn--submit:hover, .segmented-control label:hover {
   cursor: pointer; }
 
+.is-draggable {
+  cursor: move; }
+
+.is-disabled, .is-disabled * {
+  cursor: default;
+  pointer-events: none !important; }
+
+.clean-link {
+  text-decoration: none; }
+  .clean-link:hover, .clean-link:active, .clean-link:focus {
+    text-decoration: none; }
+
 .segmented-control--1-segments li {
   border-radius: 4px;
   border-radius: 0.25rem; }
