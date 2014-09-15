@@ -1,7 +1,7 @@
 {
     "title": "helpers",
     "headline": "Helpers",
-    "template":"/pages/helpers.j2",
+    "template":"/pages/core.j2",
     "data": [
         {
             "type": "container",
@@ -21,11 +21,27 @@
                                     "type": "h3",
                                     "data": "Core"
                                 },
-                                "Here are some handy little classes that will come in useful when building modules for this site."
+                                "Here are some handy little classes that will come in useful when building modules for this site.",
+                                {
+                                    "type": "list",
+                                    "class": "list--inline",
+                                    "data": [
+                                        "<a href='' class='pill'>Blocks</a>",
+                                        "<a href='' class='pill'>First child helpers</a>",
+                                        "<a href='' class='pill'>Webkit rendering</a>",
+                                        "<a href='' class='pill'>Append and Prepend </a>",
+                                        "<a href='' class='pill'>Clearfixing</a>",
+                                        "<a href='' class='pill'>Screen reader content </a>",
+                                        "<a href='' class='pill'>Typography helpers </a>",
+                                        "<a href='' class='pill'>List helpers </a>",
+                                        "<a href='' class='pill'>Layout helpers </a>"
+                                    ]
+                                }
                             ]
                         }
                     ]
                 },
+                
                 {
                     "type" : "section",
                     "size": "s",
