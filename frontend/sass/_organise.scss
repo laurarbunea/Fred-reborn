@@ -99,6 +99,11 @@
 
 .device {
     @extend %mb-xxxxl;
+    @extend %section-top-xxxxl;
+    @extend %section-bottom-xxxxl;
+    @extend %border-box;
+    @extend %layout-left;
+    @extend %layout-right;
 
     .device__menu {
         @extend %pt-s;

@@ -344,7 +344,7 @@ h1, h2, h6, p, .text, code, blockquote, caption, address, .statistics__sub-label
 .hidden, .segmented-control input {
   visibility: hidden !important; }
 
-.layout, .btn, .btn--submit, .email-wrapper input[type='submit'], .field, [type='text'], [type='email'], [type='date'], [type='number'] {
+.layout, .device, .btn, .btn--submit, .email-wrapper input[type='submit'], .field, [type='text'], [type='email'], [type='date'], [type='number'] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -2885,7 +2885,7 @@ blockquote {
   margin-left: auto;
   margin-right: auto; }
 
-.section-xxxxl, .section, .section-top-xxxxl, .section-top {
+.section-xxxxl, .section, .section-top-xxxxl, .section-top, .device {
   padding-top: 48px;
   padding-top: 3rem; }
 
@@ -2917,7 +2917,7 @@ blockquote {
   padding-top: 8px;
   padding-top: 0.5rem; }
 
-.section-xxxxl, .section, .section-bottom-xxxxl, .section-bottom {
+.section-xxxxl, .section, .section-bottom-xxxxl, .section-bottom, .device {
   padding-bottom: 48px;
   padding-bottom: 3rem; }
 
@@ -3030,22 +3030,22 @@ blockquote {
     padding-right: 32px;
     padding-right: 2rem; } }
 
-.layout, .layout--left, .homepage .content__left {
+.layout, .layout--left, .device, .homepage .content__left {
   padding-left: 1rem; }
   @media only screen and (min-width: 37.5em) {
-    .layout, .layout--left, .homepage .content__left {
+    .layout, .layout--left, .device, .homepage .content__left {
       padding-left: 4%; } }
   @media only screen and (min-width: 60em) {
-    .layout, .layout--left, .homepage .content__left {
+    .layout, .layout--left, .device, .homepage .content__left {
       padding-left: 8.3333333%; } }
 
-.layout, .layout--right, .homepage .content__right {
+.layout, .layout--right, .device, .homepage .content__right {
   padding-right: 1rem; }
   @media only screen and (min-width: 37.5em) {
-    .layout, .layout--right, .homepage .content__right {
+    .layout, .layout--right, .device, .homepage .content__right {
       padding-right: 4%; } }
   @media only screen and (min-width: 60em) {
-    .layout, .layout--right, .homepage .content__right {
+    .layout, .layout--right, .device, .homepage .content__right {
       padding-right: 8.3333333%; } }
 
 @media only screen and (min-width: 60em) {

@@ -1,0 +1,28 @@
+
+{% if item.external_theme %}
+	<div class='{{item.external_theme}}'>
+{% endif %}
+		<div class='[ wrapper ]'>
+			
+			{% if item.section or item.layout %}
+			<div class='[ {{item.section}} {{item.layout}} ] {{item.internal_theme}}'>
+			{% endif %}
+
+				<div class='[ grid ] '>
+
+				    <div class='[ col ]'>
+
+				        {{ item|children }}
+
+				    </div>
+				    
+				</div>
+
+			{% if item.section or item.layout %}
+			</div>
+			{% endif %}
+
+		</div>
+{% if item.external_theme %}
+	</div>
+{% endif %}

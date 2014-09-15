@@ -4,9 +4,10 @@
     "template":"/pages/device.j2",
     "data": [ 
         {
-          "type":"grid-one-col",
+          "layout":"layout",
+          "type":"layout-one-col",
           "grid_modifier":"grid--middle",
-          "grid_theme":"theme--cool",
+          "internal_theme":"theme--cool",
           "data":[
             {
               "type": "breadcrumb",
@@ -25,8 +26,9 @@
         },
         {
           "section":"section",
-          "grid_theme":"theme--cool",
-          "type":"grid",
+          "layout":"layout",
+          "internal_theme":"theme--cool",
+          "type":"layout",
           "grid_modifier":"grid--middle",
           "columns":[
               {
@@ -53,8 +55,9 @@
         },
         {
           "section":"section",
+          "layout":"layout",
           "type":"gallery-quarters",
-          "gallery_theme":"theme--white",
+          "internal_theme":"theme--white",
           "data":[ 
             { 
               "type":"h2",
