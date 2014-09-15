@@ -1,0 +1,61 @@
+{% if item.external_theme %}
+
+<div class='{{item.external_theme}}'>
+
+{% endif %}
+
+    <div class='[ wrapper ]'>
+        
+        {% if item.section or item.layout %}
+
+        <div class='[ {{item.section}} {{item.layout}} ] {{item.internal_theme}}'>
+
+        {% endif %}
+
+            <div class='[ grid {{item.grid_modifier }} ] {{item.theme}}'>
+ 
+                {% for item in item.column_one %}
+                    
+                <div class="[ col third ] {{item.col_theme }} {{item.class }}">
+                    
+                    {{ item|children }}
+                    
+                </div>
+
+                {% endfor %}
+
+                {% for item in item.column_two %}
+                    
+                <div class="[ col third ] {{item.col_theme }} {{item.class }}">
+                    
+                    {{ item|children }}
+                   
+                </div>
+
+                {% endfor %}
+
+                {% for item in item.column_three %}
+                    
+                <div class="[ col third ] {{item.col_theme }} {{item.class }}">
+                    
+                    {{ item|children }}
+                   
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        {% if item.section or item.layout %}
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+{% if item.external_theme %}
+
+</div>
+
+{% endif %}
