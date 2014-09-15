@@ -30,16 +30,17 @@
           "grid_modifier":"grid--middle",
           "columns":[
               {
-                  "col_size":"quarter ",
+                  "col_size":"large-quarter medium-third",
                   "data":[
                     { 
                       "type":"img",
-                      "src":"/images/iphone.png"
+                      "src":"/images/iphone.png", 
+                      "responsive":true
                     }
                   ]
               },
               {
-                  "col_size":"three-quarters",
+                  "col_size":"large-three-quarters medium-two-thirds",
                   "data":[
                     { 
                       "type":"h1",
