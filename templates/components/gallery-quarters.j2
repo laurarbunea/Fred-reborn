@@ -1,0 +1,43 @@
+<div class='[ grid section ] {{item.gallery_theme }} gallery--quarter'>
+
+    {% if item.data %}
+
+        <div class="[ col large-8 ] {{item.col_theme }} {{item.class }} gallery__intro">
+
+            {{ item|children }}
+
+        </div>
+
+   {% endif %}
+
+    {% for gallery_item in item.gallery %}
+        
+        <div class="[ col medium-quarter   ] {{item.col_theme }} {{item.class }} gallery__item mt-m">
+            
+            {% if gallery_item.img %}
+
+                <img src='{{gallery_item.img.src}}' alt='{{gallery_item.img.alt}}' class='img--responsive'>
+
+            {% endif %}
+
+            {% if gallery_item.title %}
+
+                <h4>
+                    {{gallery_item.title}}
+                </h4>
+
+            {% endif %}
+
+            {% if gallery_item.caption %}
+
+                <p>
+                    {{gallery_item.caption}}
+                </p>
+
+            {% endif %}
+            
+        </div>
+
+    {% endfor %}
+
+</div>

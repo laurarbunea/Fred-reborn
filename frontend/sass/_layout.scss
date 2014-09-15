@@ -88,6 +88,27 @@
 .section-s { @extend %section-s;}
 .section-xs { @extend %section-xs;}
 
+.section-top-xxxxl, 
+.section-top { @extend %section-top-xxxxl;}
+.section-top-xxxl { @extend %section-top-xxxl;}
+.section-top-xxl { @extend %section-top-xxl;}
+.section-top-xl { @extend %section-top-xl;}
+.section-top-l { @extend %section-top-l;}
+.section-top-m { @extend %section-top-m;}
+.section-top-s { @extend %section-top-s;}
+.section-top-xs { @extend %section-top-xs;}
+
+.section-bottom-xxxxl, 
+.section-bottom { @extend %section-bottom-xxxxl;}
+.section-bottom-xxxl { @extend %section-bottom-xxxl;}
+.section-bottom-xxl { @extend %section-bottom-xxl;}
+.section-bottom-xl { @extend %section-bottom-xl;}
+.section-bottom-l { @extend %section-bottom-l;}
+.section-bottom-m { @extend %section-bottom-m;}
+.section-bottom-s { @extend %section-bottom-s;}
+.section-bottom-xs { @extend %section-bottom-xs;}
+
+
 %remove-section {
     padding-bottom:0;
     padding-top:0;

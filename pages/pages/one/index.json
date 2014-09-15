@@ -6,6 +6,7 @@
         {
           "type":"grid-one-col",
           "grid_modifier":"grid--middle",
+          "grid_theme":"theme--cool",
           "data":[
             {
               "type": "breadcrumb",
@@ -20,27 +21,157 @@
                 }
               ]
             }
-        
           ]
-        },  
+        },
+        {
+          "section":"section",
+          "grid_theme":"theme--cool",
+          "type":"grid",
+          "grid_modifier":"grid--middle",
+          "columns":[
+              {
+                  "col_size":"quarter ",
+                  "data":[
+                    { 
+                      "type":"img",
+                      "src":"/images/iphone.png"
+                    }
+                  ]
+              },
+              {
+                  "col_size":"three-quarters",
+                  "data":[
+                    { 
+                      "type":"h1",
+                      "data":"Hello."
+                    },
+                    "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
+                  ]
+              }
+          ] 
+        },
+        {
+          "section":"section",
+          "type":"gallery-quarters",
+          "gallery_theme":"theme--white",
+          "data":[ 
+            { 
+              "type":"h2",
+              "data":"About us"
+            },
+            "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
+          ],
+          "gallery":[
+            {
+              "img":
+                {
+                  "src":"/images/placeholders/ph1.jpg",
+                  "alt":"alt tag"
+                }
+              ,
+              "title": "Mr Coolio",
+              "caption":"I'm cool "
+            },
+            {
+              "img":
+                {
+                  "src":"/images/placeholders/ph2.jpg",
+                  "alt":"alt tag"
+                }
+              ,
+              "title": "Mr Doppy",
+              "caption":"I'm dopey"
+            },
+            {
+              "img":
+                {
+                  "src":"/images/placeholders/ph3.jpg",
+                  "alt":"alt tag"
+                }
+              ,
+              "title": "Mr Sleepy",
+              "caption":"I'm sleepy "
+            },
+            {
+              "img":
+                {
+                  "src":"/images/placeholders/ph4.jpg",
+                  "alt":"alt tag"
+                }
+              ,
+              "title": "Mr Sneezy",
+              "caption":"I'm sneezy"
+            }
+
+          ]
+        },
+       
         {
           "type":"grid-half",
           "grid_modifier":"grid--middle",
-          "theme":"theme--white",
+          "grid_theme":"theme--white",
+
           "column_one":[
               {
-                 
-                  "data":"hi there"
+                  "data":"1"
               }
-              
           ],
           "column_two":[
               {
         
-                  "data":"hello"
+                  "data":"2"
               }
-             
           ] 
-        }  
+        },
+        {
+          "type":"grid-thirds",
+          "grid_modifier":"grid--middle",
+          "grid_theme":"theme--white",
+          "column_one":[
+              {
+                  "data":"1"
+              }
+          ],
+          "column_two":[
+              {
+        
+                  "data":"2"
+              }
+          ],
+          "column_three":[
+              {
+        
+                  "data":"3"
+              }
+          ] 
+        },
+        {
+          "type":"grid-quarters",
+          "grid_modifier":"grid--middle",
+          "grid_theme":"theme--white",
+          "column_one":[
+              {
+                  "data":"1"
+              }
+          ],
+          "column_two":[
+              {
+        
+                  "data":"2"
+              }
+          ],
+          "column_three":[
+              {
+        
+                  "data":"3"
+              }
+          ],
+          "column_four":[
+              {
+        
+                  "data":"4"
+              }
+          ] 
+        }
     ]
 }
