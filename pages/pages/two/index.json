@@ -3,112 +3,114 @@
     "headline": "Page one",
     "template":"/pages/device.j2",
     "data": [ 
-        {
-          "layout":"layout",
-          "type":"layout-one-col",
-          "grid_modifier":"grid--middle",
-          "internal_theme":"theme--cool",
-          "data":[
+      {
+        "type": "global-nav",
+        "internal_theme": "theme--dark",
+        "logo":"-logo",
+        "section":"section-s",
+        "pages":[
+          {
+            "title":"menu",
+            "title_color":"",
+            "svg":"menu",
+            "svg_color":"white",
+            "uppercase":true
+          },
+          {
+            "title":"search",
+            "title_color":"",
+            "svg":"search",
+            "svg_color":"white",
+            "uppercase":true
+          }
+   
+        ]
+      },
+      {
+        "type":"layout",
+        "section":"section",
+        "layout":"layout",
+        "internal_theme":"theme--cool",
+        "grid_modifier":"grid--middle",
+        "columns":[
             {
-              "type": "breadcrumb",
-              "data": [
-                {
-                  "url": "#",
-                  "title": "Link 1"
-                },
-                {
-                  "url": "#",
-                  "title": "Link 2"
-                }
-              ]
+                "col_size":"large-quarter medium-third",
+                "data":[
+                  { 
+                    "type":"img",
+                    "src":"/images/iphone.png", 
+                    "responsive":true
+                  }
+                ]
+            },
+            {
+                "col_size":"large-three-quarters medium-two-thirds",
+                "data":[
+                  { 
+                    "type":"h1",
+                    "data":"Hello."
+                  },
+                  "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
+                ]
             }
-          ]
-        },
-        {
-          "type":"layout",
-          "section":"section",
-          "layout":"layout",
-          "internal_theme":"theme--cool",
-          "grid_modifier":"grid--middle",
-          "columns":[
+        ] 
+      },
+      {
+        "type":"gallery-quarters",
+        "section":"section",
+        "layout":"layout",
+        "internal_theme":"theme--white",
+        "data":[ 
+          { 
+            "type":"h2",
+            "data":"About us"
+          },
+          "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
+        ],
+        "gallery":[
+          {
+            "img":
               {
-                  "col_size":"large-quarter medium-third",
-                  "data":[
-                    { 
-                      "type":"img",
-                      "src":"/images/iphone.png", 
-                      "responsive":true
-                    }
-                  ]
-              },
-              {
-                  "col_size":"large-three-quarters medium-two-thirds",
-                  "data":[
-                    { 
-                      "type":"h1",
-                      "data":"Hello."
-                    },
-                    "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
-                  ]
+                "src":"/images/placeholders/ph1.jpg",
+                "alt":"alt tag"
               }
-          ] 
-        },
-        {
-          "type":"gallery-quarters",
-          "section":"section",
-          "layout":"layout",
-          "internal_theme":"theme--white",
-          "data":[ 
-            { 
-              "type":"h2",
-              "data":"About us"
-            },
-            "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
-          ],
-          "gallery":[
-            {
-              "img":
-                {
-                  "src":"/images/placeholders/ph1.jpg",
-                  "alt":"alt tag"
-                }
-              ,
-              "title": "Mr Coolio",
-              "caption":"I'm cool "
-            },
-            {
-              "img":
-                {
-                  "src":"/images/placeholders/ph2.jpg",
-                  "alt":"alt tag"
-                }
-              ,
-              "title": "Mr Doppy",
-              "caption":"I'm dopey"
-            },
-            {
-              "img":
-                {
-                  "src":"/images/placeholders/ph3.jpg",
-                  "alt":"alt tag"
-                }
-              ,
-              "title": "Mr Sleepy",
-              "caption":"I'm sleepy "
-            },
-            {
-              "img":
-                {
-                  "src":"/images/placeholders/ph4.jpg",
-                  "alt":"alt tag"
-                }
-              ,
-              "title": "Mr Sneezy",
-              "caption":"I'm sneezy"
-            }
+            ,
+            "title": "Mr Coolio",
+            "caption":"I'm cool "
+          },
+          {
+            "img":
+              {
+                "src":"/images/placeholders/ph2.jpg",
+                "alt":"alt tag"
+              }
+            ,
+            "title": "Mr Doppy",
+            "caption":"I'm dopey"
+          },
+          {
+            "img":
+              {
+                "src":"/images/placeholders/ph3.jpg",
+                "alt":"alt tag"
+              }
+            ,
+            "title": "Mr Sleepy",
+            "caption":"I'm sleepy "
+          },
+          {
+            "img":
+              {
+                "src":"/images/placeholders/ph4.jpg",
+                "alt":"alt tag"
+              }
+            ,
+            "title": "Mr Sneezy",
+            "caption":"I'm sneezy"
+          }
 
-          ]
-        }
+        ]
+      }
        
         
     ]
