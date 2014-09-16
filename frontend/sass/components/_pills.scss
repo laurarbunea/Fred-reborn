@@ -28,7 +28,15 @@
 
 .pill {
     @extend %pill;
-    @extend %inline-theme--dark-blue;
+    //@extend %inline-theme--dark-blue;
+
+    //todo clean up themes should be seperate ...
+    background-color:#efefef;
+    color:#000;
+    &:hover {
+        background-color:#37b67f;
+    }
+
 }
 
 .pill {

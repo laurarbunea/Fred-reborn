@@ -3404,15 +3404,15 @@ blockquote {
   .noTouchEvents .block-theme--dark-blue a.theme__background:hover {
     background-color: #002e48; }
 
-.inline-theme--dark-blue, .pill {
+.inline-theme--dark-blue {
   color: #ffffff;
   background-color: #004771;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  .inline-theme--dark-blue.-hover:hover, .pill.-hover:hover, .inline-theme--dark-blue .-hover:hover, .pill .-hover:hover {
+  .inline-theme--dark-blue.-hover:hover, .inline-theme--dark-blue .-hover:hover {
     background-color: #002e48; }
-  .inline-theme--dark-blue i, .pill i {
+  .inline-theme--dark-blue i {
     background-position: 0 12.5% !important; }
 
 .link-theme--dark-blue, .pill {
@@ -4477,6 +4477,12 @@ body:after {
     width: 1em;
     height: 1em;
     margin-top: -0.125em; }
+
+.pill {
+  background-color: #efefef;
+  color: #000; }
+  .pill:hover {
+    background-color: #37b67f; }
 
 .pill.pill--grey {
   background-color: #333;
