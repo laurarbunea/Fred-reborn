@@ -26,12 +26,12 @@
                                     "type": "list",
                                     "class": "list--inline",
                                     "data": [
-                                        "<a href='' class='pill'>Blocks</a>",
-                                        "<a href='' class='pill'>First child helpers</a>",
-                                        "<a href='' class='pill'>Webkit rendering</a>",
-                                        "<a href='' class='pill'>Append and Prepend </a>",
-                                        "<a href='' class='pill'>Clearfixing</a>",
-                                        "<a href='' class='pill'>Screen reader content </a>",
+                                        "<a href='#blocks' class='pill'>Blocks</a>",
+                                        "<a href='#first-child' class='pill'>First child helpers</a>",
+                                        "<a href='#type-rendering' class='pill'>Webkit rendering</a>",
+                                        "<a href='#append-prepend' class='pill'>Append and Prepend </a>",
+                                        "<a href='#clearfixing' class='pill'>Clearfixing</a>",
+                                        "<a href='#screen-reader' class='pill'>Screen reader content </a>",
                                         "<a href='#typography-helpers' class='pill'>Typography helpers </a>",
                                         "<a href='#list-helpers' class='pill'>List helpers </a>",
                                         "<a href='#layout-helpers' class='pill'>Layout helpers </a>",
@@ -45,7 +45,7 @@
                 {
                     "type" : "section",
                     "size": "s",
-                    "anchor" : "",
+                    "anchor" : "blocks",
                     "data": [
                         {
                             "type" : "/pattern-library/section-block",
@@ -84,7 +84,7 @@
                 {
                     "type" : "section",
                     "size": "s",
-                    "anchor" : "",
+                    "anchor" : "first-child",
                     "data": [
                         {
                             "type" : "/pattern-library/section-block",
@@ -121,7 +121,7 @@
                 {
                     "type" : "section",
                     "size": "s",
-                    "anchor" : "",
+                    "anchor" : "type-rendering",
                     "data": [
                         {
                             "type" : "/pattern-library/section-block",
@@ -159,7 +159,7 @@
                 {
                     "type" : "section",
                     "size": "s",
-                    "anchor" : "",
+                    "anchor" : "append-prepend",
                     "data": [
                         {
                             "type" : "/pattern-library/section-block",
@@ -184,7 +184,7 @@
                 {
                     "type" : "section",
                     "size": "s",
-                    "anchor" : "",
+                    "anchor" : "clearfixing",
                     "data": [
                         {
                             "type" : "/pattern-library/section-block",
@@ -217,7 +217,7 @@
                 {
                     "type" : "section",
                     "size": "s",
-                    "anchor" : "",
+                    "anchor" : "screen-reader",
                     "data": [
                         {
                             "type" : "/pattern-library/section-block",
