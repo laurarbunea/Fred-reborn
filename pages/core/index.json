@@ -32,10 +32,10 @@
                                         "<a href='' class='pill'>Append and Prepend </a>",
                                         "<a href='' class='pill'>Clearfixing</a>",
                                         "<a href='' class='pill'>Screen reader content </a>",
-                                        "<a href='typography-helpers' class='pill'>Typography helpers </a>",
-                                        "<a href='list-helpers' class='pill'>List helpers </a>",
-                                        "<a href='layout-helpers' class='pill'>Layout helpers </a>",
-                                        "<a href='link-helpers' class='pill'>Links</a>"
+                                        "<a href='#typography-helpers' class='pill'>Typography helpers </a>",
+                                        "<a href='#list-helpers' class='pill'>List helpers </a>",
+                                        "<a href='#layout-helpers' class='pill'>Layout helpers </a>",
+                                        "<a href='#link-helpers' class='pill'>Links</a>"
                                     ]
                                 }
                             ]
