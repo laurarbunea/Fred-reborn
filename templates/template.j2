@@ -58,22 +58,22 @@
 
                     <div class='[ col large-8 medium-8 small-7 ] global-nav__items '>
                         
-                        <a href='/pages/' class='btn btn--tertiary btn--bounce  ml-m mb-0'>
+                        <a href='/pages/' class='btn btn--tertiary ml-m mb-0 {% if title == 'pages' %}active{% endif %}'>
                             
-                            Pages
+                             Pages
 
                         </a>
-                        <a href='/pattern-library/' class='btn btn--tertiary btn--bounce  ml-m mb-0'>
+                        <a href='/pattern-library/' class='btn btn--tertiary ml-m mb-0 {% if title == 'flego' %}active{% endif %}'>
                             Flego
                         </a>
 
-                        <a href='/freds-closet/' class='btn btn--tertiary btn--bounce ml-m mb-0'>
+                        <a href='/freds-closet/' class='btn btn--tertiary ml-m mb-0 {% if title == 'barebones' %}active{% endif %}'>
                             
                             Bare bones
 
                         </a>
                         
-                        <a href='/core/' class='btn btn--tertiary btn--bounce  ml-m mb-0'>
+                        <a href='/core/' class='btn btn--tertiary ml-m mb-0 {% if title == 'core' %}active{% endif %}'>
                             
                             Core
 

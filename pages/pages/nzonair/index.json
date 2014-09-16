@@ -1,5 +1,6 @@
 {
-    "title": "nzonair",
+    "title": "pages",
+    "slug":"nz-on-air",
     "headline": "nz on air",
     "template":"/pages/device.j2",
     "data": [

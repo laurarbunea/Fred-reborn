@@ -1,5 +1,6 @@
 {
-    "title": "Page one",
+    "title": "pages",
+    "slug":"test-site",
     "headline": "Page one",
     "template":"/pages/device.j2",
     "data": [ 

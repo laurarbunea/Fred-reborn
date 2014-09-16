@@ -1,5 +1,6 @@
 {
-    "title": "overview",
+    "title": "pages",
+    "slug":"redcross",
     "headline": "Overview",
     "template":"/pages/device.j2",
     "data": [
@@ -79,7 +80,7 @@
             "grid_modifier":"grid--center",
             "internal_theme":"theme--white",
             "content_theme":"theme--grey",
-            "content_padding":"section-top-m layout-m section-bottom-xxs",
+            "content_padding":"section-top-xxl layout section-bottom-xxs",
             "data":[
                 "Our new free app offers step-by-step first aid advice, tips on how to prepare for disasters and instructions on what to do during an emergency. Read more",
                 {

@@ -1,5 +1,5 @@
 {
-    "title": "helpers",
+    "title": "core",
     "headline": "Helpers",
     "template":"/pages/core.j2",
     "data": [

@@ -163,3 +163,13 @@
     @extend %pl-s;
     @extend %pr-s;
 }
+//fred global menu
+a.active {
+    color:#37b67f!important;
+    font-weight:bold;
+}
+
+.btn--secondary.active-btn {
+    background-color:#37b67f;
+    color:#fff!important;
+}
