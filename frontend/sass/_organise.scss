@@ -110,10 +110,11 @@
     @extend %border-box;
 
     .device__menu {
-        @extend %pt-s;
-        @extend %pb-s;
+        @extend %pt-xs;
+        @extend %pb-xs;
         @extend %mb-0;
         @extend %text-small;
+        border-bottom:1px solid #D6D6D6;
 
     }
 
@@ -169,7 +170,8 @@ a.active {
     font-weight:bold;
 }
 
-.btn--secondary.active-btn {
+.pill.active-pill {
     background-color:#37b67f;
     color:#fff!important;
+    font-weight:bold;
 }

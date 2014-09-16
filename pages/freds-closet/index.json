@@ -17,13 +17,10 @@
                             "data": [
                                 {
                                     "type":"h2",
-                                    "data":"Fred's closet."
+                                    "data":"Bare bones"
                                 },
-                                {
-                                    "type":"intro",
-                                    "data":"Fred has so many skeletons in his closet that he can’t keep track of them all! Just like Fred, websites also have a lot of skeletons but have no closet to store them in. Fred’s Closet is the perfect hideaway to keep all those little secrets."
-                                },
-                                "So that Fred's closest doesn't get too messy. Fred has kindly seperated his closest into a few different sections for us. These are as follows:",
+                               
+                                "Bare bones of the site blah blah",
                                 {
                                   "type": "btn",
                                   "label": "Typography",

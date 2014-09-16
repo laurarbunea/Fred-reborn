@@ -1496,7 +1496,7 @@ dd {
   padding-top: 0.25rem;
   /* fallback  times by 6 */ }
 
-li ul, li ol, .segmented-control label {
+.device .device__menu, li ul, li ol, .segmented-control label {
   padding-top: 8px;
   padding-top: 0.5rem;
   /* fallback  times by 6 */ }
@@ -1506,7 +1506,7 @@ li ul, li ol, .segmented-control label {
   padding-top: 0.5rem;
   /* fallback  times by 6 */ }
 
-.device .device__menu, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control--timeslots label {
+.code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control--timeslots label {
   padding-top: 12px;
   padding-top: 0.75rem;
   /* fallback  times by 6 */ }
@@ -1581,7 +1581,7 @@ li ul, li ol, .segmented-control label {
   padding-bottom: 0.25rem;
   /* fallback  times by 6 */ }
 
-.subnav__child {
+.device .device__menu, .subnav__child {
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
   /* fallback  times by 6 */ }
@@ -1591,7 +1591,7 @@ li ul, li ol, .segmented-control label {
   padding-bottom: 0.5rem;
   /* fallback  times by 6 */ }
 
-.device .device__menu, .code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control label, .segmented-control--timeslots label {
+.code-example, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control label, .segmented-control--timeslots label {
   padding-bottom: 12px;
   padding-bottom: 0.75rem;
   /* fallback  times by 6 */ }
@@ -3768,6 +3768,8 @@ blockquote {
   border-bottom-width: 48px;
   border-bottom-width: 3rem;
   border-radius: 50px; }
+  .device .device__menu {
+    border-bottom: 1px solid #D6D6D6; }
   @media only screen and (max-width: 59.99em) {
     .device {
       border-radius: 30px; } }
@@ -3797,9 +3799,10 @@ a.active {
   color: #37b67f !important;
   font-weight: bold; }
 
-.btn--secondary.active-btn {
+.pill.active-pill {
   background-color: #37b67f;
-  color: #fff !important; }
+  color: #fff !important;
+  font-weight: bold; }
 
 /**
 ## Components
