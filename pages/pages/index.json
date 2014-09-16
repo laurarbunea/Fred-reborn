@@ -1,11 +1,182 @@
 {
     "title": "overview",
     "headline": "Overview",
-    "template":"pages/page.j2",
+    "template":"pages/device.j2",
     "data": [
         {
-            "type":"h1",
-            "data":"example one .."
-        }         
+            "type": "global-nav",
+            "external_theme": "theme--black",
+            "pages":[
+                {
+                    "title":"Checkout",
+                    "href":""
+                },
+                {
+                    "title":"Member logout",
+                    "href":""
+                }
+              
+            ]
+        },
+        {
+            "type": "global-nav",
+            "internal_theme": "theme--white",
+            "logo":"",
+            "icon_color": "",
+            "pages":[
+                  {
+                    "title":"Donate",
+                    "href":""
+                  },
+                  {
+                    "title":"Blog",
+                    "href":""
+                  },
+                  {
+                    "title":"About us",
+                    "href":""
+                  },
+                  {
+                    "title":"Retail shops",
+                    "href":""
+                  },
+                  {
+                    "title":"First aid",
+                    "href":""
+                  },
+                  {
+                    "title":"Get involved",
+                    "href":""
+                  },
+                  {
+                    "title":"What we do",
+                    "href":""
+                  },
+                  {
+                    "title":"Home",
+                    "title_color":"white",
+                    "href":""
+                  }
+          
+            ]
+        },
+        {
+            "type": "banner-redcross",
+            "internal_theme": "theme--red",
+            "title":"New Zealand Red Cross First Aid and Emergency App",
+            "img": {
+                    "src":"/images/rc.jpg",
+                    "alt":"redcross"
+                }
+            
+        },
+        {
+            "type":"layout-one-col",
+            "layout":"layout",
+            "grid_modifier":"grid--center",
+            "internal_theme":"theme--white",
+            "content_theme":"theme--grey",
+            "content_padding":"section-top-m layout-m section-bottom-xxs",
+            "data":[
+                "Our new free app offers step-by-step first aid advice, tips on how to prepare for disasters and instructions on what to do during an emergency. Read more",
+                {
+                  "type":"btn",
+                  "label":"Download the app",
+                  "theme":"primary"
+                }
+                
+            ]
+        },
+         {
+          "type":"layout-thirds",
+          "section":"section",
+          "layout":"layout",
+          "internal_theme":"theme--redcross",
+          "column_one":[
+              {
+                "data":[
+                    {
+                      "type":"h3",
+                      "data":"First aid training "
+                    },
+                    "Book first aid training with New Zealand Red Cross - We're the leading first aid provider in Aotearoa.",
+                    "<a href=''>Book a first aid course</a>"
+
+                    
+                ]
+            }
+          ],
+          "column_two":[
+              {
+        
+                  "data":[
+                    {
+                      "type":"h3",
+                      "data":"How we help "
+                    },
+                    "From delivering meals on wheels to resettling refugee families in New Zealand, our dedicated volunteers are there to help wherever the need is greatest. ",
+                    "<a href=''>Programmes around the world </a>",
+                    "<a href=''>Book a first aid course</a>"
+                    
+                ]
+              }
+          ],
+          "column_three":[
+              {
+        
+                  "data":[
+                    {
+                      "type":"h3",
+                      "data":"Get involved "
+                    },
+                    "Whether you have an hour or a dollar, you can help make a difference. ",
+                    "<a href=''>Get involved </a>"
+                    
+                ]
+              }
+          ] 
+        },
+        {
+          "type":"gallery-thirds",
+          "section":"section",
+          "layout":"layout",
+          "internal_theme":"theme--redcross",
+          "gallery":[
+            {
+              "img":
+                {
+                  "src":"/images/placeholders/ph.jpg",
+                  "alt":"alt tag"
+                }
+              ,
+              "date":"May 2014",
+              "title": "Kiwi nurses to help with Ebola crisis ",
+              "caption":"New Zealand Red Cross nurses Donna Collins and Sharon Mackie are on their way to Sierra Leone to join an international Red Cross team responding to the Ebola crisis. "
+            },
+            {
+              "img":
+                {
+                  "src":"/images/placeholders/ph.jpg",
+                  "alt":"alt tag"
+                }
+              ,
+              "date":"May 2014 ",
+              "title": "Giving refugees a fresh start ",
+              "caption":"New Zealand Red Cross is encouraging employers to give refugees a fresh start with the launch of Pathways to Employment, a nationwide work assistance service. "
+            },
+            {
+              "img":
+                {
+                  "src":"/images/placeholders/ph.jpg",
+                  "alt":"alt tag"
+                }
+              ,
+              "date":"July 2014 ",
+              "title": "Hello from Juba ",
+              "caption":"Judy returns to South Sudan as a health delegate, supporting ICRC health programmes. "
+            }
+
+          ]
+        }      
     ]
 }

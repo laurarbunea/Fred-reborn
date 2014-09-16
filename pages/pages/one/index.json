@@ -108,74 +108,8 @@
             }
 
           ]
-        },
-       
-        {
-          "type":"layout-two-col",
-          "grid_modifier":"grid--middle",
-          "grid_theme":"theme--white",
-
-          "column_one":[
-              {
-                  "data":"1"
-              }
-          ],
-          "column_two":[
-              {
-        
-                  "data":"2"
-              }
-          ] 
-        },
-        {
-          "type":"layout-thirds",
-          "grid_modifier":"grid--middle",
-          "grid_theme":"theme--white",
-          "column_one":[
-              {
-                  "data":"1"
-              }
-          ],
-          "column_two":[
-              {
-        
-                  "data":"2"
-              }
-          ],
-          "column_three":[
-              {
-        
-                  "data":"3"
-              }
-          ] 
-        },
-        {
-          "type":"layout-quarters",
-          "grid_modifier":"grid--middle",
-          "grid_theme":"theme--white",
-          "column_one":[
-              {
-                  "data":"1"
-              }
-          ],
-          "column_two":[
-              {
-        
-                  "data":"2"
-              }
-          ],
-          "column_three":[
-              {
-        
-                  "data":"3"
-              }
-          ],
-          "column_four":[
-              {
-        
-                  "data":"4"
-              }
-          ] 
         }
+       
+        
     ]
 }

@@ -137,3 +137,35 @@ $link-color:
     color:#37b67f;
   } 
 }
+
+
+.theme--black { 
+  background-color:#000;
+  color:#fff;
+  a {
+    color:#fff;
+  }
+
+}
+
+.theme--red {
+  background-color:#d80915;
+  
+}
+
+.theme--redcross {
+  background-color:#fff;
+  h1, h2, h3, h4, h5, h6 {
+    color:#d80915;
+  }
+  a {
+    color:#d80915;
+    text-decoration: underline;
+  }
+}
+
+.text--white {color:#fff}
+.text--orange {color:#e78547}
+.text--red {color:#e2534a}
+.text--blue {color:#1392b2}
+.text--green {color:#37b67f}

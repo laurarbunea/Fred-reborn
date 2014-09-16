@@ -3,35 +3,82 @@
     "headline": "Overview",
     "template":"/pages/device.j2",
     "data": [
-      	{
-      		"type":"layout-one-col",
-        	"layout":"layout",
-        	"section":"section-top-xxl",
-        	"internal_theme":"theme--music",
-        	"data":[
-	            {
-	              "type": "breadcrumb",
-	              "data": [
-	                {
-	                  "url": "#",
-	                  "title": "Link 1"
-	                },
-	                {
-	                  "url": "#",
-	                  "title": "Link 2"
-	                }
-	              ]
-	            },
-	            {
-	              "type":"h1",
-	              "data":"It’s about great songs "
-	            },
-	            { 
-	              "type":"intro",
-	              "data":"We are about connecting great and diverse local songs with their intended audiences."
-	            }
-	         ]
-        },
+      {
+        "type": "global-nav",
+        "external_theme": "theme--white",
+        "logo":"nzoa-logo",
+        "icon_color": "",
+        "pages":[
+          {
+            "title":"menu",
+            "title_color":"",
+            "svg":"menu",
+            "svg_color":"dark-grey",
+            "uppercase":true
+          },
+          {
+            "title":"search",
+            "title_color":"",
+            "svg":"search",
+            "svg_color":"dark-grey",
+            "uppercase":true
+          },
+          {
+            "title":"digital",
+            "title_color":"red",
+            "href":"",
+            "uppercase":true
+          },
+          {
+            "title":"music",
+            "title_color":"green",
+            "href":"",
+            "uppercase":true
+          },
+          {
+            "title":"radio",
+            "title_color":"orange",
+            "href":"",
+            "uppercase":true
+          },
+          {
+            "title":"televesion",
+            "title_color":"blue",
+            "href":"",
+            "uppercase":true
+          }
+          
+        ]
+      },
+    	{
+    		"type":"layout-one-col",
+      	"layout":"layout",
+      	"section":"section-top-xxl",
+      	"external_theme":"theme--music",
+      	"data":[
+            {
+              "type": "breadcrumb",
+              "data": [
+                {
+                  "url": "#",
+                  "title": "Link 1"
+                },
+                {
+                  "url": "#",
+                  "title": "Link 2"
+                }
+              ]
+            },
+            {
+              "type":"h1",
+              "data":"It’s about great songs "
+            },
+            { 
+              "type":"intro",
+              "data":"We are about connecting great and diverse local songs with their intended audiences."
+            }
+         ]
+      },
 		{
 			"type": "featured-article",
 			"layout":"layout",
@@ -48,12 +95,12 @@
           "type":"gallery-thirds",
           "section":"section",
           "layout":"layout",
-          "internal_theme":"theme--music",
+          "external_theme":"theme--music",
           "gallery":[
             {
               "img":
                 {
-                  "src":"/images/placeholders/ph1.jpg",
+                  "src":"/images/placeholders/ph.jpg",
                   "alt":"alt tag"
                 }
               ,
@@ -64,7 +111,7 @@
             {
               "img":
                 {
-                  "src":"/images/placeholders/ph2.jpg",
+                  "src":"/images/placeholders/ph.jpg",
                   "alt":"alt tag"
                 }
               ,
@@ -75,7 +122,7 @@
             {
               "img":
                 {
-                  "src":"/images/placeholders/ph4.jpg",
+                  "src":"/images/placeholders/ph.jpg",
                   "alt":"alt tag"
                 }
               ,

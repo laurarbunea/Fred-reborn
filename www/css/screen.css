@@ -2885,7 +2885,7 @@ blockquote {
   margin-left: auto;
   margin-right: auto; }
 
-.section-xxxxl, .section, .section-top-xxxxl, .section-top, .device {
+.section-xxxxl, .section, .section-top-xxxxl, .section-top {
   padding-top: 48px;
   padding-top: 3rem; }
 
@@ -2917,7 +2917,7 @@ blockquote {
   padding-top: 8px;
   padding-top: 0.5rem; }
 
-.section-xxxxl, .section, .section-bottom-xxxxl, .section-bottom, .device {
+.section-xxxxl, .section, .section-bottom-xxxxl, .section-bottom {
   padding-bottom: 48px;
   padding-bottom: 3rem; }
 
@@ -3030,22 +3030,22 @@ blockquote {
     padding-right: 32px;
     padding-right: 2rem; } }
 
-.layout, .layout--left, .device, .homepage .content__left {
+.layout, .layout--left, .homepage .content__left {
   padding-left: 1rem; }
   @media only screen and (min-width: 37.5em) {
-    .layout, .layout--left, .device, .homepage .content__left {
+    .layout, .layout--left, .homepage .content__left {
       padding-left: 4%; } }
   @media only screen and (min-width: 60em) {
-    .layout, .layout--left, .device, .homepage .content__left {
+    .layout, .layout--left, .homepage .content__left {
       padding-left: 8.3333333%; } }
 
-.layout, .layout--right, .device, .homepage .content__right {
+.layout, .layout--right, .homepage .content__right {
   padding-right: 1rem; }
   @media only screen and (min-width: 37.5em) {
-    .layout, .layout--right, .device, .homepage .content__right {
+    .layout, .layout--right, .homepage .content__right {
       padding-right: 4%; } }
   @media only screen and (min-width: 60em) {
-    .layout, .layout--right, .device, .homepage .content__right {
+    .layout, .layout--right, .homepage .content__right {
       padding-right: 8.3333333%; } }
 
 @media only screen and (min-width: 60em) {
@@ -3178,6 +3178,10 @@ blockquote {
   width: 1.125em;
   height: 1.125em; }
 
+.i-nzoa-logo {
+  width: 7.25em;
+  height: 4.5em; }
+
 /* colourised icons */
 .subnav h2 > .i-arrow-r, .subnav h3 > .i-arrow-r, .route__item h4 .i-arrow-r, .route__item > a > * .i-arrow-r, .i--blue {
   background-position: 0 25%; }
@@ -3248,11 +3252,11 @@ blockquote {
   .theme--fred a {
     color: #fff; }
 
-.theme--dark, .device, .code-example, .traffic-info__header, .map-nav, .map-nav--icon, .webcam-list {
+.theme--dark, .code-example, .traffic-info__header, .map-nav, .map-nav--icon, .webcam-list {
   border-color: #293f54;
   background-color: #293f54;
   color: #fff; }
-  .theme--dark a, .device a, .code-example a, .traffic-info__header a, .webcam-list a {
+  .theme--dark a, .code-example a, .traffic-info__header a, .webcam-list a {
     color: #fff; }
 
 .theme--white {
@@ -3272,6 +3276,38 @@ blockquote {
   color: #000; }
   .theme--music h1, .theme--music h2, .theme--music h3, .theme--music h4, .theme--music h5, .theme--music a {
     color: #37b67f; }
+
+.theme--black {
+  background-color: #000;
+  color: #fff; }
+  .theme--black a {
+    color: #fff; }
+
+.theme--red {
+  background-color: #d80915; }
+
+.theme--redcross {
+  background-color: #fff; }
+  .theme--redcross h1, .theme--redcross h2, .theme--redcross h3, .theme--redcross h4, .theme--redcross h5, .theme--redcross h6 {
+    color: #d80915; }
+  .theme--redcross a {
+    color: #d80915;
+    text-decoration: underline; }
+
+.text--white {
+  color: #fff; }
+
+.text--orange {
+  color: #e78547; }
+
+.text--red {
+  color: #e2534a; }
+
+.text--blue {
+  color: #1392b2; }
+
+.text--green {
+  color: #37b67f; }
 
 /*------------------------------------*\
     #THEMING
@@ -3703,6 +3739,17 @@ blockquote {
   clear: left; }
 
 .device {
+  background-color: #efefef;
+  border-color: #000;
+  border-style: solid;
+  border-left-width: 48px;
+  border-left-width: 3rem;
+  border-right-width: 48px;
+  border-right-width: 3rem;
+  border-top-width: 48px;
+  border-top-width: 3rem;
+  border-bottom-width: 48px;
+  border-bottom-width: 3rem;
   border-radius: 50px; }
   @media only screen and (max-width: 59.99em) {
     .device {

@@ -236,6 +236,13 @@
 }
 
 
+
+.i-nzoa-logo {
+    background-image: url('png/nzoa-logo.png');
+    background-repeat: no-repeat;
+}
+
+
 .theme--full-colour .i-nzta-logo,
 .i-nzta-logo-coloured {
     background-image: url('png/nzta-logo-coloured.png');
