@@ -1,61 +1,14 @@
 {
-    "title": "overview",
-    "headline": "Overview",
+    "title": "Page one",
+    "headline": "Page one",
     "template":"/pages/device.j2",
-    "data": [
-      {
-        "type": "global-nav",
-        "external_theme": "theme--white",
-        "logo":"nzoa-logo",
-        "icon_color": "",
-        "pages":[
-          {
-            "title":"menu",
-            "title_color":"",
-            "svg":"menu",
-            "svg_color":"dark-grey",
-            "uppercase":true
-          },
-          {
-            "title":"search",
-            "title_color":"",
-            "svg":"search",
-            "svg_color":"dark-grey",
-            "uppercase":true
-          },
-          {
-            "title":"digital",
-            "title_color":"red",
-            "href":"",
-            "uppercase":true
-          },
-          {
-            "title":"music",
-            "title_color":"green",
-            "href":"",
-            "uppercase":true
-          },
-          {
-            "title":"radio",
-            "title_color":"orange",
-            "href":"",
-            "uppercase":true
-          },
-          {
-            "title":"televesion",
-            "title_color":"blue",
-            "href":"",
-            "uppercase":true
-          }
-          
-        ]
-      },
-    	{
-    		"type":"layout-one-col",
-      	"layout":"layout",
-      	"section":"section-top-xxl",
-      	"external_theme":"theme--music",
-      	"data":[
+    "data": [ 
+        {
+          "layout":"layout",
+          "type":"layout-one-col",
+          "grid_modifier":"grid--middle",
+          "internal_theme":"theme--cool",
+          "data":[
             {
               "type": "breadcrumb",
               "data": [
@@ -68,70 +21,95 @@
                   "title": "Link 2"
                 }
               ]
-            },
-            {
-              "type":"h1",
-              "data":"It’s about great songs "
-            },
-            { 
-              "type":"intro",
-              "data":"We are about connecting great and diverse local songs with their intended audiences."
             }
-         ]
-      },
-		{
-			"type": "featured-article",
-			"layout":"layout",
-			"category":"Music",
-			"date":"01/04/2014",
-			"href":"#",
-			"src":"/images/music.jpg",
-			"parent_link":"#",
-			"title":"Title",
-			"listing_blurb":"I am a blob of text that says something interesting about this featured article"
-
-		},
-		{
-          "type":"gallery-thirds",
+          ]
+        },
+        {
+          "type":"layout",
           "section":"section",
           "layout":"layout",
-          "external_theme":"theme--music",
+          "internal_theme":"theme--cool",
+          "grid_modifier":"grid--middle",
+          "columns":[
+              {
+                  "col_size":"large-quarter medium-third",
+                  "data":[
+                    { 
+                      "type":"img",
+                      "src":"/images/iphone.png", 
+                      "responsive":true
+                    }
+                  ]
+              },
+              {
+                  "col_size":"large-three-quarters medium-two-thirds",
+                  "data":[
+                    { 
+                      "type":"h1",
+                      "data":"Hello."
+                    },
+                    "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
+                  ]
+              }
+          ] 
+        },
+        {
+          "type":"gallery-quarters",
+          "section":"section",
+          "layout":"layout",
+          "internal_theme":"theme--white",
+          "data":[ 
+            { 
+              "type":"h2",
+              "data":"About us"
+            },
+            "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
+          ],
           "gallery":[
             {
               "img":
                 {
-                  "src":"/images/placeholders/ph.jpg",
+                  "src":"/images/placeholders/ph1.jpg",
                   "alt":"alt tag"
                 }
               ,
-              "date":"May 2014 ",
-              "title": "10th Pacific Music Awards ",
-              "caption":"The Pacific Music awards celebrate the diversity of Pacific music and honour Pasifika artists and achievements."
+              "title": "Mr Coolio",
+              "caption":"I'm cool "
             },
             {
               "img":
                 {
-                  "src":"/images/placeholders/ph.jpg",
+                  "src":"/images/placeholders/ph2.jpg",
                   "alt":"alt tag"
                 }
               ,
-              "date":"May 2014 ",
-              "title": "Devilskin ",
-              "caption":"A four-piece rock/metal band from Hamilton is storming the music scene"
+              "title": "Mr Doppy",
+              "caption":"I'm dopey"
             },
             {
               "img":
                 {
-                  "src":"/images/placeholders/ph.jpg",
+                  "src":"/images/placeholders/ph3.jpg",
                   "alt":"alt tag"
                 }
               ,
-              "date":"July 2014 ",
+              "title": "Mr Sleepy",
+              "caption":"I'm sleepy "
+            },
+            {
+              "img":
+                {
+                  "src":"/images/placeholders/ph4.jpg",
+                  "alt":"alt tag"
+                }
+              ,
               "title": "Mr Sneezy",
               "caption":"I'm sneezy"
             }
 
           ]
         }
+       
+        
     ]
 }

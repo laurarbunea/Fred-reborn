@@ -16,9 +16,21 @@
  
                 {% for item in item.column_one %}
                     
-                <div class="[ col half ] {{item.col_theme }} {{item.class }}">
+                <div class="[ col half ] {{item.theme }} {{item.class }}">
                     
-                    {{ item|children }}
+                    {% if item.content_theme %}
+                    
+                    <div class='{{item.content_theme}} {{item.content_padding}}'>
+
+                    {% endif %}
+
+                        {{ item|children }}
+
+                    {% if item.content_theme %}
+                    
+                    </div >
+
+                    {% endif %}
                     
                 </div>
 
@@ -26,9 +38,21 @@
 
                 {% for item in item.column_two %}
                     
-                <div class="[ col half ] {{item.col_theme }} {{item.class }}">
+                <div class="[ col half ] {{item.theme }} {{item.class }}">
                     
-                    {{ item|children }}
+                    {% if item.content_theme %}
+                    
+                    <div class='{{item.content_theme}} {{item.content_padding}}'>
+
+                    {% endif %}
+
+                        {{ item|children }}
+
+                    {% if item.content_theme %}
+                    
+                    </div >
+
+                    {% endif %}
                    
                 </div>
 

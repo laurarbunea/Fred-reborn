@@ -3277,14 +3277,27 @@ blockquote {
   .theme--music h1, .theme--music h2, .theme--music h3, .theme--music h4, .theme--music h5, .theme--music a {
     color: #37b67f; }
 
+.theme--orange {
+  color: #fff;
+  background-color: #f5a422; }
+
+.theme--green {
+  color: #fff;
+  background-color: #1e9fa3; }
+
 .theme--black {
   background-color: #000;
   color: #fff; }
   .theme--black a {
     color: #fff; }
 
+.theme--springload-green {
+  background-color: #98c365;
+  color: #fff; }
+
 .theme--red {
-  background-color: #d80915; }
+  background-color: #d80915;
+  color: #fff; }
 
 .theme--redcross {
   background-color: #fff; }

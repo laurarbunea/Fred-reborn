@@ -1,11 +1,12 @@
 {
     "title": "overview",
     "headline": "Overview",
-    "template":"pages/device.j2",
+    "template":"/pages/device.j2",
     "data": [
         {
             "type": "global-nav",
             "external_theme": "theme--black",
+            "section":"section-s",
             "pages":[
                 {
                     "title":"Checkout",
@@ -21,6 +22,7 @@
         {
             "type": "global-nav",
             "internal_theme": "theme--white",
+            "section":"section-l",
             "logo":"",
             "icon_color": "",
             "pages":[
@@ -73,6 +75,7 @@
         {
             "type":"layout-one-col",
             "layout":"layout",
+            "title":"New Zealand Red Cross First Aid and Emergency App ",
             "grid_modifier":"grid--center",
             "internal_theme":"theme--white",
             "content_theme":"theme--grey",

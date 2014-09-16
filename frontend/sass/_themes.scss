@@ -138,6 +138,16 @@ $link-color:
   } 
 }
 
+.theme--orange {
+  color:#fff;
+  background-color:#f5a422;
+}
+
+.theme--green {
+  color:#fff;
+  background-color:#1e9fa3;
+}
+
 
 .theme--black { 
   background-color:#000;
@@ -147,10 +157,14 @@ $link-color:
   }
 
 }
-
+.theme--springload-green {
+    background-color: #98c365;
+    color:#fff;
+}
 .theme--red {
   background-color:#d80915;
-  
+  color:#fff;
+
 }
 
 .theme--redcross {
