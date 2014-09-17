@@ -5,7 +5,7 @@
     "template":"/pages/device.j2",
     "data": [
         {
-            "type": "global-nav",
+            "type": "navigation/global-nav",
             "external_theme": "theme--black",
             "section":"section-s",
             "pages":[
@@ -21,7 +21,7 @@
             ]
         },
         {
-            "type": "global-nav",
+            "type": "navigation/global-nav",
             "internal_theme": "theme--white",
             "section":"section-l",
             "logo":"",

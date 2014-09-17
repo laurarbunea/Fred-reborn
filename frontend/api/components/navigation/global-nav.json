@@ -1,13 +1,13 @@
 {
     "api": {
-        "type": "h6",
+        "type": "navigation/global-nav",
         "data": []
     },
     "examples": [
         {
             "notes": "This component is the default header used throughout the site, except for the two pages below. ",
             "example": {
-                "type": "global-nav",
+                "type": "navigation/global-nav",
                 "theme": "theme--dark",
                 "logo":"nzta-logo",
                 "icon_color": "white"
@@ -16,7 +16,7 @@
         {
             "notes": "This component is only used on the homepage and the traffic info page.",
             "example": {
-                "type": "global-nav",
+                "type": "navigation/global-nav",
                 "theme": "theme--full-colour",
                 "logo":"nzta-logo",
                 "icon_color": "dark-blue"

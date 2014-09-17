@@ -1,0 +1,71 @@
+{% if item.external_theme %}
+    <div class='{{item.external_theme}}'>
+{% endif %}
+
+        <div class='[ wrapper ]'>
+            
+            {% if item.section or item.layout %}
+                <div class='[ {{item.section}} {{item.layout}} ] {{item.internal_theme}}'>
+            {% endif %}
+
+                <div class='[ grid ] gallery--quarter'>
+
+                {% if item.data %}
+
+                    <div class="[ col large-8 ] {{item.col_theme }} {{item.class }} gallery__intro">
+
+                        {{ item|children }}
+
+                    </div>
+
+               {% endif %}
+
+                {% for gallery_item in item.gallery %}
+                    
+                    <div class="[ col medium-half   ] {{item.col_theme }} {{item.class }} gallery__item mt-m">
+                        
+                        {% if gallery_item.img %}
+
+                            <img src='{{gallery_item.img.src}}' alt='{{gallery_item.img.alt}}' class='img--responsive'>
+
+                        {% endif %}
+
+                        {% if gallery_item.date %}
+
+                            <p class='small'>
+                                {{gallery_item.date}}
+                            </p>
+
+                        {% endif %}
+
+                        {% if gallery_item.title %}
+
+                            <h4>
+                                {{gallery_item.title}}
+                            </h4>
+
+                        {% endif %}
+
+                        {% if gallery_item.caption %}
+
+                            <p>
+                                {{gallery_item.caption}}
+                            </p>
+
+                        {% endif %}
+                        
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+        {% if item.section or item.layout %}
+            </div>
+        {% endif %}
+
+    </div>
+
+{% if item.external_theme %}
+    </div>
+{% endif %}

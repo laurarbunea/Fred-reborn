@@ -13,6 +13,27 @@
                     "data": [
                         {
                             "type": "type/h2",
+                            "data": "Gallery (half)"
+                        },
+                        "Basic two column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/gallery/gallery-half"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
                             "data": "Gallery (thirds)"
                         },
                         "Basic two column",

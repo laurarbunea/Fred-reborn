@@ -1,13 +1,13 @@
 {
     "api": {
-        "type": "breadcrumb",
+        "type": "navigation/breadcrumb",
         "data": []
     },
     "examples": [
         {
             "example":
             {
-                "type": "breadcrumb",
+                "type": "navigation/breadcrumb",
                 "data": [
                     {
                         "url": "#",

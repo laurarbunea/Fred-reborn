@@ -12,7 +12,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Action links"
                         },
                         "Use these components when you want to use an icon to guide the user to another page.",
@@ -33,7 +33,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Anchor links"
                         },
                         "Use this component to provide quick links to content on the current page.",
@@ -60,13 +60,13 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Breadcrumbs"
                         },
                         "Use breadcrumbs to indicate the user’s location within the website information architecture.",
                         {
                             "type": "pattern-library/code-example",
-                            "component": "components/breadcrumb"
+                            "component": "components/navigation/breadcrumb"
                         }
                     ]
                 }
@@ -81,7 +81,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Statistics block"
                         },
                         "Use this component to prominently display a single statistic. Two or more statistics can be grouped together in columns using grid helper classes.",
@@ -102,7 +102,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Tables"
                         },
                         "Only use a table when displaying tabular data is necessary. For simple name/value lists, a <a href='/pattern-library/type/#dl'>definition list</a> is a better option.",
@@ -123,7 +123,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Buttons"
                         },
                         "Here is a list of the different types of buttons available.",
@@ -145,7 +145,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         { 
-                            "type": "h2",
+                            "type": "type/h2",
                             "data": "Icons"
                         },
                         "An icon needs two classes for it to render correctly: the class 'i' and the icon name. In the example shown below, 'i-caret-down' is the icon name. is the icon name.",
@@ -158,7 +158,7 @@
                             "data": "<hr class='hr--bleed'/>"
                         },
                         { 
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Multicoloured UI icons"
                         },
                         "The colours of these icons can be changed. There are four colour modifiers available:",
@@ -205,7 +205,7 @@
                             "type": "section",
                             "data": [
                             { 
-                                "type": "h4",
+                                "type": "type/h4",
                                 "data": "2. UI icons"
                             },
                             
@@ -252,7 +252,7 @@
                         },
 
                         { 
-                            "type": "h2",
+                            "type": "type/h2",
                             "data": "Single-colour UI icons"
                         },
                         {
@@ -282,7 +282,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Images"
                         },
                         {
@@ -306,7 +306,7 @@
                     "type":"/pattern-library/section-block",
                     "data":[
                         {
-                            "type":"h3",
+                            "type":"type/h3",
                             "data":"Containers"
                         },
                         "There are three main classes that make up a container: 'wrapper', 'section' and 'layout'.",
@@ -348,7 +348,7 @@
                             "data":"<br />"
                         },
                         {
-                            "type":"h4",
+                            "type":"type/h4",
                             "data":"Layout"
                         },
                         "Three layout classes govern the horizontal width and spacing of content: ‘layout’, ‘layout--half’ and ‘layout--nudge’. ",
@@ -383,7 +383,7 @@
                         },
                         
                         {
-                            "type":"h4",
+                            "type":"type/h4",
                             "data":"Container examples:"
                         },
                         "Here are some examples of containers we use throughout the site",

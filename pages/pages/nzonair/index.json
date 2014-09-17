@@ -5,7 +5,7 @@
     "template":"/pages/device.j2",
     "data": [
       {
-        "type": "global-nav",
+        "type": "navigation/global-nav",
         "external_theme": "theme--white",
         "logo":"nzoa-logo",
         "section":"section-s",
@@ -59,7 +59,7 @@
       	"external_theme":"theme--music",
       	"data":[
             {
-              "type": "breadcrumb",
+              "type": "navigation/breadcrumb",
               "data": [
                 {
                   "url": "#",
