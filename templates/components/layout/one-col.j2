@@ -4,33 +4,29 @@
 
 {% endif %}
 
-    <div class='[ wrapper ]'>
-        
-        {% if item.section or item.layout %}
+    <div class='[ wrapper ]'>   
 
         <div class='[ {{item.container_padding}} ] {{item.internal_theme}}'>
 
-        {% endif %}
-
             <div class='[ grid {{item.grid_modifier}} ] '>
 
-                <div class='[ col ] {{item.content_theme}}'>
+                {% for column in item.columns %}
                     
-                    <div class='{{item.content_padding}}'>
+                <div class="[ col {{column_size}} ] {{column.content_theme}}">
+                      
+                    <div class='{{column.content_padding}}'>
 
-                        {{ item|children }}
+                        {{ column|children }}
 
                     </div>
 
                 </div>
+
+                {% endfor %}
                 
             </div>
-
-        {% if item.section or item.layout %}
         
         </div>
-        
-        {% endif %}
 
     </div>
 

@@ -9,31 +9,33 @@
           "example": {
             "type":"layout/one-col--gutters",
             "container_padding":"section-top-xxl layout",
-            "section":"section-top-xxl",
-            "internal_theme":"theme--fred",
-            "content_theme":"",
-            "content_padding":"section-m layout-m",
-            "data":[
+            "columns":[
               {
-                "type": "navigation/breadcrumb",
-                "data": [
+                "content_theme":"theme--fred",
+                "content_padding":"section-m layout-m",
+                "data":[
                   {
-                    "url": "#",
-                    "title": "Link 1"
+                    "type": "navigation/breadcrumb",
+                    "data": [
+                      {
+                        "url": "#",
+                        "title": "Link 1"
+                      },
+                      {
+                        "url": "#",
+                        "title": "Link 2"
+                      }
+                    ]
                   },
                   {
-                    "url": "#",
-                    "title": "Link 2"
+                    "type":"type/h1",
+                    "data":"It’s about great songs "
+                  },
+                  { 
+                    "type":"type/intro",
+                    "data":"We are about connecting great and diverse local songs with their intended audiences."
                   }
                 ]
-              },
-              {
-                "type":"type/h1",
-                "data":"It’s about great songs "
-              },
-              { 
-                "type":"type/intro",
-                "data":"We are about connecting great and diverse local songs with their intended audiences."
               }
             ]
           }
