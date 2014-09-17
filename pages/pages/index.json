@@ -142,8 +142,7 @@
         },
         {
           "type":"gallery/three-col",
-          "section":"section",
-          "layout":"layout",
+          "container_padding":"section layout",
           "internal_theme":"theme--redcross",
           "gallery":[
             {

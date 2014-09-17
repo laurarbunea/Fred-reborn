@@ -58,8 +58,6 @@
       },
       {
         "type":"gallery/four-col",
-        "section":"section",
-        "layout":"layout",
         "internal_theme":"theme--white",
         "data":[ 
           { 
