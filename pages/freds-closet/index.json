@@ -16,7 +16,7 @@
                             "col_size":"two-thirds",
                             "data": [
                                 {
-                                    "type":"h2",
+                                    "type":"type/h2",
                                     "data":"Bare bones"
                                 },
                                
@@ -91,7 +91,7 @@
                     "type": "/pattern-library/font-styles",
                     "description":[
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Source Sans Pro"
                         },
                         "Source Sans Pro is an open source font, which is hosted by Google and included in the NZTA style sheets by default. In the unlikely event that Source Sans Pro doesn’t load, the typography will fall back to the default system sans serif, and everything will work beautifully anyway."
@@ -118,7 +118,7 @@
                     "type": "/pattern-library/font-sizes",
                     "intro":[
                                 {
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Font sizes"
                                 }
                             ],
@@ -126,7 +126,7 @@
                         {
                             "intro":[
                                 {
-                                    "type": "h4",
+                                    "type": "type/h4",
                                     "data": "a) Heading sizes"
                                 },
                                
@@ -135,27 +135,27 @@
                             "data":[
                                
                                 {
-                                    "type": "h1",
+                                    "type": "type/h1",
                                     "data": "h1.Heading size"
                                 },
                                 {
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "h2.Heading size"
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "h3.Heading size"
                                 },
                                 {
-                                    "type": "h4",
+                                    "type": "type/h4",
                                     "data": "h4.Heading size"
                                 },
                                 {
-                                    "type": "h5",
+                                    "type": "type/h5",
                                     "data": "h5.Heading size"
                                 },
                                 {
-                                    "type": "h6",
+                                    "type": "type/h6",
                                     "data": "h6.Heading size"
                                 }
                             ]
@@ -166,24 +166,24 @@
                         {
                             "intro":[
                                 {
-                                    "type": "h4",
+                                    "type": "type/h4",
                                     "data": "b) Body copy"
                                 },
                                 "Right now, we’re using 16pt 'Source Sans Pro, sans-serif' on a line-height of 1.5. There are also some other body copy sizes available, these are as follows:"
                             ],
                             "data":[
                                 {
-                                    "type": "intro",
+                                    "type": "type/intro",
                                     "data": "This is an intro paragraph"
                                 },
                                 "I am a normal paragraph",
                                
                                 {
-                                    "type": "text-small",
+                                    "type": "type/text-small",
                                     "data": "This is a small paragraph"
                                 },
                                 {
-                                    "type": "text-tiny",
+                                    "type": "type/text-tiny",
                                     "data": "This is a tiny paragraph"
                                 }
                             ]
