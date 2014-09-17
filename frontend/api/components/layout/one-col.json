@@ -1,0 +1,40 @@
+{
+    "api": {
+        "type": "layout/one-col",
+        "data": []
+    },
+    "examples": [
+        {
+          "title": "",
+          "example": {
+            "type":"layout/one-col",
+            "layout":"layout",
+            "section":"section-top-xxl",
+            "external_theme":"theme--music",
+            "data":[
+              {
+                "type": "navigation/breadcrumb",
+                "data": [
+                  {
+                    "url": "#",
+                    "title": "Link 1"
+                  },
+                  {
+                    "url": "#",
+                    "title": "Link 2"
+                  }
+                ]
+              },
+              {
+                "type":"type/h1",
+                "data":"It’s about great songs "
+              },
+              { 
+                "type":"type/intro",
+                "data":"We are about connecting great and diverse local songs with their intended audiences."
+              }
+            ]
+          }
+        }
+  ]
+}

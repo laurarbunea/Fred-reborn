@@ -36,7 +36,7 @@
         ]
       },
       {
-        "type":"layout-one-col",
+        "type":"layout/one-col",
         "layout":"layout",
         "section":"section-top-xxl",
         "external_theme":"theme--white",
@@ -50,7 +50,7 @@
          ]
       },
       {
-          "type":"layout-two-col",
+          "type":"layout/two-col",
           "section":"section",
           "external_theme":"theme--white",
           "layout":"layout",
@@ -95,8 +95,7 @@
           ] 
         },
         {
-          "type":"layout-one-col",
-    
+          "type":"layout/one-col",
           "external_theme":"theme--white",
           "layout":"layout",
           "grid_modifier":"grid--center",

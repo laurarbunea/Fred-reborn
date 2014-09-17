@@ -53,7 +53,7 @@
         ]
       },
     	{
-    		"type":"layout-one-col",
+    		"type":"layout/one-col",
       	"layout":"layout",
       	"section":"section-top-xxl",
       	"external_theme":"theme--music",

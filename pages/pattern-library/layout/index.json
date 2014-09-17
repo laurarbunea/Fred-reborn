@@ -1,0 +1,92 @@
+{
+    "title": "layout",
+    "headline": "Layout",
+    "template":"pattern-library/type.j2",
+    "data": [
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "One column"
+                        },
+                        "Basic two column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/layout/one-col"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "Two col"
+                        },
+                        "Basic two column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/layout/two-col"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "Three columns"
+                        },
+                        "Basic two column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/layout/three-col"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "Four columns"
+                        },
+                        "Basic two column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/layout/four-col"
+                        }
+                    ]
+                } 
+            ]
+        }
+        
+    ]
+}

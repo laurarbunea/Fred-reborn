@@ -74,7 +74,7 @@
             
         },
         {
-            "type":"layout-one-col",
+            "type":"layout/one-col",
             "layout":"layout",
             "title":"New Zealand Red Cross First Aid and Emergency App ",
             "grid_modifier":"grid--center",
@@ -92,7 +92,7 @@
             ]
         },
          {
-          "type":"layout-thirds",
+          "type":"layout/three-col",
           "section":"section",
           "layout":"layout",
           "internal_theme":"theme--redcross",
