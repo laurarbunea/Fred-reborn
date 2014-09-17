@@ -59,7 +59,8 @@
     %grid:after,
     %grid__break {
         @extend %inline-block; // This extend is found in core 
-        @extend %col; //100% width
+        @extend %full-width;
+        @extend %col-padding;
         height: 0;
         content: '';
     }
@@ -223,9 +224,8 @@ $cols-large: 10;
     }
 }
 
-%col {
-    @extend %full-width;
-    @include rem(padding-left, $space-m);
+%col-padding {
+
     padding-left: .5rem;
     padding-right: .5rem;
 
@@ -238,5 +238,10 @@ $cols-large: 10;
 }
 
 .col {
-    @extend %col;
+    @extend %col-padding;
+    @extend %full-width;
+}
+
+.col__padding {
+    @extend %col-padding;
 }

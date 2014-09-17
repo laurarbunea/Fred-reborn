@@ -8,7 +8,10 @@
         @extend %pt-m;
     }
 
-    & .subnav__content { @extend %col; }
+    & .subnav__content { 
+        @extend %col-padding;
+        @extend %full-width;
+    }
 
     & h2 { @extend %font-size-l; }
 

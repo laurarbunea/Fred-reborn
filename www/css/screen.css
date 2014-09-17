@@ -2696,7 +2696,7 @@ dd, .radio-button-list > li {
 .transaction_links, .radio-button-list {
   border-bottom: 1px solid #F2F2EB; }
 
-.full-width, .section--nav > .section__content:after, .col, .subnav--tertiary .subnav__content, .field, [type='text'], [type='email'], [type='date'], [type='number'], select, body:after, .header__image img {
+.section--nav > .section__content:after, .full-width, .col, body:after, .subnav--tertiary .subnav__content, .header__image img, .field, [type='text'], [type='email'], [type='date'], [type='number'], select {
   width: 100%; }
 
 p, .text, code, dt, dd, td, th {
@@ -4052,13 +4052,11 @@ a.active {
   .large-10 {
     width: 100%; } }
 
-.section--nav > .section__content:after, .col, .subnav--tertiary .subnav__content, .field, [type='text'], [type='email'], [type='date'], [type='number'], select {
-  padding-left: 16px;
-  padding-left: 1rem;
+.section--nav > .section__content:after, .col, .col__padding, .subnav--tertiary .subnav__content {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
   @media only screen and (min-width: 37.5em) {
-    .section--nav > .section__content:after, .col, .subnav--tertiary .subnav__content, .field, [type='text'], [type='email'], [type='date'], [type='number'], select {
+    .section--nav > .section__content:after, .col, .col__padding, .subnav--tertiary .subnav__content {
       padding-left: 1rem;
       padding-right: 1rem; } }
 

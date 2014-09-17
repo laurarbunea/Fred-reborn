@@ -65,6 +65,27 @@
                     ]
                 } 
             ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "Four col with gutters"
+                        },
+                        "Basic four column gallery ..",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/gallery/four-col--gutters"
+                        }
+                    ]
+                } 
+            ]
         }
         
     ]

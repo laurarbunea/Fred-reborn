@@ -1,13 +1,13 @@
 {
     "api": {
-        "type": "gallery/four-col",
+        "type": "gallery/four-col--gutters",
         "data": []
     },
     "examples": [
         {
             "title": "",
             "example": {
-                "type":"gallery/four-col",
+                "type":"gallery/four-col--gutters",
                 "container_padding":"section layout",
                 "internal_theme":"theme--white",
                 "data":[ 
@@ -58,13 +58,15 @@
                     "title": "Mr Sneezy",
                     "caption":"I'm sneezy"
                   }
+
                 ]
             }
+            
         },
         {
-            "title": "example with content themes and padding",
+            "title": "example with content themes applied",
             "example": {
-                "type":"gallery/four-col",
+                "type":"gallery/four-col--gutters",
                 "container_padding":"section layout",
                 "internal_theme":"theme--white",
                 "data":[ 
@@ -75,52 +77,55 @@
                   "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
                 ],
                 "gallery":[
+
                   {
-                    "content_theme":"theme--green",
-                    "content_padding":"layout-s section-top-xs",
+                    "content_theme":"theme--orange",
                     "img":
                       {
                         "src":"/images/placeholders/ph1.jpg",
                         "alt":"alt tag"
                       }
                     ,
-                    "title": "Mr Coolio"
+                    "title": "Mr Coolio",
+                    "caption":"I'm cool "
                   },
                   {
-                    "content_theme":"theme--orange",
-                    "content_padding":"layout-s section-top-xs",
+                    "content_theme":"theme--green",
                     "img":
                       {
                         "src":"/images/placeholders/ph2.jpg",
                         "alt":"alt tag"
                       }
                     ,
-                    "title": "Mr Doppy"
+                    "title": "Mr Doppy",
+                    "caption":"I'm dopey"
                   },
                   {
-                    "content_theme":"theme--green",
-                    "content_padding":"layout-s section-top-xs",
+                    "content_theme":"theme--orange",
                     "img":
                       {
                         "src":"/images/placeholders/ph3.jpg",
                         "alt":"alt tag"
                       }
                     ,
-                    "title": "Mr Sleepy"
+                    "title": "Mr Sleepy",
+                    "caption":"I'm sleepy "
                   },
                   {
-                    "content_theme":"theme--orange",
-                    "content_padding":"layout-s section-top-xs",
+                    "content_theme":"theme--green",
                     "img":
                       {
                         "src":"/images/placeholders/ph4.jpg",
                         "alt":"alt tag"
                       }
                     ,
-                    "title": "Mr Sneezy"
+                    "title": "Mr Sneezy",
+                    "caption":"I'm sneezy"
                   }
+
                 ]
             }
+            
         }
     ]
 }

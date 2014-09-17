@@ -47,7 +47,7 @@
     @extend %pr-s;
     @extend %block-element;
     @extend %border-box;
-    @extend %col;
+    @extend %full-width;
     @include rem(border-radius, $space-xxs);
     -webkit-appearance:none;
     border:1px solid $form-input-color;
@@ -104,7 +104,7 @@ label {
 
 select {
     @extend %block-element;
-    @extend %col;
+    @extend %full-width;
     padding:.5rem;
     font-family: inherit;
     font-size: inherit;
