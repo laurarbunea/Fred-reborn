@@ -2805,15 +2805,15 @@ pre > code {
 
 @media only screen and (min-width: 60em) {
   .im-on-large .swatch__top {
-    background-color: #37b67f; } }
+    background-color: #f07e5c; } }
 
 @media only screen and (min-width: 37.5em) and (max-width: 59.99em) {
   .im-on-medium .swatch__top {
-    background-color: #37b67f; } }
+    background-color: #f07e5c; } }
 
 @media only screen and (max-width: 37.49em) {
   .im-on-small .swatch__top {
-    background-color: #37b67f; } }
+    background-color: #f07e5c; } }
 
 .hr--bleed {
   margin-left: -10%;

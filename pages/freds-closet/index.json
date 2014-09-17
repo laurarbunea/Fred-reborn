@@ -5,7 +5,7 @@
     "data": [
         {
             "type": "container",
-            "external_theme":"theme--neutral",
+            "internal_theme":"theme--fred",
             "layout":"layout",
             "section":"section-xxxxl",
             "data": [
@@ -24,44 +24,44 @@
                                 {
                                   "type": "btn",
                                   "label": "Typography",
-                                  "theme": "secondary",
+                                  "theme": "dark",
                                   "href":"#typography"
 
                                 },
                                 {
                                   "type": "btn",
                                   "label": "Font sizes",
-                                  "theme": "secondary",
+                                  "theme": "dark",
                                   "href":"#font-sizes"
                                 },
                                 {
                                   "type": "btn",
                                   "label": "Themes",
-                                  "theme": "secondary",
+                                  "theme": "dark",
                                   "href":"#themes"
                                 },
                                 {
                                   "type": "btn",
                                   "label": "Grid breakpoints",
-                                  "theme": "secondary",
+                                  "theme": "dark",
                                   "href":"#grid"
                                 },
                                 {
                                   "type": "btn",
                                   "label": "Spacing helpers",
-                                  "theme": "secondary",
+                                  "theme": "dark",
                                   "href":"#spacing-helpers"
                                 },
                                 {
                                   "type": "btn",
                                   "label": "Section helpers",
-                                  "theme": "secondary",
+                                  "theme": "dark",
                                   "href":"#section-helpers"
                                 },
                                 {
                                   "type": "btn",
                                   "label": "Layout helpers",
-                                  "theme": "secondary",
+                                  "theme": "dark",
                                   "href":"#layout-helpers"
                                 }
                             ]
@@ -81,8 +81,8 @@
             ]
         },
         {
-            "type": "/pattern-library/section",
-            "class":"theme--dark",
+            "type": "/pattern-library/bare-bones-section",
+            "internal_theme":"theme--dark",
             "title":"Typography",
             "anchor":"typography",
             "intro":"A place to document font-stacks used on your project's site ",
@@ -108,8 +108,8 @@
             ]
         },
         {
-            "type": "/pattern-library/section",
-            "class":"theme--light",
+            "type": "/pattern-library/bare-bones-section",
+            "internal_theme":"theme--white",
             "title":"Font sizes",
             "anchor":"sizes",
             "intro":"A place to document font-stacks used on your project's site ",
@@ -193,8 +193,8 @@
             ]
         },
         {
-            "type": "/pattern-library/section",
-            "class":"theme--dark",
+            "type": "/pattern-library/bare-bones-section",
+            "internal_theme":"theme--dark",
             "title":"Themes",
             "anchor":"themes",
             "intro":"A place to document your sites themes",
@@ -214,8 +214,8 @@
             ]
         },
         {
-            "type": "/pattern-library/section",
-            "class":"theme--light",
+            "type": "/pattern-library/bare-bones-section",
+            "internal_theme":"theme--fred",
             "title":"Grid breakpoints",
             "anchor":"grid",
             "intro":"A place to document your grids breakpoints",
@@ -248,8 +248,8 @@
             ]
         },
         {
-            "type": "/pattern-library/section",
-            "class":"theme--dark",
+            "type": "/pattern-library/bare-bones-section",
+            "internal_theme":"theme--dark",
             "title":"Spacing helpers",
             "anchor":"spacing-helpers",
             "intro":"A place to document the base spacing sizes on your site",
@@ -298,8 +298,8 @@
             ]
         },
         {
-            "type": "/pattern-library/section",
-            "class":"theme--light",
+            "type": "/pattern-library/bare-bones-section",
+            "internal_theme":"theme--white",
             "title":"Section helpers",
             "anchor":"section-helpers",
             "intro":"A place to document your vertical spacing sizes",
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "type": "/pattern-library/section",
-            "class":"theme--dark",
+            "type": "/pattern-library/bare-bones-section",
+            "internal_theme":"theme--dark",
             "title":"Layout helpers",
             "anchor":"layout-helpers",
             "intro":"A place to document your horizontal spacing sizes",

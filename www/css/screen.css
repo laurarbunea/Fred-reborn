@@ -3716,6 +3716,10 @@ blockquote {
 .text-muted {
   color: grey; }
 
+.btn--dark {
+  background-color: #293f54;
+  color: #fff; }
+
 .test {
   content: '';
   width: 0;
