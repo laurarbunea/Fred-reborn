@@ -561,7 +561,7 @@ dd {
   margin-left: 0.75rem;
   /* fallback  times by 6 */ }
 
-.icon-link--reversed i {
+.icon-link--reversed i, .device {
   margin-left: 16px;
   margin-left: 1rem;
   /* fallback  times by 6 */ }
@@ -626,7 +626,7 @@ dd {
   margin-right: 0.75rem;
   /* fallback  times by 6 */ }
 
-.icon-link i, .search-container {
+.icon-link i, .device, .search-container {
   margin-right: 16px;
   margin-right: 1rem;
   /* fallback  times by 6 */ }

@@ -103,6 +103,8 @@
 
 
 .device {
+    @extend %ml-m;
+    @extend %mr-m;
     background-color:#efefef;
     border-color:#555555;
     border-style: solid;
