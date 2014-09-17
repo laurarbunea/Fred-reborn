@@ -14,7 +14,7 @@
             "grid_modifier":"grid--center",
             "column_one":[
                 {
-                  "internal_theme":"theme--orange",
+                  "content_theme":"theme--orange",
                   "content_padding":"section-top layout-m",
                   "data":[
                     {
@@ -33,7 +33,7 @@
             ],
             "column_two":[
               {
-                "internal_theme":"theme--green",
+                "content_theme":"theme--green",
                 "content_padding":"section-top layout-m",
                 "data":[
                   {

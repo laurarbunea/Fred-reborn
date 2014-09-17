@@ -8,7 +8,7 @@
         
         {% if item.section or item.layout %}
 
-        <div class='[ {{item.section}} {{item.layout}} ] '>
+        <div class='[ {{item.section}} {{item.layout}} ] {{item.internal_theme}}'>
 
         {% endif %}
 
@@ -16,7 +16,7 @@
 
                 <div class='[ col ] '>
                     
-                    <div class='{{item.internal_theme}} {{item.content_padding}}'>
+                    <div class='{{item.content_theme}} {{item.content_padding}}'>
 
                         {{ item|children }}   
 

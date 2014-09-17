@@ -8,13 +8,13 @@
         
         {% if item.section or item.layout %}
 
-        <div class='[ {{item.section}} {{item.layout}} ] '>
+        <div class='[ {{item.section}} {{item.layout}} ] {{item.internal_theme}}'>
 
         {% endif %}
 
             <div class='[ grid {{item.grid_modifier}} ] '>
 
-                <div class='[ col ] {{item.internal_theme}}'>
+                <div class='[ col ] {{item.content_theme}}'>
                     
                     <div class='{{item.content_padding}}'>
 

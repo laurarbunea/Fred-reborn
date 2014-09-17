@@ -11,6 +11,7 @@
             "layout":"layout",
             "section":"section-top-xxl",
             "internal_theme":"theme--fred",
+            "content_theme":"",
             "content_padding":"section-m layout-m",
             "data":[
               {

@@ -95,7 +95,7 @@
           ] 
         },
         {
-          "type":"layout/one-col",
+          "type":"layout/one-col--gutters",
           "external_theme":"theme--white",
           "layout":"layout",
           "grid_modifier":"grid--center",

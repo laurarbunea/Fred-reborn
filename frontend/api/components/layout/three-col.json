@@ -13,7 +13,7 @@
           "internal_theme":"theme--black",
           "column_one":[
               {
-                "internal_theme":"theme--orange",
+                "content_theme":"theme--orange",
                 "content_padding":"section-m",
                 "data":[
                     {
@@ -28,7 +28,7 @@
           ],
           "column_two":[
               {
-                  "internal_theme":"theme--green",
+                  "content_theme":"theme--green",
                   "content_padding":"section-m",
                   "data":[
                     {
@@ -42,7 +42,7 @@
           ],
           "column_three":[
               {
-                  "internal_theme":"theme--orange",
+                  "content_theme":"theme--orange",
                   "content_padding":"section-m",
                   "data":[
                     {

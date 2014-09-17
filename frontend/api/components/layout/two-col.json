@@ -10,11 +10,12 @@
             "type":"layout/two-col",
             "section":"section",
             "external_theme":"theme--white",
+            "internal_theme":"",
             "layout":"layout",
             "grid_modifier":"grid--center",
             "column_one":[
                 {
-                  "internal_theme":"theme--orange",
+                  "content_theme":"theme--orange",
                   "content_padding":"section-top",
                   "data":[
                     {
@@ -33,7 +34,7 @@
             ],
             "column_two":[
               {
-                "internal_theme":"theme--green",
+                "content_theme":"theme--green",
                 "content_padding":"section-top",
                 "data":[
                   {
