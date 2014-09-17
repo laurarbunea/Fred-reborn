@@ -37,8 +37,7 @@
       },
       {
         "type":"layout/one-col",
-        "layout":"layout",
-        "section":"section-top-xxl",
+        "container_padding":"layout section-top-xxl",
         "external_theme":"theme--white",
         "data":[
             
@@ -51,9 +50,8 @@
       },
       {
           "type":"layout/two-col--gutters",
-          "section":"section",
+          "container_padding":"section layout",
           "external_theme":"theme--white",
-          "layout":"layout",
           "grid_modifier":"grid--center",
           "column_one":[
               {
@@ -96,8 +94,8 @@
         },
         {
           "type":"layout/one-col--gutters",
+          "container_padding":"layout ",
           "external_theme":"theme--white",
-          "layout":"layout",
           "grid_modifier":"grid--center",
           "content_theme":"theme--springload-green",
           "content_padding":"section-top layout-m",

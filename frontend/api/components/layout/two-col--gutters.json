@@ -8,9 +8,8 @@
           "title": "",
           "example": {
             "type":"layout/two-col--gutters",
-            "section":"section",
+            "container_padding":"section layout",
             "external_theme":"theme--black",
-            "layout":"layout",
             "grid_modifier":"grid--center",
             "column_one":[
                 {

@@ -8,7 +8,7 @@
           "title": "",
           "example": {
             "type":"layout/one-col--gutters",
-            "layout":"layout",
+            "container_padding":"section-top-xxl layout",
             "section":"section-top-xxl",
             "internal_theme":"theme--fred",
             "content_theme":"",

@@ -8,8 +8,7 @@
           "title": "",
           "example": {
           "type":"layout/three-col",
-          "section":"section",
-          "layout":"layout",
+          "container_padding":"section layout",
           "internal_theme":"theme--black",
           "column_one":[
               {

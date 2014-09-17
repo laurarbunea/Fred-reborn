@@ -153,8 +153,7 @@ module.exports = function(grunt) {
                         "roadworks": [".route > .route__item.route__item--roadworks:after"],
                         "warning": [".route > .route__item.route__item--warning:after"],
                         "bg-hatched": [".breakline--hatched:before, .subnav__nav:before, .hatched-line:before, .level-1 .traffic-info__header:after"],
-                        "mask-traffic-figure": [".route .route__figure:after"],
-                        "nzta-logo-coloured": [".theme--full-colour .i-nzta-logo"]
+                        "mask-traffic-figure": [".route .route__figure:after"]
                     },
 
                     previewhtml: "icons-preview.html",

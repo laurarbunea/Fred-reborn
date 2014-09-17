@@ -54,8 +54,7 @@
       },
     	{
     		"type":"layout/one-col",
-      	"layout":"layout",
-      	"section":"section-top-xxl",
+        "container_padding":"layout section-top-xxl",
       	"external_theme":"theme--music",
       	"data":[
             {
@@ -95,8 +94,7 @@
 		},
 		{
       "type":"gallery/three-col",
-      "section":"section",
-      "layout":"layout",
+      "container_padding":"section layout",
       "external_theme":"theme--music",
       "gallery":[
         {
