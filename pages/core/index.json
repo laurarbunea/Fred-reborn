@@ -18,12 +18,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h1",
+                                    "type": "type/h1",
                                     "data": "Core"
                                 },
                                 "Here are some handy little classes that will come in useful when building modules for this site.",
                                 {
-                                    "type": "list",
+                                    "type": "type/list",
                                     "class": "list--inline",
                                     "data": [
                                         "<a href='#blocks' class='pill'>Blocks</a>",
@@ -51,11 +51,11 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Blocks"
                                 },
                                 { 
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Inline blocks"
                                 },
                                 "Inline blocks are handy for everything. We don't often support projects in IE7 and below, but since it's trivial to hack it in, we've included it here.",
@@ -67,7 +67,7 @@
                                     ]
                                 },
                                 { 
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Block elements"
                                 },
                                 "Blocks are handy for everything",
@@ -90,11 +90,11 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "First child helpers"
                                 },
                                 { 
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Remove top margin from first-child elements"
                                 },
                                 {
@@ -104,7 +104,7 @@
                                     ]
                                 },
                                 { 
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Remove top border from first-child elements"
                                 },
                                 {
@@ -127,7 +127,7 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Fixing Chrome/WebKit type rendering"
                                 },
                                "Since v22, Chrome makes fat sausage horrible web typography. Fix it with these properties right here:",
@@ -165,7 +165,7 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Append and Prepend"
                                 },
                                 "Place something before or after an element",
@@ -191,7 +191,7 @@
                             "data": [
 
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Clearfixing"
                                 },
                                 "Table-pseudo element clearfix. It is good.",
@@ -224,7 +224,7 @@
                             "data": [
 
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Screen reader content"
                                 },
                                 "We've found some odd bugs with the -999px textindent hack. Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.",
@@ -249,12 +249,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Typography helpers"
                                 },
                                 "Here are some handy little classes that will come in useful when building modules for this site.",
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Text alignment classes"
                                 },
                                 {
@@ -264,7 +264,7 @@
                                     ]
                                 },        
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Uppercase and lowercase"
                                 },
                                 {
@@ -274,7 +274,7 @@
                                     ] 
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Font weights "
                                 },
                                 {
@@ -285,7 +285,7 @@
                                 },
                                
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Text overflow"
                                 },
                                 {
@@ -309,12 +309,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "List helpers"
                                 },
                                 "blah",
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Inline list"
                                 },
                                 {
@@ -324,7 +324,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Block lists"
                                 },
                                 {
@@ -346,12 +346,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Layout helpers"
                                 },
                                 "blah",
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Floating helpers"
                                 },
                                 {
@@ -361,7 +361,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Absolute and Relative helpers"
                                 },
                                 {
@@ -371,7 +371,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Centering elements"
                                 },
                                 {
@@ -381,7 +381,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Alligning elements"
                                 },
                                 {
@@ -391,7 +391,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Overflow"
                                 },
                                 {
@@ -413,12 +413,12 @@
                             "type" : "/pattern-library/section-block",
                             "data": [
                                 { 
-                                    "type": "h2",
+                                    "type": "type/h2",
                                     "data": "Link helpers"
                                 },
                                 "blah",
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Disabled link"
                                 },
                                 {
@@ -428,7 +428,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Draggable link"
                                 },
                                 {
@@ -438,7 +438,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "h3",
+                                    "type": "type/h3",
                                     "data": "Clean link"
                                 },
                                 {
