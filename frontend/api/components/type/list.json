@@ -7,7 +7,7 @@
         {
             "title": "",
             "example": {
-                "type": "list",
+                "type": "type/list",
                 "data": [
                     "first list item",
                     "second list item",
@@ -25,7 +25,7 @@
                     "second list item",
       
                     {
-                        "type": "list",
+                        "type": "type/list",
                         "text":"third list item",
                         "data": [
                             "a nested list item",

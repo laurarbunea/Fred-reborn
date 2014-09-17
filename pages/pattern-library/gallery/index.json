@@ -1,7 +1,7 @@
 {
     "title": "gallery",
     "headline": "Gallery",
-    "template":"pattern-library/type.j2",
+    "template":"pattern-library/gallery.j2",
     "data": [
         {
             "type" : "section",

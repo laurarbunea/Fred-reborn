@@ -14,11 +14,11 @@
                 "type": "form/field--details",
                 "data": [
                     {
-                        "type":"h4",
+                        "type":"type/h4",
                         "data":"Form subheading"
                     },
                     {
-                        "type":"p",
+                        "type":"type/p",
                         "data":"Arrive <strong>30 minutes before your test starts</strong> to allow time to complete your application."
                     }
                 ]

@@ -1,13 +1,13 @@
 {
     "api": {
-        "type": "dl",
+        "type": "type/dl",
         "data": []
     },
     "examples": [
         {
             "title": "",
             "example": {
-                "type": "dl",
+                "type": "type/dl",
                 "heading":"Full licence costs",
                 "data": [
                     {

@@ -164,7 +164,7 @@
                         "The colours of these icons can be changed. There are four colour modifiers available:",
                         
                         {
-                            "type": "ol",
+                            "type": "type/ol",
                             "data": [
                                 "i--red",
                                 "i--dark-grey",
@@ -329,7 +329,7 @@
                             "data":
                             [
                                 {
-                                    "type":"grid-one-col",
+                                    "type":"layout/one-col",
                                     "data":[
                                         {
                                             "type":"p",

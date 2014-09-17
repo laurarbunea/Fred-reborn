@@ -1,7 +1,7 @@
 {
     "title": "layout",
     "headline": "Layout",
-    "template":"pattern-library/type.j2",
+    "template":"pattern-library/layout.j2",
     "data": [
         {
             "type" : "section",

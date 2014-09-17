@@ -10,7 +10,7 @@
                 "type": "content-block",
                 "data": [
                     {
-                        "type":"h2",
+                        "type":"type/h2",
                         "data":"Content block heading"
                     },
                     "This is the introductory sentence of your content paragraph. Go ahead and add more sentences — but for the sake of your users, try to keep paragraphs short and to the point."

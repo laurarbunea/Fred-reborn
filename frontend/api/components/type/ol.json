@@ -7,7 +7,7 @@
         {
             "title": "",
             "example": {
-                "type": "ol",
+                "type": "type/ol",
                 "data": [
                     "Start by doing this.",
                     "Then do this.",
@@ -24,7 +24,7 @@
                     "Then do this.",
       
                     {
-                        "type": "ol",
+                        "type": "type/ol",
                         "text":"I am a second list item",
                         "data": [
                             "Do this.",

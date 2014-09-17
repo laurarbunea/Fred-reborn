@@ -1,0 +1,60 @@
+{% extends "/pattern-library/index.j2" %}
+{% import "macros.j2" as macros %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="/css/style-guide.css">
+{% endblock %}
+
+
+{% block content %}
+
+    <div class='theme--neutral'>
+
+        <div class='[ wrapper ]'>
+
+            <div class='[ layout ] styleguide-anchors'>
+
+                <div class='[ grid ]'>
+          
+                    <ul class='[ col ] nav'>
+
+                        <li>
+                            <a href='#two-col' class='pill pill-inverted'>
+                               2 column
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#three-col' class='pill pill-inverted'>
+                               3 column
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href='#four-col' class='pill pill-inverted'>
+                               4 column
+                            </a>
+                        </li>
+
+                    </ul>
+                  
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class='theme--neutral'>
+
+        <div class='wrapper'>
+
+            {% for item in data %}
+                {{ item|component }}
+            {% endfor %}
+        </div> 
+
+    </div>
+    
+{% endblock %}

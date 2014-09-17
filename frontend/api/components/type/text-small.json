@@ -1,13 +1,13 @@
 {
     "api": {
-        "type": "text-small",
+        "type": "type/text-small",
         "data": []
     },
     "examples": [
         {
             "title": "",
             "example": {
-                "type": "text-small",
+                "type": "type/text-small",
                 "data": " I’m a paragraph of small text. Use me for UI labels or less important information."
             }
         }
