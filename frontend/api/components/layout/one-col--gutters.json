@@ -1,17 +1,17 @@
 {
     "api": {
-        "type": "layout/one-col",
+        "type": "layout/one-col--gutters",
         "data": []
     },
     "examples": [
         {
           "title": "",
           "example": {
-            "type":"layout/one-col",
+            "type":"layout/one-col--gutters",
             "layout":"layout",
             "section":"section-top-xxl",
             "internal_theme":"theme--fred",
-            "content_padding":"section-m",
+            "content_padding":"section-m layout-m",
             "data":[
               {
                 "type": "navigation/breadcrumb",

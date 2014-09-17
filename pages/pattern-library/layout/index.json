@@ -6,7 +6,7 @@
         {
             "type" : "section",
             "size": "s",
-            "anchor" : "h1",
+            "anchor" : "one-col",
             "data": [ 
                 {
                     "type" : "/pattern-library/section-block",
@@ -15,7 +15,7 @@
                             "type": "type/h2",
                             "data": "One column"
                         },
-                        "Basic two column",
+                        "Basic one column",
                         {
                             "type": "pattern-library/code-example",
                             "component": "components/layout/one-col"
@@ -27,7 +27,28 @@
         {
             "type" : "section",
             "size": "s",
-            "anchor" : "h1",
+            "anchor" : "one-col",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "One column with gutters"
+                        },
+                        "Basic one column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/layout/one-col--gutters"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "two-col",
             "data": [ 
                 {
                     "type" : "/pattern-library/section-block",
@@ -48,7 +69,7 @@
         {
             "type" : "section",
             "size": "s",
-            "anchor" : "h1",
+            "anchor" : "two-col--gutters",
             "data": [ 
                 {
                     "type" : "/pattern-library/section-block",
@@ -69,7 +90,7 @@
         {
             "type" : "section",
             "size": "s",
-            "anchor" : "h1",
+            "anchor" : "three-col",
             "data": [ 
                 {
                     "type" : "/pattern-library/section-block",
@@ -78,10 +99,31 @@
                             "type": "type/h2",
                             "data": "Three columns"
                         },
-                        "Basic two column",
+                        "Basic three column",
                         {
                             "type": "pattern-library/code-example",
                             "component": "components/layout/three-col"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "three-col--gutters",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "Three columns"
+                        },
+                        "Basic three column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/layout/three-col--gutters"
                         }
                     ]
                 } 

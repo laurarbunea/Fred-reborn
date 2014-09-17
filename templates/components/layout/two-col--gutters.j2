@@ -8,19 +8,19 @@
         
         {% if item.section or item.layout %}
 
-        <div class='[ {{item.section}} {{item.layout}} ] {{item.internal_theme}}'>
+        <div class='[ {{item.section}} {{item.layout}} ] '>
 
         {% endif %}
 
-            <div class='[ grid {{item.grid_modifier }} ] {{item.theme}}'>
+            <div class='[ grid {{item.grid_modifier }} ]'>
  
-                {% for item in item.column_one %}
+                {% for column in item.column_one %}
                     
-                <div class="[ col half ] {{item.class }}">
+                <div class="[ col half ] {{column.class }}">
                               
-                    <div class='{{item.internal_theme}} {{item.content_padding}}'>
+                    <div class='{{column.internal_theme}} {{column.content_padding}}'>
 
-                        {{ item|children }}
+                        {{ column|children }}
                     
                     </div >
                     
@@ -28,12 +28,12 @@
 
                 {% endfor %}
 
-                {% for item in item.column_two %}
+                {% for column in item.column_two %}
                     
-                <div class="[ col half ] {{item.class }}">
+                <div class="[ col half ] {{column.class }}">
                       
-                    <div class='{{item.internal_theme}} {{item.content_padding}}'>       
-                        {{ item|children }}
+                    <div class='{{column.internal_theme}} {{column.content_padding}}'>       
+                        {{ column|children }}
 
                     </div >
                    

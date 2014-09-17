@@ -1,56 +1,51 @@
 {
     "api": {
-        "type": "layout/three-col",
+        "type": "layout/three-col--gutters",
         "data": []
     },
     "examples": [
         {
           "title": "",
           "example": {
-          "type":"layout/three-col",
+          "type":"layout/three-col--gutters",
           "section":"section",
           "layout":"layout",
-          "internal_theme":"theme--black",
           "column_one":[
               {
                 "internal_theme":"theme--orange",
-                "content_padding":"section-m",
+                "content_padding":"section-s layout-s",
                 "data":[
                     {
                       "type":"type/h3",
                       "data":"First aid training "
                     },
                     "Book first aid training with New Zealand Red Cross - We're the leading first aid provider in Aotearoa."
-
-                    
                 ]
             }
           ],
           "column_two":[
               {
                   "internal_theme":"theme--green",
-                  "content_padding":"section-m",
+                  "content_padding":"section-s layout-s",
                   "data":[
                     {
                       "type":"type/h3",
                       "data":"How we help "
                     },
-                    "From delivering meals on wheels to resettling refugee families in New Zealand, our dedicated volunteers are there to help wherever the need is greatest. "
-                    
+                    "From delivering meals on wheels to resettling refugee families in New Zealand, our dedicated volunteers are there to help wherever the need is greatest. "  
                 ]
               }
           ],
           "column_three":[
               {
                   "internal_theme":"theme--orange",
-                  "content_padding":"section-m",
+                  "content_padding":"section-s layout-s",
                   "data":[
                     {
                       "type":"type/h3",
                       "data":"Get involved "
                     },
-                    "Whether you have an hour or a dollar, you can help make a difference. "
-                    
+                    "Whether you have an hour or a dollar, you can help make a difference. "  
                 ]
               }
           ] 

@@ -12,16 +12,16 @@
 
         {% endif %}
 
-            <div class='[ grid {{item.grid_modifier }} ] '>
+            <div class='[ grid {{item.grid_modifier }} ] {{item.theme}}'>
  
                 {% for column in item.column_one %}
                     
-                <div class="[ col third ] {{column.internal_theme }} {{column.class }}">
+                <div class="[ col third ] {{column.class }}">
                     
-                    <div class='{{column.content_padding}}'>
+                    <div class='{{column.internal_theme }} {{column.content_padding}}'>
 
                         {{ column|children }}
-                        
+
                     </div>
                     
                 </div>
@@ -30,26 +30,26 @@
 
                 {% for column in item.column_two %}
                     
-                <div class="[ col third ] {{column.internal_theme }} {{column.class }}">
+                <div class="[ col third ] {{column.class }}">
                     
-                    <div class='{{column.content_padding}}'>
+                    <div class='{{column.internal_theme }} {{column.content_padding}}'>
 
                         {{ column|children }}
-                        
+
                     </div>
                    
                 </div>
 
                 {% endfor %}
 
-                {% for item in item.column_three %}
+                {% for column in item.column_three %}
                     
-                <div class="[ col third ] {{item.internal_theme }} {{item.class }}">
+                <div class="[ col third ] {{column.class }}">
                     
-                    <div class='{{item.content_padding}}'>
+                    <div class='{{column.internal_theme }} {{column.content_padding}}'>
 
-                        {{ item|children }}
-                        
+                        {{ column|children }}
+
                     </div>
                    
                 </div>
