@@ -50,14 +50,14 @@
          ]
       },
       {
-          "type":"layout/two-col",
+          "type":"layout/two-col--gutters",
           "section":"section",
           "external_theme":"theme--white",
           "layout":"layout",
           "grid_modifier":"grid--center",
           "column_one":[
               {
-                "content_theme":"theme--orange",
+                "internal_theme":"theme--orange",
                 "content_padding":"section-top layout-m",
                 "data":[
                   {
@@ -76,7 +76,7 @@
           ],
           "column_two":[
             {
-              "content_theme":"theme--green",
+              "internal_theme":"theme--green",
               "content_padding":"section-top layout-m",
               "data":[
                 {

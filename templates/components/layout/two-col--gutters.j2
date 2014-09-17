@@ -16,28 +16,27 @@
  
                 {% for item in item.column_one %}
                     
-                <div class="[ col half ] {{item.internal_theme}} {{item.class }}">
-                      
-                    <div class='{{item.content_padding}}'>
+                <div class="[ col half ] {{item.class }}">
+                              
+                    <div class='{{item.internal_theme}} {{item.content_padding}}'>
 
                         {{ item|children }}
-
-                    </div>
-
+                    
+                    </div >
+                    
                 </div>
 
                 {% endfor %}
 
                 {% for item in item.column_two %}
                     
-                <div class="[ col half ] {{item.internal_theme }} {{item.class }}">
-
-                    <div class='{{item.content_padding}}'>
-
+                <div class="[ col half ] {{item.class }}">
+                      
+                    <div class='{{item.internal_theme}} {{item.content_padding}}'>       
                         {{ item|children }}
-                        
-                    </div>
-        
+
+                    </div >
+                   
                 </div>
 
                 {% endfor %}

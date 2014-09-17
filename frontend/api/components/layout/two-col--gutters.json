@@ -1,21 +1,21 @@
 {
     "api": {
-        "type": "layout/two-col",
+        "type": "layout/two-col--gutters",
         "data": []
     },
     "examples": [
         {
           "title": "",
           "example": {
-            "type":"layout/two-col",
+            "type":"layout/two-col--gutters",
             "section":"section",
-            "external_theme":"theme--white",
+            "external_theme":"theme--black",
             "layout":"layout",
             "grid_modifier":"grid--center",
             "column_one":[
                 {
                   "internal_theme":"theme--orange",
-                  "content_padding":"section-top",
+                  "content_padding":"section-top layout-m",
                   "data":[
                     {
                       "type":"type/h3",
@@ -34,7 +34,7 @@
             "column_two":[
               {
                 "internal_theme":"theme--green",
-                "content_padding":"section-top",
+                "content_padding":"section-top layout-m",
                 "data":[
                   {
                     "type":"type/h3",
