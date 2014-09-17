@@ -38,7 +38,7 @@
           ],
           "column_three":[
               {
-                  "internal_theme":"theme--orange",
+                  "content_theme":"theme--orange",
                   "content_padding":"section-s layout-s",
                   "data":[
                     {

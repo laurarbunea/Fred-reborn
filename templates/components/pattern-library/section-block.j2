@@ -1,8 +1,8 @@
-<div class='[ section{% if item.size %}-{{item.size}}{% endif %} layout ] theme--white' {%if item.anchor %}id='{{item.anchor}}'{% endif %}>
+<div class='[ section layout mt-l theme--white' {%if item.anchor %} id='{{item.anchor}}'{% endif %}>
     
-    <div class='grid'>
+    <div class='[ grid ]'>
         
-        <div class='[ col ] {{item.col}}'>
+        <div class='[ col ] '>
 
             {{ item|children }}
 

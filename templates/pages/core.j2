@@ -6,42 +6,13 @@
 {% endblock %}
 
 {% block content %}
+   
 
-    <!--<div class='theme--neutral'>
+    {% for item in data %}
 
-        <div class='[ wrapper ]'>
+        {{ item|component }}
 
-            <div class='[ layout ] styleguide-anchors'>
-
-                <div class='[ grid ]'>
-          
-                    <ul class='[ col ] nav'>
-
-                        <li>
-                            <a href='#typography-helpers' class='pill'>
-                               Typography helpers
-                            </a>
-                        </li>
-
-                    </ul>
-                  
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>-->
-
-    <div class='theme--neutral'>
-
-        <div class='wrapper'>
-
-            {% for item in data %}
-                {{ item|component }}
-            {% endfor %}
-        </div> 
-
-    </div>
+    {% endfor %}
+       
     
 {% endblock %}
