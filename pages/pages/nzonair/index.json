@@ -94,7 +94,7 @@
 
 		},
 		{
-      "type":"gallery/gallery-thirds",
+      "type":"gallery/three-col",
       "section":"section",
       "layout":"layout",
       "external_theme":"theme--music",

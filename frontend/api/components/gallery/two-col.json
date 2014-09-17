@@ -1,13 +1,13 @@
 {
     "api": {
-        "type": "gallery/gallery-thirds",
+        "type": "gallery/two-col",
         "data": []
     },
     "examples": [
         {
             "title": "",
             "example": {
-                "type":"gallery/gallery-half",
+                "type":"gallery/two-col",
                 "section":"section",
                 "layout":"layout",
                 "external_theme":"theme--music",

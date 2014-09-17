@@ -13,12 +13,12 @@
                     "data": [
                         {
                             "type": "type/h2",
-                            "data": "Gallery (half)"
+                            "data": "Two columns"
                         },
                         "Basic two column",
                         {
                             "type": "pattern-library/code-example",
-                            "component": "components/gallery/gallery-half"
+                            "component": "components/gallery/two-col"
                         }
                     ]
                 } 
@@ -34,12 +34,12 @@
                     "data": [
                         {
                             "type": "type/h2",
-                            "data": "Gallery (thirds)"
+                            "data": "three-col"
                         },
                         "Basic two column",
                         {
                             "type": "pattern-library/code-example",
-                            "component": "components/gallery/gallery-thirds"
+                            "component": "components/gallery/three-col"
                         }
                     ]
                 } 
@@ -55,12 +55,12 @@
                     "data": [
                         {
                             "type": "type/h2",
-                            "data": "Gallery (quarters)"
+                            "data": "Four col"
                         },
                         "Basic two column",
                         {
                             "type": "pattern-library/code-example",
-                            "component": "components/gallery/gallery-quarters"
+                            "component": "components/gallery/four-col"
                         }
                     ]
                 } 
