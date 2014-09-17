@@ -1,0 +1,50 @@
+{
+    "title": "gallery",
+    "headline": "Gallery",
+    "template":"pattern-library/type.j2",
+    "data": [
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "Gallery (thirds)"
+                        },
+                        "Basic two column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/gallery/gallery-thirds"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "type" : "section",
+            "size": "s",
+            "anchor" : "h1",
+            "data": [ 
+                {
+                    "type" : "/pattern-library/section-block",
+                    "data": [
+                        {
+                            "type": "type/h2",
+                            "data": "Gallery (quarters)"
+                        },
+                        "Basic two column",
+                        {
+                            "type": "pattern-library/code-example",
+                            "component": "components/gallery/gallery-quarters"
+                        }
+                    ]
+                } 
+            ]
+        }
+        
+    ]
+}

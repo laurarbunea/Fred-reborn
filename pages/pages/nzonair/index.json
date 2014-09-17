@@ -72,11 +72,11 @@
               ]
             },
             {
-              "type":"h1",
+              "type":"type/h1",
               "data":"It’s about great songs "
             },
             { 
-              "type":"intro",
+              "type":"type/intro",
               "data":"We are about connecting great and diverse local songs with their intended audiences."
             }
          ]
@@ -94,46 +94,46 @@
 
 		},
 		{
-          "type":"gallery-thirds",
-          "section":"section",
-          "layout":"layout",
-          "external_theme":"theme--music",
-          "gallery":[
+      "type":"gallery/gallery-thirds",
+      "section":"section",
+      "layout":"layout",
+      "external_theme":"theme--music",
+      "gallery":[
+        {
+          "img":
             {
-              "img":
-                {
-                  "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag"
-                }
-              ,
-              "date":"May 2014 ",
-              "title": "10th Pacific Music Awards ",
-              "caption":"The Pacific Music awards celebrate the diversity of Pacific music and honour Pasifika artists and achievements."
-            },
-            {
-              "img":
-                {
-                  "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag"
-                }
-              ,
-              "date":"May 2014 ",
-              "title": "Devilskin ",
-              "caption":"A four-piece rock/metal band from Hamilton is storming the music scene"
-            },
-            {
-              "img":
-                {
-                  "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag"
-                }
-              ,
-              "date":"July 2014 ",
-              "title": "Mr Sneezy",
-              "caption":"I'm sneezy"
+              "src":"/images/placeholders/ph.jpg",
+              "alt":"alt tag"
             }
-
-          ]
+          ,
+          "date":"May 2014 ",
+          "title": "10th Pacific Music Awards ",
+          "caption":"The Pacific Music awards celebrate the diversity of Pacific music and honour Pasifika artists and achievements."
+        },
+        {
+          "img":
+            {
+              "src":"/images/placeholders/ph.jpg",
+              "alt":"alt tag"
+            }
+          ,
+          "date":"May 2014 ",
+          "title": "Devilskin ",
+          "caption":"A four-piece rock/metal band from Hamilton is storming the music scene"
+        },
+        {
+          "img":
+            {
+              "src":"/images/placeholders/ph.jpg",
+              "alt":"alt tag"
+            }
+          ,
+          "date":"July 2014 ",
+          "title": "Mr Sneezy",
+          "caption":"I'm sneezy"
         }
+
+      ]
+    }
     ]
 }

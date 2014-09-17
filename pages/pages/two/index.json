@@ -48,7 +48,7 @@
                 "col_size":"large-three-quarters medium-two-thirds",
                 "data":[
                   { 
-                    "type":"h1",
+                    "type":"type/h1",
                     "data":"Hello."
                   },
                   "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
@@ -57,13 +57,13 @@
         ] 
       },
       {
-        "type":"gallery-quarters",
+        "type":"gallery/gallery-quarters",
         "section":"section",
         "layout":"layout",
         "internal_theme":"theme--white",
         "data":[ 
           { 
-            "type":"h2",
+            "type":"type/h2",
             "data":"About us"
           },
           "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "

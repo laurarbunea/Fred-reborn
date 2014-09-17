@@ -1,6 +1,6 @@
 {
     "api": {
-        "type": "list",
+        "type": "type/list",
         "data": []
     },
     "examples": [
@@ -19,7 +19,7 @@
         {
             "title": "If you need a nested list:",
             "example": {
-                "type": "list",
+                "type": "type/list",
                 "data": [
                     "first list item",
                     "second list item",

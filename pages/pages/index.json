@@ -100,7 +100,7 @@
               {
                 "data":[
                     {
-                      "type":"h3",
+                      "type":"type/h3",
                       "data":"First aid training "
                     },
                     "Book first aid training with New Zealand Red Cross - We're the leading first aid provider in Aotearoa.",
@@ -115,7 +115,7 @@
         
                   "data":[
                     {
-                      "type":"h3",
+                      "type":"type/h3",
                       "data":"How we help "
                     },
                     "From delivering meals on wheels to resettling refugee families in New Zealand, our dedicated volunteers are there to help wherever the need is greatest. ",
@@ -130,7 +130,7 @@
         
                   "data":[
                     {
-                      "type":"h3",
+                      "type":"type/h3",
                       "data":"Get involved "
                     },
                     "Whether you have an hour or a dollar, you can help make a difference. ",
@@ -141,7 +141,7 @@
           ] 
         },
         {
-          "type":"gallery-thirds",
+          "type":"gallery/gallery-thirds",
           "section":"section",
           "layout":"layout",
           "internal_theme":"theme--redcross",

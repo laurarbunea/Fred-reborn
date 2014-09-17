@@ -42,7 +42,9 @@
 .pill {
     @extend %link-theme--dark-blue;
 }
-
+.pill--white {
+    background-color:#fff;
+}
 .pill--roadworks,
 .pill--orange {
     @extend %pill;

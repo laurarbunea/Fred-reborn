@@ -1,14 +1,14 @@
 {
     "api": {
-        "type": "h3",
+        "type": "type/h4",
         "data": []
     },
     "examples": [
         {
             "title": "",
             "example": {
-                "type": "h3",
-                "data": " H3 heading "
+                "type": "type/h4",
+                "data": " H4 heading "
             }
         }
     ]

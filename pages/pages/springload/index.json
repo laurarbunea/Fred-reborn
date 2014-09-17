@@ -43,7 +43,7 @@
         "data":[
             
             {
-              "type":"h1",
+              "type":"type/h1",
               "data":"Websites and applications for organisations where user experience matters"
             }
             
@@ -61,7 +61,7 @@
                 "content_padding":"section-top layout-m",
                 "data":[
                   {
-                    "type":"h3",
+                    "type":"type/h3",
                     "class":"font-light",
                     "data":"Helping NZ on Air express the great work they do"
                   },
@@ -80,7 +80,7 @@
               "content_padding":"section-top layout-m",
               "data":[
                 {
-                  "type":"h3",
+                  "type":"type/h3",
                   "class":"font-light",
                   "data":"Helping A disaster-resistant site that increases donations & first-aid bookings"
                 },
@@ -107,7 +107,7 @@
                 
                 "data":[
                   {
-                    "type":"h2",
+                    "type":"type/h2",
                     "class":"font-light",
                     "data":"Creating loyal bank customers one happy user at a time"
                   },
