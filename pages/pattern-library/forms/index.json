@@ -29,7 +29,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Field details"
                         },
                         "Use this when the form has extra information or help text.",
@@ -50,7 +50,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Number input"
                         },
                         "Use this for input fields that should contain a numeric value. On a touchscreen device the number keys will show by default when the field is focused.",
@@ -59,7 +59,7 @@
                             "component": "components/form/field--number"
                         },
                         {
-                            "type": "h4",
+                            "type": "type/h4",
                             "data": "Number input with error state"
                         },
                         {
@@ -79,7 +79,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Text input"
                         },
                         "Use this for input fields that contain regular text.",
@@ -88,7 +88,7 @@
                             "component": "components/form/field--text"
                         },
                         {
-                            "type": "h4",
+                            "type": "type/h4",
                             "data": "Text input with error state"
                         },
                         {
@@ -108,7 +108,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Email input"
                         },
                         "This should be used for input fields that contain an email address. The email keyboard will show by default on touchscreen devices that support it.",
@@ -117,7 +117,7 @@
                             "component": "components/form/field--email"
                         },
                         {
-                            "type": "h4",
+                            "type": "type/h4",
                             "data": "Email input with error state"
                         },
                         {
@@ -138,7 +138,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Email input with submit button"
                         },
                         "This is a single-field form for submitting an email address. When the form includes more than one field, use a regular <a href='#email-input'>email input</a> instead.",
@@ -147,7 +147,7 @@
                             "component": "components/form/field--email-plus-submit"
                         },
                         {
-                            "type": "h4",
+                            "type": "type/h4",
                             "data": "Email input with button error state"
                         },
                         {
@@ -168,7 +168,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Radio button list"
                         },
                         "This component should be used when you want users to select one input from either a list of long descriptions or a list of more than 12 items. If you have short item descriptions or numbers the <a href='#radio-button-group'>radio button group</a> may be better suited.",
@@ -189,7 +189,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Previous and Next links"
                         },
                         "These should be used when a page or component gets too long, for example when <a href='/forms/book-a-test/times1'>choosing a time for your driving test</a>.",
@@ -210,7 +210,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Radio button group"
                         },
                         "This component should be used when you want users to select one input from a group of short descriptions or numbers. If you have long descriptions or numbers, or a list of more than 12 items, the <a href='#radio-button-list'>radio button list</a> may be a better option.",
@@ -231,7 +231,7 @@
                     "type" : "/pattern-library/section-block",
                     "data": [
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Submit button"
                         },
                         "This should be used when you want to submit the form data.",

@@ -181,7 +181,7 @@
                             "type": "section",
                             "data": [
                                 { 
-                                    "type": "h4",
+                                    "type": "type/h4",
                                     "data": "1. Section icons"
                                 },
                                 "Each major section of the site has a related icon. Here are the icons for each section:",
@@ -319,7 +319,7 @@
                             "data":"<hr class='hr--bleed'/>"
                         },
                         {
-                            "type":"h4",
+                            "type":"type/h4",
                             "data":"Section"
                         },
                         "The 'section' class controls the vertical spacing of a section.",

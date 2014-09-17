@@ -13,7 +13,7 @@
                     "anchor": "grid",
                     "data": [
                         {
-                            "type":"intro",
+                            "type":"type/intro",
                             "data":"Use the grid system to create page layouts with a series of rows (‘.grid’) and columns (‘.col’)."
                         }
                     ]
@@ -31,11 +31,11 @@
                     "data": [
                         
                         {
-                            "type": "h3",
+                            "type": "type/h3",
                             "data": "Grid rules"
                         },
                         {
-                            "type": "list",
+                            "type": "type/list",
                             "class": "list--unstyled",
                             "data":[
 
@@ -61,12 +61,12 @@
                     "data": [
                         
                         {
-                            "type": "h3", 
+                            "type": "type/h3", 
                             "data": "Grid types"
                         },
                         "There are three grid types:",
                         {
-                            "type": "list", 
+                            "type": "type/list", 
                             "data": [
                                 "<a href='#fraction-grid'>fractional grid</a>",
                                 "<a href='#percentage-grid'>percentage grid</a>",
@@ -125,7 +125,7 @@
                     "data": [
                         
                         {
-                            "type": "h3", 
+                            "type": "type/h3", 
                             "data": "Grid modifiers"
                         },
                         "There are a few modifiers available to change the layout behaviour of individual grid instances. Add the modifiers next to the ‘.grid’ class, like the examples below.",

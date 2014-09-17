@@ -5,11 +5,11 @@
     "show_in_menu": false,
     "section": [
         {
-            "type": "h1",
+            "type": "type/h1",
             "data": "Test heading 1"
         },
         {
-            "type": "p",
+            "type": "type/p",
             "data": "Paragraph 1"
         }
     ]
