@@ -4,53 +4,51 @@
         "data": []
     },
     "examples": [
-        {
-          "title": "",
-          "example": {
-            "type":"layout/two-col",
-            "container_padding":"section layout",
-            "external_theme":"theme--white",
-            "internal_theme":"",
-            "grid_modifier":"grid--center",
-            "column_one":[
+      {
+        "title": "",
+        "example": {
+          "type":"layout/two-col",
+          "container_padding":"section layout",
+          "external_theme":"theme--white",
+          "internal_theme":"",
+          "grid_modifier":"grid--center",
+          "columns":[
+            {
+              "content_theme":"theme--orange",
+              "content_padding":"section-top",
+              "data":[
                 {
-                  "content_theme":"theme--orange",
-                  "content_padding":"section-top",
-                  "data":[
-                    {
-                      "type":"type/h3",
-                      "class":"font-light",
-                      "data":"Helping NZ on Air express the great work they do"
-                    },
-                    {
-                      "type":"img",
-                      "src":"/images/springload-1.png",
-                      "responsive":true,
-                      "class":"align--bottom"
-                    }
-                  ]
+                  "type":"type/h3",
+                  "class":"font-light",
+                  "data":"Helping NZ on Air express the great work they do"
+                },
+                {
+                  "type":"img",
+                  "src":"/images/springload-1.png",
+                  "responsive":true,
+                  "class":"align--bottom"
                 }
-            ],
-            "column_two":[
-              {
-                "content_theme":"theme--green",
-                "content_padding":"section-top",
-                "data":[
-                  {
-                    "type":"type/h3",
-                    "class":"font-light",
-                    "data":"Helping A disaster-resistant site that increases donations"
-                  },
-                  {
-                    "type":"img",
-                    "src":"/images/springload-2.png",
-                    "responsive":true,
-                    "class":"align--bottom"
-                  }
-                ]
-              }
-            ] 
-          }
+              ]
+            },
+            {
+              "content_theme":"theme--green",
+              "content_padding":"section-top",
+              "data":[
+                {
+                  "type":"type/h3",
+                  "class":"font-light",
+                  "data":"Helping A disaster-resistant site that increases donations"
+                },
+                {
+                  "type":"img",
+                  "src":"/images/springload-2.png",
+                  "responsive":true,
+                  "class":"align--bottom"
+                }
+              ]
+            }
+          ] 
         }
+      }
   ]
 }

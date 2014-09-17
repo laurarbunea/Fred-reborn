@@ -14,9 +14,9 @@
 
             <div class='[ grid {{item.grid_modifier }} ]'>
  
-                {% for column in item.column_one %}
+                {% for column in item.columns %}
                     
-                <div class="[ col half ] {{column.class }}">
+                <div class="[ col {{column_size | default('medium-half')}} ]">
                               
                     <div class='{{column.content_theme}} {{column.content_padding}}'>
 
@@ -27,20 +27,7 @@
                 </div>
 
                 {% endfor %}
-
-                {% for column in item.column_two %}
-                    
-                <div class="[ col half ] {{column.class }}">
-                      
-                    <div class='{{column.content_theme}} {{column.content_padding}}'>       
-                        {{ column|children }}
-
-                    </div >
-                   
-                </div>
-
-                {% endfor %}
-
+                
             </div>
         
         {% if item.section or item.layout %}

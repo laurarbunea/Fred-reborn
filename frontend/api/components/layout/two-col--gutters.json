@@ -11,26 +11,24 @@
             "container_padding":"section layout",
             "external_theme":"theme--black",
             "grid_modifier":"grid--center",
-            "column_one":[
-                {
-                  "content_theme":"theme--orange",
-                  "content_padding":"section-top layout-m",
-                  "data":[
-                    {
-                      "type":"type/h3",
-                      "class":"font-light",
-                      "data":"Helping NZ on Air express the great work they do"
-                    },
-                    {
-                      "type":"img",
-                      "src":"/images/springload-1.png",
-                      "responsive":true,
-                      "class":"align--bottom"
-                    }
-                  ]
-                }
-            ],
-            "column_two":[
+            "columns":[
+              {
+                "content_theme":"theme--orange",
+                "content_padding":"section-top layout-m",
+                "data":[
+                  {
+                    "type":"type/h3",
+                    "class":"font-light",
+                    "data":"Helping NZ on Air express the great work they do"
+                  },
+                  {
+                    "type":"img",
+                    "src":"/images/springload-1.png",
+                    "responsive":true,
+                    "class":"align--bottom"
+                  }
+                ]
+              },
               {
                 "content_theme":"theme--green",
                 "content_padding":"section-top layout-m",

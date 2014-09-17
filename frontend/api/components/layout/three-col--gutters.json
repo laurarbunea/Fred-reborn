@@ -9,7 +9,7 @@
           "example": {
           "type":"layout/three-col--gutters",
           "container_padding":"section layout",
-          "column_one":[
+          "columns":[
               {
                 "content_theme":"theme--orange",
                 "content_padding":"section-s layout-s",
@@ -20,33 +20,29 @@
                     },
                     "Book first aid training with New Zealand Red Cross - We're the leading first aid provider in Aotearoa."
                 ]
+            },
+            {
+                "content_theme":"theme--green",
+                "content_padding":"section-s layout-s",
+                "data":[
+                  {
+                    "type":"type/h3",
+                    "data":"How we help "
+                  },
+                  "From delivering meals on wheels to resettling refugee families in New Zealand, our dedicated volunteers are there to help wherever the need is greatest. "  
+              ]
+            },
+            {
+                "content_theme":"theme--orange",
+                "content_padding":"section-s layout-s",
+                "data":[
+                  {
+                    "type":"type/h3",
+                    "data":"Get involved "
+                  },
+                  "Whether you have an hour or a dollar, you can help make a difference. "  
+              ]
             }
-          ],
-          "column_two":[
-              {
-                  "content_theme":"theme--green",
-                  "content_padding":"section-s layout-s",
-                  "data":[
-                    {
-                      "type":"type/h3",
-                      "data":"How we help "
-                    },
-                    "From delivering meals on wheels to resettling refugee families in New Zealand, our dedicated volunteers are there to help wherever the need is greatest. "  
-                ]
-              }
-          ],
-          "column_three":[
-              {
-                  "content_theme":"theme--orange",
-                  "content_padding":"section-s layout-s",
-                  "data":[
-                    {
-                      "type":"type/h3",
-                      "data":"Get involved "
-                    },
-                    "Whether you have an hour or a dollar, you can help make a difference. "  
-                ]
-              }
           ] 
         }
       }
