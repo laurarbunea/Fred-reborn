@@ -104,7 +104,7 @@
 
 .device {
     background-color:#efefef;
-    border-color:#000;
+    border-color:#555555;
     border-style: solid;
     @include rem('border-left-width', $space-xxxxl);
     @include rem('border-right-width', $space-xxxxl);
