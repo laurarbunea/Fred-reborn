@@ -12,9 +12,9 @@
 
                 {% for column in item.columns %}
                     
-                <div class="[ col {{column_size}} ] {{column.content_theme}}">
+                <div class="[ col {{column_size}} ]">
                       
-                    <div class='{{column.content_padding}}'>
+                    <div class='{{column.content_padding}} {{column.content_theme}}'>
 
                         {{ column|children }}
 

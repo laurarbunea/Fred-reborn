@@ -24,7 +24,6 @@
             "svg_color":"white",
             "uppercase":true
           }
-   
         ]
       },
       {
@@ -57,8 +56,9 @@
         ] 
       },
       {
-        "type":"gallery/four-col",
+        "type":"gallery/four-col--gutters",
         "internal_theme":"theme--white",
+        "container_padding":"section layout",
         "data":[ 
           { 
             "type":"type/h2",
@@ -107,10 +107,7 @@
             "title": "Mr Sneezy",
             "caption":"I'm sneezy"
           }
-
         ]
       }
-       
-        
     ]
 }

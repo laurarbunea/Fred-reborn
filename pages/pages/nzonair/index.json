@@ -56,28 +56,32 @@
     		"type":"layout/one-col",
         "container_padding":"layout section-top-xxl",
       	"external_theme":"theme--music",
-      	"data":[
-            {
-              "type": "navigation/breadcrumb",
-              "data": [
-                {
-                  "url": "#",
-                  "title": "Link 1"
-                },
-                {
-                  "url": "#",
-                  "title": "Link 2"
-                }
-              ]
-            },
-            {
-              "type":"type/h1",
-              "data":"It’s about great songs "
-            },
-            { 
-              "type":"type/intro",
-              "data":"We are about connecting great and diverse local songs with their intended audiences."
-            }
+      	"columns":[
+          {
+            "data":[
+              {
+                "type": "navigation/breadcrumb",
+                "data": [
+                  {
+                    "url": "#",
+                    "title": "Link 1"
+                  },
+                  {
+                    "url": "#",
+                    "title": "Link 2"
+                  }
+                ]
+              },
+              {
+                "type":"type/h1",
+                "data":"It’s about great songs "
+              },
+              { 
+                "type":"type/intro",
+                "data":"We are about connecting great and diverse local songs with their intended audiences."
+              }
+            ]
+          }
          ]
       },
 		{
@@ -93,7 +97,7 @@
 
 		},
 		{
-      "type":"gallery/three-col",
+      "type":"gallery/three-col--gutters",
       "container_padding":"section layout",
       "external_theme":"theme--music",
       "gallery":[

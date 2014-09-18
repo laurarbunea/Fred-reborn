@@ -36,45 +36,46 @@
         ]
       },
       {
-        "type":"layout/one-col",
+        "type":"layout/one-col--gutters",
         "container_padding":"layout section-top-xxl",
         "external_theme":"theme--white",
-        "data":[
-            
-            {
-              "type":"type/h1",
-              "data":"Websites and applications for organisations where user experience matters"
-            }
+        "columns":[
+          {
+            "data":[
+              {
+                "type":"type/h1",
+                "data":"Websites and applications for organisations where user experience matters"
+              }
+            ]
+          }
             
          ]
       },
       {
-          "type":"layout/two-col--gutters",
-          "container_padding":"section layout",
-          "external_theme":"theme--white",
-          "grid_modifier":"grid--center",
-          "column_one":[
-              {
-                "internal_theme":"theme--orange",
-                "content_padding":"section-top layout-m",
-                "data":[
-                  {
-                    "type":"type/h3",
-                    "class":"font-light",
-                    "data":"Helping NZ on Air express the great work they do"
-                  },
-                  {
-                    "type":"img",
-                    "src":"/images/springload-1.png",
-                    "responsive":true,
-                    "class":"align--bottom"
-                  }
-                ]
-              }
-          ],
-          "column_two":[
+        "type":"layout/two-col--gutters",
+        "container_padding":"section layout",
+        "external_theme":"theme--white",
+        "grid_modifier":"grid--center",
+        "columns":[
             {
-              "internal_theme":"theme--green",
+              "content_theme":"theme--orange",
+              "content_padding":"section-top layout-m",
+              "data":[
+                {
+                  "type":"type/h3",
+                  "class":"font-light",
+                  "data":"Helping NZ on Air express the great work they do"
+                },
+                {
+                  "type":"img",
+                  "src":"/images/springload-1.png",
+                  "responsive":true,
+                  "class":"align--bottom"
+                }
+              ]
+            },
+            {
+              "content_theme":"theme--green",
               "content_padding":"section-top layout-m",
               "data":[
                 {
@@ -97,29 +98,26 @@
           "container_padding":"layout ",
           "external_theme":"theme--white",
           "grid_modifier":"grid--center",
-          "content_theme":"theme--springload-green",
-          "content_padding":"section-top layout-m",
-          "data":[
-              {
+          "columns":[
+            {
+              "content_theme":"theme--springload-green",
+              "content_padding":"section-top layout-m",
+              "data":[
+                {
+                  "type":"type/h2",
+                  "class":"font-light",
+                  "data":"Creating loyal bank customers one happy user at a time"
+                },
+                {
+                  "type":"img",
+                  "src":"/images/springload-3.png",
+                  "responsive":true,
+                  "class":"align--bottom"
+                }
+              ]
                 
-                "data":[
-                  {
-                    "type":"type/h2",
-                    "class":"font-light",
-                    "data":"Creating loyal bank customers one happy user at a time"
-                  },
-                  {
-                    "type":"img",
-                    "src":"/images/springload-3.png",
-                    "responsive":true,
-                    "class":"align--bottom"
-                  }
-                ]
-              }
+            }
           ]
-          
-        
-        }
-        
+        }  
     ]
 }
