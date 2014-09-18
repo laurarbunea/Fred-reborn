@@ -2,398 +2,485 @@
     "title": "components",
     "headline": "Components",
     "template":"pattern-library/ui-components.j2",
-    "data": [
+    "data": [     
         {
-            "type": "section",
-            "size": "s",
-            "anchor": "action",
-            "data": [ 
+            "anchor":"action-link",
+            "type" : "/pattern-library/section-block",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h3",
-                            "data": "Action links"
-                        },
-                        "Use these components when you want to use an icon to guide the user to another page.",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/action-icon"
-                        }
-                    ]
+                    "type": "type/h3",
+                    "data": "Action links"
+                },
+                "Use these components when you want to use an icon to guide the user to another page.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/action-icon"
                 }
             ]
         },
         {
-            "type": "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor": "anchor-links",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h3",
-                            "data": "Anchor links"
-                        },
-                        "Use this component to provide quick links to content on the current page.",
+                    "type": "type/h3",
+                    "data": "Anchor links"
+                },
+                "Use this component to provide quick links to content on the current page.",
 
-                        "Using this component requires that the content you’re linking to has an id attribute containing a slug of the headline text, like this:",
-                        {
-                            "type":"code",
-                            "data":"<h2 id='example-linked-element'>Example linked element</h2>"
-                        },
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/anchor-links"
-                        }
-                    ]
+                "Using this component requires that the content you’re linking to has an id attribute containing a slug of the headline text, like this:",
+                {
+                    "type":"code",
+                    "data":"<h2 id='example-linked-element'>Example linked element</h2>"
+                },
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/anchor-links"
                 }
             ]
         },
         {
-            "type": "section",
-            "size": "s",
             "anchor": "breadcrumbs",
-            "data": [ 
+            "type" : "/pattern-library/section-block",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h3",
-                            "data": "Breadcrumbs"
-                        },
-                        "Use breadcrumbs to indicate the user’s location within the website information architecture.",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/navigation/breadcrumb"
-                        }
-                    ]
+                    "type": "type/h3",
+                    "data": "Breadcrumbs"
+                },
+                "Use breadcrumbs to indicate the user’s location within the website information architecture.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/navigation/breadcrumb"
                 }
             ]
         },
+
         {
-            "type": "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor": "stat-block",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h3",
-                            "data": "Statistics block"
-                        },
-                        "Use this component to prominently display a single statistic. Two or more statistics can be grouped together in columns using grid helper classes.",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/stat-block"
-                        }
-                    ]
+                    "type": "type/h3",
+                    "data": "Statistics block"
+                },
+                "Use this component to prominently display a single statistic. Two or more statistics can be grouped together in columns using grid helper classes.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/stat-block"
                 }
             ]
-        },
+        }, 
         {
-            "type": "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor": "tables",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h3",
-                            "data": "Tables"
-                        },
-                        "Only use a table when displaying tabular data is necessary. For simple name/value lists, a <a href='/pattern-library/type/#dl'>definition list</a> is a better option.",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/table"
-                        }
-                    ]
+                    "type": "type/h3",
+                    "data": "Tables"
+                },
+                "Only use a table when displaying tabular data is necessary. For simple name/value lists, a <a href='/pattern-library/type/#dl'>definition list</a> is a better option.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/table"
                 }
             ]
         },
         {
-            "type": "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor": "buttons",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h3",
-                            "data": "Buttons"
-                        },
-                        "Here is a list of the different types of buttons available.",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/btn"
-                        }
-                    ]
+                    "type": "type/h3",
+                    "data": "Buttons"
+                },
+                "Here is a list of the different types of buttons available.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/btn"
                 }
             ]
         },
+           
         {
-            "type" : "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor":"icons",
             "data": [
-           
+                { 
+                    "type": "type/h2",
+                    "data": "Icons"
+                },
+                "An icon needs two classes for it to render correctly: the class 'i' and the icon name. In the example shown below, 'i-caret-down' is the icon name. is the icon name.",
                 {
-                    "type" : "/pattern-library/section-block",
+                    "type": "code",
+                    "data": "<i class='i i-caret-down'></i>"
+                },
+                { 
+                    "type": "raw",
+                    "data": "<hr class='hr--bleed'/>"
+                },
+                { 
+                    "type": "type/h3",
+                    "data": "Multicoloured UI icons"
+                },
+                "The colours of these icons can be changed. There are four colour modifiers available:",
+                
+                {
+                    "type": "type/ol",
+                    "data": [
+                        "i--red",
+                        "i--dark-grey",
+                        "i--dark-blue",
+                        "i--white"
+                    ]
+                },
+                "To change the colour of an icon all you need to do is add the modifier to the icon.",
+                {
+                    "type": "code",
+                    "data": "<i class='i i-caret-down i--red'></i>"
+                },
+                {
+                    "type": "section",
                     "data": [
                         { 
-                            "type": "type/h2",
-                            "data": "Icons"
+                            "type": "type/h4",
+                            "data": "1. Section icons"
                         },
-                        "An icon needs two classes for it to render correctly: the class 'i' and the icon name. In the example shown below, 'i-caret-down' is the icon name. is the icon name.",
+                        "Each major section of the site has a related icon. Here are the icons for each section:",
                         {
-                            "type": "code",
-                            "data": "<i class='i i-caret-down'></i>"
-                        },
-                        { 
-                            "type": "raw",
-                            "data": "<hr class='hr--bleed'/>"
-                        },
-                        { 
-                            "type": "type/h3",
-                            "data": "Multicoloured UI icons"
-                        },
-                        "The colours of these icons can be changed. There are four colour modifiers available:",
-                        
-                        {
-                            "type": "type/ol",
+                            "type": "/pattern-library/icon-block-multi",
                             "data": [
-                                "i--red",
-                                "i--dark-grey",
-                                "i--dark-blue",
-                                "i--white"
-                            ]
-                        },
-                        "To change the colour of an icon all you need to do is add the modifier to the icon.",
-                        {
-                            "type": "code",
-                            "data": "<i class='i i-caret-down i--red'></i>"
-                        },
-                        {
-                            "type": "section",
-                            "data": [
-                                { 
-                                    "type": "type/h4",
-                                    "data": "1. Section icons"
-                                },
-                                "Each major section of the site has a related icon. Here are the icons for each section:",
-                                {
-                                    "type": "/pattern-library/icon-block-multi",
-                                    "data": [
-                                        { "name":"section-driver-licences" },
-                                        { "name":"section-vehicle-information" },
-                                        { "name":"section-safety" },
-                                        { "name":"section-road-engineering" },
-                                        { "name":"section-traffic" },
-                                        { "name":"section-highways-and-roads" },
-                                        { "name":"section-commercial-driving" },
-                                        { "name":"section-about-us" },
-                                        { "name":"section-contact-us" }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "section",
-                            "data": [
-                            { 
-                                "type": "type/h4",
-                                "data": "2. UI icons"
-                            },
-                            
-                            {
-                                "type": "/pattern-library/icon-block-multi",
-                                "data": [
-                                        { "name":"arrow-l" },
-                                        { "name":"arrow-r" },
-                                        { "name":"caret-down" },
-                                        { "name":"circle-arrow" },
-                                        { "name":"close" },
-                                        { "name":"contact" },
-                                        { "name":"distance" },
-                                        { "name":"do-it-online" },
-                                        { "name":"facebook" },
-                                        { "name":"google" },
-                                        { "name":"hamburger" },
-                                        { "name":"map-caret-down" },
-                                        { "name":"map-caret-up" },
-                                        { "name":"map-cog" },
-                                        { "name":"map-compass" },
-                                        { "name":"map-minus" },
-                                        { "name":"map-plus" },
-                                        { "name":"menu" },
-                                        { "name":"roadworks" },
-                                        { "name":"route-stop" },
-                                        { "name":"route" },
-                                        { "name":"search" },
-                                        { "name":"sh" },
-                                        { "name":"speed" },
-                                        { "name":"time" },
-                                        { "name":"twitter" },
-                                        { "name":"view-angle" },
-                                        { "name":"warning" }
-                                    ]
-                                }
-                                    
-                            ]
-                            
-                        },
-                        { 
-                            "type": "raw",
-                            "data": "<hr class='hr--bleed'/>"
-                        },
-
-                        { 
-                            "type": "type/h2",
-                            "data": "Single-colour UI icons"
-                        },
-                        {
-                            "type": "/pattern-library/icon-block",
-                            "data": [
-                         
-                                { "name":"bg-abstract" },
-                                { "name":"bg-hatched" },
-                                { "name":"map-tools-cameras" },
-                                { "name":"map-tools-roadworks" },
-                                { "name":"map-tools-traffic-flow" },
-                                { "name":"map-tools-warnings" },
-                                { "name":"mask-traffic-figure" }
-
+                                { "name":"section-driver-licences" },
+                                { "name":"section-vehicle-information" },
+                                { "name":"section-safety" },
+                                { "name":"section-road-engineering" },
+                                { "name":"section-traffic" },
+                                { "name":"section-highways-and-roads" },
+                                { "name":"section-commercial-driving" },
+                                { "name":"section-about-us" },
+                                { "name":"section-contact-us" }
                             ]
                         }
+                    ]
+                },
+                {
+                    "type": "section",
+                    "data": [
+                    { 
+                        "type": "type/h4",
+                        "data": "2. UI icons"
+                    },
+                    
+                    {
+                        "type": "/pattern-library/icon-block-multi",
+                        "data": [
+                                { "name":"arrow-l" },
+                                { "name":"arrow-r" },
+                                { "name":"caret-down" },
+                                { "name":"circle-arrow" },
+                                { "name":"close" },
+                                { "name":"contact" },
+                                { "name":"distance" },
+                                { "name":"do-it-online" },
+                                { "name":"facebook" },
+                                { "name":"google" },
+                                { "name":"hamburger" },
+                                { "name":"map-caret-down" },
+                                { "name":"map-caret-up" },
+                                { "name":"map-cog" },
+                                { "name":"map-compass" },
+                                { "name":"map-minus" },
+                                { "name":"map-plus" },
+                                { "name":"menu" },
+                                { "name":"roadworks" },
+                                { "name":"route-stop" },
+                                { "name":"route" },
+                                { "name":"search" },
+                                { "name":"sh" },
+                                { "name":"speed" },
+                                { "name":"time" },
+                                { "name":"twitter" },
+                                { "name":"view-angle" },
+                                { "name":"warning" }
+                            ]
+                        }
+                            
+                    ]
+                    
+                },
+                { 
+                    "type": "raw",
+                    "data": "<hr class='hr--bleed'/>"
+                },
+
+                { 
+                    "type": "type/h2",
+                    "data": "Single-colour UI icons"
+                },
+                {
+                    "type": "/pattern-library/icon-block",
+                    "data": [
+                 
+                        { "name":"bg-abstract" },
+                        { "name":"bg-hatched" },
+                        { "name":"map-tools-cameras" },
+                        { "name":"map-tools-roadworks" },
+                        { "name":"map-tools-traffic-flow" },
+                        { "name":"map-tools-warnings" },
+                        { "name":"mask-traffic-figure" }
+
                     ]
                 }
             ]
         },
         {
-            "type": "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor": "images",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h3",
-                            "data": "Images"
-                        },
-                        {
-                            "type": "raw",
-                            "data": "<hr class='hr--bleed' />"
-                        },
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/img"
-                        }
-                    ]
+                    "type": "type/h3",
+                    "data": "Images"
+                },
+                {
+                    "type": "raw",
+                    "data": "<hr class='hr--bleed' />"
+                },
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/img"
                 }
             ]
         },
-        {    
-            "type" : "section",
-            "size": "s",
+        {
+            "type":"/pattern-library/section-block",
             "anchor" : "containers",
-            "data": [ 
+            "data":[
                 {
-                    "type":"/pattern-library/section-block",
-                    "data":[
+                    "type":"type/h3",
+                    "data":"Containers"
+                },
+                "There are three main classes that make up a container: 'wrapper', 'section' and 'layout'.",
+                "The 'wrapper' class sets the maximum page width to 72rem (1152px).",
+                "The '<a href='#section'>section</a>' class controls the vertical spacing of a section.",
+                "The '<a href='#layout'>layout</a>' class controls the horizontal spacing of a section.",
+                "Each container can include an optional <a href='/pattern-library/themes/'>theme</a> if needed. ",
+                {
+                    "type":"raw",
+                    "data":"<hr class='hr--bleed'/>"
+                },
+                {
+                    "type":"type/h4",
+                    "data":"Section"
+                },
+                "The 'section' class controls the vertical spacing of a section.",
+                {
+                    "type": "section", 
+                    "theme":"section--debug",
+                    "data":
+                    [
                         {
-                            "type":"type/h3",
-                            "data":"Containers"
-                        },
-                        "There are three main classes that make up a container: 'wrapper', 'section' and 'layout'.",
-                        "The 'wrapper' class sets the maximum page width to 72rem (1152px).",
-                        "The '<a href='#section'>section</a>' class controls the vertical spacing of a section.",
-                        "The '<a href='#layout'>layout</a>' class controls the horizontal spacing of a section.",
-                        "Each container can include an optional <a href='/pattern-library/themes/'>theme</a> if needed. ",
-                        {
-                            "type":"raw",
-                            "data":"<hr class='hr--bleed'/>"
-                        },
-                        {
-                            "type":"type/h4",
-                            "data":"Section"
-                        },
-                        "The 'section' class controls the vertical spacing of a section.",
-                        {
-                            "type": "section", 
-                            "theme":"section--debug",
-                            "data":
-                            [
+                            "type":"layout/one-col",
+                            "data":[
                                 {
-                                    "type":"layout/one-col",
-                                    "data":[
-                                        {
-                                            "type":"p",
-                                            "data":"By default, sections have 1rem of top and bottom padding, which increases to 3rem above the medium breakpoint."
-                                        }
-                                    ]
+                                    "type":"p",
+                                    "data":"By default, sections have 1rem of top and bottom padding, which increases to 3rem above the medium breakpoint."
                                 }
                             ]
-                        },
-                        {
-                            "type":"raw",
-                            "data":"<hr class='hr--bleed'/>"
-                        },
-                        {
-                            "type":"raw",
-                            "data":"<br />"
-                        },
-                        {
-                            "type":"type/h4",
-                            "data":"Layout"
-                        },
-                        "Three layout classes govern the horizontal width and spacing of content: ‘layout’, ‘layout--half’ and ‘layout--nudge’. ",
-                        {
-                            "type":"raw",
-                            "data":"<br />"
-                        },
-                        "1. <strong>layout</strong>",
-                        "This is the main layout class used throughout the site. It has a default left and right padding of 1rem, which changes to 4% above the medium breakpoint and again to 8.33% above the large breakpoint.",
-                        {
-                            "type": "/pattern-library/layout"
-                        },
-                        {
-                            "type":"raw",
-                            "data":"<br /><br />"
-                        },
-                        "2.<strong>'Layout--half'</strong>",
-                        "This is mostly used to constrain the width of forms in the transactions section; ‘layout--half’ inherits the same behaviour as ‘layout’ and adjusts the left and right padding to 25% (instead of 8.33%) above the large breakpoint.",      
-                        {
-                            "type": "pattern-library/layout--half"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "type":"raw",
+                    "data":"<hr class='hr--bleed'/>"
+                },
+                {
+                    "type":"raw",
+                    "data":"<br />"
+                },
+                {
+                    "type":"type/h4",
+                    "data":"Layout"
+                },
+                "Three layout classes govern the horizontal width and spacing of content: ‘layout’, ‘layout--half’ and ‘layout--nudge’. ",
+                {
+                    "type":"raw",
+                    "data":"<br />"
+                },
+                "1. <strong>layout</strong>",
+                "This is the main layout class used throughout the site. It has a default left and right padding of 1rem, which changes to 4% above the medium breakpoint and again to 8.33% above the large breakpoint.",
+                {
+                    "type": "/pattern-library/layout"
+                },
+                {
+                    "type":"raw",
+                    "data":"<br /><br />"
+                },
+                "2.<strong>'Layout--half'</strong>",
+                "This is mostly used to constrain the width of forms in the transactions section; ‘layout--half’ inherits the same behaviour as ‘layout’ and adjusts the left and right padding to 25% (instead of 8.33%) above the large breakpoint.",      
+                {
+                    "type": "pattern-library/layout--half"
+                },
 
+                {
+                    "type":"raw",
+                    "data":"<br /><br />"
+                },
+                "3.<strong>layout--nudge</strong>",
+                "This modifier applies a negative margin of -2em to the top of an element. It doesn’t affect horizontal layout or spacing.",
+                {
+                    "type":"raw",
+                    "data":"<hr class='hr--bleed'/>"
+                },
+                
+                {
+                    "type":"type/h4",
+                    "data":"Container examples:"
+                },
+                "Here are some examples of containers we use throughout the site",
+                {
+                    "type": "pattern-library/code",
+                    "component": "components/container"
+                }
+            ]
+        },
+        {
+            "type" : "/pattern-library/section-block",
+            "anchor": "messages",
+            "data": [
+                {
+                    "type": "type/h3",
+                    "data": "Traffic messages"
+                },
+                "These are used to highlight alerts, estimated travel times and issues with a particular route.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/traffic/messages"
+                }
+            ]
+        },
+        {
+            "type" : "/pattern-library/section-block",
+            "anchor": "location-list",
+            "data": [
+                {
+                    "type": "type/h3",
+                    "data": "Region list"
+                },
+                "This provides a list of regions, with optional pills.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/traffic/regions"
+                }
+
+            ]
+        },
+        {
+            "type" : "/pattern-library/section-block",
+            "anchor": "route",
+            "data": [
+                {
+                    "type": "type/h3",
+                    "data": "Route information"
+                },
+                "This provides drive times, destinations and webcams for routes.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/traffic/route"
+                }
+
+            ]
+        },
+        {
+            "type" : "/pattern-library/section-block",
+            "anchor": "share",
+            "data": [
+                {
+                    "type": "type/h3",
+                    "data": "Share buttons"
+                },
+                "These are social buttons for Transport Agency maps.",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/share"
+                }
+
+            ]
+        },
+        {
+            "type" : "/pattern-library/section-block",
+            "anchor": "webcam",
+            "data": [
+                {
+                    "type": "type/h3",
+                    "data": "Webcams"
+                },
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/traffic/webcam"
+                }
+            ]
+        },
+        {
+            "type" : "/pattern-library/section-block",
+            "anchor": "highway-sign",
+            "data": [
+                {
+                    "type": "type/h3",
+                    "data": "Highway signs"
+                },
+                "This provides a shield with the required state highway number on it",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/traffic/highway"
+                },
+                {
+                    "type": "type/h4",
+                    "data": "The highway icons are available in all our theme colours by passing a 'style' to the component:"
+                },
+                {
+                    "type": "type/p",
+                    "data": [
                         {
-                            "type":"raw",
-                            "data":"<br /><br />"
+                            "type": "traffic/highway",
+                            "data":"56"
                         },
-                        "3.<strong>layout--nudge</strong>",
-                        "This modifier applies a negative margin of -2em to the top of an element. It doesn’t affect horizontal layout or spacing.",
                         {
-                            "type":"raw",
-                            "data":"<hr class='hr--bleed'/>"
+                            "type": "traffic/highway",
+                            "data":"12",
+                            "style": "blue"
                         },
-                        
                         {
-                            "type":"type/h4",
-                            "data":"Container examples:"
+                            "type": "traffic/highway",
+                            "data":"21",
+                            "style": "orange"
                         },
-                        "Here are some examples of containers we use throughout the site",
                         {
-                            "type": "pattern-library/code",
-                            "component": "components/container"
+                            "type": "traffic/highway",
+                            "data":"89",
+                            "style": "green"
+                        },
+                        {
+                            "type": "traffic/highway",
+                            "data":"2",
+                            "style": "dark-grey"
+                        },
+                        {
+                            "type": "traffic/highway",
+                            "data":"4",
+                            "style": "grey"
+                        },
+                        {
+                            "type": "traffic/highway",
+                            "data":"7",
+                            "style": "dark-blue"
+                        },
+                        {
+                            "type": "traffic/highway",
+                            "data":"24",
+                            "style": "white"
                         }
                     ]
                 }
             ]
-        }  
+        }
     ]
 }
