@@ -1,6 +1,6 @@
 {
     "title": "components",
-    "headline": "Components",
+    "headline": "Everything else",
     "template":"pattern-library/ui-components.j2",
     "data": [     
         {
