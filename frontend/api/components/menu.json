@@ -206,7 +206,7 @@
                                                 "col_size":"full-size",
                                                 "data":[
                                                     {
-                                                        "type": "list",
+                                                        "type": "type/list",
                                                         "class":"nav-list",
                                                         "data":[
                                                             

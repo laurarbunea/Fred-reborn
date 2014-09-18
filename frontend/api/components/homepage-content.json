@@ -48,7 +48,7 @@
                                                 "theme":"theme--info",
                                                 "data":[
                                                     {
-                                                        "type": "list",
+                                                        "type": "type/list",
                                                         "class": "list--unstyled list--home",
                                                         "data": [
                                                             "<a href='/transaction-centre/vehicle-registration/'>Relicence your vehicle (rego)</a>",
