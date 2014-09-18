@@ -1,0 +1,52 @@
+{% extends "/pattern-library/index.j2" %}
+{% import "macros.j2" as macros %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="/css/style-guide.css">
+{% endblock %}
+
+
+{% block content %}
+
+    <div class='theme--neutral'>
+
+        <div class='[ wrapper ]'>
+
+            <div class='styleguide-anchors'>
+
+                <div class='[ grid ]'>
+          
+                    <ul class='[ col ] nav'>
+                        <li>
+                            <a class='font-bold pill'>
+                               Filter:
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#buttons' class='pill pill--white'>
+                               Buttons..
+                            </a>
+                        </li>
+
+                    </ul>
+                  
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class='theme--neutral'>
+
+        <div class='wrapper'>
+
+            {% for item in data %}
+                {{ item|component }}
+            {% endfor %}
+        </div> 
+
+    </div>
+    
+{% endblock %}

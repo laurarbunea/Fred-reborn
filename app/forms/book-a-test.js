@@ -324,7 +324,7 @@ module.exports = new Form({
                         label: "Continue"
                     }),
                     {
-                        type: "btn",
+                        type: "buttons/btn",
                         theme: "secondary",
                         href: "region",
                         label: "Change your region",
@@ -384,7 +384,7 @@ module.exports = new Form({
                         label: "Continue"
                     }),
                     {
-                        type: "btn",
+                        type: "buttons/btn",
                         theme: "secondary",
                         href: "town",
                         label: "Change your town",
@@ -438,7 +438,7 @@ module.exports = new Form({
                         label: "Continue"
                     }),
                     {
-                        type: "btn",
+                        type: "buttons/btn",
                         theme: "secondary",
                         href: "town",
                         label: "Change test location",
@@ -495,7 +495,7 @@ module.exports = new Form({
                         label: "Continue"
                     }),
                     {
-                        type: "btn",
+                        type: "buttons/btn",
                         theme: "secondary",
                         href: "town",
                         label: "Change test location",
@@ -546,7 +546,7 @@ module.exports = new Form({
                         label: "Continue"
                     }),
                     {
-                        type: "btn",
+                        type: "buttons/btn",
                         theme: "secondary",
                         href: "town",
                         label: "Change test location",
@@ -573,7 +573,7 @@ module.exports = new Form({
                         label: "Confirm and pay"
                     },
                     {
-                        type: "btn",
+                        type: "buttons/btn",
                         theme: "secondary",
                         href: "times1",
                         label: "Change test time",

@@ -2,8 +2,7 @@
     "title": "forms",
     "headline": "Forms",
     "template":"pattern-library/form.j2",
-    "data": [
-        
+    "data": [    
         {
             "type": "section",
             "size": "s",

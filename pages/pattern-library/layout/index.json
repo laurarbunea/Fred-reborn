@@ -4,152 +4,110 @@
     "template":"pattern-library/layout.j2",
     "data": [
         {
-            "type" : "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor" : "one-col",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "One column"
-                        },
-                        "Basic one column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/layout/one-col"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "One column"
+                },
+                "Basic one column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/layout/one-col"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
-            "anchor" : "one-col",
-            "data": [ 
+            "type" : "/pattern-library/section-block",
+            "anchor" : "one-col--gutters",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "One column with gutters"
-                        },
-                        "Basic one column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/layout/one-col--gutters"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "One column with gutters"
+                },
+                "Basic one column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/layout/one-col--gutters"
+                }
             ]
         },
+           
         {
-            "type" : "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor" : "two-col",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Two col"
-                        },
-                        "Basic two column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/layout/two-col"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Two col"
+                },
+                "Basic two column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/layout/two-col"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor" : "two-col--gutters",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Two col with gutters"
-                        },
-                        "Basic two column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/layout/two-col--gutters"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Two col with gutters"
+                },
+                "Basic two column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/layout/two-col--gutters"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor" : "three-col",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Three columns"
-                        },
-                        "Basic three column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/layout/three-col"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Three columns"
+                },
+                "Basic three column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/layout/three-col"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor" : "three-col--gutters",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Three columns"
-                        },
-                        "Basic three column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/layout/three-col--gutters"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Three columns"
+                },
+                "Basic three column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/layout/three-col--gutters"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
+            "type" : "/pattern-library/section-block",
             "anchor" : "h1",
-            "data": [ 
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Four columns"
-                        },
-                        "Basic two column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/layout/four-col"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Four columns"
+                },
+                "Basic two column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/layout/four-col"
+                }
             ]
-        }
-        
+        } 
     ]
 }

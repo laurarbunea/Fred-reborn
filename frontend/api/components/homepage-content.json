@@ -30,7 +30,7 @@
                                                 "theme":"theme--info",
                                                 "data":[
                                                     {
-                                                        "type": "action-icon",
+                                                        "type": "buttons/action-icon",
                                                         "action":[
                                                             {
                                                                 "icon":"i-section-do-it-online",
@@ -76,7 +76,7 @@
                                                 "col_size":"medium-third",
                                                 "data":[
                                                     {
-                                                        "type": "action-icon",
+                                                        "type": "buttons/action-icon",
                                                         "action":[
                                                             {
                                                                 "icon":"i-section-driver-licences",
@@ -91,7 +91,7 @@
                                                 "col_size":"medium-third",
                                                 "data":[
                                                     {
-                                                        "type": "action-icon",
+                                                        "type": "buttons/action-icon",
                                                         "action":[
                                                             {
                                                                 "icon":"i-section-vehicle-information",
@@ -106,7 +106,7 @@
                                                 "col_size":"medium-third",
                                                 "data":[
                                                     {
-                                                        "type": "action-icon",
+                                                        "type": "buttons/action-icon",
                                                         "action":[
                                                             {
                                                                 "icon":"i-section-traffic",
@@ -142,7 +142,7 @@
                                                         "col_size":"medium-fifth",
                                                         "data":[
                                                             {
-                                                                "type": "action-icon",
+                                                                "type": "buttons/action-icon",
                                                                 "action":[
                                                                     {
                                                                         "icon":"i-section-highways-and-roads",
@@ -159,7 +159,7 @@
                                                         "col_size":"medium-fifth", 
                                                         "data":[
                                                             {
-                                                                "type": "action-icon",
+                                                                "type": "buttons/action-icon",
                                                                 "action":[
                                                                     {
                                                                         "icon":"i-section-safety",
@@ -176,7 +176,7 @@
                                                         "col_size":"medium-fifth",
                                                         "data":[
                                                             {
-                                                                "type": "action-icon",
+                                                                "type": "buttons/action-icon",
                                                                 "action":[
                                                                     {
                                                                         "icon":"i-section-commercial-driving",
@@ -193,7 +193,7 @@
                                                         "col_size":"medium-fifth",
                                                         "data":[
                                                             {
-                                                                "type": "action-icon",
+                                                                "type": "buttons/action-icon",
                                                                 "action":[
                                                                     {
                                                                         "icon":"i-section-road-engineering",
@@ -210,7 +210,7 @@
                                                         "col_size":"medium-fifth",
                                                         "data":[
                                                             {
-                                                                "type": "action-icon",
+                                                                "type": "buttons/action-icon",
                                                                 "action":[
                                                                     {
                                                                         "icon":"i-section-media",

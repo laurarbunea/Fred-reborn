@@ -4,131 +4,94 @@
     "template":"pattern-library/gallery.j2",
     "data": [
         {
-            "type" : "section",
-            "size": "s",
-            "anchor" : "h1",
-            "data": [ 
+            "type" : "/pattern-library/section-block",
+            "anchor" : "",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Two columns"
-                        },
-                        "Basic two column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/gallery/two-col"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Two columns"
+                },
+                "Basic two column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/gallery/two-col"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
-            "anchor" : "h1",
-            "data": [ 
+            "type" : "/pattern-library/section-block",
+            "anchor" : "",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Two columns width gutters"
-                        },
-                        "Basic two column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/gallery/two-col--gutters"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Two columns width gutters"
+                },
+                "Basic two column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/gallery/two-col--gutters"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
-            "anchor" : "h1",
-            "data": [ 
+            "type" : "/pattern-library/section-block",
+            "anchor" : "",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "three-col"
-                        },
-                        "Basic two column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/gallery/three-col"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "three-col"
+                },
+                "Basic two column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/gallery/three-col"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
-            "anchor" : "h1",
-            "data": [ 
+            "type" : "/pattern-library/section-block",
+            "anchor" : "",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "three-col with gutters"
-                        },
-                        "Basic two column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/gallery/three-col--gutters"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "three-col with gutters"
+                },
+                "Basic two column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/gallery/three-col--gutters"
+                }
             ]
         },
         {
-            "type" : "section",
-            "size": "s",
-            "anchor" : "h1",
-            "data": [ 
+            "type" : "/pattern-library/section-block",
+            "anchor" : "",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Four col"
-                        },
-                        "Basic two column",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/gallery/four-col"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Four col"
+                },
+                "Basic two column",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/gallery/four-col"
+                }
             ]
-        },
+        }, 
         {
-            "type" : "section",
-            "size": "s",
-            "anchor" : "h1",
-            "data": [ 
+            "type" : "/pattern-library/section-block",
+            "anchor" : "",
+            "data": [
                 {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        {
-                            "type": "type/h2",
-                            "data": "Four col with gutters"
-                        },
-                        "Basic four column gallery ..",
-                        {
-                            "type": "pattern-library/code-example",
-                            "component": "components/gallery/four-col--gutters"
-                        }
-                    ]
-                } 
+                    "type": "type/h2",
+                    "data": "Four col with gutters"
+                },
+                "Basic four column gallery ..",
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/gallery/four-col--gutters"
+                }
             ]
         }
-        
     ]
 }

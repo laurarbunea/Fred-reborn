@@ -1,13 +1,13 @@
 {
     "api": {
-        "type": "action-icon",
+        "type": "buttons/action-icon",
         "data": []
     },
     "examples": [
         {
             "title": "",
             "example": {
-                "type": "action-icon",
+                "type": "buttons/action-icon",
                 "action":[
                     {
                         "icon":"i-section-driver-licences",
@@ -20,7 +20,7 @@
         {
             "title": "Action link with a theme modifier ",
             "example": {
-                "type": "action-icon",
+                "type": "buttons/action-icon",
                 "action":[
                     {
                         "icon":"i-section-driver-licences",
@@ -34,7 +34,7 @@
         {
             "title": "Action link with a size modifier ",
             "example": {
-                "type": "action-icon",
+                "type": "buttons/action-icon",
                 "action":[
                     {
                         "icon":"i-section-driver-licences",
@@ -48,7 +48,7 @@
         {
             "title": "Action link with a tiny size modifier ",
             "example": {
-                "type": "action-icon",
+                "type": "buttons/action-icon",
                 "action":[
                     {
                         "icon":"i-section-driver-licences",
@@ -62,7 +62,7 @@
         {
             "title": "Horizontal action link ",
             "example": {
-                "type": "action-icon",
+                "type": "buttons/action-icon",
                 "action":[
                     {
                         "icon":"i-section-driver-licences",
@@ -77,7 +77,7 @@
         {
             "title": "Bold action link ",
             "example": {
-                "type": "action-icon",
+                "type": "buttons/action-icon",
                 "action":[
                     {
                         "icon":"i-section-driver-licences",

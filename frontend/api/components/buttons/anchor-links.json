@@ -1,13 +1,13 @@
 {
     "api": {
-        "type": "anchor-links",
+        "type": "buttons/anchor-links",
         "data": []
     },
     "examples": [
         {
             "title": "",
             "example": {
-                "type": "anchor-links",
+                "type": "buttons/anchor-links",
                 "data": [
                     {
                         "href": "about-driver-licences",

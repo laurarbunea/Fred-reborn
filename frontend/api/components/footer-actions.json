@@ -20,7 +20,7 @@
                                 "col_size":"large-quarter medium-third",
                                 "data":[
                                     {
-                                        "type": "action-icon",
+                                        "type": "buttons/action-icon",
                                         "action":[
                                             {
                                                 "icon":"i-section-driver-licences",
@@ -37,7 +37,7 @@
                                 "col_size":"large-quarter medium-third",
                                 "data":[
                                     {
-                                        "type": "action-icon",
+                                        "type": "buttons/action-icon",
                                         "action":[
                                             {
                                                 "icon":"i-section-traffic",
@@ -54,7 +54,7 @@
                                 "col_size":"large-quarter medium-third",
                                 "data":[
                                     {
-                                        "type": "action-icon",
+                                        "type": "buttons/action-icon",
                                         "action":[
                                             {
                                                 "icon":"i-section-vehicle-information",
@@ -71,7 +71,7 @@
                                 "col_size":"large-quarter medium-third",
                                 "data":[
                                     {
-                                        "type": "action-icon",
+                                        "type": "buttons/action-icon",
                                         "action":[
                                             {
                                                 "icon":"i-section-highways-and-roads",
@@ -88,7 +88,7 @@
                                 "col_size":"large-quarter medium-third", 
                                 "data":[
                                     {
-                                        "type": "action-icon",
+                                        "type": "buttons/action-icon",
                                         "action":[
                                             {
                                                 "icon":"i-section-safety",
@@ -105,7 +105,7 @@
                                 "col_size":"large-quarter medium-third",
                                 "data":[
                                     {
-                                        "type": "action-icon",
+                                        "type": "buttons/action-icon",
                                         "action":[
                                             {
                                                 "icon":"i-section-commercial-driving",
@@ -122,7 +122,7 @@
                                 "col_size":"large-quarter medium-third",
                                 "data":[
                                     {
-                                        "type": "action-icon",
+                                        "type": "buttons/action-icon",
                                         "action":[
                                             {
                                                 "icon":"i-section-road-engineering",
@@ -139,7 +139,7 @@
                                 "col_size":"large-quarter medium-third", 
                                 "data":[
                                     {
-                                        "type": "action-icon",
+                                        "type": "buttons/action-icon",
                                         "action":[
                                             {
                                                 "icon":"i-section-safety",

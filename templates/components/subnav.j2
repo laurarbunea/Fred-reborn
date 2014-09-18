@@ -65,7 +65,7 @@
         {% for child in child.data.action %}
 
             {% set item  = { "action": [{"href":child.href,"text":child.text,"icon":child.icon }] } %}
-            {% include "components/action-icon.j2" %}
+            {% include "components/buttons/action-icon.j2" %}
 
         {% endfor %}
 

@@ -60,7 +60,7 @@
 
 {% macro action_icon( icon, text, href, theme, size ) %}
 
-    {% set item = { type:"action-icon", action:[{ icon:icon, text:text, href:href, theme:theme, size:size} }]  %}
+    {% set item = { type:"buttons/action-icon", action:[{ icon:icon, text:text, href:href, theme:theme, size:size} }]  %}
 
     {{ item|component }}
 

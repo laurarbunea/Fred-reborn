@@ -22,44 +22,44 @@
                                
                                 "Bare bones of the site blah blah",
                                 {
-                                  "type": "btn",
+                                  "type": "buttons/btn",
                                   "label": "Typography",
                                   "theme": "dark",
                                   "href":"#typography"
 
                                 },
                                 {
-                                  "type": "btn",
+                                  "type": "buttons/btn",
                                   "label": "Font sizes",
                                   "theme": "dark",
                                   "href":"#font-sizes"
                                 },
                                 {
-                                  "type": "btn",
+                                  "type": "buttons/btn",
                                   "label": "Themes",
                                   "theme": "dark",
                                   "href":"#themes"
                                 },
                                 {
-                                  "type": "btn",
+                                  "type": "buttons/btn",
                                   "label": "Grid breakpoints",
                                   "theme": "dark",
                                   "href":"#grid"
                                 },
                                 {
-                                  "type": "btn",
+                                  "type": "buttons/btn",
                                   "label": "Spacing helpers",
                                   "theme": "dark",
                                   "href":"#spacing-helpers"
                                 },
                                 {
-                                  "type": "btn",
+                                  "type": "buttons/btn",
                                   "label": "Section helpers",
                                   "theme": "dark",
                                   "href":"#section-helpers"
                                 },
                                 {
-                                  "type": "btn",
+                                  "type": "buttons/btn",
                                   "label": "Layout helpers",
                                   "theme": "dark",
                                   "href":"#layout-helpers"

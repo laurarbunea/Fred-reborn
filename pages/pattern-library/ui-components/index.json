@@ -14,7 +14,7 @@
                 "Use these components when you want to use an icon to guide the user to another page.",
                 {
                     "type": "pattern-library/code-example",
-                    "component": "components/action-icon"
+                    "component": "components/buttons/action-icon"
                 }
             ]
         },
@@ -35,7 +35,7 @@
                 },
                 {
                     "type": "pattern-library/code-example",
-                    "component": "components/anchor-links"
+                    "component": "components/buttons/anchor-links"
                 }
             ]
         },
@@ -96,7 +96,7 @@
                 "Here is a list of the different types of buttons available.",
                 {
                     "type": "pattern-library/code-example",
-                    "component": "components/btn"
+                    "component": "components/buttons/btn"
                 }
             ]
         },

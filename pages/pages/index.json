@@ -87,7 +87,7 @@
                 "data":[
                   "Our new free app offers step-by-step first aid advice, tips on how to prepare for disasters and instructions on what to do during an emergency. Read more",
                   {
-                    "type":"btn",
+                    "type":"buttons/btn",
                     "label":"Download the app",
                     "theme":"primary"
                   }

@@ -1,0 +1,18 @@
+{
+    "title": "buttons",
+    "headline": "Button",
+    "template":"pattern-library/buttons.j2",
+    "data": [
+        {
+            "type" : "/pattern-library/section-block",
+            "anchor" : "",
+            "data": [
+                {
+                    "type": "type/h2",
+                    "data": "Buttons"
+                },
+                "add stuff"
+            ]
+        }
+    ]
+}
