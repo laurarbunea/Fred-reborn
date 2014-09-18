@@ -4,42 +4,6 @@
     "template":"pattern-library/ui-components.j2",
     "data": [     
         {
-            "anchor":"action-link",
-            "type" : "/pattern-library/section-block",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Action links"
-                },
-                "Use these components when you want to use an icon to guide the user to another page.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/buttons/action-icon"
-                }
-            ]
-        },
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor": "anchor-links",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Anchor links"
-                },
-                "Use this component to provide quick links to content on the current page.",
-
-                "Using this component requires that the content you’re linking to has an id attribute containing a slug of the headline text, like this:",
-                {
-                    "type":"code",
-                    "data":"<h2 id='example-linked-element'>Example linked element</h2>"
-                },
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/buttons/anchor-links"
-                }
-            ]
-        },
-        {
             "anchor": "breadcrumbs",
             "type" : "/pattern-library/section-block",
             "data": [
@@ -82,21 +46,6 @@
                 {
                     "type": "pattern-library/code-example",
                     "component": "components/table"
-                }
-            ]
-        },
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor": "buttons",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Buttons"
-                },
-                "Here is a list of the different types of buttons available.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/buttons/btn"
                 }
             ]
         },
