@@ -481,6 +481,73 @@
                     ]
                 }
             ]
+        },
+        {
+            "type" : "/pattern-library/section-block",
+            "anchor" : "accessibility",
+            "data": [
+                { 
+                    "type": "type/h3",
+                    "data": "Access keys"
+                },
+                "Access keys are a useful navigation mechanism for users who are unable to use a mouse. Display the access keys by using the appropriate modifier and access keys shown below. The full website should include an accessibility page documenting the access keys.",
+                {
+                    "type": "type/h4",
+                    "data": "Modifier keys"
+                    },
+                {
+                    "type": "table",
+                    "data": {
+                        "thead": [
+                            {
+                                "data": "Browser"
+                            },
+                            {
+                                "data": "Keys"
+                            }
+                        ],
+                        "tbody": [
+                            [
+                                {
+                                  "data": "Google Chrome 3 +"
+                                },
+                                {
+                                  "data": "Alt on Windows (Note: ⇧ Shift is required in some circumstances), Ctrl + Alt on Mac"
+                                }
+                            ],
+                            [
+                                {
+                                  "data": "Firefox 2 +"
+                                },
+                                {
+                                  "data": "Alt+⇧ Shift on Windows and Linux, Ctrl on Mac"
+                                }
+                            ],
+                            [
+                                {
+                                  "data": "Internet Explorer"
+                                },
+                                {
+                                  "data": "Alt"
+                                }
+                            ],
+                            [
+                                {
+                                  "data": "Safari 4+"
+                                },
+                                {
+                                  "data": "Ctrl+⌥ Opt on Mac, Alt on Windows"
+                                }
+                            ]
+                            
+                        ]
+                    }
+                },
+                {
+                    "type": "pattern-library/code-example",
+                    "component": "components/accessibility"
+                }
+            ]
         }
     ]
 }
