@@ -91,25 +91,10 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "grid-modifiers",
-            "anchor": "grid",
-            "data": [
-                {
-                    "type": "type/h3", 
-                    "data": "Grid modifiers"
-                },
-                "There are a few modifiers available to change the layout behaviour of individual grid instances. Add the modifiers next to the ‘.grid’ class, like the examples below.",
-                
-                {
-                    "type": "raw",
-                    "data": "<hr class='hr--bleed'/>"
-                },
-                {
-                    "type": "pattern-library/code",
-                    "component": "components/grid"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "grid-modifiers",
+            "component": "components/grid"
         }
+        
     ]
 }
