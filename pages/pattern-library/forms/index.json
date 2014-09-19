@@ -13,8 +13,7 @@
                     "data": [
                         
                         "To build a form, choose the components you want from the list below, then copy and paste the component code inside the following block:",
-                        "<pre>&lt;form method='post' action='' class=''&gt; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--copy component's code here --&gt; <br />&lt;/form&gt;</pre>",
-                        "<a href='/pattern-library/pages/#transactions'>View</a> some examples of Transport Agency forms."
+                        "<pre>&lt;form method='post' action='' class=''&gt; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--copy component's code here --&gt; <br />&lt;/form&gt;</pre>"
                     ]
                 }
             ]
