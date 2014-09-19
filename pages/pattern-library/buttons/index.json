@@ -10,43 +10,8 @@
         },
         {
             "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "block",
-            "component": "components/buttons/btn--block"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "mobile-block",
-            "component": "components/buttons/btn--mobile-block"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "bounce",
-            "component": "components/buttons/btn--bounce"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "icon-with-text",
-            "component": "components/buttons/btn--icon-and-text"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "icon-only",
-            "component": "components/buttons/btn--icon"
-        },
-        {
-            "anchor":"action-links",
-            "type" : "/pattern-library/section-block",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Action links"
-                },
-                "Use these components when you want to use an icon to guide the user to another page.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/buttons/action-icon"
-                }
-            ]
+            "anchor": "action-icon",
+            "component": "components/buttons/action-icon"
         },
         {
             "type" : "/pattern-library/section-block",

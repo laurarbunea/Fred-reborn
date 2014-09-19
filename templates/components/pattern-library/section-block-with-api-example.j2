@@ -13,15 +13,31 @@
                 <div class='[ col ] '>
                     
                     {% if example.title %}
-                    <h4 >
-                        {{ example.title }} 
-                    </h4>
+
+                        {% if loop.index > 1 %}
+                        
+                        <h4>
+                            {{ example.title }} 
+                        </h4>
+
+                        {% else %}
+
+                        <h3>
+                            {{ example.title }} 
+                        </h3>
+
+                        {% endif %}
+                     
                     {% endif %}
                     
                     {% if example.notes %}
-                    <p>{{ example.notes }}</p> 
+
+                    <p>
+                        {{ example.notes }}
+                    </p> 
+
                     {% endif %}
-                    
+
                     <div class='styleguide__example '>
                         {{ example.example|component }}
                     </div>

@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Action links",
+            "notes":"Use these components when you want to use an icon to guide the user to another page.",
             "example": {
                 "type": "buttons/action-icon",
                 "action":[
@@ -18,7 +19,8 @@
             }
         },
         {
-            "title": "Action link with a theme modifier ",
+          
+            "title":"Action link with a theme modifier",
             "example": {
                 "type": "buttons/action-icon",
                 "action":[
@@ -32,7 +34,8 @@
             }
         },
         {
-            "title": "Action link with a size modifier ",
+         
+            "title":"Action link with a size modifier",
             "example": {
                 "type": "buttons/action-icon",
                 "action":[
@@ -46,7 +49,8 @@
             }
         },
         {
-            "title": "Action link with a tiny size modifier ",
+           
+            "title":"Action link with a tiny size modifier",
             "example": {
                 "type": "buttons/action-icon",
                 "action":[
@@ -60,7 +64,8 @@
             }
         },
         {
-            "title": "Horizontal action link ",
+            
+            "title":"Horizontal action link:",
             "example": {
                 "type": "buttons/action-icon",
                 "action":[
@@ -75,7 +80,7 @@
             }
         },
         {
-            "title": "Bold action link ",
+            "title":"Action link with a bold modifier:",
             "example": {
                 "type": "buttons/action-icon",
                 "action":[
