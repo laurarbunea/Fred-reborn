@@ -4,21 +4,6 @@
     "template":"pattern-library/form.j2",
     "data": [    
         {
-            "type": "section",
-            "size": "s",
-            "anchor": "field-details",
-            "data": [
-                {
-                    "type" : "/pattern-library/section-block",
-                    "data": [
-                        
-                        "To build a form, choose the components you want from the list below, then copy and paste the component code inside the following block:",
-                        "<pre>&lt;form method='post' action='' class=''&gt; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--copy component's code here --&gt; <br />&lt;/form&gt;</pre>"
-                    ]
-                }
-            ]
-        },
-        {
             "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "field--details",
             "component": "components/form/field--details"
