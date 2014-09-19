@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Unordered list",
+            "notes":"Use this when the order of items doesn’t matter.",
             "example": {
                 "type": "type/list",
                 "data": [
@@ -17,7 +18,8 @@
             }
         },
         {
-            "title": "If you need a nested list:",
+            "title": "Nested Unordered list",
+            "notes":"Use this when you need to nest lists",
             "example": {
                 "type": "type/list",
                 "data": [

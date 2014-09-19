@@ -54,49 +54,19 @@
             "component": "components/type/text-tiny"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "ul",
-            "data": [ 
-                {
-                    "type": "type/h2",
-                    "data": "Unordered list"
-                },
-                "Use this when the order of items doesn’t matter.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/list"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "list",
+            "component": "components/type/list"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "ol",
-            "data": [ 
-                {
-                    "type": "type/h2",
-                    "data": "Ordered list"
-                },
-                "A list of items, the order of which does explicitly matter.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/ol"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "ol",
+            "component": "components/type/ol"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "dl",
-            "data": [ 
-                {
-                    "type": "type/h2",
-                    "data": "Definition list"
-                },
-                "Use this for a list of terms and their definitions. This is a useful alternative to tables for marking up simple lists of name/value pairs.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/dl"
-                }
-            ]
-        } 
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "dl",
+            "component": "components/type/dl"
+        }
     ]
 }

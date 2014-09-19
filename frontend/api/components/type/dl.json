@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Definition list",
+            "notes":"Use this for a list of terms and their definitions. This is a useful alternative to tables for marking up simple lists of name/value pairs.",
             "example": {
                 "type": "type/dl",
                 "heading":"Full licence costs",

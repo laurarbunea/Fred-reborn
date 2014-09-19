@@ -1,23 +1,31 @@
 {% set examples = item.component|getApi %}
 
+<div class='mb-xxxl mb-xxxxl--q-large'>
+
 {% for example in examples %}
 
-<div class='[ wrapper ] '>
+    <div class='[ wrapper ] '>
     
-    <div class='[ section layout ] theme--white' {%if item.anchor %} id='{{item.anchor}}'{% endif %}>
-    
-        <div class='[ grid ]'>
-            
-            <div class='[ col ] '>
+        <div class='[ section layout ] theme--white' {%if item.anchor %} id='{{item.anchor}}'{% endif %}>
+        
+            <div class='[ grid ]'>
+                
+                <div class='[ col ] '>
+                    
+                    {% if example.title %}
+                    <h4 >
+                        {{ example.title }} 
+                    </h4>
+                    {% endif %}
+                    
+                    {% if example.notes %}
+                    <p>{{ example.notes }}</p> 
+                    {% endif %}
+                    
+                    <div class='styleguide__example '>
+                        {{ example.example|component }}
+                    </div>
 
-                <h4>
-                    {{ example.title }} 
-                </h4>
-
-                <p>{{ example.notes }}</p> 
-
-                <div class='styleguide__example '>
-                    {{ example.example|component }}
                 </div>
 
             </div>
@@ -26,25 +34,23 @@
 
     </div>
 
-</div>
+    <div class='[ wrapper ] '>
+        
+        <div class='[ section-m layout ] theme--grey' {%if item.anchor %} id='{{item.anchor}}'{% endif %}>
+        
+            <div class='[ grid ]'>
+                
+                <div class='[ col ] '>
 
-<div class='[ wrapper ] '>
-    
-    <div class='[ section-m layout mb-l ] theme--grey' {%if item.anchor %} id='{{item.anchor}}'{% endif %}>
-    
-        <div class='[ grid ]'>
-            
-            <div class='[ col ] '>
+                    <strong>Try it out:</strong>
 
-                <strong>Try it out:</strong>
+                    <a data-showhide-trigger='{{example.example.type}}-{{loop.index}}' class='styleguide__api__code-view'>
+                        Code
+                    </a>
 
-                <a data-showhide-trigger='{{example.example.type}}-{{loop.index}}' class='styleguide__api__code-view'>
-                    Code
-                </a>
+                </div>
 
-            </div>
-
-            <div class='showhide-hidden code-container' data-showhide-container='{{example.example.type}}-{{loop.index}}'> 
+                <div class='showhide-hidden code-container' data-showhide-container='{{example.example.type}}-{{loop.index}}'> 
 
 <pre class="styleguide__code">
 
@@ -59,12 +65,14 @@
 </pre>
 
 
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-</div>
-
 {% endfor %}
+
+</div>

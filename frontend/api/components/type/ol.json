@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Ordered list",
+            "notes":"A list of items, the order of which does explicitly matter",
             "example": {
                 "type": "type/ol",
                 "data": [
@@ -16,7 +17,8 @@
             }
         },
         {
-            "title": "If you need a nested list:",
+            "title": "",
+            "notes":"If you need a nested list:",
             "example": {
                 "type": "type/ol",
                 "data": [
