@@ -5,7 +5,7 @@
     },
     "examples": [
         {
-          "title": "",
+          "title": "One column with gutters",
           "example": {
             "type":"layout/one-col--gutters",
             "container_padding":"section-top-xxl layout",

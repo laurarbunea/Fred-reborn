@@ -4,94 +4,29 @@
     "template":"pattern-library/gallery.j2",
     "data": [
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Two columns"
-                },
-                "Basic two column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/gallery/two-col"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "two-col",
+            "component": "components/gallery/two-col"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Two columns width gutters"
-                },
-                "Basic two column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/gallery/two-col--gutters"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "two-col--gutters",
+            "component": "components/gallery/two-col--gutters"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "three-col"
-                },
-                "Basic two column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/gallery/three-col"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "three-col--gutters",
+            "component": "components/gallery/three-col--gutters"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "three-col with gutters"
-                },
-                "Basic two column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/gallery/three-col--gutters"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "four-col",
+            "component": "components/gallery/four-col"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Four col"
-                },
-                "Basic two column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/gallery/four-col"
-                }
-            ]
-        }, 
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Four col with gutters"
-                },
-                "Basic four column gallery ..",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/gallery/four-col--gutters"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "four-col--gutters",
+            "component": "components/gallery/four-col--gutters"
         }
     ]
 }

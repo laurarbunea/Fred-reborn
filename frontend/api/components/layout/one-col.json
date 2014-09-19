@@ -5,7 +5,7 @@
     },
     "examples": [
         {
-          "title": "",
+          "title": "Basic one column",
           "example": {
             "type":"layout/one-col",
             "container_padding":"section-top-xxl layout",

@@ -4,110 +4,39 @@
     "template":"pattern-library/layout.j2",
     "data": [
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "one-col",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "One column"
-                },
-                "Basic one column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/layout/one-col"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "one-col",
+            "component": "components/layout/one-col"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "one-col--gutters",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "One column with gutters"
-                },
-                "Basic one column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/layout/one-col--gutters"
-                }
-            ]
-        },
-           
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "two-col",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Two col"
-                },
-                "Basic two column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/layout/two-col"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "one-col--gutters",
+            "component": "components/layout/one-col--gutters"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "two-col--gutters",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Two col with gutters"
-                },
-                "Basic two column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/layout/two-col--gutters"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "two-col",
+            "component": "components/layout/two-col"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "three-col",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Three columns"
-                },
-                "Basic three column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/layout/three-col"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "two-col--gutters",
+            "component": "components/layout/two-col--gutters"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "three-col--gutters",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Three columns"
-                },
-                "Basic three column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/layout/three-col--gutters"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "three-col",
+            "component": "components/layout/three-col"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "h1",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Four columns"
-                },
-                "Basic two column",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/layout/four-col"
-                }
-            ]
-        } 
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "three-col--gutters",
+            "component": "components/layout/three-col--gutters"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "four-col",
+            "component": "components/layout/four-col"
+        }
     ]
 }
