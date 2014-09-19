@@ -6,13 +6,16 @@
     {{ item.title }} 
 </h4>
 
-{{ item.notes }} 
+<p>{{ item.notes }}</p> 
 
-{#<div class="styleguide__api">
+<div class='styleguide__example '>
+    {{ item.example|component }}
+</div>
+
+<div class="styleguide__api">
 
     <strong>Try it out:</strong>
 
-   
     <a data-showhide-trigger='{{item.example.type}}-{{loop.index}}' class='styleguide__api__code-view'>
         Code
     </a>
@@ -33,12 +36,8 @@
 
 </pre>
 
-</div>#}
-
-<div class='styleguide__example '>
-
-    {{ item.example|component }}
-
 </div>
+
+
 
 {% endfor %}

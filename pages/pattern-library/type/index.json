@@ -4,154 +4,54 @@
     "template":"pattern-library/type.j2",
     "data": [
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "h1",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Heading 1"
-                },
-                "H1 is always used for the most important headline on the page—but nowhere else.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/h1"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "h1",
+            "component": "components/type/h1"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "h2",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Heading 2"
-                },
-                "H2 is used as a break between sections of content.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/h2"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "h2",
+            "component": "components/type/h2"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "h3",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Heading 3"
-                },
-                "H3 is used for subsection headings.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/h3"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "h3",
+            "component": "components/type/h3"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "h4",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Heading 4"
-                },
-                 "If you find yourself needing an H4 heading, you might want to consider reorganising the content or editing it for length. If that’s not possible this style will serve you nicely.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/h4"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "h4",
+            "component": "components/type/h4"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "h5",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Heading 5"
-                },
-                 "If you find yourself needing an H5 heading, you might want to consider reorganising the content or editing it for length. If that’s not possible this style will serve you nicely.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/h5"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "h5",
+            "component": "components/type/h5"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "h6",
-            "data": [
-                {
-                    "type": "type/h2",
-                    "data": "Heading 6"
-                },
-                 "If you find yourself needing an H6 heading, you might want to consider reorganising the content or editing it for length. If that’s not possible this style will serve you nicely.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/h6"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "h6",
+            "component": "components/type/h6"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "p-intro",
-            "data": [ 
-                {
-                    "type": "type/h2",
-                    "data": "Intro paragraph"
-                },
-                "Use an intro paragraph to introduce and summarise the content of a page.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/intro"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "intro",
+            "component": "components/type/intro"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "p",
-            "data": [ 
-                {
-                    "type": "type/h2",
-                    "data": "Paragraph"
-                },
-                "A good old-fashioned, vanilla-flavoured body copy paragraph.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/p"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "paragraph",
+            "component": "components/type/p"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "text-small",
-            "data": [ 
-                {
-                    "type": "type/h2",
-                    "data": "Small type"
-                },
-                "Small text is used mainly for UI elements where space is limited or the information is of secondary importance.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/text-small"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "text-small",
+            "component": "components/type/text-small"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "text-tiny",
-            "data": [ 
-                {
-                    "type": "type/h2",
-                    "data": "Tiny type"
-                },
-                "We don’t recommend you use tiny text as it’s more difficult to read — unless it’s a word or two on a UI label and regular old small text just isn’t small enough.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/type/text-small"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "text-tiny",
+            "component": "components/type/text-tiny"
         },
         {
             "type" : "/pattern-library/section-block",

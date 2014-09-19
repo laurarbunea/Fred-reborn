@@ -4,22 +4,37 @@
     "template":"pattern-library/buttons.j2",
     "data": [
         {
-            "type" : "/pattern-library/section-block",
-            "anchor": "buttons",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Buttons"
-                },
-                "Here is a list of the different types of buttons available.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/buttons/btn"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "simple",
+            "component": "components/buttons/btn"
         },
         {
-            "anchor":"action-link",
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "block",
+            "component": "components/buttons/btn--block"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "mobile-block",
+            "component": "components/buttons/btn--mobile-block"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "bounce",
+            "component": "components/buttons/btn--bounce"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "icon-with-text",
+            "component": "components/buttons/btn--icon-and-text"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "icon-only",
+            "component": "components/buttons/btn--icon"
+        },
+        {
+            "anchor":"action-links",
             "type" : "/pattern-library/section-block",
             "data": [
                 {

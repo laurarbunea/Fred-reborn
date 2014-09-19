@@ -1,0 +1,23 @@
+{
+    "api": {
+        "type": "button",
+        "label": "",
+        "theme": ["primary", "secondary","tertiary"]
+    },
+    "examples": [
+        { 
+            "notes":"Buttons can also be icons only:",
+            "example": {
+                "type": "buttons/btn",
+                "theme": "secondary",
+                "href": "#",
+                "icon": 
+                    {
+                        "name":"caret-down",
+                        "color":"dark-blue"
+                    }
+                
+            }
+        }
+    ]
+}

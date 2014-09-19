@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Heading 6",
+            "notes":"If you find yourself needing an H6 heading, you might want to consider reorganising the content or editing it for length. If that’s not possible this style will serve you nicely.",            
             "example": {
                 "type": "type/h6",
                 "data": " H6 heading "

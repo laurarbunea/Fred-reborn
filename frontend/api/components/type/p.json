@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Paragraph",
+            "notes":"A good old-fashioned, vanilla-flavoured body copy paragraph.",
             "example": {
                 "data": "I’m just a regular old paragraph of body copy. I’m just a regular old paragraph of body copy. I’m just a regular old paragraph of body copy. I’m just a regular old paragraph of body copy. I’m just a regular old paragraph of body copy."
             }

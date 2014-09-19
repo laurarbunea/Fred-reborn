@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Tiny type",
+            "notes":"We don’t recommend you use tiny text as it’s more difficult to read — unless it’s a word or two on a UI label and regular old small text just isn’t small enough.",
             "example": {
                 "type": "type/text-tiny",
                 "data": " I’m paragraph of tiny text. Only use me as a label on small UI controls, and then only when small text just doesn’t work."

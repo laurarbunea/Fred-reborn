@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li, p, .text, code, bloc
   margin-top: 0.75rem;
   /* fallback  times by 6 */ }
 
-.styleguide__api, .styleguide__api, .styleguide__example + h4 {
+.styleguide__api, .styleguide__example + h4 {
   margin-top: 16px;
   margin-top: 1rem;
   /* fallback  times by 6 */ }
@@ -228,6 +228,11 @@ hr {
 .mt-xxxl {
   margin-top: 32px;
   margin-top: 2rem;
+  /* fallback  times by 6 */ }
+
+.styleguide__api {
+  margin-top: 48px;
+  margin-top: 3rem;
   /* fallback  times by 6 */ }
 
 .mt-xxxxl {
@@ -2670,11 +2675,11 @@ body {
 .styleguide__code, pre {
   border-radius: 4px;
   border-radius: 0.25rem;
-  background-color: #F8FBFC;
-  border: solid 1px #DDE7EB;
+  background-color: #555555;
+  border: solid 1px #555555;
   padding: 1em;
   overflow: scroll;
-  color: #6D7A8A;
+  color: #fff;
   font-size: 13px; }
 
 code {
@@ -2691,12 +2696,10 @@ pre > code {
   padding: 0; }
 
 .styleguide--html {
-  color: #B16635; }
+  color: #9DFFE5; }
 
 .styleguide__api {
-  margin-bottom: 48px;
-  margin-bottom: 3rem;
-  background-color: #f6f6f6; }
+  background-color: #ddd; }
 
 .styleguide__api, .styleguide__example + h4 {
   margin-left: -10%;

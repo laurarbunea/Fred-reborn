@@ -169,11 +169,11 @@ body {
 .styleguide__code,
 pre {
     @include rem(border-radius, $space-xxs);
-    background-color: #F8FBFC;
-    border: solid 1px #DDE7EB;
+    background-color: #555555;
+    border: solid 1px #555555;
     padding: 1em;
     overflow: scroll;
-    color: #6D7A8A;
+    color: #fff;
     font-size: 13px;
 }
 
@@ -192,19 +192,19 @@ pre > code {
 }
 
 .styleguide--html {
-    color: #B16635;
+    color: #9DFFE5;
 }
 
 
 .styleguide__api {    
     @extend %pt-m;
     @extend %pb-m;
-    @extend %mt-m;
+    @extend %mt-xxxxl;
     @extend %font-size-s;    
     @extend %bt--primary;
     @extend %bb--primary;
-    @include rem(margin-bottom, 48);
-    background-color:#f6f6f6;
+    //@include rem(margin-bottom, 48);
+    background-color:#ddd;
 }
 
 .styleguide__api, 

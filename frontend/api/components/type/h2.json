@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Heading 2",
+            "notes":"H2 is used as a break between sections of content.",
             "example": {
                 "type": "type/h2",
                 "data": "h2 Heading"

@@ -1,0 +1,20 @@
+{
+    "api": {
+        "type": "button",
+        "label": "",
+        "theme": ["primary", "secondary","tertiary"]
+    },
+    "examples": [
+        {
+            "title": "Button with block modifier",
+            "notes":"Block buttons stretch to the full width of their parent.",
+            "example": {
+                "type": "buttons/btn",
+                "label": "Hello",
+                "theme": "primary",
+                "block": true
+            }
+        }
+    ]
+}
+

@@ -4144,29 +4144,29 @@ button {
   padding-right: 0; }
 
 .btn--submit, .btn--primary, .email-wrapper input[type='submit'] {
-  background-color: #293f54;
+  background-color: #37b67f;
   color: #fff;
-  border: #293f54; }
+  border: #37b67f; }
   .btn--submit:visited, .btn--primary:visited, .email-wrapper input[type='submit']:visited {
     color: #fff; }
   .btn--submit:hover, .btn--primary:hover, .email-wrapper input[type='submit']:hover {
-    background: black;
+    background-color: #2b8f64;
     color: #fff; }
   .btn--submit:active, .btn--primary:active, .email-wrapper input[type='submit']:active {
     color: #fff;
-    background: #293f54; }
+    background-color: #37b67f; }
 
 .btn--secondary {
-  background: #fff;
-  color: #293f54; }
+  background: #293f54;
+  color: #fff; }
   .btn--secondary:visited {
     color: #236FA6; }
   .btn--secondary:hover {
-    background: #293f54;
+    background: #182532;
     color: #fff; }
   .btn--secondary:active {
     color: #fff;
-    background: #236FA6; }
+    background: #293f54; }
 
 .btn--tertiary {
   background: none;

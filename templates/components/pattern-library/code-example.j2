@@ -7,7 +7,11 @@
 <h4>
     {{ item.title }} 
 </h4>
-{{ item.notes }} 
+<p>{{ item.notes }} </p>
+
+<div class='styleguide__example '>
+    {{ item.example|component }}
+</div>
 <div class="styleguide__api">
         <strong>Try it out:</strong>
         <a href="/api/{{item.example.type}}">API</a> |
@@ -24,9 +28,7 @@
 </pre>
 </div>
 
-<div class='styleguide__example '>
-    {{ item.example|component }}
-</div>
+
 
 {% endfor %}
 
