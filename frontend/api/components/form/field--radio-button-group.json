@@ -9,7 +9,8 @@
     },
     "examples": [
         {
-            "title": "10-up radio group",
+            "title": "Radio button group",
+            "notes":"This component should be used when you want users to select one input from a group of short descriptions or numbers. If you have long descriptions or numbers, or a list of more than 12 items, the <a href='#radio-button-list'>radio button list</a> may be a better option.",
             "example": {
                 "type": "form/field--radio-button-group",
                 "label": "Registration period",

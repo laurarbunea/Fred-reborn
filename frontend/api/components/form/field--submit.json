@@ -6,6 +6,7 @@
     "examples": [
         {
             "title": "Submit button",
+            "notes":"This should be used when you want to submit the form data.",
             "example": {
                 "type": "form/field--submit",
                 "label": "Submit"

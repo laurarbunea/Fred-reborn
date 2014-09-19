@@ -9,7 +9,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Field details",
+            "notes":"Use this when the form has extra information or help text.",
             "example": {
                 "type": "form/field--details",
                 "data": [

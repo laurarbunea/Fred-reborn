@@ -8,13 +8,29 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Email input",
+            "notes":"This should be used for input fields that contain an email address. The email keyboard will show by default on touchscreen devices that support it.",
             "example": {
                 "type": "form/field--email",
                 "name": "email",
                 "label": "Your email address",
                 "placeholder": "email@example.com",
                 "field_note": "You won’t get any junk email from us."
+            }
+        },
+        {
+            "title": "Email input with errors",
+            "example": {
+                "type": "form/field--email",
+                "name": "email",
+                "label": "Your email address",
+                "placeholder": "email@example.com",
+                "field_note": "You won’t get any junk email from us.",
+                "errors": [
+                    {
+                        "msg": "Ooops, there was an error"
+                    }
+                ]
             }
         }
     ]

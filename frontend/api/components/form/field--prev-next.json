@@ -8,7 +8,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Previous and Next links",
+            "notes":"These should be used when a page or component gets too long, for example when <a href='/forms/book-a-test/times1'>choosing a time for your driving test</a>.",
             "example": {
                 "type": "form/field--prev-next",
                 "next_href": "/imalink.co.nz",

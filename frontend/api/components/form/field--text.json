@@ -8,12 +8,27 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Text input",
+            "notes":"Use this for input fields that contain regular text.",
             "example": {
                 "type": "form/field--text",
                 "placeholder": "placeholder text",
                 "label": "Field label",
                 "field_note": "Enter your surname as it appears on your licence."
+            }
+        },
+        {
+            "title": "Text input with errors",
+            "example": {
+                "type": "form/field--text",
+                "placeholder": "placeholder text",
+                "label": "Field label",
+                "field_note": "Enter your surname as it appears on your licence.",
+                "errors": [
+                    {
+                        "msg": "Ooops, there was an error"
+                    }
+                ]
             }
         }
     ]
