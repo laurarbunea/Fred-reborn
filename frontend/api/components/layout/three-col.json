@@ -5,7 +5,7 @@
     },
     "examples": [
       {
-        "title": "",
+        "title": "Three column layout",
         "example": {
         "type":"layout/three-col",
         "container_padding":"section layout",

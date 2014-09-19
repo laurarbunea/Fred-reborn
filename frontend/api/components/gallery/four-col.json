@@ -5,7 +5,7 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Four column gallery",
             "example": {
                 "type":"gallery/four-col",
                 "container_padding":"section layout",

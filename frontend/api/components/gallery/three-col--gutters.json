@@ -5,7 +5,7 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Three column gallery with gutters",
             "example": {
                 "type":"gallery/three-col--gutters",
                 "container_padding":"section layout",

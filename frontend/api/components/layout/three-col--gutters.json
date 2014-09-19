@@ -5,7 +5,7 @@
     },
     "examples": [
         {
-          "title": "",
+          "title": "Three column layout with gutters",
           "example": {
           "type":"layout/three-col--gutters",
           "container_padding":"section layout",

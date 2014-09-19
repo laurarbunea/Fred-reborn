@@ -5,7 +5,7 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Three column gallery",
             "example": {
                 "type":"gallery/three-col",
                 "container_padding":"section layout",
