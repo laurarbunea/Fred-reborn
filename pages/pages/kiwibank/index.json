@@ -23,36 +23,70 @@
       },
       {
         "type":"layout/dynamic",
-        "grid_modifier":"grid--table",
-        "container_padding":"layout-xl section-top-xl",
         "external_theme":"theme--",
         "columns":[
           {
-            "column_size":"two-thirds",
-            "column_theme":"theme--grey",
+            "column_size":"medium-two-thirds",
             "data":[
               {
-                "type": "navigation/breadcrumb",
-                "data": [
+                "type": "grid/dynamic",
+                "container_padding":"section-xl layout--left",
+                "container_theme":"theme--grey",
+                "columns": [
                   {
-                    "url": "#",
-                    "title": "Personal"
+                    "column_size":"two-thirds",
+                    "data": [
+                     "hi"
+                    ]
+                  },
+                  {
+                    "column_size":"third",
+                    "data":["hi"]
                   }
                 ]
               },
               {
-                "type":"type/h1",
-                "data":"Everyday banking"
-              },
-              { 
-                "type":"type/intro",
-                "data":"Get the stuff you do every day running like clockwork. Simple choices, smart options, clever tools and tips.."
+                "type": "grid/three-col",
+                "container_padding":"section-xl layout--left",
+                "container_theme":"theme--white",
+                "columns": [
+                  {
+                    "data":[
+                      {
+                        "type":"type/h4",
+                        "data":"Everyday accounts"
+                      },
+                      "<a href=''>Free up</a>",
+                      "Bank online and free yourself from transaction fees. "
+                    ]
+                  },
+                  {
+                    "data":[
+                      {
+                        "type":"type/h4",
+                        "data":"Everyday accounts"
+                      },
+                      "<a href=''>Free up</a>",
+                      "Bank online and free yourself from transaction fees. "
+                    ]
+                  },
+                  {
+                    "data":[
+                      {
+                        "type":"type/h4",
+                        "data":"Everyday accounts"
+                      },
+                      "<a href=''>Free up</a>",
+                      "Bank online and free yourself from transaction fees. "
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
-            "column_size":"third",
-            "column_theme":"theme--white",
+            "column_size":"medium-third",
+            "internal_theme":"theme--white",
             "data":[
               {
                 "type":"type/h4",
@@ -66,7 +100,6 @@
               "<a href=''/>Insurance</a>"
             ]
           }
-
         ]
       }
     ]
