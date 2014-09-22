@@ -86,7 +86,7 @@
           },
           {
             "column_size":"medium-third",
-            "internal_theme":"theme--white",
+            "column_theme":"theme--white",
             "data":[
               {
                 "type":"type/h4",
