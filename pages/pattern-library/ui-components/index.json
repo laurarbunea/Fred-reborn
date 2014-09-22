@@ -18,7 +18,6 @@
                 }
             ]
         },
-
         {
             "type" : "/pattern-library/section-block",
             "anchor": "stat-block",

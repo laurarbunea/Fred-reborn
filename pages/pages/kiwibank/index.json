@@ -1,0 +1,73 @@
+{
+    "title": "pages",
+    "slug":"kiwibank",
+    "headline": "kiwibank",
+    "template":"/pages/device.j2",
+    "data": [
+      {
+        "type": "navigation/global-nav",
+        "external_theme": "theme--kiwibank",
+        "logo":"kiwibank-logo",
+        "section":"section-s",
+        "icon_color": "",
+        "pages":[
+          {
+            "title":"menu",
+            "svg":"Search",
+            "svg_color":"white"
+          },
+          {
+            "title":"Internet Banking login"
+          }  
+        ]
+      },
+      {
+        "type":"layout/dynamic",
+        "grid_modifier":"grid--table",
+        "container_padding":"layout-xl section-top-xl",
+        "external_theme":"theme--",
+        "columns":[
+          {
+            "column_size":"two-thirds",
+            "column_theme":"theme--grey",
+            "data":[
+              {
+                "type": "navigation/breadcrumb",
+                "data": [
+                  {
+                    "url": "#",
+                    "title": "Personal"
+                  }
+                ]
+              },
+              {
+                "type":"type/h1",
+                "data":"Everyday banking"
+              },
+              { 
+                "type":"type/intro",
+                "data":"Get the stuff you do every day running like clockwork. Simple choices, smart options, clever tools and tips.."
+              }
+            ]
+          },
+          {
+            "column_size":"third",
+            "column_theme":"theme--white",
+            "data":[
+              {
+                "type":"type/h4",
+                "data":"Related pages"
+              },
+              "Everyday banking",
+              "<a href=''/>Investments</a>",
+              "<a href=''/>Credit cards</a>",
+              "<a href=''/>Home loans</a>",
+              "<a href=''/>KiwiSaver</a>",
+              "<a href=''/>Insurance</a>"
+            ]
+          }
+
+        ]
+      }
+    ]
+}

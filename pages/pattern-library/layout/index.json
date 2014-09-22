@@ -37,6 +37,11 @@
             "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "four-col",
             "component": "components/layout/four-col"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "dynamic",
+            "component": "components/layout/dynamic"
         }
     ]
 }

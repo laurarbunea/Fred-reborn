@@ -1,0 +1,33 @@
+{% if item.external_theme %}
+
+<div class='{{item.external_theme}}'>
+
+{% endif %}
+
+    <div class='[ wrapper ]'>   
+
+        <div class='[ {{item.container_padding}} ] {{item.internal_theme}}'>
+
+            <div class='[ grid {{item.grid_modifier }} {{item.section}} ] {{item.grid_theme }}'>
+
+                {% for column in item.columns %}
+
+                    <div class="[ col {{column.column_size }} ] {{column.column_theme }}">
+
+                        {{ column|children }}
+
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% if item.external_theme %}
+
+</div>
+
+{% endif %}

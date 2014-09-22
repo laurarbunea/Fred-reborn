@@ -3186,6 +3186,10 @@ blockquote {
   width: 10em;
   height: 1.75em; }
 
+.i-kiwibank-logo {
+  width: 3.5em;
+  height: 3.5em; }
+
 /* colourised icons */
 .subnav h2 > .i-arrow-r, .subnav h3 > .i-arrow-r, .route__item h4 .i-arrow-r, .route__item > a > * .i-arrow-r, .i--blue {
   background-position: 0 25%; }
@@ -3310,6 +3314,10 @@ blockquote {
   .theme--redcross a {
     color: #d80915;
     text-decoration: underline; }
+
+.theme--kiwibank {
+  background-color: #6aa41e;
+  color: #fff; }
 
 .text--white {
   color: #fff; }

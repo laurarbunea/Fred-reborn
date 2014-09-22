@@ -1,0 +1,44 @@
+{
+    "api": {
+        "type": "layout/dynamic",
+        "data": []
+    },
+    "examples": [
+      {
+        "title": "Dynamic layout",
+        "example": {
+          "type":"layout/dynamic",
+          "container_padding":"section-top-xxl layout",
+          "internal_theme":"theme--warm",
+          "columns":[
+            {
+              "content_theme":"theme--fred",
+              "content_padding":"section-m",
+              "column_size":"two-thirds",
+              "data":[
+                {
+                  "type":"type/h1",
+                  "data":"It’s about great songs "
+                },
+                { 
+                  "type":"type/intro",
+                  "data":"We are about connecting great and diverse local songs with their intended audiences."
+                }
+              ]
+            },
+            {
+              "content_theme":"theme--fred",
+              "content_padding":"section-m",
+              "column_size":"third",
+              "data":[
+                {
+                  "type":"type/h1",
+                  "data":"It’s about great songs "
+                }
+              ]
+            }
+          ]
+        }
+      }
+  ]
+}

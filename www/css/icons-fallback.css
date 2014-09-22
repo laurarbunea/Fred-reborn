@@ -125,6 +125,13 @@
 
 
 
+.i-kiwibank-logo {
+    background-image: url('png/kiwibank-logo.png');
+    background-repeat: no-repeat;
+}
+
+
+
 .i-linkedin-grey {
     background-image: url('png/linkedin-grey.png');
     background-repeat: no-repeat;
@@ -243,7 +250,7 @@
 }
 
 
-.theme--full-colour .i-nzta-logo,
+
 .i-nzta-logo-coloured {
     background-image: url('png/nzta-logo-coloured.png');
     background-repeat: no-repeat;
