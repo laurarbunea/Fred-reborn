@@ -1,22 +1,14 @@
-<div class='[ {{item.container_padding}} ] {{item.internal_theme}}'>
+<div class='[ grid {{item.grid_modifier}} ] {{item.grid_theme}}'>
 
-    <div class='[ grid {{item.grid_modifier}} ] '>
-
-        {% for column in item.columns %}
-            
-        <div class="[ col medium-third ]">
-              
-            <div class='{{column.content_padding}} {{column.content_theme}}'>
-
-                {{ column|children }}
-
-            </div>
-
-        </div>
-
-        {% endfor %}
+    {% for column in item.columns %}
         
+    <div class="[ col medium-third {{column.column_padding}} {{column.column_theme}} ]">
+          
+
+        {{ column|children }}
+      
     </div>
 
+    {% endfor %}
+    
 </div>
-

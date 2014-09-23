@@ -2,11 +2,17 @@
 
     <div class="[ wrapper ]">
 
-        <div class="[ layout {{item.section}} ] {{ item.internal_theme }}" >
+        {% if item.container_padding %}
+        
+        <div class='[ grid ] {{item.container_theme}}'>
+            
+            <div class='[ col {{item.container_padding}} ] '>
 
-            <div class="[ grid grid--middle ] ">
+        {% endif %}
+
+            <div class="[ grid grid--middle ] {{ item.internal_theme }}">
                 
-                <div class='[ col small-2 ] '>
+                <div class='[ col small-2 ] {{item.left_column_padding}} '>
                     
                     <a href='/' class='i i-{{ item.logo }}' accesskey="h">
                         <span class="sr-only">{{item.text}}</span>
@@ -14,7 +20,7 @@
 
                 </div>
 
-                <div class='[ col small-8 ] global-nav__items '>
+                <div class='[ col small-8 ] global-nav__items {{item.right_column_padding}}'>
 
                     {% for page in item.pages %}
                         
@@ -35,8 +41,13 @@
                 </div>
       
             </div>
-
+        {% if item.container_padding %}
+        
+            </div>
+            
         </div>
+
+        {% endif %}
 
     </div>
 

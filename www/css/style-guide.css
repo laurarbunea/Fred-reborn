@@ -2372,11 +2372,17 @@ dd {
   border-top-right-radius: 4px;
   border-top-right-radius: 0.25rem; }
 
-dd, .styleguide__api, .styleguide__example + h4 {
+.bt--primary, dd, .styleguide__api, .styleguide__example + h4 {
   border-top: 1px solid #F2F2EB; }
 
-.styleguide__api {
+.bb--primary, .styleguide__api {
   border-bottom: 1px solid #F2F2EB; }
+
+.bl--primary {
+  border-left: 1px solid #F2F2EB; }
+
+.br--primary {
+  border-right: 1px solid #F2F2EB; }
 
 p, .text, code, dt, dd, td, th {
   font-size: 16px;

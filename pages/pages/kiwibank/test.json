@@ -1,0 +1,116 @@
+{
+    "title": "pages",
+    "slug":"kiwibank",
+    "headline": "kiwibank",
+    "template":"/pages/device.j2",
+    "data": [
+      {
+        "type": "navigation/global-nav",
+        "external_theme": "theme--kiwibank",
+        "logo":"kiwibank-logo",
+        "section":"section-s",
+        "icon_color": "",
+        "pages":[
+          {
+            "title":"menu",
+            "svg":"Search",
+            "svg_color":"white"
+          },
+          {
+            "title":"Internet Banking login"
+          }  
+        ]
+      },
+      {
+        "type":"layout/test",
+        "grid-modifer":"grid-table--q-medium",
+        "columns":[
+          {
+            "column_theme":"theme--white",
+            "column_size":"medium-two-thirds",
+            "data":[
+              {
+                "type": "grid/two-col",
+                "container_padding":"section-xl layout--left",
+                "container_theme":"theme--grey",
+                "columns": [
+                  {
+                    "column_size":"two-thirds",
+                    "data": [
+                     "hi"
+                    ]
+                  },
+                  {
+                    "column_size":"third",
+                    "data":["hi"]
+                  }
+                ]
+              },
+              {
+                "type": "grid/three-col",
+                "container_padding":"section-xl layout--left",
+                "container_theme":"theme--white",
+                "columns": [
+                  {
+                    "data":[
+                      {
+                        "type":"type/h4",
+                        "data":"Everyday accounts"
+                      },
+                      "<a href=''>Free up</a>",
+                      "Bank online and free yourself from transaction fees. "
+                    ]
+                  },
+                  {
+                    "data":[
+                      {
+                        "type":"type/h4",
+                        "data":"Everyday accounts"
+                      },
+                      "<a href=''>Free up</a>",
+                      "Bank online and free yourself from transaction fees. "
+                    ]
+                  },
+                  {
+                    "data":[
+                      {
+                        "type":"type/h4",
+                        "data":"Everyday accounts"
+                      },
+                      "<a href=''>Free up</a>",
+                      "Bank online and free yourself from transaction fees. "
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+    
+            "column_size":"medium-third",
+            "content_theme":"theme--white",
+            "data":[
+              {
+                "type": "grid/one-col",
+                "container_padding":"section-xl layout--left",
+                "container_theme":"theme--white",
+                "columns": [
+                  {
+                    "type":"type/h4",
+                    "data":"Related pages"
+                  },
+                  "Everyday banking",
+                  "<a href=''/>Investments</a>",
+                  "<a href=''/>Credit cards</a>",
+                  "<a href=''/>Home loans</a>",
+                  "<a href=''/>KiwiSaver</a>",
+                  "<a href=''/>Insurance</a>"
+                ]
+              }
+              
+            ]
+          }
+        ]
+      }
+    ]
+}

@@ -2,95 +2,139 @@
     "title": "pages",
     "slug":"kiwibank",
     "headline": "kiwibank",
-    "template":"/pages/device.j2",
-    "data": [
+    "template":"two-col.j2",
+    "grid_modifier":"",
+    "internal_theme":"theme--white",
+    "navigation": [
       {
-        "type": "navigation/global-nav",
-        "external_theme": "theme--kiwibank",
-        "logo":"kiwibank-logo",
-        "section":"section-s",
-        "icon_color": "",
-        "pages":[
+        "data": [
           {
-            "title":"menu",
-            "svg":"Search",
-            "svg_color":"white"
-          },
-          {
-            "title":"Internet Banking login"
-          }  
-        ]
-      },
-      {
-        "type":"layout/dynamic",
-        "external_theme":"theme--",
-        "columns":[
-          {
-            "column_size":"medium-two-thirds",
-            "data":[
+            "type": "navigation/global-nav",
+            "external_theme": "theme--kiwibank",
+            "internal_theme": "theme--dark-green",
+            "logo":"kiwibank-logo",
+            "left_column_padding":"pl-xxxxl--q-medium",
+            "right_column_padding":"pr-xxxxl--q-medium",
+            "icon_color": "",
+            "pages":[
               {
-                "type": "grid/dynamic",
-                "container_padding":"section-xl layout--left",
-                "container_theme":"theme--grey",
-                "columns": [
-                  {
-                    "column_size":"two-thirds",
-                    "data": [
-                     "hi"
-                    ]
-                  },
-                  {
-                    "column_size":"third",
-                    "data":["hi"]
-                  }
-                ]
+                "title":"menu",
+                "svg":"Search",
+                "svg_color":"white"
               },
               {
-                "type": "grid/three-col",
-                "container_padding":"section-xl layout--left",
-                "container_theme":"theme--white",
-                "columns": [
-                  {
-                    "data":[
-                      {
-                        "type":"type/h4",
-                        "data":"Everyday accounts"
-                      },
-                      "<a href=''>Free up</a>",
-                      "Bank online and free yourself from transaction fees. "
-                    ]
-                  },
-                  {
-                    "data":[
-                      {
-                        "type":"type/h4",
-                        "data":"Everyday accounts"
-                      },
-                      "<a href=''>Free up</a>",
-                      "Bank online and free yourself from transaction fees. "
-                    ]
-                  },
-                  {
-                    "data":[
-                      {
-                        "type":"type/h4",
-                        "data":"Everyday accounts"
-                      },
-                      "<a href=''>Free up</a>",
-                      "Bank online and free yourself from transaction fees. "
-                    ]
-                  }
-                ]
-              }
+                "title":"Internet Banking login"
+              }  
             ]
-          },
-          {
-            "column_size":"medium-third",
-            "column_theme":"theme--white",
-            "data":[
-              {
-                "type":"type/h4",
-                "data":"Related pages"
+          }
+        ]
+      }
+  ],
+  "left_column": [
+    {
+      "column_size":"medium-two-thirds",
+      "column_theme":"br--primary",
+      "data":[
+        {
+          "type":"grid/dynamic",
+          "grid_theme":"theme--beige",
+          "columns":[
+            {
+              "column_size":"medium-half",
+              "column_padding":"pl-xxxxl--q-medium pt-xxl pb-xxl",
+              "data":[
+                {
+                    "type":"type/h2",
+                    "data":"Everday banking"
+                },
+                "Get the stuff you do every day running like clockwork. Simple choices, smart options, clever tools and tips."
+              ]
+            },
+            {
+              "column_size":"medium-half",
+              "column_padding":" pt-xxl pb-xxl",
+              "data":[
+                {
+                    "type":"img",
+                    "src":"/images/motorbike.jpg",
+                    "responsive":true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type":"grid/dynamic",
+          "grid_theme":"theme--white",
+          "columns":[
+            {
+              "column_size":"medium-half large-third",
+              "column_padding":"pl-xxxxl--q-medium pt-xxl pb-xxl",
+              "data":[
+                {
+                    "type":"type/h4",
+                    "data":"Everyday accounts "
+                },
+                "Bank online and free yourself from transaction fees. ",
+                {
+                    "type":"type/h4",
+                    "data":"Now account"
+                },
+                "Our standard everyday account with a choice of fee plans. "
+              ]
+            },
+            {
+              "column_size":"medium-half large-third",
+              "column_padding":" pt-xxl pb-xxl",
+              "data":[
+                {
+                    "type":"type/h4",
+                    "data":"Everyday accounts "
+                },
+                "Bank online and free yourself from transaction fees. ",
+                {
+                    "type":"type/h4",
+                    "data":"Now account"
+                },
+                "Our standard everyday account with a choice of fee plans. "
+              ]
+            },
+            {
+              "column_size":"medium-half large-third",
+              "column_padding":" pt-xxl pb-xxl",
+              "data":[
+                {
+                    "type":"type/h4",
+                    "data":"Everyday accounts "
+                },
+                "Bank online and free yourself from transaction fees. ",
+                {
+                    "type":"type/h4",
+                    "data":"Now account"
+                },
+                "Our standard everyday account with a choice of fee plans. "
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "right_column": [
+    {
+      "column_size":"medium-third",
+      "column_theme":"theme--white",
+      "data":[
+        {
+          "type":"grid/dynamic",
+          "columns":[
+            {
+              "column_padding":"pr-xxxxl--q-medium pt-xxl",
+              "column_theme":"theme--white",
+              "data":[
+               {
+                  "type":"type/h4",
+                  "data":"Related pages"
               },
               "Everyday banking",
               "<a href=''/>Investments</a>",
@@ -98,9 +142,11 @@
               "<a href=''/>Home loans</a>",
               "<a href=''/>KiwiSaver</a>",
               "<a href=''/>Insurance</a>"
-            ]
-          }
-        ]
-      }
-    ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

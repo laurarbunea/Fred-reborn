@@ -161,10 +161,21 @@ $link-color:
     background-color: #98c365;
     color:#fff;
 }
+
+.theme--dark-green {
+    background-color: darken(#98c365, 10%);
+    color:#fff;
+}
+
 .theme--red {
   background-color:#d80915;
   color:#fff;
 
+}
+
+.theme--beige {
+   background-color:#e5e3de;
+   color:#000;
 }
 
 .theme--redcross {

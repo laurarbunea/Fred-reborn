@@ -6,9 +6,10 @@
     "data": [ 
       {
         "type": "navigation/global-nav",
-        "internal_theme": "theme--dark",
+        
+        "container_theme":"theme--dark",
         "logo":"-logo",
-        "section":"section-s",
+        "container_padding":"layout section-s",
         "pages":[
           {
             "title":"menu",
@@ -27,14 +28,14 @@
         ]
       },
       {
-        "type":"layout",
-        "section":"section",
-        "layout":"layout",
+        "type":"layout/dynamic",
+        "container_padding":"section layout",
+        "container_theme":"theme--cool",
         "internal_theme":"theme--cool",
         "grid_modifier":"grid--middle",
         "columns":[
             {
-                "col_size":"large-quarter medium-third",
+                "column_size":"large-quarter medium-third",
                 "data":[
                   { 
                     "type":"img",
@@ -44,7 +45,7 @@
                 ]
             },
             {
-                "col_size":"large-three-quarters medium-two-thirds",
+                "column_size":"large-three-quarters medium-two-thirds",
                 "data":[
                   { 
                     "type":"type/h1",
@@ -56,9 +57,9 @@
         ] 
       },
       {
-        "type":"gallery/four-col--gutters",
-        "internal_theme":"theme--white",
+        "type":"gallery/dynamic",
         "container_padding":"section layout",
+        "container_theme":"theme--white",
         "data":[ 
           { 
             "type":"type/h2",
@@ -68,6 +69,7 @@
         ],
         "gallery":[
           {
+            "column_size":"quarter",
             "img":
               {
                 "src":"/images/placeholders/ph1.jpg",
@@ -78,6 +80,7 @@
             "caption":"I'm cool "
           },
           {
+            "column_size":"quarter",
             "img":
               {
                 "src":"/images/placeholders/ph2.jpg",
@@ -88,6 +91,7 @@
             "caption":"I'm dopey"
           },
           {
+            "column_size":"quarter",
             "img":
               {
                 "src":"/images/placeholders/ph3.jpg",
@@ -98,6 +102,7 @@
             "caption":"I'm sleepy "
           },
           {
+            "column_size":"quarter",
             "img":
               {
                 "src":"/images/placeholders/ph4.jpg",

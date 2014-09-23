@@ -1,0 +1,96 @@
+
+{% extends "pages/device.j2" %}
+{% import "macros.j2" as macros %}
+
+
+
+{% block page_site_wrapper %}
+
+
+
+
+    {% block page_navigation %}
+
+        {% for item in navigation %}
+
+            {{ item|component }}
+
+        {% endfor %}
+
+    {% endblock %}
+
+
+
+
+    {% block page_header %}
+    {% endblock %}
+
+
+
+
+    {% block page_content %}
+
+        {% if external_theme %}
+
+        <div class='{{external_theme}}'>
+
+        {% endif %}
+
+            <div class='[ wrapper ]'>   
+                
+                {% if container_padding %}
+
+                <div class='[ {{container_padding}} ] '>
+
+                {% endif %} 
+                
+                    <div class='[ grid {{grid_modifier }} ] {{internal_theme}}'>
+                        
+                        {% for item in left_column %}
+                        
+                        <div class="[ col {{item.column_padding}} {{item.column_size }} ] {{item.column_theme }}">
+                           
+                            {{ item|component }}
+                            
+                        </div>
+
+                        {% endfor %}
+
+
+                        {% for item in right_column %}
+
+                        <div class="[ col {{item.column_padding}} {{item.column_size }} ] {{item.column_theme }}">
+                           
+                            {% for item in right_column %}
+
+                                {{ item|component }}
+
+                            {% endfor %}
+                            
+                        </div>
+
+                        {% endfor %}
+
+                    </div>
+
+                {% if container_padding %}
+
+                </div>
+
+                {% endif %}
+
+            </div>
+
+        {% if external_theme %}
+
+        </div>
+
+        {% endif %}
+    {% endblock %}
+
+
+
+    {% block page_footer %}
+    {% endblock %}
+
+{% endblock %}

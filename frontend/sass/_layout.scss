@@ -228,12 +228,12 @@
     padding-left: 1rem;
     @include medium {
         & {
-            padding-left: 4%;
+            padding-left: 4em;
         }
     }
     @include large {
         & {
-            padding-left: 8.3333333%;
+            padding-left: 6em;
         }
     }
 }
@@ -242,12 +242,12 @@
     padding-right: 1rem;
     @include medium {
         & {
-            padding-right: 4%;
+            padding-right: 4em;
         }
     }
     @include large {
         & {
-            padding-right: 8.3333333%;
+            padding-right: 6em;
         }
     }
 }
@@ -262,9 +262,9 @@
 }
 
 
-.layout--left { @extend %layout-left; }
+.col.layout--left { @extend %layout-left; }
 
-.layout--right { @extend %layout-right; }
+.col.layout--right { @extend %layout-right; }
 
 
 .layout--half {

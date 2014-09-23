@@ -1,0 +1,98 @@
+{% if item.external_theme %}
+
+<div class='{{item.external_theme}}'>
+
+{% endif %}
+
+        <div class='[ wrapper ]'>
+            
+            {% if item.container_padding %}
+        
+            <div class='[ grid ] {{item.container_theme}}'>
+                
+                <div class='[ full-width {{item.gutters}} {{item.container_padding}} ] '>
+
+            {% endif %}
+            
+                <div class='[ grid ]'>
+
+                    {% if item.data %}
+
+                    <div class="[ {{item.gutters}} large-8 ] {{item.col_theme }} {{item.class }} gallery__intro">
+
+                        {{ item|children }}
+
+                    </div>
+
+                   {% endif %}
+
+                </div>
+
+                <div class='[ grid {#col__padding#} ]'>
+
+                {% for gallery_item in item.gallery %}
+                    
+                    <div class="[ {{gallery_item.gutters}} {{gallery_item.column_size | default('medium-half')}} ] {{gallery_item.content_theme }} gallery__item mt-m">
+                        
+                        {% if gallery_item.img %}
+
+                        <img src='{{gallery_item.img.src}}' alt='{{gallery_item.img.alt}}' class='img--responsive'>
+
+                        {% endif %}
+
+                        {% if gallery_item.content_padding %}
+
+                        <div class='{{gallery_item.content_padding}}'>
+
+                        {% endif %}
+
+                            {% if gallery_item.date %}
+
+                            <p class='small'>
+                                {{gallery_item.date}}
+                            </p>
+
+                            {% endif %}
+
+                            {% if gallery_item.title %}
+
+                            <h4>
+                                {{gallery_item.title}}
+                            </h4>
+
+                            {% endif %}
+
+                            {% if gallery_item.caption %}
+
+                            <p>
+                                {{gallery_item.caption}}
+                            </p>
+
+                            {% endif %}
+
+                        {% if gallery_item.content_padding %}
+
+                        </div >
+
+                        {% endif %}
+                        
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+        {% if item.container_padding %}
+        
+                </div >
+                
+            </div >
+
+            {% endif %}
+
+    </div>
+
+{% if item.external_theme %}
+    </div>
+{% endif %}

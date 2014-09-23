@@ -1,7 +1,8 @@
 {% extends "template.j2" %}
 {% import "macros.j2" as macros %}
 
-{% block header %}
+{% block sub_navigation %}
+
     <div class='theme--neutral'>
 
         <div class='[ wrapper ]  mb-xxxxl'>
@@ -80,16 +81,35 @@
 
             </div>
 
-          
-
         </div>
-        
-    
-        {% for item in data %}
-            {{ item|component }}
-        {% endfor %}
+
+        {% block page_site_wrapper %}
+
+            {% block page_navigation %}
+            {% endblock %}
+
+
+            {% block page_sub_navigation %}
+            {% endblock %}
+
+
+            {% block page_content %}
+                 
+                 {% for item in data %}
+                    {{ item|component }}
+                {% endfor %}
+
+            {% endblock %}
+
+
+            {% block page_footer %}
+            {% endblock %}
+
+
+        {% endblock %}
+
+  
            
-        
         
     </div>
    

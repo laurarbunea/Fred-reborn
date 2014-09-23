@@ -19,131 +19,116 @@
     </noscript>
 </head>
 <body class="theme--neutral {{ body_class }}">
-    <a class="access access-skip" accesskey="2" href="#nzta-main-content">
-        Skip to content
-    </a>
-    <a class="access access-skip" accesskey="0" href="#nzta-access-keys"></a>
-    
-    {% set accesskeys = [
-            {"key":"h", "page":"Home"},
-            {"key":"m", "page":"Menu"},
-            {"key":"0", "page":"Show list of access keys"},
-            {"key":"2", "page":"Skip to content"},
-            {"key":"3", "page":"Skip to top"}
-        ]
-    %}
+  
 
-    
-    {{ macros.accesibility_container(accesskeys, "Access keys for nzta.govt.nz") }}
+    {% block navigation %}
 
-    
-    {% block header_wrap %}
+        <div class="global-nav theme--white mb-l">
 
-        
-    <div class="global-nav theme--white mb-l">
+            <div class="[ wrapper ]">
 
-        <div class="[ wrapper ]">
+                <div class="[ layout ]">
 
-            <div class="[ layout ]">
+                    <div class="[ grid grid--middle ]">
+                        
+                        <div class='[ col large-2 medium-2 small-3 ] '>
+                            
+                            <a href='/'>
+                                <img src='/images/fred-logo.png'>
+                            </a>
 
-                <div class="[ grid grid--middle ]">
-                    
-                    <div class='[ col large-2 medium-2 small-3 ] '>
-                        <a href='/'>
-                            <img src='/images/fred-logo.png'>
-                        </a>
-                    
+                        </div>
 
+                        <div class='[ col large-8 medium-8 small-7 ] global-nav__items '>
+                            
+                            <a href='/pages/' class='btn btn--tertiary ml-m mb-0 {% if title == 'pages' %}active{% endif %}'>
+                                
+                                 Pages
+
+                            </a>
+                            <a href='/pattern-library/' class='btn btn--tertiary ml-m mb-0 {% if title == 'flego' %}active{% endif %}'>
+                                Flego
+                            </a>
+
+                            <a href='/freds-closet/' class='btn btn--tertiary ml-m mb-0 {% if title == 'barebones' %}active{% endif %}'>
+                                
+                                Bare bones
+
+                            </a>
+                            
+                            <a href='/core/' class='btn btn--tertiary ml-m mb-0 {% if title == 'core' %}active{% endif %}'>
+                                
+                                Core
+
+                            </a>
+
+                        </div>
+              
                     </div>
 
-                    <div class='[ col large-8 medium-8 small-7 ] global-nav__items '>
-                        
-                        <a href='/pages/' class='btn btn--tertiary ml-m mb-0 {% if title == 'pages' %}active{% endif %}'>
-                            
-                             Pages
-
-                        </a>
-                        <a href='/pattern-library/' class='btn btn--tertiary ml-m mb-0 {% if title == 'flego' %}active{% endif %}'>
-                            Flego
-                        </a>
-
-                        <a href='/freds-closet/' class='btn btn--tertiary ml-m mb-0 {% if title == 'barebones' %}active{% endif %}'>
-                            
-                            Bare bones
-
-                        </a>
-                        
-                        <a href='/core/' class='btn btn--tertiary ml-m mb-0 {% if title == 'core' %}active{% endif %}'>
-                            
-                            Core
-
-                        </a>
-
-                    </div>
-          
                 </div>
 
             </div>
 
         </div>
-
-    </div>
             
-
-    {% block header %}
     {% endblock %}
-
-
-    {% endblock %}
- 
-
-    {% block nav_ %}
-    {% endblock %}
-
-    <a name="nzta-main-content" id="nzta-main-content"></a>
-    
     
 
-    {% block container %}
-
-        {% block messages %}
-        {% endblock %}
-
-        {% block content %}
-            {% for item in data %}
-                {{ item|component }}
-            {% endfor %}
-        {% endblock %}
-
+    {% block sub_navigation %}
     {% endblock %}
 
 
-    {% block nav %}
+    {% block content %}
 
-       {% include "nav.j2" %}
-       {#{{ macros.get_api_example('menu')}}#}
+        {% for item in data %}
+            {{ item|component }}
+        {% endfor %}
+
+        {% block page_site_wrapper %}
+
+
+            {% block page_navigation %}
+            {% endblock %}
+
+
+            {% block page_sub_navigation %}
+            {% endblock %}
+
+
+            {% block page_content %}
+            {% endblock %}
+
+
+            {% block page_footer %}
+            {% endblock %}
+
+        {% endblock %}
 
     {% endblock %}
 
 
 
     {% block footer %}
-    <div class="global-nav theme--white">
 
-        <div class="[ wrapper ]">
+        <div class="global-nav theme--white">
 
-            <div class="[ layout ]">
+            <div class="[ wrapper ]">
 
-                <div class="[ grid grid--middle ]">
-                    
-                    <div class='[ col ] '>
+                <div class="[ layout ]">
 
-                        <p>
-                             Made with &nbsp; &hearts; &nbsp; by friendly Feds
-                             <span class='split__right'>
-                                 © 2014. All rights reserved.
-                             </span>
-                        </p>
+                    <div class="[ grid grid--middle ]">
+                        
+                        <div class='[ col ] '>
+
+                            <p>
+                                 Made with &nbsp; &hearts; &nbsp; by friendly Feds
+                                 <span class='split__right'>
+                                     © 2014. All rights reserved.
+                                 </span>
+                            </p>
+
+                        </div>
 
                     </div>
 
@@ -152,8 +137,6 @@
             </div>
 
         </div>
-
-    </div>
 
     {% endblock %}
 
@@ -161,8 +144,7 @@
        <a href='#' class='fixed--bottom back-to-top-anchor icons--large'><i class='i i--white i-map-caret-up'></i></a>
     {% endblock %}
 
-    <a class="access access-skip" accesskey="3" href="#">Top</a>
-
+ 
 
     <script src="/js/site.js"></script>
     <script src="/js/showhide.js"></script>

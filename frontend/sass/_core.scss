@@ -434,6 +434,14 @@
 
 %bb--primary { border-bottom: 1px solid $primary-border-color; }
 
+%bl--primary { border-left: 1px solid $primary-border-color; }
+
+%br--primary { border-right: 1px solid $primary-border-color; }
+
+.bt--primary { @extend %bt--primary; }
+.bb--primary { @extend %bb--primary; }
+.bl--primary { @extend %bl--primary; }
+.br--primary { @extend %br--primary; }
 %full-width { width: 100%; }
 
 

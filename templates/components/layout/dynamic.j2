@@ -4,15 +4,21 @@
 
 {% endif %}
 
-    <div class='[ wrapper ]'>   
+    <div class='[ wrapper ]'>
+        
+        {% if item.container_padding %}
+        
+        <div class='[ grid ] {{item.container_theme}}'>
+            
+            <div class='[  full-width {{item.gutters}} {{item.container_padding}} ] '>
 
-        <div class='[ {{item.container_padding}} ] '>
+        {% endif %}
 
             <div class='[ grid {{item.grid_modifier }} ] {{item.internal_theme}}'>
 
                 {% for column in item.columns %}
 
-                    <div class="[ col {{column.column_size }} ] {{column.column_theme }}">
+                    <div class="[ {#col#} {{item.gutters}} {{column.column_size }} ] {{column.column_theme }}">
 
                         {{ column|children }}
 
@@ -22,7 +28,13 @@
 
             </div>
 
+        {% if item.container_padding %}
+
+            </div>
+
         </div>
+
+        {% endif %}
 
     </div>
 
