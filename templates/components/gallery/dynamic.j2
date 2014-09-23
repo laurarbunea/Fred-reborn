@@ -10,7 +10,7 @@
         
             <div class='[ grid ] {{item.container_theme}}'>
                 
-                <div class='[ full-width {{item.gutters}} {{item.container_padding}} ] '>
+                <div class='[ full-width {{item.container_padding}} ] '>
 
             {% endif %}
             
@@ -32,7 +32,7 @@
 
                 {% for gallery_item in item.gallery %}
                     
-                    <div class="[ {{gallery_item.gutters}} {{gallery_item.column_size | default('medium-half')}} ] {{gallery_item.content_theme }} gallery__item mt-m">
+                    <div class="[ full-width {% if column.remove_gutters %}{% else %}gutters{% endif %} {{gallery_item.column_size | default('medium-half')}} ] {{gallery_item.content_theme }} gallery__item mt-m">
                         
                         {% if gallery_item.img %}
 

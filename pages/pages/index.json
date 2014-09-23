@@ -5,81 +5,95 @@
     "template":"/pages/device.j2",
     "data": [
         {
-            "type": "navigation/global-nav",
-            "external_theme": "theme--black",
-            "section":"section-s",
-            "pages":[
-                {
-                    "title":"Checkout",
-                    "href":""
-                },
-                {
-                    "title":"Member logout",
-                    "href":""
-                }
-              
-            ]
-        },
-        {
-            "type": "navigation/global-nav",
-            "internal_theme": "theme--white",
-            "section":"section-l",
-            "logo":"",
-            "icon_color": "",
-            "pages":[
-                  {
-                    "title":"Donate",
-                    "href":""
-                  },
-                  {
-                    "title":"Blog",
-                    "href":""
-                  },
-                  {
-                    "title":"About us",
-                    "href":""
-                  },
-                  {
-                    "title":"Retail shops",
-                    "href":""
-                  },
-                  {
-                    "title":"First aid",
-                    "href":""
-                  },
-                  {
-                    "title":"Get involved",
-                    "href":""
-                  },
-                  {
-                    "title":"What we do",
-                    "href":""
-                  },
-                  {
-                    "title":"Home",
-                    "title_color":"white",
-                    "href":""
-                  }
-          
-            ]
-        },
-        {
-            "type": "banner-redcross",
-            "internal_theme": "theme--red",
-            "title":"New Zealand Red Cross First Aid and Emergency App",
-            "img": {
-                    "src":"/images/rc.jpg",
-                    "alt":"redcross"
-                }
+          "type": "navigation/global-nav",
+          "external_theme":"theme--black",
+          "logo":"-logo",
+          "container_padding":"layout section-s",
+          "pages":[
+              {
+                  "title":"Checkout",
+                  "href":""
+              },
+              {
+                  "title":"Member logout",
+                  "href":""
+              }
             
+          ]
         },
         {
-            "type":"layout/one-col--gutters",
-            "layout":"layout",
+          "type": "navigation/global-nav",
+        "container_theme":"theme--white",
+        "logo":"-logo",
+        "container_padding":"layout section-s",
+        "pages":[
+            {
+              "title":"Donate",
+              "href":""
+            },
+            {
+              "title":"Blog",
+              "href":""
+            },
+            {
+              "title":"About us",
+              "href":""
+            },
+            {
+              "title":"Retail shops",
+              "href":""
+            },
+            {
+              "title":"First aid",
+              "href":""
+            },
+            {
+              "title":"Get involved",
+              "href":""
+            },
+            {
+              "title":"What we do",
+              "href":""
+            },
+            {
+              "title":"Home",
+              "title_color":"white",
+              "href":""
+            }
+          ]
+        },
+        {
+            "type":"layout/dynamic",
             "title":"New Zealand Red Cross First Aid and Emergency App ",
             "grid_modifier":"grid--center",
-            "internal_theme":"theme--white",
+            "container_theme":"theme--red",
+            "container_padding":"section-top-xxxxl layout",
+            "remove_gutters":true,
+            "columns":[
+              {
+                "data":[
+                  {
+                    "type":"type/h2",
+                    "data":"New Zealand Red Cross First Aid and Emergency App"
+                  
+                  },
+                  {
+                    "type":"img",
+                    "src":"/images/rc.jpg",
+                    "align":"bottom",
+                    "responsive":true
+                  }
+                ]
+              }
+            ]
+        },
+        {
+            "type":"layout/dynamic",
+            "title":"New Zealand Red Cross First Aid and Emergency App ",
+            "grid_modifier":"grid--center",
+            "container_theme":"theme--white",
             "container_padding":"layout section-bottom-xxs",
+            "remove_gutters":true,
             "columns":[
               {
                 "content_theme":"theme--grey",
@@ -96,11 +110,12 @@
             ]
         },
          {
-          "type":"layout/three-col--gutters",
+          "type":"layout/dynamic",
           "container_padding":"section layout",
-          "internal_theme":"theme--redcross",
+          "container_theme":"theme--redcross",
           "columns":[
               {
+                "column_size":"medium-third",
                 "data":[
                     {
                       "type":"type/h3",
@@ -111,7 +126,7 @@
                 ]
             },
             {
-      
+                "column_size":"medium-third",
                 "data":[
                   {
                     "type":"type/h3",
@@ -124,7 +139,7 @@
               ]
             },
             {
-      
+                "column_size":"medium-third",
                 "data":[
                   {
                     "type":"type/h3",
@@ -138,15 +153,17 @@
           ] 
         },
         {
-          "type":"gallery/three-col--gutters",
+          "type":"gallery/dynamic",
           "container_padding":"section layout",
-          "internal_theme":"theme--redcross",
+          "container_theme":"theme--redcross",
           "gallery":[
             {
+              "column_size":"medium-third",
               "img":
                 {
                   "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag"
+                  "alt":"alt tag",
+                  "responsive":true
                 }
               ,
               "date":"May 2014",
@@ -154,10 +171,12 @@
               "caption":"New Zealand Red Cross nurses Donna Collins and Sharon Mackie are on their way to Sierra Leone to join an international Red Cross team responding to the Ebola crisis. "
             },
             {
+              "column_size":"medium-third",
               "img":
                 {
                   "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag"
+                  "alt":"alt tag", 
+                  "responsive":true
                 }
               ,
               "date":"May 2014 ",
@@ -165,10 +184,12 @@
               "caption":"New Zealand Red Cross is encouraging employers to give refugees a fresh start with the launch of Pathways to Employment, a nationwide work assistance service. "
             },
             {
+              "column_size":"medium-third",
               "img":
                 {
                   "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag"
+                  "alt":"alt tag",
+                  "responsive":true
                 }
               ,
               "date":"July 2014 ",

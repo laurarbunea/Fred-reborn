@@ -6,7 +6,6 @@
     "data": [ 
       {
         "type": "navigation/global-nav",
-        
         "container_theme":"theme--dark",
         "logo":"-logo",
         "container_padding":"layout section-s",

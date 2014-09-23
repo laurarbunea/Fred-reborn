@@ -3,7 +3,7 @@
 
     {% for column in item.columns %}
         
-    <div class="[  full-width {{item.gutters}} {{ column.column_size}} {{column.column_padding}} {{column.column_theme}} ]">
+    <div class="[  full-width {% if column.remove_gutters %}{% else %}gutters{% endif %} {{ column.column_size}} {{column.column_padding}} {{column.column_theme}} ]">
           
         {{ column|children }}
       

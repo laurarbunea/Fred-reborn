@@ -18,9 +18,21 @@
 
                 {% for column in item.columns %}
 
-                    <div class="[ {#col#} {{item.gutters}} {{column.column_size }} ] {{column.column_theme }}">
+                    <div class="[ full-width {% if column.remove_gutters %}{% else %}gutters{% endif %} {{column.column_size }} ] {{column.column_theme }}">
 
-                        {{ column|children }}
+                        {% if column.content_padding or column.content_theme %}
+                        
+                        <div class='{{column.content_theme}} {{column.content_padding}}'>
+                            
+                        {% endif %}
+
+                            {{ column|children }}
+                        
+                        {% if column.content_padding or column.content_theme %}
+                        
+                        </div>
+
+                        {% endif %}
 
                     </div>
 
