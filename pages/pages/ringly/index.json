@@ -99,7 +99,8 @@
             { 
               "type":"img",
               "src":"/images/pages/ringly/iphone.png",
-              "alt":"imge here please"
+              "alt":"imge here please",
+              "responsive":true
             }
           ]
         },
@@ -115,115 +116,115 @@
       ]   
     },
     {
-      "type":"gallery/dynamic",
-      "external_theme":"theme--white bt--primary",
-      "container_padding":"section layout",
-      "intro_grid_modifier":"grid--center",
-      "gallery_grid_modifier":"grid--center",
-      "intro":[
-        { 
-          "type":"type/h2",
-          "data":"Launch collection"
-        },
-        "Crafted with an 18K matte gold 3 micron plated setting and precious and semi-precious stones. Available in US sizes 6, 7 and 8. New orders will ship Winter 2014/2015. "
-      ],
-      "gallery":[
-        {
-          "column_size":"medium-quarter",
-          "content":[
-            {
-              "type":"img",
-              "src":"/images/pages/ringly/ring-1.jpg",
-              "responsive":true
-            },
-            {
-              "type":"type/text-small",
-              "data":"BLACK ONYX"
-            },
-            {
-              "type":"type/intro",
-              "data":"$195"
-            },
-            {
-              "type":"buttons/btn",
-              "label":"PRE ORDER",
-              "theme":"primary"
-            }
-          ]
-        },
-        {
-          "column_size":"medium-quarter",
-          "content":[
-            {
-              "type":"img",
-              "src":"/images/pages/ringly/ring-2.jpg",
-              "responsive":true
-            },
-            {
-              "type":"type/text-small",
-              "data":"RAINBOW MOONSTONE"
-            },
-            {
-              "type":"type/intro",
-              "data":"$195"
-            },
-            {
-              "type":"buttons/btn",
-              "label":"PRE ORDER",
-              "theme":"primary"
-            }
-            
-          ]
-        },
-        {
-          "column_size":"medium-quarter",
-          "content":[
-            {
-              "type":"img",
-              "src":"/images/pages/ringly/ring-3.jpg",
-              "responsive":true
-            },
-            {
-              "type":"type/text-small",
-              "data":"EMERALD"
-            },
-            {
-              "type":"type/intro",
-              "data":"$195"
-            },
-            {
-              "type":"buttons/btn",
-              "label":"PRE ORDER",
-              "theme":"primary"
-            }
-            
-           
-          ]
-        },
-        {
-          "column_size":"medium-quarter",
-          "content":[
-            {
-              "type":"img",
-              "src":"/images/pages/ringly/ring-4.jpg",
-              "responsive":true
-            },
-            {
-              "type":"type/text-small",
-              "data":"PINK SAPHIRE"
-            },
-            {
-              "type":"type/intro",
-              "data":"$195"
-            },
-            {
-              "type":"buttons/btn",
-              "label":"PRE ORDER",
-              "theme":"primary"
-            }
-          ]
-        }
-      ]
-    }
+        "type":"gallery/dynamic",
+        "external_theme":"theme--white bt--primary",
+        "container_padding":"section layout",
+        "intro_grid_modifier":"grid--center",
+        "gallery_grid_modifier":"grid--center",
+        "intro":[
+          { 
+            "type":"type/h2",
+            "data":"Launch collection"
+          },
+          "Crafted with an 18K matte gold 3 micron plated setting and precious and semi-precious stones. Available in US sizes 6, 7 and 8. New orders will ship Winter 2014/2015. "
+        ],
+        "gallery":[
+          {
+            "column_size":"large-quarter medium-half",
+            "content":[
+              {
+                "type":"img",
+                "src":"/images/pages/ringly/ring-1.jpg",
+                "responsive":true
+              },
+              {
+                "type":"type/text-small",
+                "data":"BLACK ONYX"
+              },
+              {
+                "type":"type/intro",
+                "data":"$195"
+              },
+              {
+                "type":"buttons/btn",
+                "label":"PRE ORDER",
+                "theme":"primary"
+              }
+            ]
+          },
+          {
+            "column_size":"large-quarter medium-half",
+            "content":[
+              {
+                "type":"img",
+                "src":"/images/pages/ringly/ring-2.jpg",
+                "responsive":true
+              },
+              {
+                "type":"type/text-small",
+                "data":"RAINBOW MOONSTONE"
+              },
+              {
+                "type":"type/intro",
+                "data":"$195"
+              },
+              {
+                "type":"buttons/btn",
+                "label":"PRE ORDER",
+                "theme":"primary"
+              }
+              
+            ]
+          },
+          {
+            "column_size":"large-quarter medium-half",
+            "content":[
+              {
+                "type":"img",
+                "src":"/images/pages/ringly/ring-3.jpg",
+                "responsive":true
+              },
+              {
+                "type":"type/text-small",
+                "data":"EMERALD"
+              },
+              {
+                "type":"type/intro",
+                "data":"$195"
+              },
+              {
+                "type":"buttons/btn",
+                "label":"PRE ORDER",
+                "theme":"primary"
+              }
+              
+             
+            ]
+          },
+          {
+            "column_size":"large-quarter medium-half",
+            "content":[
+              {
+                "type":"img",
+                "src":"/images/pages/ringly/ring-4.jpg",
+                "responsive":true
+              },
+              {
+                "type":"type/text-small",
+                "data":"PINK SAPHIRE"
+              },
+              {
+                "type":"type/intro",
+                "data":"$195"
+              },
+              {
+                "type":"buttons/btn",
+                "label":"PRE ORDER",
+                "theme":"primary"
+              }
+            ]
+          }
+        ]
+      }
   ]
 }
