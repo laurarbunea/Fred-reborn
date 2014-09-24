@@ -5,36 +5,6 @@
     "data": [
         {
             "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "one-col",
-            "component": "components/layout/one-col"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "two-col",
-            "component": "components/layout/two-col"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "two-col--gutters",
-            "component": "components/layout/two-col--gutters"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "three-col",
-            "component": "components/layout/three-col"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "three-col--gutters",
-            "component": "components/layout/three-col--gutters"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "four-col",
-            "component": "components/layout/four-col"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "dynamic",
             "component": "components/layout/dynamic"
         }
