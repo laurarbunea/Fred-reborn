@@ -23,12 +23,13 @@
     },
     {
       "type":"layout/dynamic",
-      "grid_modifier":"grid--center",
       "external_theme":"theme--soft",
       "container_padding":"section layout",
+      "background_image":"/images/pages/ringly/woman_bg1.jpg",
       "columns":[
         {
           "column_size":"medium-half",
+          "column_class":"text-center",
           "data":[
             { 
               "type":"type/h2",
@@ -39,15 +40,6 @@
               "type":"buttons/btn",
               "label":"I want one",
               "theme":"secondary"
-            }
-          ]
-        },
-        {
-          "column_size":"medium-half",
-          "data":[
-            { 
-              "type":"type/intro",
-              "data":"I am some dummy copy."
             }
           ]
         }
@@ -63,8 +55,8 @@
           "column_size":"medium-quarter",
           "data":[
             { 
-              "type":"type/h4",
-              "data":"Glamour"
+              "type":"img",
+              "src":"/images/pages/ringly/glamour.png"
             }
           ]
         },
@@ -72,8 +64,8 @@
           "column_size":"medium-quarter",
           "data":[
             { 
-              "type":"type/intro",
-              "data":"ABC news"
+              "type":"img",
+              "src":"/images/pages/ringly/abc.png"
             }
           ]
         },
@@ -81,8 +73,8 @@
           "column_size":"medium-quarter",
           "data":[
             { 
-              "type":"type/intro",
-              "data":"Elle"
+              "type":"img",
+              "src":"/images/pages/ringly/elle.png"
             }
           ]
         },
@@ -90,8 +82,8 @@
           "column_size":"medium-quarter",
           "data":[
             { 
-              "type":"type/intro",
-              "data":"Buzzfeed"
+              "type":"img",
+              "src":"/images/pages/ringly/buzzfeed.png"
             }
           ]
         }
@@ -99,7 +91,7 @@
     },
     {
       "type":"layout/dynamic",
-      "grid_modifier":"grid--center",
+      "grid_modifier":"grid--middle",
       "external_theme":"theme--white bt--primary",
       "container_padding":"section layout",
       "columns":[
@@ -108,7 +100,7 @@
           "data":[
             { 
               "type":"img",
-              "src":"image here",
+              "src":"/images/pages/ringly/iphone.png",
               "alt":"imge here please"
             }
           ]
@@ -128,6 +120,7 @@
         "type":"gallery/dynamic",
         "external_theme":"theme--white bt--primary",
         "container_padding":"section layout",
+        "intro_grid_modifier":"grid--center",
         "intro":[
          
               { 
@@ -144,7 +137,7 @@
             "content":[
               {
                 "type":"img",
-                "src":""
+                "src":"/images/bike.jpg"
               },
               {
                 "type":"type/text--small",
@@ -164,6 +157,10 @@
               {
                 "type":"img",
                 "src":""
+              },
+              {
+                "type":"type/intro",
+                "data":"wassup"
               },
               {
                 "type":"type/text--small",

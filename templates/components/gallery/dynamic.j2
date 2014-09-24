@@ -14,12 +14,12 @@
 
                 {% if item.intro  %}
 
-                <div class='[ grid {{grid_modifier}} ]'>
+                <div class='[ grid {{item.intro_grid_modifier}} ]'>
 
                     <div class="[ col large-8 ] {{item.column_theme }} gallery__intro">
                         
                         {% set intro = {"data":item.intro} %}
-                        
+                    
                         {{ intro|children }}
                          
                     </div>
@@ -28,19 +28,17 @@
 
                 {% endif %}
              
-                <div class='[ grid ] {{grid_modifier}}'>
+                <div class='[ grid ] {{item.gallery_grid_modifier}}'>
 
                 {% for gallery_item in item.gallery %}
                     
                     <div class="[ col{% if column.remove_column_gutter %}--no-gutters{% endif %} {{gallery_item.column_size | default('medium-half')}} ] {{gallery_item.content_theme }} gallery__item mt-m">
-                        
+                      
+                        {% for content in gallery_item.content %}
+                            
+                            {{ content|children }} 
 
-                        {% set items = gallery_item.content %}
-                        
-                        {% for item in items %}
-                            {{ item|children }} 
                         {% endfor %}
-                        
                         
                     </div>
 
