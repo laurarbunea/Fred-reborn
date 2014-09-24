@@ -7,6 +7,7 @@
       {
         "type": "navigation/global-nav",
         "external_theme": "theme--kiwibank",
+        "internal_theme": "theme--dark-green",
         "logo":"kiwibank-logo",
         "section":"section-s",
         "icon_color": "",

@@ -12,70 +12,35 @@
 
             {% endif %}
 
-                {% if item.intro %}
+                {% if item.intro  %}
 
-                    <div class='[ grid {{item.grid_modifier}} ]'>
+                <div class='[ grid {{grid_modifier}} ]'>
 
-                        <div class="[ col large-8 ] {{item.column_theme }} gallery__intro">
-
-                            {% for item in item.intro %}
-
-                                {{ item|children }}
-
-                            {% endfor %}
-
-                        </div>
-
+                    <div class="[ col large-8 ] {{item.column_theme }} gallery__intro">
+                        
+                        {% set intro = {"data":item.intro} %}
+                        
+                        {{ intro|children }}
+                         
                     </div>
-                    
+
+                </div>
+
                 {% endif %}
-                <div class='[ grid ]'>
+             
+                <div class='[ grid ] {{grid_modifier}}'>
 
                 {% for gallery_item in item.gallery %}
                     
                     <div class="[ col{% if column.remove_column_gutter %}--no-gutters{% endif %} {{gallery_item.column_size | default('medium-half')}} ] {{gallery_item.content_theme }} gallery__item mt-m">
                         
-                        {% if gallery_item.img %}
 
-                        <img src='{{gallery_item.img.src}}' alt='{{gallery_item.img.alt}}' class='img--responsive'>
-
-                        {% endif %}
-
-                        {% if gallery_item.content_padding %}
-
-                        <div class='{{gallery_item.content_padding}}'>
-
-                        {% endif %}
-
-                            {% if gallery_item.date %}
-
-                            <p class='small'>
-                                {{gallery_item.date}}
-                            </p>
-
-                            {% endif %}
-
-                            {% if gallery_item.title %}
-
-                            <h4>
-                                {{gallery_item.title}}
-                            </h4>
-
-                            {% endif %}
-
-                            {% if gallery_item.caption %}
-
-                            <p>
-                                {{gallery_item.caption}}
-                            </p>
-
-                            {% endif %}
-
-                        {% if gallery_item.content_padding %}
-
-                        </div >
-
-                        {% endif %}
+                        {% set items = gallery_item.content %}
+                        
+                        {% for item in items %}
+                            {{ item|children }} 
+                        {% endfor %}
+                        
                         
                     </div>
 

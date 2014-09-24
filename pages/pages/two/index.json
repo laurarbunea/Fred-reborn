@@ -56,14 +56,14 @@
       },
       {
         "type":"gallery/dynamic",
-        "internal_theme":"theme--white",
+        "external_theme":"theme--white",
         "container_padding":"section layout",
-        "data":[ 
+        "intro":[ 
           { 
             "type":"type/h2",
             "data":"About us"
           },
-          "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
+          "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "   
         ],
         "gallery":[
           {
