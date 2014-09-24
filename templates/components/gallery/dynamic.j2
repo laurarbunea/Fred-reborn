@@ -21,7 +21,7 @@
                         {% set intro = {"data":item.intro} %}
                     
                         {{ intro|children }}
-                         
+                    
                     </div>
 
                 </div>
@@ -33,12 +33,17 @@
                 {% for gallery_item in item.gallery %}
                     
                     <div class="[ col{% if column.remove_column_gutter %}--no-gutters{% endif %} {{gallery_item.column_size | default('medium-half')}} ] {{gallery_item.content_theme }} gallery__item mt-m">
+                        
+                        {% set content = { "data":gallery_item.content } %}
+                        
+                        {{ content|children }}
                       
-                        {% for content in gallery_item.content %}
+
+                        {#{% for content in gallery_item.content %}
                             
                             {{ content|children }} 
 
-                        {% endfor %}
+                        {% endfor %}#}
                         
                     </div>
 
