@@ -247,3 +247,6 @@ $cols-large: 10;
 .col__padding {
     @extend %col-padding;
 }
+.col--no-gutters {
+    @extend %full-width;
+}

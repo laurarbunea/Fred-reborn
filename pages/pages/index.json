@@ -22,8 +22,8 @@
           ]
         },
         {
-          "type": "navigation/global-nav",
-        "container_theme":"theme--white",
+        "type": "navigation/global-nav",
+        "internal_theme":"theme--white",
         "logo":"-logo",
         "container_padding":"layout section-s",
         "pages":[
@@ -63,37 +63,35 @@
           ]
         },
         {
-            "type":"layout/dynamic",
-            "title":"New Zealand Red Cross First Aid and Emergency App ",
-            "grid_modifier":"grid--center",
-            "container_theme":"theme--red",
-            "container_padding":"section-top-xxxxl layout",
-            "remove_gutters":true,
-            "columns":[
-              {
-                "data":[
-                  {
-                    "type":"type/h2",
-                    "data":"New Zealand Red Cross First Aid and Emergency App"
-                  
-                  },
-                  {
-                    "type":"img",
-                    "src":"/images/rc.jpg",
-                    "align":"bottom",
-                    "responsive":true
-                  }
-                ]
-              }
-            ]
+          "type":"layout/dynamic",
+          "title":"New Zealand Red Cross First Aid and Emergency App ",
+          "grid_modifier":"grid--center",
+          "internal_theme":"theme--red",
+          "container_padding":"section-top-xxxxl layout",
+          "columns":[
+            {
+              "data":[
+                {
+                  "type":"type/h2",
+                  "data":"New Zealand Red Cross First Aid and Emergency App"
+                
+                },
+                {
+                  "type":"img",
+                  "src":"/images/rc.jpg",
+                  "align":"bottom",
+                  "responsive":true
+                }
+              ]
+            }
+          ]
         },
         {
             "type":"layout/dynamic",
             "title":"New Zealand Red Cross First Aid and Emergency App ",
+            "internal_theme":"theme--white",
             "grid_modifier":"grid--center",
-            "container_theme":"theme--white",
             "container_padding":"layout section-bottom-xxs",
-            "remove_gutters":true,
             "columns":[
               {
                 "content_theme":"theme--grey",
@@ -109,10 +107,10 @@
               }
             ]
         },
-         {
+        {
           "type":"layout/dynamic",
           "container_padding":"section layout",
-          "container_theme":"theme--redcross",
+          "internal_theme":"theme--redcross",
           "columns":[
               {
                 "column_size":"medium-third",
@@ -155,7 +153,7 @@
         {
           "type":"gallery/dynamic",
           "container_padding":"section layout",
-          "container_theme":"theme--redcross",
+          "internal_theme":"theme--redcross",
           "gallery":[
             {
               "column_size":"medium-third",

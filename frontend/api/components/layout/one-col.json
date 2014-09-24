@@ -1,45 +1,104 @@
 {
-    "api": {
-        "type": "layout/one-col",
-        "data": []
-    },
-    "examples": [
-        {
-          "title": "One column layout",
-          "example": {
-            "type":"layout/one-col",
-            "container_padding":"section-top-xxl layout",
-            "internal_theme":"theme--fred",
-            "columns":[
+  "api": {
+      "type": "layout/one-col",
+      "data": []
+  },
+  "examples": [
+    {
+      "title": "One column layouts",
+      "notes": "One column layout with an internal theme",
+      "example": {
+        "type":"layout/one-col",
+        "container_padding":"layout",
+        "internal_theme":"theme--fred",
+        "columns":[
+          {
+            "data":[
               {
-                "content_theme":"theme--fred",
-                "content_padding":"section-m",
-                "data":[
-                  {
-                    "type": "navigation/breadcrumb",
-                    "data": [
-                      {
-                        "url": "#",
-                        "title": "Link 1"
-                      },
-                      {
-                        "url": "#",
-                        "title": "Link 2"
-                      }
-                    ]
-                  },
-                  {
-                    "type":"type/h1",
-                    "data":"It’s about great songs "
-                  },
-                  { 
-                    "type":"type/intro",
-                    "data":"We are about connecting great and diverse local songs with their intended audiences."
-                  }
-                ]
+                "type":"type/h4",
+                "data":"I am a h4 just chilling in a one col layout"
               }
             ]
           }
-        }
+        ]
+      }
+    },
+    {
+      "title": "One column layout with an external theme",
+      "example": {
+        "type":"layout/one-col",
+        "external_theme":"theme--fred",
+        "container_padding":"layout",
+        "columns":[
+          {
+            "data":[
+              {
+                "type":"type/h4",
+                "data":"I am a h4 just chilling in a one col layout"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "One column layout with a column theme",
+      "example": {
+        "type":"layout/one-col",
+        "external_theme":"theme--fred",
+        "container_padding":"layout",
+        "columns":[
+          {
+            "column_theme":"theme--warm",
+            "data":[
+              {
+                "type":"type/h4",
+                "data":"I am a h4 just chilling in a one col layout"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "One column layout with a column theme and no gutters",
+      "example": {
+        "type":"layout/one-col",
+        "external_theme":"theme--fred",
+        "container_padding":"layout",
+        "remove_column_gutters":true,
+        "columns":[
+          {
+            "column_theme":"theme--warm",
+            "data":[
+              {
+                "type":"type/h4",
+                "data":"I am a h4 just chilling in a one col layout"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "One column layout with a column theme and grid gutters",
+      "example": {
+        "type":"layout/one-col",
+        "external_theme":"theme--fred",
+        "container_padding":"layout",
+        "grid_gutters":true,
+        "columns":[
+          {
+            "column_theme":"theme--warm",
+            "data":[
+              {
+                "type":"type/h4",
+                "data":"I am a h4 just chilling in a one col layout"
+              }
+            ]
+          }
+        ]
+      }
+    }
   ]
 }

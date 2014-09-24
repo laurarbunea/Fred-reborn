@@ -1,16 +1,14 @@
 <div class="{{ item.external_theme }}">
 
-    <div class="[ wrapper ]">
+    <div class="[ wrapper ] ">
 
-        {% if item.container_padding %}
+        {% if item.container_padding or item.internal_theme %}
         
-        <div class='[ grid ] {{item.container_theme}}'>
-            
-            <div class='[ col {{item.container_padding}} ] '>
+            <div class='[ {{item.container_padding}} ] {{ item.internal_theme }}'>
 
         {% endif %}
 
-            <div class="[ grid grid--middle ] {{ item.internal_theme }}">
+            <div class="[ grid grid--middle ] ">
                 
                 <div class='[ col small-2 ] {{item.left_column_padding}} '>
                     
@@ -41,12 +39,11 @@
                 </div>
       
             </div>
+
         {% if item.container_padding %}
         
             </div>
             
-        </div>
-
         {% endif %}
 
     </div>

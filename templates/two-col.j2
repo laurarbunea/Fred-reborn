@@ -6,9 +6,6 @@
 
 {% block page_site_wrapper %}
 
-
-
-
     {% block page_navigation %}
 
         {% for item in navigation %}
@@ -20,15 +17,12 @@
     {% endblock %}
 
 
-
-
     {% block page_header %}
     {% endblock %}
 
 
-
-
     {% block page_content %}
+
 
         {% if external_theme %}
 
@@ -38,17 +32,17 @@
 
             <div class='[ wrapper ]'>   
                 
-                {% if container_padding %}
+                {% if container_padding or internal_theme %}
 
-                <div class='[ {{container_padding}} ] '>
+                <div class='[ {{container_padding}} ] {{internal_theme}}'>
 
                 {% endif %} 
                 
-                    <div class='[ grid {{grid_modifier }} ] {{internal_theme}}'>
+                    <div class='[ grid {{grid_modifier }} ] gutters'>
                         
                         {% for item in left_column %}
                         
-                        <div class="[ col {{item.column_padding}} {{item.column_size }} ] {{item.column_theme }}">
+                        <div class="[ col--no-gutters {{item.column_padding}} {{item.column_size }} ] {{item.column_theme }}">
                            
                             {{ item|component }}
                             
@@ -59,7 +53,7 @@
 
                         {% for item in right_column %}
 
-                        <div class="[ col {{item.column_padding}} {{item.column_size }} ] {{item.column_theme }}">
+                        <div class="[ col--no-gutters {{item.column_padding}} {{item.column_size }} ] {{item.column_theme }}">
                            
                             {% for item in right_column %}
 
@@ -87,7 +81,6 @@
 
         {% endif %}
     {% endblock %}
-
 
 
     {% block page_footer %}

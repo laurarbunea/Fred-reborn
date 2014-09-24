@@ -1,34 +1,34 @@
 {
-    "title": "pages",
-    "slug":"kiwibank",
-    "headline": "kiwibank",
-    "template":"two-col.j2",
-    "grid_modifier":"",
-    "internal_theme":"theme--white",
-    "navigation": [
-      {
-        "data": [
-          {
-            "type": "navigation/global-nav",
-            "external_theme": "theme--kiwibank",
-            "internal_theme": "theme--dark-green",
-            "logo":"kiwibank-logo",
-            "left_column_padding":"pl-xxxxl--q-medium",
-            "right_column_padding":"pr-xxxxl--q-medium",
-            "icon_color": "",
-            "pages":[
-              {
-                "title":"menu",
-                "svg":"Search",
-                "svg_color":"white"
-              },
-              {
-                "title":"Internet Banking login"
-              }  
-            ]
-          }
-        ]
-      }
+  "title": "pages",
+  "slug":"kiwibank",
+  "headline": "kiwibank",
+  "template":"two-col.j2",
+  "grid_modifier":"",
+  "internal_theme":"theme--white",
+  "navigation": [
+    {
+      "data": [
+        {
+          "type": "navigation/global-nav",
+          "external_theme": "theme--kiwibank",
+          "internal_theme": "theme--dark-green",
+          "logo":"kiwibank-logo",
+          "left_column_padding":"pl-xxxxl--q-medium",
+          "right_column_padding":"pr-xxxxl--q-medium",
+          "icon_color": "",
+          "pages":[
+            {
+              "title":"menu",
+              "svg":"Search",
+              "svg_color":"white"
+            },
+            {
+              "title":"Internet Banking login"
+            }  
+          ]
+        }
+      ]
+    }
   ],
   "left_column": [
     {
@@ -37,7 +37,8 @@
       "data":[
         {
           "type":"grid/dynamic",
-          "grid_theme":"theme--beige",
+          "container_padding":"layout--left pr-m section",
+          "internal_theme":"theme--beige",
           "columns":[
             {
               "column_size":"medium-half",
@@ -65,7 +66,8 @@
         },
         {
           "type":"grid/dynamic",
-          "grid_theme":"theme--white",
+          "internal_theme":"theme--white",
+          "container_padding":"layout--left pr-m section",
           "columns":[
             {
               "column_size":"medium-half large-third",
@@ -100,6 +102,7 @@
               ]
             },
             {
+              
               "column_size":"medium-half large-third",
               "column_padding":" pt-xxl pb-xxl",
               "data":[
@@ -127,6 +130,7 @@
       "data":[
         {
           "type":"grid/dynamic",
+          "container_padding":"layout--right pl-m section",
           "columns":[
             {
               "column_padding":"pr-xxxxl--q-medium pt-xxl",

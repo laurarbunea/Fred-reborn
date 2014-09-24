@@ -8,7 +8,6 @@
         "type": "navigation/global-nav",
         "external_theme": "theme--white",
         "logo":"nzoa-logo",
-        "section":"section-s",
         "icon_color": "",
         "pages":[
           {
@@ -53,7 +52,7 @@
         ]
       },
     	{
-    		"type":"layout/one-col",
+    		"type":"layout/dynamic",
         "container_padding":"layout section-top-xxl",
       	"external_theme":"theme--music",
       	"columns":[
@@ -97,11 +96,12 @@
 
 		},
 		{
-      "type":"gallery/three-col--gutters",
+      "type":"gallery/dynamic",
       "container_padding":"section layout",
       "external_theme":"theme--music",
       "gallery":[
         {
+          "column_size":"medium-third",
           "img":
             {
               "src":"/images/placeholders/ph.jpg",
@@ -113,6 +113,7 @@
           "caption":"The Pacific Music awards celebrate the diversity of Pacific music and honour Pasifika artists and achievements."
         },
         {
+          "column_size":"medium-third",
           "img":
             {
               "src":"/images/placeholders/ph.jpg",
@@ -124,6 +125,7 @@
           "caption":"A four-piece rock/metal band from Hamilton is storming the music scene"
         },
         {
+          "column_size":"medium-third",
           "img":
             {
               "src":"/images/placeholders/ph.jpg",

@@ -7,8 +7,8 @@
       {
         "type": "navigation/global-nav",
         "external_theme": "theme--white",
+        "container_padding":"pt-xs pb-xs",
         "logo":"springload",
-        "section":"section-l",
         "icon_color": "",
         "pages":[
           
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "type":"layout/one-col--gutters",
+        "type":"layout/dynamic",
         "container_padding":"layout section-top-xxl",
         "external_theme":"theme--white",
         "columns":[
@@ -52,14 +52,15 @@
          ]
       },
       {
-        "type":"layout/two-col--gutters",
+        "type":"layout/dynamic",
         "container_padding":"section layout",
         "external_theme":"theme--white",
         "grid_modifier":"grid--center",
         "columns":[
             {
+              "column_size":"large-half",
               "content_theme":"theme--orange",
-              "content_padding":"section-top layout-m",
+              "content_padding":"section-top",
               "data":[
                 {
                   "type":"type/h3",
@@ -75,8 +76,9 @@
               ]
             },
             {
+              "column_size":"large-half",
               "content_theme":"theme--green",
-              "content_padding":"section-top layout-m",
+              "content_padding":"section-top",
               "data":[
                 {
                   "type":"type/h3",
@@ -94,14 +96,14 @@
           ] 
         },
         {
-          "type":"layout/one-col--gutters",
+          "type":"layout/dynamic",
           "container_padding":"layout ",
           "external_theme":"theme--white",
           "grid_modifier":"grid--center",
           "columns":[
             {
               "content_theme":"theme--springload-green",
-              "content_padding":"section-top layout-m",
+              "content_padding":"section-top",
               "data":[
                 {
                   "type":"type/h2",

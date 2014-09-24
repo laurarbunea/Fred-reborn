@@ -4,35 +4,36 @@
 
 {% endif %}
 
-        <div class='[ wrapper ]'>
+        <div class='[ wrapper ] {{item.internal_theme}}'>
             
             {% if item.container_padding %}
-        
-            <div class='[ grid ] {{item.container_theme}}'>
-                
-                <div class='[ full-width {{item.container_padding}} ] '>
+           
+            <div class='[ {{item.container_padding}} ] '>
 
             {% endif %}
-            
-                <div class='[ grid ]'>
 
-                    {% if item.data %}
+                {% if item.intro %}
 
-                    <div class="[ {{item.gutters}} large-8 ] {{item.col_theme }} {{item.class }} gallery__intro">
+                    <div class='[ grid {{item.grid_modifier}} ]'>
 
-                        {{ item|children }}
+                        <div class="[ col large-8 ] {{item.column_theme }} gallery__intro">
+
+                            {% for item in item.intro %}
+
+                                {{ item|children }}
+
+                            {% endfor %}
+
+                        </div>
 
                     </div>
-
-                   {% endif %}
-
-                </div>
-
-                <div class='[ grid {#col__padding#} ]'>
+                    
+                {% endif %}
+                <div class='[ grid ]'>
 
                 {% for gallery_item in item.gallery %}
                     
-                    <div class="[ full-width {% if column.remove_gutters %}{% else %}gutters{% endif %} {{gallery_item.column_size | default('medium-half')}} ] {{gallery_item.content_theme }} gallery__item mt-m">
+                    <div class="[ col{% if column.remove_column_gutter %}--no-gutters{% endif %} {{gallery_item.column_size | default('medium-half')}} ] {{gallery_item.content_theme }} gallery__item mt-m">
                         
                         {% if gallery_item.img %}
 
@@ -95,4 +96,52 @@
 
 {% if item.external_theme %}
     </div>
+{% endif %}
+
+
+
+{% if item.external_theme %}
+
+<div class='{{item.external_theme}}'>
+
+{% endif %}
+
+    <div class='[ wrapper ]'>   
+
+        <div class='[ {{item.container_padding}} ] {{item.internal_theme}}'>
+
+            <div class='[ grid {{item.grid_modifier}} ] '>
+
+                {% for column in item.columns %}
+                    
+                <div class="[ col{% if item.remove_column_gutters %}--no-gutters{% endif %} {{column_size }}  {{column.column_size}} ] {{column.column_theme}}">
+                    
+                    {% if column.content_theme or column.remove_content_gutters or column.content_padding %}
+                    
+                    <div class='{% if column.remove_content_gutters %}{% else %}gutters {% endif %} {{column.content_theme}} {{column.content_padding}}'>
+
+                    {% endif %}
+
+                        {{ column|children }}
+
+                    {% if column.content_theme or column.remove_content_gutters or column.content_padding%}
+                    
+                    </div>
+                    
+                    {% endif %}
+
+                </div>
+
+                {% endfor %}
+                
+            </div>
+        
+        </div>
+
+    </div>
+
+{% if item.external_theme %}
+
+</div>
+
 {% endif %}

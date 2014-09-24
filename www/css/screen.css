@@ -2702,7 +2702,7 @@ fieldset, .field, [type='text'], [type='email'], [type='date'], [type='number'],
 .br--primary {
   border-right: 1px solid #F2F2EB; }
 
-.section--nav > .section__content:after, .full-width, .col, body:after, .subnav--tertiary .subnav__content, .header__image img, .field, [type='text'], [type='email'], [type='date'], [type='number'], select {
+.section--nav > .section__content:after, .full-width, .col, .col--no-gutters, body:after, .subnav--tertiary .subnav__content, .header__image img, .field, [type='text'], [type='email'], [type='date'], [type='number'], select {
   width: 100%; }
 
 p, .text, code, dt, dd, td, th {
@@ -3036,22 +3036,22 @@ blockquote {
     padding-right: 32px;
     padding-right: 2rem; } }
 
-.layout, .col.layout--left, .homepage .content__left {
+.layout, .layout--left, .col.layout--left, .homepage .content__left {
   padding-left: 1rem; }
   @media only screen and (min-width: 37.5em) {
-    .layout, .col.layout--left, .homepage .content__left {
+    .layout, .layout--left, .col.layout--left, .homepage .content__left {
       padding-left: 4em; } }
   @media only screen and (min-width: 60em) {
-    .layout, .col.layout--left, .homepage .content__left {
+    .layout, .layout--left, .col.layout--left, .homepage .content__left {
       padding-left: 6em; } }
 
-.layout, .col.layout--right, .homepage .content__right {
+.layout, .layout--right, .col.layout--right, .homepage .content__right {
   padding-right: 1rem; }
   @media only screen and (min-width: 37.5em) {
-    .layout, .col.layout--right, .homepage .content__right {
+    .layout, .layout--right, .col.layout--right, .homepage .content__right {
       padding-right: 4em; } }
   @media only screen and (min-width: 60em) {
-    .layout, .col.layout--right, .homepage .content__right {
+    .layout, .layout--right, .col.layout--right, .homepage .content__right {
       padding-right: 6em; } }
 
 @media only screen and (min-width: 60em) {

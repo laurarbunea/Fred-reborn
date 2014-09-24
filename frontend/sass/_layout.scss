@@ -261,6 +261,9 @@
     @extend %layout-right;
 }
 
+.layout--left { @extend %layout-left; }
+
+.layout--right { @extend %layout-right; }
 
 .col.layout--left { @extend %layout-left; }
 

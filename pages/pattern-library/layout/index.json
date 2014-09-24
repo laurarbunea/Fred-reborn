@@ -10,11 +10,6 @@
         },
         {
             "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "one-col--gutters",
-            "component": "components/layout/one-col--gutters"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "two-col",
             "component": "components/layout/two-col"
         },
