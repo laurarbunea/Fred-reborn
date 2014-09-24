@@ -1,0 +1,221 @@
+{
+  "title": "pages",
+  "slug":"test-site",
+  "headline": "Page one",
+  "template":"/pages/device.j2",
+  "data": [ 
+    {
+      "type": "navigation/global-nav",
+
+      "external_theme":"theme--white",
+      "logo":"-logo",
+      "container_padding":"layout section-s",
+      "pages":[
+        {
+          "title":"pre order now",
+          "title_color":"",
+          "svg":"menu",
+          "svg_color":"white",
+          "uppercase":true
+        }
+        
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--center",
+      "external_theme":"theme--soft",
+      "container_padding":"section layout",
+      "columns":[
+        {
+          "column_size":"medium-half",
+          "data":[
+            { 
+              "type":"type/h2",
+              "data":"Jewelry, Meet Technology.."
+            },
+            "Introducing our first line of connected rings that let you put your phone away and your mind at ease.",
+            { 
+              "type":"buttons/btn",
+              "label":"I want one",
+              "theme":"secondary"
+            }
+          ]
+        },
+        {
+          "column_size":"medium-half",
+          "data":[
+            { 
+              "type":"type/intro",
+              "data":"I am some dummy copy."
+            }
+          ]
+        }
+      ]   
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--center",
+      "external_theme":"theme--white",
+      "container_padding":"section layout",
+      "columns":[
+        {
+          "column_size":"medium-quarter",
+          "data":[
+            { 
+              "type":"type/h4",
+              "data":"Glamour"
+            }
+          ]
+        },
+        {
+          "column_size":"medium-quarter",
+          "data":[
+            { 
+              "type":"type/intro",
+              "data":"ABC news"
+            }
+          ]
+        },
+        {
+          "column_size":"medium-quarter",
+          "data":[
+            { 
+              "type":"type/intro",
+              "data":"Elle"
+            }
+          ]
+        },
+        {
+          "column_size":"medium-quarter",
+          "data":[
+            { 
+              "type":"type/intro",
+              "data":"Buzzfeed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--center",
+      "external_theme":"theme--white bt--primary",
+      "container_padding":"section layout",
+      "columns":[
+        {
+          "column_size":"medium-half",
+          "data":[
+            { 
+              "type":"img",
+              "src":"image here",
+              "alt":"imge here please"
+            }
+          ]
+        },
+        {
+          "column_size":"medium-half",
+          "data":[
+            { 
+              "type":"type/h2",
+              "data":"Ringly notifies you about the People that matter most. "
+            }
+          ]
+        }
+      ]   
+    },
+    {
+        "type":"gallery/dynamic",
+        "external_theme":"theme--white bt--primary",
+        "container_padding":"section layout",
+        "intro":[
+         
+              { 
+                "type":"type/h2",
+                "data":"Launch collection"
+              },
+              "Crafted with an 18K matte gold 3 micron plated setting and precious and semi-precious stones. Available in US sizes 6, 7 and 8. New orders will ship Winter 2014/2015. "
+            
+         
+        ],
+        "gallery":[
+          {
+            "column_size":"quarter",
+            "content":[
+              {
+                "type":"img",
+                "src":""
+              },
+              {
+                "type":"type/text--small",
+                "data":"Star gaze"
+              },
+              "$195",
+              {
+                "type":"buttons/btn",
+                "label":"buy me",
+                "theme":"primary"
+              }
+            ]
+          },
+          {
+            "column_size":"quarter",
+            "content":[
+              {
+                "type":"img",
+                "src":""
+              },
+              {
+                "type":"type/text--small",
+                "data":"Star gaze"
+              },
+              "$195",
+              {
+                "type":"buttons/btn",
+                "label":"buy me",
+                "theme":"primary"
+              }
+            ]
+          },
+          {
+            "column_size":"quarter",
+            "content":[
+              {
+                "type":"img",
+                "src":""
+              },
+              {
+                "type":"type/text--small",
+                "data":"Star gaze"
+              },
+              "$195",
+              {
+                "type":"buttons/btn",
+                "label":"buy me",
+                "theme":"primary"
+              }
+            ]
+          },
+          {
+            "column_size":"quarter",
+            "content":[
+              {
+                "type":"img",
+                "src":""
+              },
+              {
+                "type":"type/text--small",
+                "data":"Star gaze"
+              },
+              "$195",
+              {
+                "type":"buttons/btn",
+                "label":"buy me",
+                "theme":"primary"
+              }
+            ]
+          }
+        ]
+      }
+  ]
+}
