@@ -50,7 +50,7 @@
       "container_padding":"section layout",
       "columns":[
         {
-          "column_size":"medium-quarter",
+          "column_size":"large-quarter medium-half",
           "data":[
             { 
               "type":"img",
@@ -59,7 +59,7 @@
           ]
         },
         {
-          "column_size":"medium-quarter",
+          "column_size":"large-quarter medium-half",
           "data":[
             { 
               "type":"img",
@@ -68,7 +68,7 @@
           ]
         },
         {
-          "column_size":"medium-quarter",
+          "column_size":"large-quarter medium-half",
           "data":[
             { 
               "type":"img",
@@ -77,7 +77,7 @@
           ]
         },
         {
-          "column_size":"medium-quarter",
+          "column_size":"large-quarter medium-half",
           "data":[
             { 
               "type":"img",
