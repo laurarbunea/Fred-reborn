@@ -8,7 +8,7 @@
 
         {% if item.container_padding or item.internal_theme %}
         
-            <div class='[ {{item.container_padding}} ] {{ item.internal_theme }}' >
+            <div class='[ {{item.container_padding}} ] {{ item.internal_theme }} ' {% if item.internal_background_image %} style="background-image:url('{{item.internal_background_image}}'); background-size:cover; background-position: center center;" {% endif %}>
 
         {% endif %}
 
@@ -21,7 +21,7 @@
                     
                     {% if column.content_theme or column.remove_content_gutters or column.content_padding %}
                     
-                    <div class='content  {% if column.remove_content_gutters %}{% else %}gutters {% endif %} {{column.content_theme}} {{column.content_padding}}'>
+                    <div class='content  {% if column.remove_content_gutters %}{% else %}gutters {% endif %} {{column.content_theme}} {{column.content_padding}}' {% if column.content_background_image %} style="background-image:url('{{column.content_background_image}}'); background-size:cover; background-position: center center;" {% endif %}>
 
                     {% endif %}
 

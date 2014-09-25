@@ -1,0 +1,151 @@
+{
+    "title": "pages",
+    "slug":"test-site",
+    "headline": "Page three",
+    "template":"/pages/device.j2",
+    "data": [ 
+      {
+        "type": "navigation/global-nav",
+        "external_theme":"bg--black",
+        "logo":"-logo",
+        "container_padding":"layout section-s",
+        "pages":[
+          {
+            "title":"menu",
+            "title_color":"green",
+            "svg":"menu",
+            "svg_color":"green",
+            "uppercase":true
+          },
+          {
+            "title":"search",
+            "title_color":"orange",
+            "svg":"search",
+            "svg_color":"orange",
+            "uppercase":true
+          }
+        ]
+      },
+      {
+        "type":"layout/dynamic", 
+        "external_theme":"theme--black",
+        "container_padding":"section layout",
+        "internal_background_image":"/images/pages/cats/banner.jpg",
+        "columns":[
+            {
+              "column_size":"large-7",
+              "data":[
+                { 
+                  "type":"type/h1",
+                  "data":"I am a header"
+                },
+                "Berry & Co was a well-known Wellington portrait photography studio, established in 1897 by William Berry. During World War I, many photographs were taken at this studio of soldiers before they embarked for the front lines."
+                
+              ]
+            }
+            
+        ] 
+      },
+      {
+        "type":"layout/dynamic", 
+        "external_theme":"theme--black",
+        "container_padding":"section layout",
+        "grid_modifier":"grid--bottom ",
+        "columns":[
+            {
+              "column_size":"large-quarter medium-half",
+              "content_padding":"pt-xxxxl pb-xl mt-l",
+              "content_background_image":"/images/pages/cats/kitten.jpg",
+              "data":[
+                { 
+                  "type":"type/h4",
+                  "data":"Drama"
+                }
+              ]
+            },
+            {
+              "column_size":"large-quarter medium-half",
+              "content_theme":"theme--warm",
+              "content_padding":"pt-xxxxl pb-xl mt-l",
+              "data":[
+                { 
+                  "type":"type/h4",
+                  "data":"Music"
+                }
+              ]
+            },
+            {
+              "column_size":"large-quarter medium-half",
+              "content_background_image":"/images/pages/cats/cat-eye.jpg",
+              "content_padding":"pt-xxxxl pb-xl mt-l",
+              "data":[
+                { 
+                  "type":"type/h4",
+                  "data":"Category"
+                }
+              ]
+            },
+            {
+              "column_size":"large-quarter medium-half",
+              "content_padding":"pt-xxxxl pb-xl mt-l",
+              "content_theme":"theme--fred",
+              "data":[
+                { 
+                  "type":"type/h4",
+                  "data":"Rugby"
+                }
+              ]
+            },
+            {
+              "column_size":"large-quarter medium-half",
+              "content_theme":"theme--cool",
+              "content_padding":"pt-xxxxl pb-xl mt-l",
+              "data":[
+                { 
+                  "type":"type/h4",
+                  "data":"Words"
+                }
+          
+              ]
+            },
+            {
+              "column_size":"large-quarter medium-half",
+              "content_padding":"pt-xxxxl pb-xl mt-l",
+              "content_background_image":"/images/pages/cats/cat.jpg",
+              "data":[
+                { 
+                  "type":"type/h4",
+                  "data":"Drama"
+                }
+              ]
+            },
+            {
+              "column_size":"large-quarter medium-half",
+              "content_theme":"theme--soft",
+              "content_padding":"pt-xxxxl pb-xl mt-l",
+              "data":[
+                { 
+                  "type":"type/h4",
+                  "data":"Soccer"
+                }
+          
+              ]
+            },
+            {
+              "column_size":"large-quarter medium-half",
+              "content_background_image":"/images/pages/cats/black.jpg",
+              "content_padding":"pt-xxxxl pb-xl mt-l",
+              "data":[
+                { 
+                  "type":"type/h4",
+                  "data":"Words"
+                }
+          
+              ]
+            }
+            
+        ] 
+      }
+      
+    ]
+}
