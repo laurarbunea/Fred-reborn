@@ -223,7 +223,6 @@
                 {
                     "type": "section", 
                     "theme":"section--debug",
-                   
                     "data":[
                         {
                             "type":"p",
