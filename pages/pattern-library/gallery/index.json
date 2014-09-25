@@ -6,27 +6,7 @@
         {
             "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "two-col",
-            "component": "components/gallery/two-col"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "two-col--gutters",
-            "component": "components/gallery/two-col--gutters"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "three-col--gutters",
-            "component": "components/gallery/three-col--gutters"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "four-col",
-            "component": "components/gallery/four-col"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "four-col--gutters",
-            "component": "components/gallery/four-col--gutters"
-        }
+            "component": "components/gallery/dynamic"
+        }  
     ]
 }
