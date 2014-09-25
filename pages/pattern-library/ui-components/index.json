@@ -223,16 +223,11 @@
                 {
                     "type": "section", 
                     "theme":"section--debug",
-                    "data":
-                    [
+                   
+                    "data":[
                         {
-                            "type":"layout/one-col",
-                            "data":[
-                                {
-                                    "type":"p",
-                                    "data":"By default, sections have 1rem of top and bottom padding, which increases to 3rem above the medium breakpoint."
-                                }
-                            ]
+                            "type":"p",
+                            "data":"By default, sections have 1rem of top and bottom padding, which increases to 3rem above the medium breakpoint."
                         }
                     ]
                 },

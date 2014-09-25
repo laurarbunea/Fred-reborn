@@ -33,7 +33,7 @@
         "internal_background_image":"/images/pages/cats/banner.jpg",
         "columns":[
             {
-              "content_theme":"text--orange",
+              "content_theme":"text--white",
               "column_size":"large-7",
               "data":[
                 { 
