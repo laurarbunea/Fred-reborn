@@ -5,7 +5,6 @@
     sass structure 
 \*------------------------------------*/
 
-
 .document--overlay:after {
     content: "";
     position: absolute;
@@ -273,15 +272,11 @@ $margin-traffic-info-side: 32;
 .list-view {
 
     @extend %map-box;
-
     @include vendor(border-top-left-radius, 0);
     @include vendor(border-bottom-left-radius, 0);
-
     bottom: $offset-map-bottom;
-
     overflow-x: hidden;
     overflow-y: auto;
-
     min-width: 20em;
     max-width: 24em;
     width: 40%;
@@ -307,19 +302,14 @@ $margin-traffic-info-side: 32;
 .modal-view {
 
     @extend %map-box;
-
     @include vendor(border-top-left-radius, 0);
     @include vendor(border-bottom-left-radius, 0);
-
     bottom: $offset-map-bottom;
-
     overflow-x: hidden;
     overflow-y: auto;
-
     min-width: 20em;
     max-width: 24em;
     width: 40%;
-
     left: -26em;
 
     @include up-to(small) {
@@ -514,7 +504,6 @@ $margin-traffic-info-side: 32;
     }
 }
 
-
 .location-list__split {
     float: right;
 }
@@ -524,7 +513,6 @@ $margin-traffic-info-side: 32;
 @import "components/traffic/route";
 @import "components/traffic/webcam";
 @import "components/traffic/switch-nav";
-
 
 
 .horizontal-scroll {
