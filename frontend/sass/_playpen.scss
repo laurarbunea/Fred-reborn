@@ -23,7 +23,6 @@
     }
 }
 
-
 .hatched-line {
 
     $height-line: 24;
@@ -33,17 +32,6 @@
         position: absolute;
         content: "";
         top: 0;
-
-        @include medium {
-            & {
-               left: 4%;
-            }
-        }
-        @include large {
-            & {
-                left: 8.3333333%;
-            }
-        }
         width: 65%;
         height: 1em;
         background-repeat: repeat-x !important;
@@ -54,21 +42,12 @@
     }
 }
 
-
+//this is to show the access component as the default is hidden 
 .styleguide__example .access {
     width:100%;
     height:auto;
     position: relative;
 }
-
-//clean up from here down :) 
-.horizontal-icon-list {
-    @extend %mb-0;
-    li {
-        @extend %mb-l;
-    }
-}
-
 
 .back-to-top-anchor {
     @extend %br-top-xxs ;
@@ -76,16 +55,10 @@
     padding: 0 1rem;
     right:2em;
     margin-bottom:0;
-
 }
 
 .icon-link i { @extend %mr-m; }
 .icon-link--reversed i { @extend %ml-m; }
-
-.header-search {
-    @extend %mb-xxxl;
-}
-
 
 .small-list--block {
     @include media('small-down') {
@@ -101,52 +74,11 @@
 }
 
 
-
-.transaction_links {
-    @extend %pb-m;
-    @extend %bb--primary;
-}
-
-.icon-wrapper {
-    display:inline-block;
-}
-
-.grid.large-grid--table,
-.grid.medium-grid--table {
-    margin-left:0;
-    margin-right:0;
-}
-
-
-
-
 .content > {
     &:last-child {
         margin-bottom:0!important;
     }
 }
-
-
-
-.btn--dark {
-    background-color:#293f54;
-    color:#fff;
-}
-
-//uwould this be usefull to have in core??
-
-.test {
-    content: '';
-    width:0;
-    height:0;
-}
-
-
-
-.code-example + h3 {
-    @extend %mt-xxxl;
-}
-
 
 
 %ratio {
@@ -166,6 +98,8 @@
 }
 
 .ratio-filmic { @extend %ratio; }
+
+
 .crop {
     top: 0;
     right: 0;
@@ -257,13 +191,7 @@
 }
 
 
-.code-example {
-    @extend %theme--dark; 
-    @extend %pt-s; 
-    @extend %pb-s;
-    @extend %pl-s;
-    @extend %pr-s;
-}
+
 //fred global menu
 a.active {
     color:#37b67f!important;
@@ -294,7 +222,7 @@ $offset-map-side: .75em;
 
 
 .traffic-info {
-//    max-width: 100%;
+
     & .global-nav {
         position: relative;
         @include up-to(small) {
@@ -302,9 +230,7 @@ $offset-map-side: .75em;
             @include rem(padding-top, 20);
         }
     }
-//    & .global-nav > .wrapper {
-//        max-width: none;
-//    }
+
     & .global-nav > .wrapper > .layout {
         @include rem(padding-left, 32);
         @include rem(padding-right, 16);
@@ -361,16 +287,6 @@ $offset-map-side: .75em;
 }
 
 
-
-a {
-    text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-
-
 /*
     map list
 */
@@ -388,8 +304,6 @@ $margin-traffic-info-side: 32;
     z-index: 1;
     position: absolute;
     top: $offset-map-top;
-//    min-width: 16em;
-//    max-width: 20em;
 }
 
 .list-view {
@@ -400,7 +314,6 @@ $margin-traffic-info-side: 32;
     @include vendor(border-bottom-left-radius, 0);
 
     bottom: $offset-map-bottom;
-    // left: $offset-map-side;
 
     overflow-x: hidden;
     overflow-y: auto;
@@ -435,7 +348,6 @@ $margin-traffic-info-side: 32;
     @include vendor(border-bottom-left-radius, 0);
 
     bottom: $offset-map-bottom;
-    // left: $offset-map-side;
 
     overflow-x: hidden;
     overflow-y: auto;
@@ -444,12 +356,8 @@ $margin-traffic-info-side: 32;
     max-width: 24em;
     width: 40%;
 
-//    top: $offset-map-top;
     left: -26em;
 
-//    .modal-active & {
-//        left: 4em;
-//    }
     @include up-to(small) {
         max-width: none;
         @include vendor(transition, left 0s);
@@ -501,11 +409,9 @@ $margin-traffic-info-side: 32;
     @include rem(padding-right, $margin-traffic-info-side);
 
     .breadcrumb {
-//        margin-top: 0;
         @include rem(margin-top, 2);
         @include rem(margin-bottom, 8);
         @include rem(padding-right, 96);
-//        padding-right: 6rem;
     }
     .breadcrumb + h1 {
         margin-top: 0;
@@ -574,10 +480,10 @@ $margin-traffic-info-side: 32;
         @extend %font-size-s;
     }
 
-    // right align pills and icons when following a headline
     h4 {
         @extend %font-size-l;
     }
+
     h3,
     h4 {
         @extend %mb-0;
@@ -631,13 +537,15 @@ $margin-traffic-info-side: 32;
         padding-top: $padding-traffic-info;
         padding-bottom: $padding-traffic-info;
     }
-    // reduce padding for pills in list
+
     & .list__link .pill {
         padding: .071428571em .285714286em .142857143em;
     }
+
     & .list__link {
         display: block;
     }
+
     h4 {
         margin-bottom: 0;
     }
@@ -662,9 +570,6 @@ $margin-traffic-info-side: 32;
     overflow-y: hidden;
     overflow-x: auto;
 }
-
-
-
 
 
 
@@ -737,8 +642,6 @@ $margin-traffic-info-side: 32;
         @include rem(right,-12);
     }
 }
-
-
     .highway__number {
         position: absolute;
         left: 0;
@@ -751,20 +654,6 @@ $margin-traffic-info-side: 32;
     .highway--white .highway__number {
         color: #333;
     }
-
-.view-relative {
-    position: relative;
-}
-
-.view-absolute {
-    position: absolute;
-    background: #fff;
-    width: 100%;
-//    display: none;
-}
-
-
-
 
 
 

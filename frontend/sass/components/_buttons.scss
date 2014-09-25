@@ -123,7 +123,10 @@ button {
     @extend %btn--block;
 }
 
-
+.btn--dark {
+    background-color:#293f54;
+    color:#fff;
+}
 /**
  * Make a button behave like a block at mobile only (also handy)
  */
