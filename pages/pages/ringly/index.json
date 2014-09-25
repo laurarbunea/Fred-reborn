@@ -1,6 +1,6 @@
 {
   "title": "pages",
-  "slug":"test-site",
+  "slug":"ringly",
   "headline": "Page one",
   "template":"/pages/device.j2",
   "data": [ 
@@ -21,7 +21,6 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"theme--soft",
       "container_padding":"section layout",
       "background_image":"/images/pages/ringly/woman_bg1.jpg",
       "columns":[
@@ -46,7 +45,8 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--center",
-      "external_theme":"theme--white",
+      "external_theme":"theme--fred",
+      "internal_theme":"theme--soft",
       "container_padding":"section layout",
       "columns":[
         {
@@ -197,8 +197,6 @@
                 "label":"PRE ORDER",
                 "theme":"primary"
               }
-              
-             
             ]
           },
           {

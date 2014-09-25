@@ -1,6 +1,6 @@
 {
     "title": "pages",
-    "slug":"test-site",
+    "slug":"cats",
     "headline": "Page three",
     "template":"/pages/device.j2",
     "data": [ 

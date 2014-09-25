@@ -13,10 +13,11 @@
     *display: inline;
     *zoom: 1;
 }
+.inline-block { @extend %inline-block; }
 
-%block-element {
-    display:block;
-}
+
+%block-element { display:block; }
+.block-element { @extend %block-element; }
 
 
 // -----------------------------------------------------------------------------
