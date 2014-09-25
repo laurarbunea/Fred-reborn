@@ -56,7 +56,7 @@
       },
       {
         "type":"gallery/dynamic",
-        "external_theme":"theme--white",
+        "internal_theme":"theme--white",
         "container_padding":"section layout",
         "intro":[ 
           { 
@@ -68,47 +68,52 @@
         "gallery":[
           {
             "column_size":"quarter",
-            "img":
+            "content":[
               {
+                "type":"img",
                 "src":"/images/placeholders/ph1.jpg",
-                "alt":"alt tag"
-              }
-            ,
-            "title": "Mr Coolio",
-            "caption":"I'm cool "
+                "alt":"alt tag", 
+                "responsive":true
+              },
+              "Mr Coolio"
+            ]
           },
           {
             "column_size":"quarter",
-            "img":
+            "content":[
               {
+                "type":"img",
                 "src":"/images/placeholders/ph2.jpg",
-                "alt":"alt tag"
-              }
-            ,
-            "title": "Mr Doppy",
-            "caption":"I'm dopey"
+                "alt":"alt tag",
+                "responsive":true
+              },
+              "Mr Doppy"
+            ]
           },
           {
             "column_size":"quarter",
-            "img":
+            "content":[
               {
+                "type":"img",
                 "src":"/images/placeholders/ph3.jpg",
-                "alt":"alt tag"
-              }
-            ,
-            "title": "Mr Sleepy",
-            "caption":"I'm sleepy "
+                "alt":"alt tag",
+                "responsive":true
+              },
+              "Mr Sleepy"
+            ]
+      
           },
           {
             "column_size":"quarter",
-            "img":
+            "content":[
               {
+                "type":"img",
                 "src":"/images/placeholders/ph4.jpg",
-                "alt":"alt tag"
-              }
-            ,
-            "title": "Mr Sneezy",
-            "caption":"I'm sneezy"
+                "alt":"alt tag",
+                "responsive":true
+              },
+              "Mr Sleepy"
+            ]
           }
         ]
       }
