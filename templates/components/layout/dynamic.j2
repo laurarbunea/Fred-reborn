@@ -1,4 +1,4 @@
-{% if item.external_theme %}
+{% if item.external_theme or item.background_image %}
 
 <div class='{{item.external_theme}}' {% if item.background_image %} style="background-image:url('{{item.background_image}}'); background-size:cover; background-position: center center;" {% endif %}>
 
@@ -47,7 +47,7 @@
 
     </div>
 
-{% if item.external_theme %}
+{% if item.external_theme or item.background_image %}
 
 </div>
 
