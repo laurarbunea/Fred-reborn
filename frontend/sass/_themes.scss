@@ -6,7 +6,6 @@
 // Theme blocks
 // ----------------------------------------------------------------------------
 
-
 $dark-bg-color: #293f54;
 $dark-border-color: $dark-bg-color;
 $dark-font-color: $white;
@@ -199,9 +198,8 @@ $link-color:
 .bg--black {  background:#000;  }
 .bg--white {  background:#fff;  }
 
-
-
 //text colours
+.text--muted {  color:grey; }
 .text--bright-yellow {color:yellow}
 .text--white {color:#fff}
 .text--orange {color:#e78547}

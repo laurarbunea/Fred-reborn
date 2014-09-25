@@ -5,9 +5,6 @@
     sass structure 
 \*------------------------------------*/
 
-.relative {
-    @extend %relative;
-}
 
 .document--overlay:after {
     content: "";
@@ -58,19 +55,6 @@
 }
 
 
-.img--responsive {
-    max-width:100%;
-}
-
-.styleguide__example .header__image {
-    margin-top:0;
-}
-
-.styleguide__example .theme--confirmation, 
-.styleguide__example .theme--error {
-    @extend %mb-l;
-}
-
 .styleguide__example .access {
     width:100%;
     height:auto;
@@ -85,10 +69,6 @@
     }
 }
 
-.fixed--bottom {
-    position:fixed; 
-    bottom:0;
-}
 
 .back-to-top-anchor {
     @extend %br-top-xxs ;
@@ -106,23 +86,6 @@
     @extend %mb-xxxl;
 }
 
-//clean usedon homepage
-.list--home {
-    @extend %mb-0;
-    @extend %pl-s;
-    @extend %font-size-s;
-    li {
-        @extend %mb-s;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    @include small-only {
-        @include rem(padding-left, 68);
-        @include rem(padding-bottom, $space-l);
-    }
-}
-
 
 .small-list--block {
     @include media('small-down') {
@@ -135,42 +98,9 @@
             display: block;
         }
     }
-    
 }
 
-.footer_social-links {
-    @extend %right;
-    a {
-        @extend %ml-l;
-    }
-    @include media('medium-down') {
-        float:left;
-        a {
-            margin-left:0;
-            margin-right:1.75em;
-        }
-    }
-    
-}
 
-.footer_pages {
-    a {
-        @extend %mr-l;
-        @extend %mb-s;
-        @extend %inline-block;
-        @extend %font-size-s;
-
-    }
-    span {
-        @extend %pl-xs; 
-    }
-    @include media('small-down') {
-        .icon-wrapper {
-            width:4em;
-            text-align: center;
-        }
-    }
-}
 
 .transaction_links {
     @extend %pb-m;
@@ -188,30 +118,7 @@
 }
 
 
-//responsive helpers 
-@include media(medium) {
-    .append--q-medium {
-        &:after{
-            content: attr(data-append-medium);
-            display: inline-block;
-        }
-    }
-}
 
-@include media(small) {
-    .append--q-small {
-        &:after{
-            content: attr(data-append-small);
-            display: inline-block;
-        }
-    }
-}
-
-.text-right--medium {
-    @include medium {
-        text-align: right;
-    }
-}
 
 .content > {
     &:last-child {
@@ -219,9 +126,6 @@
     }
 }
 
-.text-muted {
-    color:grey;   
-}
 
 
 .btn--dark {
@@ -278,10 +182,6 @@
         }
     }
 
-
-
-.left { @extend %left;}
-.right { @extend %right;}
 
 
 .split {

@@ -77,6 +77,25 @@
     }
 }
 
+//responsive helpers 
+@include media(medium) {
+    .append--q-medium {
+        &:after{
+            content: attr(data-append-medium);
+            display: inline-block;
+        }
+    }
+}
+
+@include media(small) {
+    .append--q-small {
+        &:after{
+            content: attr(data-append-small);
+            display: inline-block;
+        }
+    }
+}
+
 // -----------------------------------------------------------------------------
 // Clearfix
 // -----------------------------------------------------------------------------
@@ -137,6 +156,11 @@
 .text-left { @extend %text-left;}
 .text-right { @extend %text-right;}
 
+.text-right--medium {
+    @include medium {
+        text-align: right;
+    }
+}
 
 %uppercase { text-transform:uppercase; }
 %lowercase { text-transform:lowercase; }
@@ -290,10 +314,16 @@
 
 %overflow-hidden { overflow: hidden; }
 
+//toadd
+.fixed--bottom {
+    position:fixed; 
+    bottom:0;
+}
 
-
-
-
+.fixed--top {
+    position:fixed; 
+    top:0;
+}
 
 
 
@@ -446,3 +476,8 @@
 %full-width { width: 100%; }
 
 
+
+//images
+.img--responsive {
+    max-width:100%;
+}
