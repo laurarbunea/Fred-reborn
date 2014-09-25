@@ -299,3 +299,40 @@
     
     + .layout--nudge { margin-top: 0; }
 }
+
+
+
+
+%ratio {
+    position: relative;
+    height: 0;
+    & > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.ratio-square {
+    @extend %ratio;
+    padding-bottom: 100%;
+}
+
+.ratio-filmic { @extend %ratio; }
+
+.crop {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+    .crop--bottom {
+        > img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
