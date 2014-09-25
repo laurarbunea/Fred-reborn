@@ -3342,6 +3342,12 @@ blockquote {
 .bg--black {
   background: #000; }
 
+.bg--white {
+  background: #fff; }
+
+.text--bright-yellow {
+  color: yellow; }
+
 .text--white {
   color: #fff; }
 

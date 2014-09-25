@@ -28,11 +28,12 @@
       },
       {
         "type":"layout/dynamic", 
-        "external_theme":"theme--black",
+        "external_theme":"bg--black",
         "container_padding":"section layout",
         "internal_background_image":"/images/pages/cats/banner.jpg",
         "columns":[
             {
+              "content_theme":"text--orange",
               "column_size":"large-7",
               "data":[
                 { 
