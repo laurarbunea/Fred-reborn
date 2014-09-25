@@ -45,8 +45,8 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--center",
-      "external_theme":"theme--fred",
-      "internal_theme":"theme--soft",
+      "external_theme":"theme--white",
+      
       "container_padding":"section layout",
       "columns":[
         {

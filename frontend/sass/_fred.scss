@@ -26,14 +26,15 @@ body {
     &:last-child {
         border-right:none;
     }
+
     background-color: $ultra-light-grey;
     @extend %mb-l;
     position:relative;
+
     &:before {
         @include rem('width', 16);
         height:100%; 
         background-color:#004771;
-      
         position:absolute; 
         top:0;
         left:0;
@@ -531,5 +532,3 @@ $im-on-this:#f07e5c;
 .breakpoints__swatch {
     @extend %pb-l;
 }
-
-///////////////////////////////////////////////////////////////

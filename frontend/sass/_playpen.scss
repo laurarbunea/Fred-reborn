@@ -71,13 +71,12 @@
     }
 }
 
-
+//this is when you have a content block of text and you need to remove the bottom margin so you can add some content padding
 .content > {
     &:last-child {
         margin-bottom:0!important;
     }
 }
-
 
 
 .split {
