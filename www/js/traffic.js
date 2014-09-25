@@ -3366,7 +3366,7 @@ Backbone.Marionette.StackRegion = (function(_super) {
     var ListView = CompositeView.extend({
         template: "motorway", // panel
         childViewContainer: "[data-items]",
-        className: "view-absolute",
+        className: "absolute",
         childView: ListItemView,
         model: this.model,
         events: {

@@ -104,7 +104,7 @@ html {
 
 body {
     margin: 0;
-    background-color: $white;
+    background-color: #f0f0f0;
     color: $base-font-color;
     font-family: $sans-serif-stack;
     line-height: $base-line-height;
@@ -145,6 +145,7 @@ body {
 @import "components/header";
 @import "components/table";
 @import "components/share";
+@import "components/accessibility";
 
 /**
 ## Forms
@@ -161,7 +162,7 @@ body {
 @import "components/form/_field--details";
 @import "components/form/_field--radio-button-group";
 @import "components/form/_field--submit";
-@import "components/accessibility";
+
 
 
 //specfic fred styles

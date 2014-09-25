@@ -2361,7 +2361,8 @@ dd {
 .body-copy a, .textlink {
   text-decoration: none;
   background-repeat: repeat-x;
-  background-size: 0.125em 0.125em; }
+  -webkit-background-size: 0.125em 0.125em;
+          background-size: 0.125em 0.125em; }
 
 .body-copy a, .textlink {
   background-position: 0 100%; }
@@ -2509,6 +2510,9 @@ a {
     color: #1a537c; }
 
 .body-copy a, .textlink {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #236FA6));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #236FA6 50%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #236FA6 50%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #236FA6 50%); }
   .body-copy a:hover, .textlink:hover {
     background-image: none; }
@@ -2522,11 +2526,12 @@ a {
   border-bottom: 1px dashed;
   text-decoration: none;
   background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #000000), color-stop(1%, #ffffff)) 0 -1px;
+  background: -webkit-linear-gradient(top, #000000 0%, #ffffff 1%) 0 -1px;
+  background: -moz-linear-gradient(top, #000000 0%, #ffffff 1%) 0 -1px;
   background: linear-gradient(top, #000000 0%, #ffffff 1%) 0 -1px;
   -webkit-background-size: 100% 24px;
-  -moz-background-size: 100% 24px;
   -ms-background-size: 100% 24px;
-  -o-background-size: 100% 24px;
   background-size: 100% 24px; }
 
 dl dt {
@@ -2811,14 +2816,15 @@ pre > code {
   display: block !important; }
 
 .showhide-autoheight {
-  transition: height 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transition: height 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+     -moz-transition: height 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          transition: height 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   overflow: hidden; }
 
 .showhide-autoheight > div {
   -webkit-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
   -ms-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
   animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .font-size__left {
@@ -2872,3 +2878,5 @@ pre > code {
   padding-bottom: 16px;
   padding-bottom: 1rem; }
 
+
+/*# sourceMappingURL=style-guide.css.map */

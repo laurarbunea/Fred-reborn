@@ -121,8 +121,7 @@ module.exports = function(grunt) {
         sass: {
             dev: {
                 files: {
-                    "www/css/screen.css": "<%= paths.sass %>/screen.scss",
-                    "www/css/style-guide.css": "<%= paths.sass %>/style-guide.scss"
+                    "www/css/screen.css": "<%= paths.sass %>/screen.scss"
                 },
                 options: {
                     sourceComments: 'none',
