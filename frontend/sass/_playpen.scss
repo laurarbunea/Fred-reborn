@@ -56,8 +56,7 @@
     margin-bottom:0;
 }
 
-.icon-link i { @extend %mr-m; }
-.icon-link--reversed i { @extend %ml-m; }
+
 
 .small-list--block {
     @include media('small-down') {
