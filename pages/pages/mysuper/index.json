@@ -7,7 +7,7 @@
     {
       "type": "navigation/global-nav",
       "external_theme": "theme--white",
-      "right_column_padding":"pt-m",
+      "right_column_padding":"pt-m pb-m",
       "logo":"",
       "icon_color": "",
       "pages":[
@@ -32,7 +32,7 @@
     {
       "type":"layout/dynamic",
       "container_padding":"layout section",
-      "external_theme":"theme--white",
+      "external_theme":"theme--white bt--primary",
       "grid_modifier":"grid--center",
       "columns":[
         {
