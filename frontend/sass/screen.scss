@@ -69,7 +69,7 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 * Reset................ A level playing fields.
 *
-* Extends ............. Globally-available extends.
+* Core ............. Globally-available extends and core classes
 *
 * Type ................ Text sizes, Heirarchy, H1–H6 styles..
 *
@@ -182,8 +182,6 @@ body {
 *:focus {
     outline: solid 3px $color-focus;
 }
-
-
 
 
 //sorry quick hack class ;0

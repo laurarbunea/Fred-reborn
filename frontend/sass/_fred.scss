@@ -366,18 +366,7 @@ pre > code {
 }
 
 
-.icons--large {
-    i {
-        width:2em;
-        height:2em;
-    }
-}
-.icons--small {
-    i {
-        width:1em;
-        height:1em;
-    }
-}
+
 // ----------------------------------------------------------------------------
 // show hide
 // ----------------------------------------------------------------------------
@@ -415,10 +404,8 @@ pre > code {
         @extend %mb-0;
     } 
 }
-.font-size-container {
 
-}
-
+//used in typography swatch ?
     .font-size__left {
         @extend %pr-xxl;
         border-right:1px solid #efefef;
@@ -447,8 +434,6 @@ pre > code {
 // Grid breakpoints
 // ----------------------------------------------------------------------------
 $im-on-this:#f07e5c;
-
-
 
 .im-on-large {
     @include media('large') {

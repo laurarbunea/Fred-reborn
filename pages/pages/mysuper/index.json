@@ -1,0 +1,218 @@
+{
+  "title": "pages",
+  "slug":"mysuper",
+  "headline": "mysuper",
+  "template":"/pages/device.j2",
+  "data": [
+    {
+      "type": "navigation/global-nav",
+      "external_theme": "theme--white",
+      "logo":"",
+      "icon_color": "",
+      "pages":[
+        {
+          "title":"Home",
+          "title_color":"",
+          "svg":"menu"
+        },
+        {
+          "title":"Why choose mysuper?",
+          "title_color":"black",
+          "href":""
+
+        },
+        {
+          "title":"Options",
+          "title_color":"black",
+          "href":""
+        },
+        {
+          "title":"Manage",
+          "title_color":"black",
+          "href":""
+        },
+        {
+          "title":"Join",
+          "title_color":"black",
+          "href":""
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout section-top",
+      "external_theme":"theme--white",
+      "grid_modifier":"grid--center",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"type/text-small",
+              "data":"Option #4 insurance", 
+              "class":"text--muted",
+              "uppercase":true
+            },
+            {
+              "type":"type/h2",
+              "data":"Pay for combined life and income protection insurance directly from your mysuper account."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout section",
+      "external_theme":"bg--light-blue",
+      "grid_modifier":"grid--center",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"type/h3",
+              "data":"What kind of cover does this give me?"
+            },
+            "Life insurance provides a lump sum payment of three times your annual salary if you die. Income protection cover provides a tax-free monthly benefit equivalent to 50% of your annual salary should you become unable to work due to illness or accident.",
+            { 
+              "type": "buttons/btn",
+              "label": "Calculate your premium",
+              "theme": "mysuper-green",
+              "size":"x-small",
+              "icon": 
+                {
+                    "name":"caret-down",
+                    "color":"white"
+                }
+            },
+            { 
+              "type": "buttons/btn",
+              "label": "Calculate your premium",
+              "theme": "mysuper-green",
+              "size":"small",
+              "icon": 
+                {
+                    "name":"caret-down",
+                    "color":"white"
+                }
+            },
+            { 
+              "type": "buttons/btn",
+              "label": "Calculate your premium",
+              "theme": "mysuper-green",
+              "icon": 
+                {
+                    "name":"caret-down",
+                    "color":"white"
+                }
+            },
+            { 
+              "type": "buttons/btn",
+              "label": "Calculate your premium",
+              "theme": "mysuper-green",
+              "size":"large",
+              "icon": 
+                {
+                    "name":"caret-down",
+                    "color":"white"
+                }
+            },
+            { 
+              "type": "buttons/btn",
+              "label": "Calculate your premium",
+              "theme": "mysuper-green",
+              "size":"x-large",
+              "icon": 
+                {
+                    "name":"caret-down",
+                    "color":"white"
+                }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout section",
+      "external_theme":"theme--white",
+      "grid_modifier":"",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"type/h3",
+              "data":"The perks",
+              "class":"text-center"
+            },
+            {
+              "type": "type/list",
+              "data": [
+                "If you choose the mysuper insurance add-on within 90 days of joining ACC, any pre-existing conditions will be covered. ",
+                "This is money that would have gone straight into your savings anyway—no noticeable loss to your day-to-day funds, but a whole lot more peace of mind for you and your loved ones. "
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout section",
+      "external_theme":"bg--dark-grey text--white",
+      "grid_modifier":"grid--center",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"type/h3",
+              "data":"Get started",
+              "class":"text-center"
+            },
+            {
+              "type":"type/text-small",
+              "data":"mysuper exists to set up our employees with financial security in the future, and we’ve been doing it."
+            },
+            { 
+              "type": "buttons/btn",
+              "size":"",
+              "label": "Join my super",
+              "theme": "mysuper-green",
+              "icon": 
+                {
+                    "name":"caret-down",
+                    "color":"white"
+                }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout section",
+      "external_theme":"theme--white",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"type/h3",
+              "data":"The perks",
+              "class":"text-center"
+            },
+            {
+              "type": "type/list",
+              "data": [
+                "If you’re unable to work due to illness or accident there’s a 13-week stand down period.",
+                "If you apply outside of the first 90 days you will need to complete a personal statement and be medically underwritten  for all benefits. Unless you have any underlying health issues this should not affect your premium.",
+                "Your premium is based on your age, gender and salary when you take up your cover and is reviewed 1 October each year.",
+                "Income protection cover is sometimes referred to as “Salary Continuance Insurance” or “Personal Sickness Insurance” or “Accident insurance”",
+                "To determine your insurance protection cover, your annual salary is calculate as at the date of joining, or 1  October each year (whichever is later).",
+                "This insurance cover is provided by AMP."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

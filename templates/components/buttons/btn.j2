@@ -1,8 +1,18 @@
-<a class='btn {% if item.theme %}btn--{{ item.theme }}{% endif %} {% if item.size %}btn--{{ item.size }}{% endif %} {% if item.block %}btn--block{% endif %} {% if item.mobile %}btn--block-mobile{% endif %} {% if item.bounce %}btn--bounce{% endif %}' {% if item.href %}href="{{item.href}}"{% endif %}>
-    {{ item.label }}
+<a class='btn {% if item.theme %}btn--{{ item.theme }}{% endif %} {% if item.size %}btn--{{ item.size }}{% endif %} {% if item.block %}btn--block{% endif %} {% if item.mobile %}btn--block-mobile{% endif %} {% if item.bounce %}btn--bounce{% endif %} {% if item.rounded %}btn--soft{% endif %}' {% if item.href %}href="{{item.href}}"{% endif %}>
 
-    {% if item.icon %}
-        <i class='i i-{{item.icon.name}} {% if item.icon.color %}i--{{item.icon.color}}{% endif %}'></i>
+    {% if item.icon_reversed %}
+    {% else %}
+
+        {{ item.label }}
+
+    {% endif %}
+
+        {% if item.icon %}
+            <i class='i i-{{item.icon.name}} {% if item.icon.color %}i--{{item.icon.color}}{% endif %}'></i>
+        {% endif %}
+
+    {% if item.icon_reversed %}
+        {{ item.label }}
     {% endif %}
 
 </a>

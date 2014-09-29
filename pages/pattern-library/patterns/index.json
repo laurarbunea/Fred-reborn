@@ -79,7 +79,7 @@
                 },
                 "If JavaScript is enabled, this menu will be hidden until someone clicks the menu button in the <a href='#global-navigation'>global navigation</a>; if JavaScript is disabled, then the menu button will anchor to the bottom of the page where the menu will be visible.",
                 {
-                    "type": "pattern-library/api-example",
+                    "type": "pattern-library/section-block-with-api-example",
                     "component": "components/menu"
                 } 
             ]
@@ -148,7 +148,7 @@
                 },
                
                 {
-                    "type": "pattern-library/api-example",
+                    "type": "pattern-library/section-block-with-api-example",
                     "component": "components/homepage-content"
                 } 
             ]

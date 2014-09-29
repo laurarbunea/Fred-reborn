@@ -197,6 +197,9 @@ $link-color:
 //bg colours
 .bg--black {  background:#000;  }
 .bg--white {  background:#fff;  }
+.bg--light-blue {background-color:#f6fcfb;}
+.bg--dark-grey {background-color:#727375;}
+
 
 //text colours
 .text--muted {  color:grey; }
@@ -206,3 +209,68 @@ $link-color:
 .text--red {color:#e2534a}
 .text--blue {color:#1392b2}
 .text--green {color:#37b67f}
+
+
+
+
+// ----------------------------------------------------------------------------
+// Button themes
+// ----------------------------------------------------------------------------
+
+//button themes
+.btn--dark {
+    background-color:#293f54;
+    color:#fff;
+}
+
+.btn--mysuper-green {
+    background-color:#5e9b91;
+    color:#fff;
+}
+
+.btn--primary {  @extend %btn-primary; }
+.btn--secondary { @extend %btn-secondary; }
+.btn--tertiary { @extend %btn-tertiary; }
+
+
+%btn-primary {
+    background-color: #37b67f;
+    color: $white; 
+    border: #37b67f;
+    &:visited {
+        color: $white;
+    }
+    &:hover {
+        background-color: darken(#37b67f, 10%);
+        color: $white;
+    }
+    &:active {
+        color:$white;
+        background-color: #37b67f;
+    }
+}
+
+%btn-secondary {
+
+    background: #293f54;
+    color: #fff;
+    &:visited { color: $base-link-color;}
+
+    &:hover {
+        background: darken(#293f54, 10%);
+        color:#fff;
+    }
+    &:active {
+        color:$white;
+        background: #293f54;
+    }
+}
+
+
+%btn-tertiary {
+    background: none;
+    color: $base-link-color;
+    &:visited {
+        color: $base-link-color;
+    }
+}

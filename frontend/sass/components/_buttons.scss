@@ -2,16 +2,13 @@
     #BUTTONS
 \*------------------------------------*/
 
-button {
-    display: inline-block;
-    border: none;
-    appearance: none;
-    background-color: transparent;
-    cursor: pointer;
-}
 
+$btn--x-small:1.75rem;
+$btn--small: 2rem;
+$btn--medium:2.5rem;
+$btn--large:2.75rem;
+$btn--x-large:3rem;
 
-//todo this needs refactering!
 
 %btn {
     @extend %remove-anchor-decoration;
@@ -21,36 +18,59 @@ button {
     @extend %mt-0;
     @extend %mb-xxl;
     @extend %mb-0;
-    @extend %pl-l;
-    @extend %pr-l;
+    @extend %pl-m;
+    @extend %pr-m;
     @extend %pb-0;
     @extend %pt-0;
-    @include rem(line-height, $space-xxxxl);
+    line-height:$btn--medium;
     white-space: nowrap;
     border: none;
     cursor:pointer;
-    //todo 
     font-family: inherit;
     color: inherit;
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     font-size: inherit;
-    
+
     &:hover {
         text-decoration: none;
     }
-
-    & + %button {
-        @include rem(margin-top, $space-m);
-    }
 }
 
 
+// buttons
+.btn, 
+button {
+    @extend %btn;
+}
 
+button {
+    appearance: none;
+    background-color: transparent;
+}
+
+.btn + .btn {  @extend %ml-l; }
+
+
+.btn--block + .btn--block { margin-left:0; }
+
+/*********************************
+    Pill/softness modifier
+********************************/
 %btn--soft {
     @include rem(border-radius, $space-xxs);
 }
+
+.btn--soft {
+   @extend %btn--soft;
+}
+
+
+
+/*********************************
+    block modifier
+********************************/
 
 %btn--block {
     @extend %first-child-no-top;
@@ -61,75 +81,14 @@ button {
     padding-right: 0;
 }
 
-%btn-primary {
-    background-color: #37b67f;
-    color: $white; 
-    border: #37b67f;
-    @extend %font-weight-bold;
-    &:visited {
-        color: $white;
-    }
-    &:hover {
-        background-color: darken(#37b67f, 10%);
-        color: $white;
-    }
-    &:active {
-        color:$white;
-        background-color: #37b67f;
-    }
-}
-
-%btn-secondary {
-    @extend %font-weight-bold;
-    background: #293f54;
-    color: #fff;
-    //box-shadow: inset 1px 0 0 $base-link-color, inset 0 1px 0 $base-link-color, inset -1px 0 0 $base-link-color, inset 0 -1px 0 $base-link-color;
-    
-    &:visited {
-        color: $base-link-color;
-    }
-    &:hover {
-        background: darken(#293f54, 10%);
-        color:#fff;
-        //box-shadow: inset 1px 0 0 darken($base-link-color, 10%), inset 0 1px 0 darken($base-link-color, 10%), inset -1px 0 0 darken($base-link-color, 10%), inset 0 -1px 0 darken($base-link-color, 10%);
-    }
-    &:active {
-        color:$white;
-        background: #293f54;
-    }
-}
-
-
-%btn-tertiary {
-    background: none;
-    color: $base-link-color;
-    box-shadow: none;
-    @extend %font-size-xxs;
-    @extend %line-height-xxs;
-    &:visited {
-        color: $base-link-color;
-    }
-}
-
-
-
-// buttons
-.btn {
-    @extend %btn;
-    @extend %btn--soft;
-}
-
 .btn--block {
     @extend %btn--block;
 }
 
-.btn--dark {
-    background-color:#293f54;
-    color:#fff;
-}
-/**
- * Make a button behave like a block at mobile only (also handy)
- */
+ /*****************************************************************************
+    Make a button behave like a block at mobile only (also handy)
+****************************************************************************/
+
 @include media(small-down) {
     .btn--block-mobile {
         text-align: center;
@@ -155,17 +114,11 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 
 
 .btn--submit { @extend %btn--submit;}
-.btn--primary {  @extend %btn-primary; }
-.btn--secondary { @extend %btn-secondary; }
-.btn--tertiary { @extend %btn-tertiary; }
 
 
-.btn + .btn {  @extend %ml-l; }
-
-
-.btn--block + .btn--block { margin-left:0; }
-
-
+/*********************************
+    bounce modifier
+*********************************/
 %btn--bounce {
     position: relative;
     top: 0;
@@ -176,3 +129,34 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 }
 
 .btn--bounce {  @extend %btn--bounce; }
+
+
+/*********************************
+    Size modifiers
+*********************************/
+.btn.btn--x-small {
+    @extend %pl-xs;
+    @extend %pr-xs;
+    @extend %font-size-s;
+    line-height:$btn--x-small;
+}
+
+.btn.btn--small {
+    @extend %pl-s;
+    @extend %pr-s;
+    @extend %font-size-s;
+    line-height:$btn--small;
+}
+
+.btn.btn--large {
+    @extend %pl-l;
+    @extend %pr-l;
+    line-height:$btn--large;
+}
+
+.btn.btn--x-large {
+    @extend %font-size-l;
+    @extend %pl-xl;
+    @extend %pr-xl;
+    line-height:$btn--x-large;
+}

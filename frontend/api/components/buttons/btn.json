@@ -70,6 +70,21 @@
                 
             }
         },
+        {
+            "title": "Button with an icon in front of the label",
+            "example": {
+                "type": "buttons/btn",
+                "label": "I’m a button with an icon",
+                "theme": "secondary",
+                "icon_reversed":"true",
+                "icon": 
+                    {
+                        "name":"caret-down",
+                        "color":"dark-blue"
+                    }
+                
+            }
+        },
         { 
             "title":"Buttons can also be icons only:",
             "example": {
@@ -83,8 +98,47 @@
                     }
                 
             }
+        },
+        {
+            "title": "Simple button",
+            "example": {
+                "data": [
+                    {
+                        "type": "buttons/btn",
+                        "label": "x-small button",
+                        "size":"x-small"
+                    },
+                    {
+                        "type": "buttons/btn",
+                        "label": "small button",
+                        "size":"small"
+                    },
+                    {
+                        "type": "buttons/btn",
+                        "label": "default button"
+                    },
+                    {
+                        "type": "buttons/btn",
+                        "label": "large button",
+                        "size":"large"
+                    },
+                    {
+                        "type": "buttons/btn",
+                        "label": "x-large button",
+                        "size":"x-large"
+                    }
+                ]
+            }
+        },
+        { 
+            "title":"Buttons with rounded corners:",
+            "example": {
+                "type": "buttons/btn",
+                "theme": "secondary",
+                "rounded":true,
+                "href": "#"
+            }
         }
-        
     ]
 }
 
