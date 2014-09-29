@@ -9,6 +9,7 @@
         "external_theme": "theme--white",
         "container_padding":"pt-xs pb-xs",
         "logo":"springload",
+        "small_text":true,
         "icon_color": "",
         "pages":[
           

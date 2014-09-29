@@ -7,40 +7,31 @@
     {
       "type": "navigation/global-nav",
       "external_theme": "theme--white",
+      "right_column_padding":"pt-m",
       "logo":"",
       "icon_color": "",
       "pages":[
         {
-          "title":"Home",
-          "title_color":"",
-          "svg":"menu"
-        },
-        {
-          "title":"Why choose mysuper?",
-          "title_color":"black",
-          "href":""
-
-        },
-        {
-          "title":"Options",
-          "title_color":"black",
-          "href":""
-        },
-        {
-          "title":"Manage",
-          "title_color":"black",
-          "href":""
-        },
-        {
           "title":"Join",
-          "title_color":"black",
-          "href":""
+          "btn_theme":"mysuper-green"
+        },
+        {
+          "title":"Manage"
+        },
+        {
+          "title":"Options"
+        },
+        {
+          "title":"Why choose mysuper?"
+        },
+        {
+          "title":"Home"
         }
       ]
     },
     {
       "type":"layout/dynamic",
-      "container_padding":"layout section-top",
+      "container_padding":"layout section",
       "external_theme":"theme--white",
       "grid_modifier":"grid--center",
       "columns":[
@@ -77,50 +68,8 @@
               "type": "buttons/btn",
               "label": "Calculate your premium",
               "theme": "mysuper-green",
-              "size":"x-small",
-              "icon": 
-                {
-                    "name":"caret-down",
-                    "color":"white"
-                }
-            },
-            { 
-              "type": "buttons/btn",
-              "label": "Calculate your premium",
-              "theme": "mysuper-green",
               "size":"small",
-              "icon": 
-                {
-                    "name":"caret-down",
-                    "color":"white"
-                }
-            },
-            { 
-              "type": "buttons/btn",
-              "label": "Calculate your premium",
-              "theme": "mysuper-green",
-              "icon": 
-                {
-                    "name":"caret-down",
-                    "color":"white"
-                }
-            },
-            { 
-              "type": "buttons/btn",
-              "label": "Calculate your premium",
-              "theme": "mysuper-green",
-              "size":"large",
-              "icon": 
-                {
-                    "name":"caret-down",
-                    "color":"white"
-                }
-            },
-            { 
-              "type": "buttons/btn",
-              "label": "Calculate your premium",
-              "theme": "mysuper-green",
-              "size":"x-large",
+              "icon_reversed":true,
               "icon": 
                 {
                     "name":"caret-down",
@@ -174,9 +123,10 @@
             },
             { 
               "type": "buttons/btn",
-              "size":"",
               "label": "Join my super",
               "theme": "mysuper-green",
+              "size":"small",
+              "icon_reversed":true,
               "icon": 
                 {
                     "name":"caret-down",

@@ -8,7 +8,7 @@
         "type": "navigation/global-nav",
         "external_theme": "theme--white",
         "logo":"nzoa-logo",
-        "icon_color": "",
+        "small_text":true,
         "pages":[
           {
             "title":"menu",

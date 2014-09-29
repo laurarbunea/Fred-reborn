@@ -18,11 +18,11 @@
 
                 </div>
 
-                <div class='[ col small-8 ] global-nav__items {{item.right_column_padding}}'>
+                <div class='[ col small-8 ] global-nav__items {{item.right_column_padding}} small'>
 
                     {% for page in item.pages %}
                         
-                        <a data-navigation href='{{page.href}}' class="pl-l {% if page.uppercase%}uppercase small{% endif %} {% if page.title_color %}text--{{page.title_color}}{% endif %}" accesskey="m">
+                        <a data-navigation href='{{page.href}}' class="nav_item {% if page.uppercase%}uppercase{% endif %} {% if page.title_color %}text--{{page.title_color}}{% endif %} {% if page.btn_theme %}theme btn--{{page.btn_theme}}{% endif %} {% if item.small_text %}small{% endif %}" >
             
                             {% if page.svg %}
 

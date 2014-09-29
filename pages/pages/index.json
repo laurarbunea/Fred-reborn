@@ -29,7 +29,8 @@
         "pages":[
             {
               "title":"Donate",
-              "href":""
+              "href":"",
+              "btn_theme":"red"
             },
             {
               "title":"Blog",

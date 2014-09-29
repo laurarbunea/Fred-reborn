@@ -185,7 +185,7 @@ blockquote:before, blockquote:after {
 /*------------------------------------*\
     #EXTENDS
 \*------------------------------------*/
-.inline-block, .text--overflow, .breadcrumb > li, .traffic-metrics > *, .map-nav__item > a > span, .section--map-nav, .route__item:after, .webcam-list, .webcam-list > li, .map-nav--view-type, .switch-nav, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .subnav--tertiary, .section--nav > .section__content:after, .grid--float > *, .breadcrumb > li:last-child, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .share-nav > li > a, .field--bare, .segmented-control > li {
+.inline-block, .text--overflow, .breadcrumb > li, .traffic-metrics > *, .map-nav__item > a > span, .section--map-nav, .route__item:after, .webcam-list, .webcam-list > li, .map-nav--view-type, .switch-nav, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .subnav--tertiary, .section--nav > .section__content:after, .grid--float > *, .breadcrumb > li:last-child, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .share-nav > li > a, .field--bare, .segmented-control > li {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -253,7 +253,7 @@ blockquote:before, blockquote:after {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.text-center, .grid--center, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .segmented-control label, .swatch__top, .swatch__bottom {
+.text-center, .grid--center, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .segmented-control label, .swatch__top, .swatch__bottom {
   text-align: center; }
 
 .text-left, dd, .grid--justify > *, .subnav--tertiary, .segmented-control--timeslots label {
@@ -314,7 +314,7 @@ h1, h2, h6, p, .text, code, blockquote, caption, address, .webcam__last-update, 
 .absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right, .anchor-links li:before, .anchor-links li:after, .section--nav, body:after, .header__image + .header__title, .prev-link:before, .next-link:after, .radio-button-list input, .segmented-control input, .styleguide__api__code-view:after, .styleguide__api__code-view.showhide-active:after, .anatomy-block:before {
   position: absolute; }
 
-.relative, .layout--nudge, .anchor-links li, .section--nav > .section__content, .global-nav, .field--prev-next, .radio-button-list > li, .segmented-control > li, .styleguide__api__code-view, .anatomy-block {
+.relative, .layout--nudge, .anchor-links li, .section--nav > .section__content, .field--prev-next, .radio-button-list > li, .segmented-control > li, .styleguide__api__code-view, .anatomy-block {
   position: relative; }
 
 .absolute--bottom-left {
@@ -375,14 +375,14 @@ h1, h2, h6, p, .text, code, blockquote, caption, address, .webcam__last-update, 
 .hidden, .segmented-control input {
   visibility: hidden !important; }
 
-.layout, .device, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .field, [type='text'], [type='email'], [type='date'], [type='number'] {
+.layout, .device, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .field, [type='text'], [type='email'], [type='date'], [type='number'] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li, p, .text, code, blockquote, caption, address, dd, .breadcrumb > li, .anchor-links li, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .statistics__figure, .statistics__label, .subnav__child, .prev-link, .next-link, .radio-button-list > li, .styleguide-anchors li {
+h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li, p, .text, code, blockquote, caption, address, dd, .breadcrumb > li, .anchor-links li, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .statistics__figure, .statistics__label, .subnav__child, .nav_item, .prev-link, .next-link, .radio-button-list > li, .styleguide-anchors li {
   margin-top: 0px;
   margin-top: 0rem;
   /* fallback  times by 6 */ }
@@ -472,7 +472,7 @@ hr, .field--link {
   margin-top: 3rem;
   /* fallback  times by 6 */ }
 
-.device .device__menu, .traffic-info__header h1, .traffic-info__header h2, .traffic-info__body h5, .traffic-info__body p, .traffic-info__body h3, .traffic-info__body h4, .anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], li ul, li ol, .statistics__figure, .statistics__label, .layout .content-block:last-child, .styleguide-anchors ul, .styleguide__navigation {
+.device .device__menu, .traffic-info__header h1, .traffic-info__header h2, .traffic-info__body h5, .traffic-info__body p, .traffic-info__body h3, .traffic-info__body h4, .anchor-links, li ul, li ol, .statistics__figure, .statistics__label, .layout .content-block:last-child, .nav_item, .styleguide-anchors ul, .styleguide__navigation {
   margin-bottom: 0px;
   margin-bottom: 0rem;
   /* fallback  times by 6 */ }
@@ -507,7 +507,7 @@ hr, .field--link {
   margin-bottom: 0.75rem;
   /* fallback  times by 6 */ }
 
-h2, h3, h4, h5, h6, .intro, .layout--debug {
+h2, h3, h4, h5, h6, .intro, .btn, button, .layout--debug {
   margin-bottom: 16px;
   margin-bottom: 1rem;
   /* fallback  times by 6 */ }
@@ -537,7 +537,7 @@ ul, ol, .theme-swatch {
   margin-bottom: 1.5rem;
   /* fallback  times by 6 */ }
 
-hr, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .subnav .subnav__intro, .subnav--tertiary, .table {
+hr, .subnav .subnav__intro, .subnav--tertiary, .table {
   margin-bottom: 28px;
   margin-bottom: 1.75rem;
   /* fallback  times by 6 */ }
@@ -567,7 +567,7 @@ h1, .intro:last-child, .primary-subnav, .secondary-subnav, .field, .field--selec
   margin-bottom: 3rem;
   /* fallback  times by 6 */ }
 
-dd {
+dd, .nav_item + .nav_item {
   margin-left: 0px;
   margin-left: 0rem;
   /* fallback  times by 6 */ }
@@ -587,12 +587,17 @@ dd {
   margin-left: 0.5rem;
   /* fallback  times by 6 */ }
 
+.nav_item.theme.small {
+  margin-left: 12px;
+  margin-left: 0.75rem;
+  /* fallback  times by 6 */ }
+
 .ml-s {
   margin-left: 12px;
   margin-left: 0.75rem;
   /* fallback  times by 6 */ }
 
-.icon-link--reversed i, .device {
+.icon-link--reversed i, .device, .btn + .btn, .nav_item.theme {
   margin-left: 16px;
   margin-left: 1rem;
   /* fallback  times by 6 */ }
@@ -602,7 +607,7 @@ dd {
   margin-left: 1rem;
   /* fallback  times by 6 */ }
 
-.btn + .btn, li ul, li ol {
+li ul, li ol {
   margin-left: 20px;
   margin-left: 1.25rem;
   /* fallback  times by 6 */ }
@@ -662,7 +667,7 @@ dd {
   margin-right: 0.75rem;
   /* fallback  times by 6 */ }
 
-.icon-link i, .device, .search-container {
+.icon-link i, .device, .nav_item + .nav_item {
   margin-right: 16px;
   margin-right: 1rem;
   /* fallback  times by 6 */ }
@@ -1515,7 +1520,7 @@ dd {
     margin-right: 3rem;
     /* fallback  times by 6 */ } }
 
-.btn, button, .btn--submit, .email-wrapper input[type='submit'] {
+.btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item {
   padding-top: 0px;
   padding-top: 0rem;
   /* fallback  times by 6 */ }
@@ -1555,7 +1560,7 @@ dd {
   padding-top: 0.75rem;
   /* fallback  times by 6 */ }
 
-.action, .subnav--tertiary h3, .global-nav, .styleguide__api, .styleguide__example + h4, .icon-block__item .swatch__bottom {
+.action, .subnav--tertiary h3, .styleguide__api, .styleguide__example + h4, .icon-block__item .swatch__bottom {
   padding-top: 16px;
   padding-top: 1rem;
   /* fallback  times by 6 */ }
@@ -1610,7 +1615,7 @@ dd {
   padding-top: 3rem;
   /* fallback  times by 6 */ }
 
-.btn, button, .btn--submit, .email-wrapper input[type='submit'] {
+.btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item {
   padding-bottom: 0px;
   padding-bottom: 0rem;
   /* fallback  times by 6 */ }
@@ -1645,7 +1650,7 @@ dd {
   padding-bottom: 0.75rem;
   /* fallback  times by 6 */ }
 
-.nav-transaction ul > li, .global-nav, .styleguide__api, .icon-block__item .swatch__bottom {
+.nav-transaction ul > li, .styleguide__api, .icon-block__item .swatch__bottom {
   padding-bottom: 16px;
   padding-bottom: 1rem;
   /* fallback  times by 6 */ }
@@ -1720,7 +1725,7 @@ dd {
   padding-left: 0.5rem;
   /* fallback  times by 6 */ }
 
-.btn.btn--small, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label, .swatch {
+.btn.btn--small, .nav_item.small, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label, .swatch {
   padding-left: 12px;
   padding-left: 0.75rem;
   /* fallback  times by 6 */ }
@@ -1730,7 +1735,7 @@ dd {
   padding-left: 0.75rem;
   /* fallback  times by 6 */ }
 
-.anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], ul, ol, .prev-link {
+.anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], ul, ol, .nav_item, .prev-link {
   padding-left: 16px;
   padding-left: 1rem;
   /* fallback  times by 6 */ }
@@ -1740,7 +1745,7 @@ dd {
   padding-left: 1rem;
   /* fallback  times by 6 */ }
 
-.btn.btn--large, .menu-small {
+.btn.btn--large {
   padding-left: 20px;
   padding-left: 1.25rem;
   /* fallback  times by 6 */ }
@@ -1785,7 +1790,7 @@ dd {
   padding-left: 3rem;
   /* fallback  times by 6 */ }
 
-.radio-button-list label {
+.nav_item, .radio-button-list label {
   padding-right: 0px;
   padding-right: 0rem;
   /* fallback  times by 6 */ }
@@ -1815,7 +1820,7 @@ dd {
   padding-right: 0.5rem;
   /* fallback  times by 6 */ }
 
-.btn.btn--small, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label, .swatch {
+.btn.btn--small, .nav_item.theme.small, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label, .swatch {
   padding-right: 12px;
   padding-right: 0.75rem;
   /* fallback  times by 6 */ }
@@ -1825,7 +1830,7 @@ dd {
   padding-right: 0.75rem;
   /* fallback  times by 6 */ }
 
-.anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .statistics__label, .next-link, .styleguide__navigation li {
+.anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .statistics__label, .nav_item.theme, .next-link, .styleguide__navigation li {
   padding-right: 16px;
   padding-right: 1rem;
   /* fallback  times by 6 */ }
@@ -1835,7 +1840,7 @@ dd {
   padding-right: 1rem;
   /* fallback  times by 6 */ }
 
-.btn.btn--large, .search-small {
+.btn.btn--large {
   padding-right: 20px;
   padding-right: 1.25rem;
   /* fallback  times by 6 */ }
@@ -2058,10 +2063,6 @@ dd {
     padding-top: 16px;
     padding-top: 1rem;
     /* fallback  times by 6 */ }
-  .global-nav {
-    padding-top: 20px;
-    padding-top: 1.25rem;
-    /* fallback  times by 6 */ }
   .pt-l--q-medium {
     padding-top: 20px;
     padding-top: 1.25rem;
@@ -2101,10 +2102,6 @@ dd {
   .pb-m--q-medium {
     padding-bottom: 16px;
     padding-bottom: 1rem;
-    /* fallback  times by 6 */ }
-  .global-nav {
-    padding-bottom: 20px;
-    padding-bottom: 1.25rem;
     /* fallback  times by 6 */ }
   .pb-l--q-medium {
     padding-bottom: 20px;
@@ -2849,7 +2846,7 @@ h5, h6, p, .text, code, blockquote, caption, address, .map-nav, .map-nav--icon, 
   font-size: 1rem;
   line-height: 1.5; }
 
-.small, .traffic-info__body h5, .traffic-info__body p, .map-nav__item > a > span, .map-nav--tools .map-nav__item > label, .map-nav--view-type, .switch-nav, .btn.btn--x-small, .btn.btn--small, .nav-transaction ul > li a, .action > span, .pill, .pill--roadworks, .pill--orange, .statistics__sub-label, .subnav--tertiary .subnav__child__link, .nav-pill, input.search__input, .search__input, .share-nav > li, .field__note, .styleguide__api {
+.small, .traffic-info__body h5, .traffic-info__body p, .map-nav__item > a > span, .map-nav--tools .map-nav__item > label, .map-nav--view-type, .switch-nav, .btn.btn--x-small, .btn.btn--small, .nav-transaction ul > li a, .action > span, .pill, .pill--roadworks, .pill--orange, .statistics__sub-label, .subnav--tertiary .subnav__child__link, .share-nav > li, .field__note, .styleguide__api {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4285714286; }
@@ -3515,6 +3512,10 @@ blockquote {
 
 .btn--dark {
   background-color: #293f54;
+  color: #fff; }
+
+.btn--red {
+  background-color: #e2534a;
   color: #fff; }
 
 .btn--mysuper-green {
@@ -4776,7 +4777,6 @@ a.active {
   border: none;
   cursor: pointer;
   font-family: inherit;
-  color: inherit;
   text-decoration: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -5256,92 +5256,17 @@ body:after {
 /*------------------------------------*\
     #GLOBAL NAV
 \*------------------------------------*/
-.global-nav {
-  z-index: 11; }
-
-.nav-pill {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  padding: 0.2em 0.6em; }
-
-.menu, .search__input {
-  line-height: 25px;
-  height: 30px; }
-
-.menu {
-  background-color: #1a689d; }
-  .menu:hover {
-    background-color: #196394; }
-
-input.search__input {
-  background-color: #00446a;
-  border-color: #00446a;
-  color: #ffffff; }
-  input.search__input i {
-    background-position: 0 12.5%; }
-
-.theme--full-colour .menu {
-  background-color: #f2f4f7; }
-  .theme--full-colour .menu:hover {
-    background-color: #eceff3; }
-  .theme--full-colour .menu i {
-    background-position: 0 37.5%; }
-.theme--full-colour .search__input {
-  background-color: #f2f2eb;
-  border-color: #f2f2eb;
-  color: #555; }
-  .theme--full-colour .search__input i {
-    background-position: 0 37.5%; }
-
-.search-container {
-  position: relative;
-  width: 60%; }
-  @media only screen and (max-width: 37.49em) {
-    .search-container {
-      position: absolute;
-      top: 100%;
-      z-index: 10;
-      margin-top: -1.5em;
-      right: 1em;
-      left: 1em;
-      width: 80%; } }
-
-.search__input {
-  padding-left: 2em; }
-
-.search__icon {
-  display: block;
-  position: absolute;
-  left: 1em;
-  top: 1em; }
-  .search__icon:hover {
-    background-position: 0 0; }
-
-.theme--full-colour {
-  background-color: #fff; }
-  .theme--full-colour a {
-    color: #236FA6; }
-  .theme--full-colour .nav-btn__search {
-    background-color: #f2f2eb; }
-
-.global-nav--home + * {
-  margin-top: -5.5em;
-  padding-top: 5.5em;
-  background-color: #7196a8; }
-
-.site-search-container {
-  position: relative; }
-
-.site-search__button {
-  position: absolute;
-  top: 1.5em;
-  left: 1.5em; }
-
-.site-search__input {
-  padding-left: 2.5em; }
+.nav_item {
+  line-height: 2.5rem;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  .nav_item:hover {
+    text-decoration: none; }
 
 /*------------------------------------*\
     #HEADER STYLES
