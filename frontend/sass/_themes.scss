@@ -211,7 +211,10 @@ $link-color:
 .text--green {color:#37b67f}
 
 
-
+.text--highlight-red {
+  @extend %pl-m;
+  border:3px solid red;
+}
 
 // ----------------------------------------------------------------------------
 // Button themes

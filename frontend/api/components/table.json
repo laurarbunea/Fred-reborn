@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Tables",
+            "notes":"Only use a table when displaying tabular data is necessary. For simple name/value lists, a <a href='/pattern-library/type/#dl'>definition list</a> is a better option.",
             "example": {
                 "type": "table",
                 "data": {

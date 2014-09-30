@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Statistics block",
+            "notes":"Use this component to prominently display a single statistic. Two or more statistics can be grouped together in columns using grid helper classes.",
             "example": {
                 "type": "stat-block",
                 "data": [

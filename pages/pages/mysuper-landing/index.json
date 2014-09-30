@@ -69,17 +69,20 @@
           "content":[
             {
               "type":"type/h4",
-              "data":"Withdraw your funds when you leave ACC"
+              "data":"Withdraw your funds when you leave ACC",
+              "class":"text--blue"
             }, 
             "Complete this form to withdraw or tansfer your mystery after you have resigned or retired from ACC",
             {
               "type":"type/h4",
-              "data":"Withdraw your funds when you leave ACC"
+              "data":"Withdraw your funds when you leave ACC",
+              "class":"text--blue"
             }, 
             "Complete this form to withdraw or tansfer your mystery after you have resigned or retired from ACC",
             {
               "type":"type/h4",
-              "data":"Withdraw your funds when you leave ACC"
+              "data":"Withdraw your funds when you leave ACC",
+              "class":"text--blue"
             }, 
             "Complete this form to withdraw or tansfer your mystery after you have resigned or retired from ACC"  
           ]
@@ -89,17 +92,20 @@
           "content":[
             {
               "type":"type/h4",
-              "data":"Withdraw your funds when you leave ACC"
+              "data":"Withdraw your funds when you leave ACC",
+              "class":"text--blue"
             }, 
             "Complete this form to withdraw or tansfer your mystery after you have resigned or retired from ACC",
             {
               "type":"type/h4",
-              "data":"Withdraw your funds when you leave ACC"
+              "data":"Withdraw your funds when you leave ACC",
+              "class":"text--blue"
             }, 
             "Complete this form to withdraw or tansfer your mystery after you have resigned or retired from ACC",
             {
               "type":"type/h4",
-              "data":"Withdraw your funds when you leave ACC"
+              "data":"Withdraw your funds when you leave ACC",
+              "class":"text--blue"
             }, 
             "Complete this form to withdraw or tansfer your mystery after you have resigned or retired from ACC"  
           ]

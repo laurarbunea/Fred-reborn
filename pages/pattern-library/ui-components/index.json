@@ -4,51 +4,50 @@
     "template":"pattern-library/ui-components.j2",
     "data": [     
         {
+            "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "breadcrumbs",
-            "type" : "/pattern-library/section-block",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Breadcrumbs"
-                },
-                "Use breadcrumbs to indicate the user’s location within the website information architecture.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/navigation/breadcrumb"
-                }
-            ]
+            "component": "components/navigation/breadcrumb"
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor": "stat-block",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Statistics block"
-                },
-                "Use this component to prominently display a single statistic. Two or more statistics can be grouped together in columns using grid helper classes.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/stat-block"
-                }
-            ]
-        }, 
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor": "tables",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Tables"
-                },
-                "Only use a table when displaying tabular data is necessary. For simple name/value lists, a <a href='/pattern-library/type/#dl'>definition list</a> is a better option.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/table"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "stat block",
+            "component": "components/stat-block"
         },
-           
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "traffic-messages",
+            "component": "components/traffic/messages"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "region-list",
+            "component": "components/traffic/regions"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "region-list",
+            "component": "components/traffic/route"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "share",
+            "component": "components/share"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "webcam",
+            "component": "components/traffic/webcam"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "table",
+            "component": "components/table"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "images",
+            "component": "components/img"
+        },
         {
             "type" : "/pattern-library/section-block",
             "anchor":"icons",
@@ -62,10 +61,7 @@
                     "type": "code",
                     "data": "<i class='i i-caret-down'></i>"
                 },
-                { 
-                    "type": "raw",
-                    "data": "<hr class='hr--bleed'/>"
-                },
+
                 { 
                     "type": "type/h3",
                     "data": "Multicoloured UI icons"
@@ -153,11 +149,6 @@
                         }
                             
                     ]
-                    
-                },
-                { 
-                    "type": "raw",
-                    "data": "<hr class='hr--bleed'/>"
                 },
 
                 { 
@@ -181,22 +172,9 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
-            "anchor": "images",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Images"
-                },
-                {
-                    "type": "raw",
-                    "data": "<hr class='hr--bleed' />"
-                },
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/img"
-                }
-            ]
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "traffic-messages",
+            "component": "components/accessibility"
         },
         {
             "type":"/pattern-library/section-block",
@@ -286,83 +264,6 @@
         },
         {
             "type" : "/pattern-library/section-block",
-            "anchor": "messages",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Traffic messages"
-                },
-                "These are used to highlight alerts, estimated travel times and issues with a particular route.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/traffic/messages"
-                }
-            ]
-        },
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor": "location-list",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Region list"
-                },
-                "This provides a list of regions, with optional pills.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/traffic/regions"
-                }
-
-            ]
-        },
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor": "route",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Route information"
-                },
-                "This provides drive times, destinations and webcams for routes.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/traffic/route"
-                }
-
-            ]
-        },
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor": "share",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Share buttons"
-                },
-                "These are social buttons for Transport Agency maps.",
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/share"
-                }
-
-            ]
-        },
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor": "webcam",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Webcams"
-                },
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/traffic/webcam"
-                }
-            ]
-        },
-        {
-            "type" : "/pattern-library/section-block",
             "anchor": "highway-sign",
             "data": [
                 {
@@ -421,73 +322,6 @@
                             "style": "white"
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "type" : "/pattern-library/section-block",
-            "anchor" : "accessibility",
-            "data": [
-                { 
-                    "type": "type/h3",
-                    "data": "Access keys"
-                },
-                "Access keys are a useful navigation mechanism for users who are unable to use a mouse. Display the access keys by using the appropriate modifier and access keys shown below. The full website should include an accessibility page documenting the access keys.",
-                {
-                    "type": "type/h4",
-                    "data": "Modifier keys"
-                    },
-                {
-                    "type": "table",
-                    "data": {
-                        "thead": [
-                            {
-                                "data": "Browser"
-                            },
-                            {
-                                "data": "Keys"
-                            }
-                        ],
-                        "tbody": [
-                            [
-                                {
-                                  "data": "Google Chrome 3 +"
-                                },
-                                {
-                                  "data": "Alt on Windows (Note: ⇧ Shift is required in some circumstances), Ctrl + Alt on Mac"
-                                }
-                            ],
-                            [
-                                {
-                                  "data": "Firefox 2 +"
-                                },
-                                {
-                                  "data": "Alt+⇧ Shift on Windows and Linux, Ctrl on Mac"
-                                }
-                            ],
-                            [
-                                {
-                                  "data": "Internet Explorer"
-                                },
-                                {
-                                  "data": "Alt"
-                                }
-                            ],
-                            [
-                                {
-                                  "data": "Safari 4+"
-                                },
-                                {
-                                  "data": "Ctrl+⌥ Opt on Mac, Alt on Windows"
-                                }
-                            ]
-                            
-                        ]
-                    }
-                },
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/accessibility"
                 }
             ]
         }

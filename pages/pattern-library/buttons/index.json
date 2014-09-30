@@ -14,25 +14,9 @@
             "component": "components/buttons/action-icon"
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "anchor-links",
-            "data": [
-                {
-                    "type": "type/h3",
-                    "data": "Anchor links"
-                },
-                "Use this component to provide quick links to content on the current page.",
-
-                "Using this component requires that the content you’re linking to has an id attribute containing a slug of the headline text, like this:",
-                {
-                    "type":"code",
-                    "data":"<h2 id='example-linked-element'>Example linked element</h2>"
-                },
-                {
-                    "type": "pattern-library/code-example",
-                    "component": "components/buttons/anchor-links"
-                }
-            ]
+            "component": "components/buttons/anchor-links"
         }
     ]
 }

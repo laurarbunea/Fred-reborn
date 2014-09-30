@@ -4,7 +4,8 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Share buttons",
+            "notes":"These are social buttons for Transport Agency maps.",
             "example": {
                 "type": "share",
                 "data": {

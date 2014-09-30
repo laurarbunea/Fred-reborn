@@ -3,6 +3,8 @@
         "type": "pill",
         "data": []
     },
+    "heading":"Traffic messages",
+    "description":"These are used to highlight alerts, estimated travel times and issues with a particular route.",
     "examples": [
         {
             "title": "Time",

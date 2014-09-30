@@ -10,8 +10,8 @@
         
             <div class='[ grid ]'>
                 
-                <div class='[ col ] '>
-                    
+                <div class='[ col ] '>    
+
                     {% if example.title %}
 
                         {% if loop.index > 1 %}
@@ -35,6 +35,12 @@
                     <p>
                         {{ example.notes }}
                     </p> 
+
+                    {% endif %}
+
+                    {% if example.code %}
+
+<pre>{{ example.code }}</pre>
 
                     {% endif %}
 

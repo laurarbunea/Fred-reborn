@@ -2,6 +2,7 @@
     "examples": [
         {
             "title": "Region list",
+            "notes":"This provides a list of regions, with optional pills.",
             "example": {
                 "type": "traffic/regions",
                 "data": [

@@ -273,3 +273,13 @@ blockquote {
     border-left:0 solid $ultra-light-grey;
     @include rem(border-width, $space-xs);
 }
+
+// ----------------------------------------------------------------------------
+// ??
+// ----------------------------------------------------------------------------
+//this is when you have a block of text and you need to remove the bottom margin so you can add some content padding
+.type-container > {
+    &:last-child {
+        margin-bottom:0!important;
+    }
+}

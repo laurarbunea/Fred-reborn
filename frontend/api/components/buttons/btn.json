@@ -4,6 +4,8 @@
         "label": "",
         "theme": ["primary", "secondary","tertiary"]
     },
+    "heading":"Buttons",
+    "description":"hello",
     "examples": [
         {
             "title": "Simple button",
@@ -106,26 +108,31 @@
                     {
                         "type": "buttons/btn",
                         "label": "x-small button",
-                        "size":"x-small"
+                        "size":"x-small",
+                        "theme":"primary"
                     },
                     {
                         "type": "buttons/btn",
                         "label": "small button",
-                        "size":"small"
+                        "size":"small",
+                        "theme":"primary"
                     },
                     {
                         "type": "buttons/btn",
-                        "label": "default button"
+                        "label": "default button",
+                        "theme":"primary"
                     },
                     {
                         "type": "buttons/btn",
                         "label": "large button",
-                        "size":"large"
+                        "size":"large",
+                        "theme":"primary"
                     },
                     {
                         "type": "buttons/btn",
                         "label": "x-large button",
-                        "size":"x-large"
+                        "size":"x-large",
+                        "theme":"primary"
                     }
                 ]
             }

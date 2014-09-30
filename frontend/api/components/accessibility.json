@@ -1,15 +1,16 @@
 {
     "api": {
-        "type": "accessibility",
+        "type": "table",
         "data": []
     },
     "examples": [
         {
-            "title": "",
+            "title": "Accessibility",
+            "notes":"Access keys are a useful navigation mechanism for users who are unable to use a mouse. Display the access keys by using the appropriate modifier and access keys shown below. The full website should include an accessibility page documenting the access keys.",
             "example": {
-                "type": "accessibility",
+                "type": "table",
                 "title":"Access keys ",
-                "data": [
+                "tbody": [
                     {
                         "key": "h",
                         "page": "Home"
@@ -31,6 +32,60 @@
                         "page": "Skip to top"
                     }
                 ]
+            }
+        },
+        {
+            "title": "Accessibility",
+            "notes":"Access keys are a useful navigation mechanism for users who are unable to use a mouse. Display the access keys by using the appropriate modifier and access keys shown below. The full website should include an accessibility page documenting the access keys.",
+            "example": {
+                
+                "title":"Access keys ",
+                "type": "table",
+                "data": {
+                    "thead": [
+                        {
+                            "data": "Browser"
+                        },
+                        {
+                            "data": "Keys"
+                        }
+                    ],
+                    "tbody": [
+                        [
+                            {
+                              "data": "Google Chrome 3 +"
+                            },
+                            {
+                              "data": "Alt on Windows (Note: ⇧ Shift is required in some circumstances), Ctrl + Alt on Mac"
+                            }
+                        ],
+                        [
+                            {
+                              "data": "Firefox 2 +"
+                            },
+                            {
+                              "data": "Alt+⇧ Shift on Windows and Linux, Ctrl on Mac"
+                            }
+                        ],
+                        [
+                            {
+                              "data": "Internet Explorer"
+                            },
+                            {
+                              "data": "Alt"
+                            }
+                        ],
+                        [
+                            {
+                              "data": "Safari 4+"
+                            },
+                            {
+                              "data": "Ctrl+⌥ Opt on Mac, Alt on Windows"
+                            }
+                        ]
+                        
+                    ]
+                }
             }
         }
     ]

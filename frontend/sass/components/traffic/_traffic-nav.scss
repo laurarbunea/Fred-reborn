@@ -5,15 +5,15 @@
 .map-controls {
     z-index: 1;
     position: absolute;
-    top: $offset-map-top;
-    right: $offset-map-side;
+    //top: $offset-map-top;
+    //right: $offset-map-side;
     text-align: right;
 
     .list-active & {
         z-index: auto;
     }
     @include up-to(small) {
-        top: $offset-map-top-mobile;
+        //top: $offset-map-top-mobile;
     }
 }
 

@@ -1,16 +1,19 @@
 {
-    "title": "core",
+    "title": "helpers",
     "headline": "Helpers",
-    "template":"/pages/core.j2",
+    "template":"/pages/helpers.j2",
     "data": [ 
         {
             "type" : "/pattern-library/section-block",
             "data": [
                 { 
                     "type": "type/h1",
-                    "data": "Core"
+                    "data": "Helpers"
                 },
-                "Here are some handy little classes that will come in useful when building modules for this site.",
+                { 
+                    "type": "type/intro",
+                    "data": "Here are some handy little classes that will come in useful when building modules for this site."
+                },
                 {
                     "type": "type/list",
                     "class": "list--inline",

@@ -155,62 +155,60 @@
 
 .code-container { @extend %mb-xxxl; }
 
-.styleguide__code,
-pre {
-    @include rem(border-radius, $space-xxs);
-    background-color: #555555;
-    border: solid 1px #555555;
-    padding: 1em;
-    overflow: scroll;
-    color: #fff;
-    font-size: 13px;
-}
-
-code {
-    @include rem(border-radius, $space-xxs);
-    background-color: #F8FBFC;
-    border: solid 1px #DDE7EB;
-    padding: .25em .5em;
-    margin-left: .25em;
-}
-
-pre > code {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-}
-
-.styleguide--html {
-    color: #9DFFE5;
-}
-
-
-.styleguide__api {    
-    @extend %pt-m;
-    @extend %pb-m;
-    @extend %mt-xxxxl;
-    @extend %font-size-s;    
-    @extend %bt--primary;
-    @extend %bb--primary;
-    //@include rem(margin-bottom, 48);
-    background-color:#ddd;
-}
-
-.styleguide__api, 
-.styleguide__example + h4 {
-    @extend %mt-m;
-    margin-left:-10%;
-    margin-right:-10%;
-    padding-left:10%;
-    padding-right:10%;
-    @include media('large-down') {
-        margin-left:-4%;
-        margin-right:-4%;
-        padding-left:4%;
-        padding-right:4%;
+    .styleguide__code,
+    pre {
+        @include rem(border-radius, $space-xxs);
+        background-color: #555555;
+        border: solid 1px #555555;
+        padding: 1em;
+        overflow: scroll;
+        color: #fff;
+        font-size: 13px;
     }
 
-}
+    code {
+        @include rem(border-radius, $space-xxs);
+        background-color: #F8FBFC;
+        border: solid 1px #DDE7EB;
+        padding: .25em .5em;
+        margin-left: .25em;
+    }
+
+    pre > code {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .styleguide--html {
+        color: #9DFFE5;
+    }
+
+
+    .styleguide__api {    
+        @extend %pt-m;
+        @extend %pb-m;
+        @extend %mt-xxxxl;
+        @extend %font-size-s;    
+        @extend %bt--primary;
+        @extend %bb--primary;
+        background-color:#ddd;
+    }
+ 
+    .styleguide__example + h4 {
+        @extend %mt-m;
+        margin-left:-10%;
+        margin-right:-10%;
+        padding-left:10%;
+        padding-right:10%;
+        @include media('large-down') {
+            margin-left:-4%;
+            margin-right:-4%;
+            padding-left:4%;
+            padding-right:4%;
+        }
+
+    }
     .styleguide__api__code-view {
         @extend %ml-xxxl;
         @extend %pr-xl;
@@ -504,4 +502,53 @@ $im-on-this:#f07e5c;
 
 .breakpoints__swatch {
     @extend %pb-l;
+}
+.device {
+    @extend %ml-m;
+    @extend %mr-m;
+    background-color:#efefef;
+    border-color:#555555;
+    border-style: solid;
+    @include rem('border-left-width', $space-xxxxl);
+    @include rem('border-right-width', $space-xxxxl);
+    @include rem('border-top-width', $space-xxxxl);
+    @include rem('border-bottom-width', $space-xxxxl);
+    @extend %mb-xxxxl; 
+    @extend %border-box;
+
+    .device__menu {
+        @extend %pt-xs;
+        @extend %pb-xs;
+        @extend %mb-0;
+        @extend %text-small;
+        border-bottom:1px solid #D6D6D6;
+
+    }
+
+    border-radius: 50px;
+    @include media(medium-down) {
+        border-radius: 30px;
+    }
+}
+
+.back-to-top-anchor {
+    @extend %br-top-xxs ;
+    background-color: #37b67f;
+    padding: 0 1rem;
+    right:2em;
+    margin-bottom:0;
+}
+
+
+
+//fred global menu
+a.active {
+    color:#37b67f!important;
+    font-weight:bold;
+}
+
+.pill.active-pill {
+    background-color:#37b67f;
+    color:#fff!important;
+    font-weight:bold;
 }

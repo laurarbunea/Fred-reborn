@@ -467,10 +467,11 @@
 
 %round { border-radius: 50em; }
 
-//move to themes
+
 //layout helpers
 %full-width { width: 100%; }
 
-
-
-
+//do we need this
+%border-box {
+    @include vendor(box-sizing, border-box);
+}

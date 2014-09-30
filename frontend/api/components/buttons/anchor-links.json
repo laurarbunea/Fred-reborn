@@ -5,7 +5,9 @@
     },
     "examples": [
         {
-            "title": "",
+            "title": "Anchor links",
+            "notes":"Using this component requires that the content you’re linking to has an id attribute containing a slug of the headline text, like this:",
+            "code":"<h2 id='example-linked-element'>Example linked element</h2>",
             "example": {
                 "type": "buttons/anchor-links",
                 "data": [

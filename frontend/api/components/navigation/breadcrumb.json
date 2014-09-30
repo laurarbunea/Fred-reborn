@@ -7,6 +7,8 @@
         {
             "example":
             {
+                "title":"Breadcrumbs",
+                "notes":"Use breadcrumbs to indicate the user’s location within the website information architecture.",
                 "type": "navigation/breadcrumb",
                 "data": [
                     {

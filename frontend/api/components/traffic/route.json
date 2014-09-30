@@ -5,7 +5,8 @@
     },
     "examples": [
         {
-            "title": "Example route",
+            "title": "Route information",
+            "notes":"This provides drive times, destinations and webcams for routes.",
             "example": {
                 "type": "traffic/route",
                 "data": [

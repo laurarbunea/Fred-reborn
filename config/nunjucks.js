@@ -203,7 +203,6 @@ var getApi = function(apiName) {
     } catch(e) {
         console.log(e);
     }
-
     if (ret.examples) {
         ret = ret.examples;
         return ret;
