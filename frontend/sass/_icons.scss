@@ -11,8 +11,8 @@
 }
 
 .i {
+    
     @extend %i;
-
     .icon-text &,
     .btn--icon & {
         margin-right: $base-spacing-unit/4;
