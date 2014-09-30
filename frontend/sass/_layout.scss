@@ -8,13 +8,22 @@
     margin-right: auto;
 }
 
+.wrapper--medium {
+    @include rem(max-width, 960);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .wrapper--small {
     @include rem(max-width, 800);
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
 // ----------------------------------------------------------------------------
-// vertical spacing
+// vertical spacing combines padding helpers :) 
 // ----------------------------------------------------------------------------
 
 
@@ -82,13 +91,6 @@
     padding-top:0;
 }
 
-.section--stacked { padding-bottom:0; }
-
-//do we need top and bottom extenders??
-
-
-
-
 
 
 // ----------------------------------------------------------------------------
@@ -99,7 +101,6 @@
     @extend %pl-xxxxl;
     @extend %pr-xxxxl;
 
-    //responsinate
     @include media("small-down") {
         & {
             @include rem(padding-left, $space-xxxl);
@@ -174,7 +175,7 @@
 
 
 
-%pl {
+%layout-left {
     padding-left: 1rem;
     @include medium {
         & {
@@ -188,7 +189,7 @@
     }
 }
 
-%pr {
+%layout-right {
     padding-right: 1rem;
     @include medium {
         & {
@@ -207,17 +208,15 @@
 
 .layout {
     @extend %border-box;
-    @extend %pl;
-    @extend %pr;
+    @extend %layout-left;
+    @extend %layout-right;
 }
 
-.layout--left { @extend %pl; }
+.layout--left, 
+.col.layout--left { @extend %layout-left; }
 
-.layout--right { @extend %pr; }
-
-.col.layout--left { @extend %pl; }
-
-.col.layout--right { @extend %pr; }
+.layout--right, 
+.col.layout--right { @extend %layout-right; }
 
 
 .layout--half {
@@ -281,3 +280,93 @@
             bottom: 0;
         }
     }
+
+
+
+// ----------------------------------------------------------------------------
+// widths
+// ----------------------------------------------------------------------------
+
+
+.full-width { width:100% }
+.half { width: 50%; }
+.third { width: 33.3333333%; }
+.two-thirds { width: 66.666666%; }
+.quarter { width: 25%; }
+.three-quarters { width: 75%; }
+.fifth { width: 20%; }
+
+
+@include small() {
+    .small-full-width { width: 100%; }
+    .small-half { width: 50%; }
+    .small-third { width: 33.3333333%; }
+    .small-two-thirds { width: 66.666666%; }
+    .small-quarter { width: 25%; }
+    .small-three-quarters { width: 75%; }
+}
+
+@include medium() {
+    .medium-full-width { width: 100%; }
+    .medium-half { width: 50%; }
+    .medium-third { width: 33.3333333%; }
+    .medium-two-thirds { width: 66.666666%; }
+    .medium-quarter { width: 25%; }
+    .medium-three-quarters { width: 75%; }
+    .medium-fifth { width: 20%; }
+}
+
+@include large() {
+    .large-full-width { width: 100%; }
+    .large-half { width: 50%; }
+    .large-third { width: 33.3333333%; }
+    .large-two-thirds { width: 66.666666%; }
+    .large-quarter { width: 25%; }
+    .large-three-quarters { width: 75%; }
+    .large-fifth { width: 20%; }
+}
+
+//10 column grid
+$cols-large: 10;
+
+@for $i from 1 to $cols-large+1 {
+    $width: #{ (((1/$cols-large) * $i) * 100)  + "%"};
+    %small-#{$i} {
+      
+        width: $width;
+        
+    }
+    .small-#{$i} {
+        @extend %small-#{$i};
+    }
+}
+
+@for $i from 1 to $cols-large+1 {
+    $width: #{ (((1/$cols-large) * $i) * 100)  + "%"};
+    %medium-#{$i} {
+        @include medium() {
+            & {
+                width: $width;
+            }
+        }
+    }
+    .medium-#{$i} {
+        @extend %medium-#{$i};
+    }
+}
+
+
+@for $i from 1 to $cols-large+1 {
+    $width: #{ (((1/$cols-large) * $i) * 100)  + "%"};
+    %large-#{$i} {
+        @include large() {
+            & {
+                width: $width;
+            }
+        }
+    }
+
+    .large-#{$i} {
+        @extend %large-#{$i};
+    }
+}
