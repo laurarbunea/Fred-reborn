@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #EXTENDS
+    #Utilities
 \*------------------------------------*/
 
 // -----------------------------------------------------------------------------
@@ -30,7 +30,7 @@
     margin-top: 0;
 }
 
-.first-child-not-top {
+.first-child-no-top {
     @extend %first-child-no-top;
 }
 
@@ -46,7 +46,7 @@
 // -----------------------------------------------------------------------------
 // Fix webkit bug
 // -----------------------------------------------------------------------------
-//todo class ?
+
 %font-smoothing {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -327,7 +327,6 @@
 }
 
 
-//toadd
 .fixed--bottom {
     position:fixed; 
     bottom:0;
@@ -338,78 +337,68 @@
     top:0;
 }
 
-//images
-.img--responsive {
+
+
+// -----------------------------------------------------------------------------
+// Images
+// -----------------------------------------------------------------------------
+
+%img--responsive {
     max-width:100%;
 }
 
-
-//Showing and hiding things with a pre-emptive `important` 
-
-%hide { display: none; }
-%show { display: block; }
-
-.hide { @extend %hide; }
-.show { @extend %show; }
-
-%visible {visibility: visible !important;}
-%hidden {visibility: hidden !important;}
-
-.visible { @extend %visible; }
-.hidden { @extend %hidden; }
-
-%border-box {
-    @include vendor(box-sizing, border-box);
+.img--responsive {
+    @extend %img--responsive;
 }
 
 
+
+// -----------------------------------------------------------------------------
+// padding helper classes
+// -----------------------------------------------------------------------------
 
 
 @include breakpoint-sizer($margin-breakpoints, $margin-types);
 @include breakpoint-sizer($padding-breakpoints, $padding-types);
 
 
+%remove-padding {  padding:0; }
+
+%remove-margin { margin:0;}
+
+
 // -----------------------------------------------------------------------------
-// Reset helpers
+// border helper classes
 // -----------------------------------------------------------------------------
-
-%padding-0 {
-    padding:0;
-}
-
-%margin-0 {
-    margin:0;
-}
-
 
 %border {
     border-width:1px;
     border-style:solid;
 }
 
-%custom-line {
-    text-decoration: none;
-    background-repeat: repeat-x;
-    background-size: .125em .125em;
-}
+%bt--primary { border-top: 1px solid $primary-border-color; }
 
-%underline {
-    @extend %custom-line;
-    background-position: 0 100%;
-}
+%bb--primary { border-bottom: 1px solid $primary-border-color; }
+
+%bl--primary { border-left: 1px solid $primary-border-color; }
+
+%br--primary { border-right: 1px solid $primary-border-color; }
+
+.bt--primary { @extend %bt--primary; }
+.bb--primary { @extend %bb--primary; }
+.bl--primary { @extend %bl--primary; }
+.br--primary { @extend %br--primary; }
 
 
+// -----------------------------------------------------------------------------
+// Anchors
+// -----------------------------------------------------------------------------
 
 %cursor-on-hover {
     &:hover {
         cursor: pointer;
     }
 }
-
-// -----------------------------------------------------------------------------
-// Anchors
-// -----------------------------------------------------------------------------
-
 .cursor-on-hover {
   @extend %cursor-on-hover;  
 }
@@ -443,13 +432,8 @@
 
 
 // -----------------------------------------------------------------------------
-// Border and border radius helpers
+// radius helpers
 // -----------------------------------------------------------------------------
-
-%border {
-    border-width: 1px;
-    border-style: solid;
-}
 
 %br-xxs { @include rem(border-radius, $space-xxs);}
 
@@ -481,20 +465,10 @@
 
 %br-bottom-left-xxs { @include rem(border-bottom-left-radius, $space-xxs);}
 
+
+
 //move to themes
-%bt--primary { border-top: 1px solid $primary-border-color; }
-
-%bb--primary { border-bottom: 1px solid $primary-border-color; }
-
-%bl--primary { border-left: 1px solid $primary-border-color; }
-
-%br--primary { border-right: 1px solid $primary-border-color; }
-
-.bt--primary { @extend %bt--primary; }
-.bb--primary { @extend %bb--primary; }
-.bl--primary { @extend %bl--primary; }
-.br--primary { @extend %br--primary; }
-
+//layout helpers
 %full-width { width: 100%; }
 
 

@@ -53,7 +53,7 @@
       },
     	{
     		"type":"layout/dynamic",
-        "container_padding":"layout section-top-xxl",
+        "container_padding":"layout pt-xxl",
       	"external_theme":"theme--music",
       	"columns":[
           {

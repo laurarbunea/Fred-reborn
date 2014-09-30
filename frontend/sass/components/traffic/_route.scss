@@ -54,7 +54,7 @@ $margin-figure: 50;
 
     & > * {
         min-height: 4.5em;
-        @extend %section-bottom-xs;
+        @extend %pb-xs;
         position: relative;
         display: block;
         & p {

@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 fieldset {
-    @extend %padding-0;
-    @extend %margin-0;
+    @extend %remove-padding;
+    @extend %remove-margin;
 	border:0;
 }

@@ -1,0 +1,32 @@
+%link-underline {
+    text-decoration: underline;
+    @extend %underline-on-hover;
+}
+
+%underline-on-hover {
+    &:hover{
+        text-decoration:underline;
+    }
+}
+
+
+.link-more {
+    //font-weight: normal;
+    font-style: italic;
+    &:after {
+        content: "...";
+    }
+}
+
+
+.linedText {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+    background-color: #ffffff;
+    background: linear-gradient(top, #000000 0%, #ffffff 1%) 0 -1px;
+    -webkit-background-size: 100% 24px;
+    -moz-background-size: 100% 24px;
+    -ms-background-size: 100% 24px;
+    -o-background-size: 100% 24px;
+    background-size: 100% 24px;
+}

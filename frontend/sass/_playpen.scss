@@ -336,7 +336,7 @@ $margin-traffic-info-side: 32;
         & > span {
             display: inline-block;
             vertical-align: middle;
-            @include font-size(14);
+            @extend %font-size-xs;
         }
     }
 }
@@ -346,8 +346,8 @@ $margin-traffic-info-side: 32;
 .traffic-info__header {
 
     @extend %theme--dark;
-    @extend %section-top-s;
-    @extend %section-bottom-m;
+    @extend %pt-s;
+    @extend %pb-m;
 
     @include rem(padding-left, $margin-traffic-info-side);
     @include rem(padding-right, $margin-traffic-info-side);
@@ -404,8 +404,8 @@ $margin-traffic-info-side: 32;
     }
 }
 .traffic-messages {
-    @extend %section-top-xs;
-    @extend %section-bottom-m;
+    @extend %pt-xs;
+    @extend %pb-m;
     .list__link + & {
         padding-top: 0;
     }
@@ -506,13 +506,26 @@ $margin-traffic-info-side: 32;
 
 
 .horizontal-scroll {
-    @extend %section-bottom-m;
+    @extend %pb-m;
     width: 100%;
     overflow-y: hidden;
     overflow-x: auto;
 }
 
 
+%link-hover-color {
+    &:hover {
+        color: darken($base-link-color, 10%);
+//        @include custom-line-color--modified(darken($base-link-color, 10%));
+
+        &.link--action  > div {
+            background-color: darken($base-link-color, 5%);
+        }
+        & .nav-main__icon > i {
+            background-color: darken($color-bg-header, 4%);
+        }
+    }
+}
 // state highway sign
 .highway {
     position: relative;
@@ -540,3 +553,30 @@ $margin-traffic-info-side: 32;
     .highway--white .highway__number {
         color: #333;
     }
+
+
+
+
+
+
+
+
+
+
+
+//do we need this
+%border-box {
+    @include vendor(box-sizing, border-box);
+}
+
+
+%custom-line {
+    text-decoration: none;
+    background-repeat: repeat-x;
+    background-size: .125em .125em;
+}
+
+%underline {
+    @extend %custom-line;
+    background-position: 0 100%;
+}

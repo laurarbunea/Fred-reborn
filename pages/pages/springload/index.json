@@ -38,7 +38,7 @@
       },
       {
         "type":"layout/dynamic",
-        "container_padding":"layout section-top-xxl",
+        "container_padding":"layout pt-xxl",
         "external_theme":"theme--white",
         "columns":[
           {
@@ -61,7 +61,7 @@
             {
               "column_size":"large-half",
               "content_theme":"theme--orange",
-              "content_padding":"section-top",
+              "content_padding":"pt-xxxxl",
               "data":[
                 {
                   "type":"type/h3",
@@ -79,7 +79,7 @@
             {
               "column_size":"large-half",
               "content_theme":"theme--green",
-              "content_padding":"section-top",
+              "content_padding":"pt-xxxxl",
               "data":[
                 {
                   "type":"type/h3",
@@ -104,7 +104,7 @@
           "columns":[
             {
               "content_theme":"theme--springload-green",
-              "content_padding":"section-top",
+              "content_padding":"pt-xxxxl",
               "data":[
                 {
                   "type":"type/h2",

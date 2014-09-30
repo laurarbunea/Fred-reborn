@@ -17,28 +17,11 @@
 // vertical spacing
 // ----------------------------------------------------------------------------
 
-%section-top-xxxxl { @include rem(padding-top, $space-xxxxl);}
-%section-top-xxxl { @include rem(padding-top, $space-xxxl); }
-%section-top-xxl { @include rem(padding-top, $space-xxl);}
-%section-top-xl { @include rem(padding-top, $space-xl);}
-%section-top-l { @include rem(padding-top, $space-l);}
-%section-top-m { @include rem(padding-top, $space-m);}
-%section-top-s { @include rem(padding-top, $space-s);}
-%section-top-xs { @include rem(padding-top, $space-xs);}
-
-%section-bottom-xxxxl { @include rem(padding-bottom, $space-xxxxl);}
-%section-bottom-xxxl { @include rem(padding-bottom, $space-xxxl); }
-%section-bottom-xxl { @include rem(padding-bottom, $space-xxl);}
-%section-bottom-xl { @include rem(padding-bottom, $space-xl);}
-%section-bottom-l { @include rem(padding-bottom, $space-l);}
-%section-bottom-m { @include rem(padding-bottom, $space-m);}
-%section-bottom-s { @include rem(padding-bottom, $space-s);}
-%section-bottom-xs { @include rem(padding-bottom, $space-xs);}
 
 .section-xxxxl, 
 .section {
-    @extend %section-top-xxxxl;
-    @extend %section-bottom-xxxxl;
+    @extend %pt-xxxxl;
+    @extend %pb-xxxxl;
 
     //responsinate
     @include media("small-down") {
@@ -50,38 +33,38 @@
 }
 
 %section-xxxl {
-    @extend %section-top-xxxl;
-    @extend %section-bottom-xxxl;
+    @extend %pt-xxxl;
+    @extend %pb-xxxl;
 }
 
 %section-xxl {
-    @extend %section-top-xxl;
-    @extend %section-bottom-xxl;
+    @extend %pt-xxl;
+    @extend %pb-xxl;
 }
 
 %section-xl {
-    @extend %section-top-xl;
-    @extend %section-bottom-xl;
+    @extend %pt-xl;
+    @extend %pb-xl;
 }
 
 %section-l {
-    @extend %section-top-l;
-    @extend %section-bottom-l;
+    @extend %pt-l;
+    @extend %pb-l;
 }
 
 %section-m {
-    @extend %section-top-m;
-    @extend %section-bottom-m;
+    @extend %pt-m;
+    @extend %pb-m;
 }
 
 %section-s {
-    @extend %section-top-s;
-    @extend %section-bottom-s;
+    @extend %pt-s;
+    @extend %pb-s;
 }
 
 %section-xs {
-    @extend %section-top-xs;
-    @extend %section-bottom-xs;
+    @extend %pt-xs;
+    @extend %pb-xs;
 }
 
 .section-xxxxl { @extend %section-xxxxl;}
@@ -92,26 +75,6 @@
 .section-m { @extend %section-m;}
 .section-s { @extend %section-s;}
 .section-xs { @extend %section-xs;}
-
-.section-top-xxxxl, 
-.section-top { @extend %section-top-xxxxl;}
-.section-top-xxxl { @extend %section-top-xxxl;}
-.section-top-xxl { @extend %section-top-xxl;}
-.section-top-xl { @extend %section-top-xl;}
-.section-top-l { @extend %section-top-l;}
-.section-top-m { @extend %section-top-m;}
-.section-top-s { @extend %section-top-s;}
-.section-top-xs { @extend %section-top-xs;}
-
-.section-bottom-xxxxl, 
-.section-bottom { @extend %section-bottom-xxxxl;}
-.section-bottom-xxxl { @extend %section-bottom-xxxl;}
-.section-bottom-xxl { @extend %section-bottom-xxl;}
-.section-bottom-xl { @extend %section-bottom-xl;}
-.section-bottom-l { @extend %section-bottom-l;}
-.section-bottom-m { @extend %section-bottom-m;}
-.section-bottom-s { @extend %section-bottom-s;}
-.section-bottom-xs { @extend %section-bottom-xs;}
 
 
 %remove-section {
@@ -132,27 +95,9 @@
 // horizontal spacing - work on this 
 // ----------------------------------------------------------------------------
 
-%layout-left-xxxxl { @include rem(padding-left, $space-xxxxl);}
-%layout-left-xxxl { @include rem(padding-left, $space-xxxl); }
-%layout-left-xxl { @include rem(padding-left, $space-xxl);}
-%layout-left-xl { @include rem(padding-left, $space-xl);}
-%layout-left-l { @include rem(padding-left, $space-l);}
-%layout-left-m { @include rem(padding-left, $space-m);}
-%layout-left-s { @include rem(padding-left, $space-s);}
-%layout-left-xs { @include rem(padding-left, $space-xs);}
-
-%layout-right-xxxxl { @include rem(padding-right, $space-xxxxl);}
-%layout-right-xxxl { @include rem(padding-right, $space-xxxl); }
-%layout-right-xxl { @include rem(padding-right, $space-xxl);}
-%layout-right-xl { @include rem(padding-right, $space-xl);}
-%layout-right-l { @include rem(padding-right, $space-l);}
-%layout-right-m { @include rem(padding-right, $space-m);}
-%layout-right-s { @include rem(padding-right, $space-s);}
-%layout-right-xs { @include rem(padding-right, $space-xs);}
-
 .layout-xxxxl {
-    @extend %layout-left-xxxxl;
-    @extend %layout-right-xxxxl;
+    @extend %pl-xxxxl;
+    @extend %pr-xxxxl;
 
     //responsinate
     @include media("small-down") {
@@ -164,38 +109,38 @@
 }
 
 %layout-xxxl {
-    @extend %layout-left-xxxl;
-    @extend %layout-right-xxxl;
+    @extend %pl-xxxl;
+    @extend %pr-xxxl;
 }
 
 %layout-xxl {
-    @extend %layout-left-xxl;
-    @extend %layout-right-xxl;
+    @extend %pl-xxl;
+    @extend %pr-xxl;
 }
 
 %layout-xl {
-    @extend %layout-left-xl;
-    @extend %layout-right-xl;
+    @extend %pl-xl;
+    @extend %pr-xl;
 }
 
 %layout-l {
-    @extend %layout-left-l;
-    @extend %layout-right-l;
+    @extend %pl-l;
+    @extend %pr-l;
 }
 
 %layout-m {
-    @extend %layout-left-m;
-    @extend %layout-right-m;
+    @extend %pl-m;
+    @extend %pr-m;
 }
 
 %layout-s {
-    @extend %layout-left-s;
-    @extend %layout-right-s;
+    @extend %pl-s;
+    @extend %pr-s;
 }
 
 %layout-xs {
-    @extend %layout-left-xs;
-    @extend %layout-right-xs;
+    @extend %pl-xs;
+    @extend %pr-xs;
 }
 
 .layout-xxxxl { @extend %layout-xxxxl;}
@@ -229,7 +174,7 @@
 
 
 
-%layout-left {
+%pl {
     padding-left: 1rem;
     @include medium {
         & {
@@ -243,7 +188,7 @@
     }
 }
 
-%layout-right {
+%pr {
     padding-right: 1rem;
     @include medium {
         & {
@@ -262,17 +207,17 @@
 
 .layout {
     @extend %border-box;
-    @extend %layout-left;
-    @extend %layout-right;
+    @extend %pl;
+    @extend %pr;
 }
 
-.layout--left { @extend %layout-left; }
+.layout--left { @extend %pl; }
 
-.layout--right { @extend %layout-right; }
+.layout--right { @extend %pr; }
 
-.col.layout--left { @extend %layout-left; }
+.col.layout--left { @extend %pl; }
 
-.col.layout--right { @extend %layout-right; }
+.col.layout--right { @extend %pr; }
 
 
 .layout--half {

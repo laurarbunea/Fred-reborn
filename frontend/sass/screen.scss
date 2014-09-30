@@ -69,7 +69,7 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 * Reset................ A level playing fields.
 *
-* Core ............. Globally-available extends and core classes
+* Utilities ............. Globally-available extends and core classes
 *
 * Type ................ Text sizes, Heirarchy, H1–H6 styles..
 *
@@ -114,7 +114,7 @@ body {
 
 
 @import "reset";
-@import "core";
+@import "utilities";
 @import "type";
 @import "layout";
 
@@ -184,14 +184,20 @@ body {
 }
 
 
-//sorry quick hack class ;0
-%hide-on-mobile {
-    @include media("small-down") {
-        & {
-            display:none;
-        }
-    }
-}
+
+
+%visible {visibility: visible !important;}
+%hidden {visibility: hidden !important;}
+
+.visible { @extend %visible; }
+.hidden { @extend %hidden; }
+
+%hide { display: none; }
+%show { display: block; }
+
+.hide { @extend %hide; }
+.show { @extend %show; }
+
 
 .hide-small {
     @include media("small-down") {

@@ -14,7 +14,7 @@
         height: auto;
     }
     .webcam__caption {
-        @include font-size(14);
+        @extend %font-size-xs;
         @extend %font-weight-bold;
 
         position: absolute;
@@ -30,7 +30,7 @@
     }
     .webcam__last-update {
         & > .i {
-            @include font-size(16);
+            @extend %font-size-s;
             @include rem(margin-top, -1);
             @extend %mr-xxs;
         }

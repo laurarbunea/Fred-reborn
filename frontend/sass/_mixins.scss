@@ -8,7 +8,6 @@
     $_out: false;
     @each $item in $list { @if $item == $var { $_out: true; } }
     @return $_out;
-    //    @return (false == index($list, $var));
 }
 
 
@@ -172,53 +171,7 @@
             transition: #{$value};
 }
 
-// ----------------------------------------------------------------------------
-// Animation
-// ----------------------------------------------------------------------------
 
-///*
-//### Keyframe
-//
-//Create CSS keyframe animations for all vendors in one go.
-//
-//To use it:
-//
-//```
-//@include keyframe(fadeIn) {
-//    0% {
-//        opacity: 0;
-//    }
-//    100% {
-//        opacity: 1;
-//    }
-//}
-//```
-//
-//Courtesy of [@integralist](twitter.com/integralist/status/260484115315437569)
-//
-//*/
-//
-//@mixin keyframe ($animation-name){
-//    @-webkit-keyframes #{$animation-name} {
-//        @content;
-//    }
-//
-//    @-moz-keyframes #{$animation-name} {
-//        @content;
-//    }
-//
-//    @-ms-keyframes #{$animation-name} {
-//        @content;
-//    }
-//
-//    @-o-keyframes #{$animation-name} {
-//        @content;
-//    }
-//
-//    @keyframes #{$animation-name} {
-//        @content;
-//    }
-//}
 
 
 // Simple theme mixins
@@ -344,16 +297,6 @@
     -moz-opacity: $trans;
     -khtml-opacity: $trans;
     opacity: $trans;
-}
-
-// font-size in px and rem units
-@mixin font-size($size-in-px) {
-    font-size: #{$size-in-px}px;
-    font-size: pxrem($size-in-px);
-}
-
-@function pxrem($size, $context: 16) {
-    @return #{($size / $context)}rem;
 }
 
 
