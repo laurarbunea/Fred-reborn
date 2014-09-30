@@ -143,14 +143,7 @@
     }
 }
 
-// Cross-browser opacity down to IE 5
-@mixin opacity($trans) {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
-    filter: alpha(opacity=#{$trans * 100});
-    -moz-opacity: $trans;
-    -khtml-opacity: $trans;
-    opacity: $trans;
-}
+
 
 // add vendor prefix to values
 @mixin vendor($property, $value...){

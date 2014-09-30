@@ -10,7 +10,6 @@
     vertical-align: middle;
 }
 
-
 .i {
     @extend %i;
 
@@ -25,12 +24,35 @@
 }
 
 
+
 // -----------------------------------------------------------------------------
-// Icon stuff to clean
+// Icon colouring
 // -----------------------------------------------------------------------------
 
-.icon-link i { @extend %mr-m; }
-.icon-link--reversed i { @extend %ml-m; }
+/* colourised icons */
+
+%i--link,
+%i--blue { background-position: 0 $icon-bg-blue; }
+%i--dark-blue { background-position: 0 $icon-bg-dark-blue; }
+%i--grey { background-position: 0 $icon-bg-grey; }
+%i--dark-grey { background-position: 0 $icon-bg-dark-grey; }
+%i--green { background-position: 0 $icon-bg-green; }
+%i--red { background-position: 0 $icon-bg-red;}
+%i--orange { background-position: 0 $icon-bg-orange; }
+%i--white { background-position: 0 $icon-bg-white; }
+
+.i--dark-blue { @extend %i--dark-blue; }
+.i--blue { @extend %i--blue; }
+.i--grey { @extend %i--grey; }
+.i--dark-grey { @extend %i--dark-grey; }
+.i--red { @extend %i--red; }
+.i--orange { @extend %i--orange; }
+.i--green { @extend %i--green; }
+.i--white { @extend %i--white; }
+
+
+
+
 // -----------------------------------------------------------------------------
 // Icon Sizing
 // -----------------------------------------------------------------------------
@@ -45,19 +67,7 @@
     height: 2em;
 }
 
-.i-circle-arrow {
-    @extend %i;
-    width: 1.2em;
-    height: 1.2em;
-}
 
-.i-arrow-r {
-    @extend %i;
-    width: 1em;
-    height: 1em;
-}
-
-%round { border-radius: 50em; }
 
 // rounded section icons, that can be white or blue
 .i-section {
@@ -78,6 +88,21 @@
         background-color: $base-link-color;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/***************************
+    Icon sizes
+****************************/
+
+
 
 .i-search {
     width:1em;
@@ -121,10 +146,6 @@
     width: 1.25em;
     height: 1.25em;
 }
-
-
-
-
 
 .i-facebook-grey {
     width: 1.25em;
@@ -175,9 +196,6 @@
 }
 
 
-/*
-    custom map icons
-*/
 
 .i-map-caret-down,
 .i-map-caret-up,
@@ -204,8 +222,6 @@
 }
 
 
-//custom traffic icons
-
 .i-sh {
     width: 1.625em;
     height: 1.625em;
@@ -228,27 +244,3 @@
     width: 1.5em;
     height: 1.5em;
 }
-// -----------------------------------------------------------------------------
-// Icon colouring
-// -----------------------------------------------------------------------------
-
-/* colourised icons */
-
-%i--link,
-%i--blue { background-position: 0 $icon-bg-blue; }
-%i--dark-blue { background-position: 0 $icon-bg-dark-blue; }
-%i--grey { background-position: 0 $icon-bg-grey; }
-%i--dark-grey { background-position: 0 $icon-bg-dark-grey; }
-%i--green { background-position: 0 $icon-bg-green; }
-%i--red { background-position: 0 $icon-bg-red;}
-%i--orange { background-position: 0 $icon-bg-orange; }
-%i--white { background-position: 0 $icon-bg-white; }
-
-.i--dark-blue { @extend %i--dark-blue; }
-.i--blue { @extend %i--blue; }
-.i--grey { @extend %i--grey; }
-.i--dark-grey { @extend %i--dark-grey; }
-.i--red { @extend %i--red; }
-.i--orange { @extend %i--orange; }
-.i--green { @extend %i--green; }
-.i--white { @extend %i--white; }
