@@ -1,9 +1,12 @@
 @charset "utf-8";
 
+
 /**
 ---------------------------------------
 Fred stylesheet
 ---------------------------------------
+
+Hi!
 
 Front-end architecture for Fred.
 With a nod to inuit.css (https://github.com/inuitcss)
@@ -37,6 +40,10 @@ of simple media queries in IE8.
 
 Don't worry about writing vendor prefixes in the SaSS. Just write the
 standards-first property, and the fallbacks will be automatically generated.
+
+
+
+
 
 For instance:
 
@@ -75,15 +82,15 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 * Layout .............. Layout modifiers along with vertical and horizontal spacing.
 *
-* Icons ............... Icons 
+* Icons ............... Icons
 *
-* Themes .............. Themes 
+* Themes .............. Themes
 *
-* Playpen ............. The place where we solve design problems without dirtying up the sass structure 
+* Playpen ............. The place where we solve design problems without dirtying up the sass structure
 *
-* Components .......... Components (See below for the component list) 
+* Components .......... Components (See below for the component list)
 *
-* Form Components ..... Form Components (See below for the component list) 
+* Form Components ..... Form Components (See below for the component list)
 *
 * Pages ............... Page specific styles
 *
