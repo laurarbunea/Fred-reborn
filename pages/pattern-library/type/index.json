@@ -1,72 +1,17 @@
 {
     "title": "type",
     "headline": "Type",
-    "template":"pattern-library/type.j2",
+    "template":"pattern-library/test.j2",
     "data": [
         {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "h1",
-            "component": "components/type/h1"
+            "type" : "component-with-api-example",
+            "anchor": "headings",
+            "component": "components/type/heading"
         },
         {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "h2",
-            "component": "components/type/h2"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "h3",
-            "component": "components/type/h3"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "h4",
-            "component": "components/type/h4"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "h5",
-            "component": "components/type/h5"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "h6",
-            "component": "components/type/h6"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "intro",
-            "component": "components/type/intro"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "paragraph",
-            "component": "components/type/p"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "text-small",
-            "component": "components/type/text-small"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "text-tiny",
-            "component": "components/type/text-tiny"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "list",
-            "component": "components/type/list"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "ol",
-            "component": "components/type/ol"
-        },
-        {
-            "type" : "/pattern-library/section-block-with-api-example",
-            "anchor": "dl",
-            "component": "components/type/dl"
+            "type" : "component-with-api-example",
+            "anchor": "test",
+            "component": "components/type/heading"
         }
     ]
 }

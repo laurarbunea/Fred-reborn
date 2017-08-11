@@ -65,18 +65,3 @@ exports.node = function(req, res, next) {
         });
     }
 };
-
-
-exports.search = function(req, res, next) {
-
-    var term = req.query.term;
-
-    var results = [
-        {title: "Result 1"}, {title: "Result 2"}, {title: "Result 3"}, {title: "Result 4"}, {title: "Result 5"},
-        {title: "Result 6"}, {title: "Result 7"}, {title: "Result 8"}, {title: "Result 9"}, {title: "Result 10"}
-    ];
-
-
-
-    res.render("pages/search.j2", { term: term, results: results });
-};

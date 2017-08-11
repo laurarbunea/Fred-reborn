@@ -18,59 +18,12 @@
     </noscript>
 </head>
 
-<body class="theme--neutral {{ body_class }}">
+<body class="{{ body_class }}">
   
 
     {% block navigation %}
 
-        <div class="global-nav theme--white mb-l">
-
-            <div class="[ wrapper ]">
-
-                <div class="[ layout ]">
-
-                    <div class="[ grid grid--middle ]">
-                        
-                        <div class='[ col large-2 medium-2 small-3 ] '>
-                            
-                            <a href='/'>
-                                <img src='/images/fred-logo.png'>
-                            </a>
-
-                        </div>
-
-                        <div class='[ col large-8 medium-8 small-7 ] global-nav__items '>
-                            
-                            <a href='/pages/' class='btn btn--tertiary ml-m mb-0 {% if title == 'pages' %}active{% endif %}'>
-                                
-                                 Pages
-
-                            </a>
-                            <a href='/pattern-library/' class='btn btn--tertiary ml-m mb-0 {% if title == 'flego' %}active{% endif %}'>
-                                Flego
-                            </a>
-
-                            <a href='/freds-closet/' class='btn btn--tertiary ml-m mb-0 {% if title == 'barebones' %}active{% endif %}'>
-                                
-                                Bare bones
-
-                            </a>
-                            
-                            <!--<a href='/helpers/' class='btn btn--tertiary ml-m mb-0 {% if title == 'utilities' %}active{% endif %}'>
-                                
-                                Helpers
-
-                            </a>-->
-
-                        </div>
-              
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+        {% include "includes/header.j2" %}
             
     {% endblock %}
     
@@ -113,37 +66,12 @@
 
     {% block footer %}
 
-        <div class="global-nav theme--white">
-
-            <div class="[ wrapper ]">
-
-                <div class="[ layout ]">
-
-                    <div class="[ grid grid--middle ]">
-                        
-                        <div class='[ col ] '>
-
-                            <p>
-                                 Made with &nbsp; &hearts; &nbsp; by friendly Feds
-                                 <span class='split__right'>
-                                     © 2014. All rights reserved.
-                                 </span>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+        {% include "/includes/footer.j2" %}
 
     {% endblock %}
 
     {% block anchor %}
-       <a href='#' class='fixed--bottom back-to-top-anchor icons--large'><i class='i i--white i-map-caret-up'></i></a>
+       <a href='#' class='u-position-fixed back-to-top-anchor u-align-bottom-right'><i class='i i--white i-map-caret-up'></i></a>
     {% endblock %}
 
  

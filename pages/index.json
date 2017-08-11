@@ -1,16 +1,13 @@
 {
     "title": "Home",
-    "template": "pages/home.j2",
+    "template": "template.j2",
     "order": "0",
     "show_in_menu": false,
-    "section": [
+    "data": [
         {
-            "type": "type/h1",
-            "data": "Test heading 1"
-        },
-        {
-            "type": "type/p",
-            "data": "Paragraph 1"
+            "type": "heading",
+            "level":"h2",
+            "data": "Fred" 
         }
     ]
 }

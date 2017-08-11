@@ -6,7 +6,12 @@
         {
             "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "dynamic",
-            "component": "components/layout/dynamic"
-        }
+            "component": "container"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "traffic-messages",
+            "component": "components/traffic/messages"
+        },
     ]
 }

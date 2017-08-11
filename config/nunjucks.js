@@ -146,7 +146,7 @@ var component = function(item) {
     }
 
 
-    var ret = nunjucks.render("components/" + item.type + ".j2", {
+    var ret = nunjucks.render("/components/" + item.type + "/" + item.type + ".j2", {
         item: item
     });
 
@@ -163,7 +163,7 @@ var component = function(item) {
 var describe = function(componentName) {
     console.log(componentName);
 
-    var path = "./frontend/api/" + componentName + ".json";
+    var path = "/components/" + componentName + "/" + componentName + ".json";
     var ret = [];
     var apiData = fs.readFileSync(path, "utf8");
 
@@ -179,8 +179,6 @@ var describe = function(componentName) {
         return ret;
     }
 
-//    console.log("ret", ret);
-
     return false;
 };
 
@@ -193,7 +191,8 @@ var describe = function(componentName) {
 var getApi = function(apiName) {
     console.log(apiName);
 
-    var path = "./frontend/api/" + apiName + ".json";
+    //var path = "./frontend/api/" + apiName + ".json";
+    var path = "./pattern-library/components/" + apiName +"/" + apiName + ".json";
     var ret = [];
     var apiData = fs.readFileSync(path, "utf8");
 
@@ -230,7 +229,7 @@ var url_safe = function(obj) {
 module.exports = function(app) {
 
     // Template config
-    var nj = nunjucks.configure(['frontend/templates','templates'], {
+    var nj = nunjucks.configure(['pattern-library/','templates'], {
         autoescape: true,
         express   : app
     });

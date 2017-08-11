@@ -1,8 +1,7 @@
 var util = require('util');
 var path = require('path');
 var Q = require('q');
-var chmodr = require('chmodr');
-var rimraf = require('rimraf');
+var rimraf = require('../../util/rimraf');
 var mkdirp = require('mkdirp');
 var which = require('which');
 var LRU = require('lru-cache');
@@ -10,7 +9,6 @@ var mout = require('mout');
 var Resolver = require('./Resolver');
 var semver = require('../../util/semver');
 var createError = require('../../util/createError');
-var defaultConfig = require('../../config');
 
 var hasGit;
 
@@ -22,13 +20,25 @@ try {
     hasGit = false;
 }
 
-// Set template dir to the empty directory so that user templates are not run
-// This environment variable is not multiple config aware but it's not documented
-// anyway
-mkdirp.sync(defaultConfig.storage.empty);
-process.env.GIT_TEMPLATE_DIR = defaultConfig.storage.empty;
-
 function GitResolver(decEndpoint, config, logger) {
+    // Set template dir to the empty directory so that user templates are not run
+    // This environment variable is not multiple config aware but it's not documented
+    // anyway
+    mkdirp.sync(config.storage.empty);
+    process.env.GIT_TEMPLATE_DIR = config.storage.empty;
+
+    if (!config.strictSsl) {
+        process.env.GIT_SSL_NO_VERIFY = 'true';
+    }
+
+    if (!config.interactive) {
+        process.env.GIT_TERMINAL_PROMPT = '0';
+
+        if (!process.env.SSH_ASKPASS) {
+            process.env.SSH_ASKPASS = 'echo';
+        }
+    }
+
     Resolver.call(this, decEndpoint, config, logger);
 
     if (!hasGit) {
@@ -41,7 +51,7 @@ mout.object.mixIn(GitResolver, Resolver);
 
 // -----------------
 
-GitResolver.prototype._hasNew = function (canonicalDir, pkgMeta) {
+GitResolver.prototype._hasNew = function (pkgMeta) {
     var oldResolution = pkgMeta._resolution || {};
 
     return this._findResolution()
@@ -145,7 +155,7 @@ GitResolver.prototype._findResolution = function (target) {
                 throw createError('No tag found that was able to satisfy ' + target, 'ENORESTARGET', {
                     details: !versions.length ?
                         'No versions found in ' + that._source :
-                        'Available versions: ' + versions.map(function (version) { return version.version; }).join(', ')
+                        'Available versions in ' + that._source + ': ' + versions.map(function (version) { return version.version; }).join(', ')
                 });
             });
         });
@@ -196,23 +206,7 @@ GitResolver.prototype._findResolution = function (target) {
 GitResolver.prototype._cleanup = function () {
     var gitFolder = path.join(this._tempDir, '.git');
 
-    // Remove the .git folder
-    // Note that on windows, we need to chmod to 0777 before due to a bug in git
-    // See: https://github.com/isaacs/rimraf/issues/19
-    if (process.platform === 'win32') {
-        return Q.nfcall(chmodr, gitFolder, 0777)
-        .then(function () {
-            return Q.nfcall(rimraf, gitFolder);
-        }, function (err) {
-            // If .git does not exist, chmodr returns ENOENT
-            // so, we ignore that error code
-            if (err.code !== 'ENOENT') {
-                throw err;
-            }
-        });
-    } else {
-        return Q.nfcall(rimraf, gitFolder);
-    }
+    return Q.nfcall(rimraf, gitFolder);
 };
 
 GitResolver.prototype._savePkgMeta = function (meta) {
@@ -222,7 +216,7 @@ GitResolver.prototype._savePkgMeta = function (meta) {
         version = semver.clean(this._resolution.tag);
 
         // Warn if the package meta version is different than the resolved one
-        if (typeof meta.version === 'string' && semver.neq(meta.version, version)) {
+        if (typeof meta.version === 'string' && semver.valid(meta.version) && semver.neq(meta.version, version)) {
             this._logger.warn('mismatch', 'Version declared in the json (' + meta.version + ') is different than the resolved one (' + version + ')', {
                 resolution: this._resolution,
                 pkgMeta: meta

@@ -3,38 +3,12 @@
     "headline": "Flego ",
     "order": 0,
     "show_in_menu": false,
-    "template":"pattern-library/index.j2",
+    "template":"pattern-library/content.j2",
     "data": [
         {
-            "type": "section",
-            "data": [
-                {
-                    "type": "content-block",
-                    "data": [
-                        {
-                            "type": "type/intro",
-                            "data": "Flego, the cool kids lego."
-
-                        },
-                        "Flego is a great tool for bringing your wireframes to life fast. Thus giving you more time to revise the designs more often and refine them sooner.",
-                        {
-                            "type": "type/intro",
-                            "data": "Hi there. You must be building something awesome. This pattern library details the components you can use when building web applications."
-
-                        },
-                        "Pages in this demo site are constructed using individual modules — little lego blocks that we glue together into pages. This lets you compose really expressive pages, where content can appear in flexible order and all the pieces fit nicely. If you need, you can get a component over our JSON API to check that your HTML looks right!",
-                        {
-                            "type": "type/h3",
-                            "data": "Download the assets"
-                        },
-                        {
-                            "type": "type/p",
-                            "data": "You'll need the JavaScript and CSS asset to use the pattern library."
-                        },
-                        "<a class='btn btn--primary' href='/api/css'>Get the CSS</a>  <a class='btn btn--primary' href='/api/js'>Get the Javascript</a>  "
-                    ] 
-                }
-            ]
+            "type": "heading",
+            "level":"h2",
+            "data": " Flego, the cool kids lego." 
         }
     ]
 }

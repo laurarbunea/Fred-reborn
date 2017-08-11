@@ -1,5 +1,5 @@
 // Node application setup
-var port = 3000;
+var port = 8000;
 var http = require('http');
 var ip = require('ip');
 var express = require('express');

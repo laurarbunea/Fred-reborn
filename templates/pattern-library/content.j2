@@ -1,5 +1,5 @@
-{% extends "pattern-library/index.j2" %}
-{% import "macros.j2" as macros %}
+{% extends "template.j2" %}
+{% set page = title %}
 
 {% block stylesheets %}
 
@@ -8,66 +8,16 @@
 {% endblock %}
 
 
+{#{% block header %}
+    {{ macros.site_header(breadcrumb, headline, false, false, true, "fullwidth", page) }}
+{% endblock  %}#}
+
+
 {% block content %}
-      <div class='theme--neutral'>
 
-            <div class='[ wrapper ]'>
+    <div class='[ wrapper ]'>
 
-                <div class='[ layout ] styleguide-anchors'>
-
-                    <div class='[ grid ]'>
-             
-                        <ul class='[ col ] nav'>
-
-                            <li>
-                                <a href='#writing' class='pill'>
-                                    Writing for the NZ Transport Agency
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#style' class='pill'>
-                                    Style
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#language' class='pill'>
-                                    Language
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#maori-language' class='pill'>
-                                    Māori language
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#legal-language' class='pill'>
-                                    Legal language
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#links' class='pill'>
-                                    Links
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#faqs' class='pill'>
-                                    Frequently asked questions (FAQs)
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    <div class='theme--neutral'>
-        
-        <div class='wrapper'>
+        <div class='[ gutters section ] t-plain'>
 
             {% for item in data %}
                 {{ item|component }}
@@ -75,6 +25,8 @@
 
         </div>
 
-    </div>
+    </div> 
 
 {% endblock %}
+
+

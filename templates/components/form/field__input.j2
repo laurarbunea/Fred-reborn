@@ -1,6 +1,0 @@
-<span class="field__input">
-
-    <input name="{{ item.name }}" id="{{ item.name }}" type="{% if inputtype %}{{inputtype}}{% else %}text{% endif %}" class="{{ item.class }}" {% if item.maxlength %}maxlength="{{item.maxlength}}"{% endif %} value="{% if item.default %}{{ item.default }}{% else %}{{ item.value }}{% endif %}" placeholder="{{ item.placeholder }}" />
-
-</span>
-

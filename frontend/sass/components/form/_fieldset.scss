@@ -1,9 +1,0 @@
-/*------------------------------------*\
-    #Fieldset
-\*------------------------------------*/
-
-fieldset {
-    @extend %remove-padding;
-    @extend %remove-margin;
-	border:0;
-}

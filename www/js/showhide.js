@@ -29,6 +29,7 @@
         };
 
         showHide.prototype = {
+            
             onClick: function(e) {
                 e.preventDefault();
                 var self = this;

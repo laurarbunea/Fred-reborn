@@ -41,7 +41,7 @@ var renderExamples = function(string, app) {
         var json = false;
 
         try {
-            json = jsonlint.parse(fs.readFileSync("./frontend/" + component + ".json", "utf8"));
+            json = jsonlint.parse(fs.readFileSync("/components/" + component + "/" + component + ".json", "utf8"));
         } catch(e) {
             console.log('Couldn\'t read ' + component);
         }
@@ -85,7 +85,7 @@ StyleGuide.prototype = {
     view: function(req, res) {
 
         var documentsPath = "./frontend/documentation/";
-        var apiPath = "./frontend/api/";
+        var apiPath = "/components/";
 
         var pages = buildGuide();
         var page = req.params.page || "";
@@ -171,7 +171,7 @@ StyleGuide.prototype = {
                 var json = false;
 
                 try {
-                    json = jsonlint.parse(fs.readFileSync("./frontend/" + component + ".json", "utf8"));
+                    json = jsonlint.parse(fs.readFileSync("/components/" + component + "/" + component + ".json", "utf8"));
                 } catch(e) {
                     console.log('Couldn\'t read ' + component);
                 }
@@ -254,7 +254,7 @@ StyleGuide.prototype = {
 
         var obj = {
             "name": name,
-            "data": nunjucks.render("components/" + name + ".j2", data)
+            "data": nunjucks.render("components/" + name + "/" + name + ".j2", data)
         };
 
         return res.json(obj);
@@ -267,7 +267,7 @@ StyleGuide.prototype = {
 
 
         if (!data.type) {
-            var apiData = jsonlint.parse(fs.readFileSync("./frontend/api/components/" + name + ".json", "utf8"));
+            var apiData = jsonlint.parse(fs.readFileSync("/components/" + name + "/" + name + ".json", "utf8"));
 
             try {
                 data = apiData["examples"][0].example;
@@ -277,7 +277,7 @@ StyleGuide.prototype = {
 
         }
 
-        return res.render("components/" + name + ".j2", {
+        return res.render("components/" + name + "/" + name + ".j2", {
             item: data
         });
     },
@@ -291,7 +291,7 @@ StyleGuide.prototype = {
         }
 
         if (data.type) {
-            return prettyHtml(res.render("components/" + data.type + ".j2", {
+            return prettyHtml(res.render("components/" + data.type + "/" + data.type + ".j2", {
                 item: data
             }));
         } else {

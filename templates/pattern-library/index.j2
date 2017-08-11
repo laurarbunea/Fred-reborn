@@ -1,4 +1,6 @@
 {% extends "template.j2" %}
+{% set page = title %}
+{% set examples = component|getApi %}
 
 {% block stylesheets %}
 
@@ -7,37 +9,134 @@
 {% endblock %}
 
 
+{% block sub_navigation %}
 
-{% set page = title %}
+    <div class='[ grid ]'>
 
-{% block header %}
-    {{ macros.site_header(breadcrumb, headline, false, false, true, "fullwidth", page) }}
-{% endblock  %}
+        <div class='[ width-full ]'>
+        
+            <ul class='list-inline '>
+            
+                <li class='list-inline__item'>
+                    <a href="/pattern-library/grid/" class="{% if item.title == 'grid' %}navigation__active{% endif %}">
+                        Grid
+                        <i class="arrow arrow-bottom"></i>
+                    </a>
+                </li>
+               
+            </ul>
 
+        </div>
 
-
+    </div>
+    
+{% endblock %}
 
 {% block content %}
 
-<div class='section'>
+    <div class="[ wrapper ]">
+        <div class="[ section gutters ]">
+            <span class="u-font-bold">Filter: </span>
+            {% for example in examples %}
+                <a href="#{{ example.anchor }}" class="btn btn--small">{{ example.title }} </a>
+            {% endfor %}
+        </div>
+    </div>
 
-    <div class="theme--neutral">
+    <div class="t-neutral">
         
         <div class=" [ wrapper ] ">
 
-            <div class="[ layout  ] theme--white">
 
-                {% for item in data %}
-                    {{ item|component }}
-                {% endfor %}
-             
-            </div>
+
+{% for example in examples %}
+
+    
+<div class='[ section gutters ] t-plain'  id='{{example.anchor}}'>
+
+    <div class='[ grid ]'>
+    
+        {% if example.title %}
+
+            {% if loop.index > 1 %}
             
+            <h4>
+                {{ example.title }} 
+            </h4>
+
+            {% else %}
+
+            <h3>
+                {{ example.title }} 
+            </h3>
+
+            {% endif %}
+         
+        {% endif %}
+        
+        {% if example.notes %}
+
+        <p>
+            {{ example.notes }}
+        </p> 
+
+        {% endif %}
+
+        {% if example.code %}
+
+<pre>{{ example.code }}</pre>
+
+        {% endif %}
+
+        <div class='styleguide__example '>
+            {{ example.example|component }}
+        </div>
+
+    </div><!--grid ends-->
+
+</div><!--section ends-->
+
+<div class='[ section--- gutters ] t-steel' {%if item.anchor %} id='{{item.anchor}}'{% endif %}>
+
+    <div class='[ grid ]'>
+        
+        <div class='list-inline'>
+           
+            <p><strong>Try it out:</strong><a data-showhide-trigger='{{example.example.type}}-{{loop.index}}' class='styleguide__api__code-view'>
+                Code
+            </a></p>
+            
+        </div>
+        <div class='showhide-hidden code-container' data-showhide-container='{{example.example.type}}-{{loop.index}}'> 
+
+<pre class="styleguide__code">
+
+{{ example.example|json }}
+
+</pre>
+
+<pre class='styleguide--html' >
+
+{{ example.example|component|pretty_html|escape|safe }}
+
+</pre>
+
+
         </div>
 
     </div>
 
 </div>
+
+
+
+{% endfor %}
+
+             
+  
+        </div>
+
+    </div>
 
 {% endblock %}
 
