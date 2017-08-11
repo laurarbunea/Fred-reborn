@@ -1,0 +1,228 @@
+// -----------------------------------------------------------------------------
+// Pattern library
+// -----------------------------------------------------------------------------
+
+$color-styleguide: #7DC265;
+$color-dark: #3D4149;
+$color-soft: #efefef;
+
+body {
+    background-color: $color-soft;
+}
+
+.footer { margin-top:40px; }
+.header { margin-bottom:40px; }
+
+
+//  Themes
+.t-plain {
+    background-color: $color-white;
+}
+
+.t-primary {
+    background-color: $color-dark;
+    color: #fff;
+}
+    .t-primary--bg {
+        background-color: $color-dark;
+    }
+
+.t-secondary {
+    background-color: $color-white;
+    color: $color-page-text;
+}
+
+.t-tertiary {
+    background-color: $color-soft;
+    color: $color-page-text;
+}
+
+/* overide to make the buttons a bit prettier :) */
+.styleguide .btn {
+    background-color: $color-styleguide;
+    color: #fff;
+    border-color: $color-styleguide;
+    border-radius:0.2rem;
+}
+
+.styleguide .btn:hover{
+    color:  $color-styleguide;
+    background-color:#fff;
+}
+
+
+.device {
+    margin:20px;
+    border:50px solid #555555;
+    border-radius: 30px;
+    @include small {
+       border-radius:20px;
+    }
+}
+
+.btn {
+    border-color: #fff;
+    border-radius:1px; 
+}
+
+.t-grid-debug {
+
+    text-align: center;
+	position:relative;
+	padding-top:$spacing-s;
+    padding-bottom:$spacing-s;
+    margin-bottom:$spacing-l;
+    border-right:1px dashed #fff;
+    background-color: #f0f0f0;
+    &:last-child {
+        border-right:none;
+    }
+
+    &:before {
+        opacity:0.7;
+        width:16px;
+        height:100%; 
+        background-color:#e4f5dd;
+        position:absolute; 
+        top:0;
+        left:0;
+        content:'';
+        display:block;
+
+    }
+    &:after {
+        opacity:0.7;
+        width:16px;
+        height:100%; 
+        background-color:#e4f5dd;
+        position:absolute; 
+        top:0;
+        right:0;
+        content:'';
+        display:block;
+    }
+}
+
+
+// Pattern library helpers
+
+@include xsmall {
+    .breakpoint-on-xsmall { background-color:$color-styleguide; }
+}
+@include smallish {
+    .breakpoint-on-smallish { background-color:$color-styleguide; }
+}
+@include xsmall {
+    .breakpoint-on-small { background-color:$color-styleguide; }
+}
+@include medium {
+    .breakpoint-on-medium { background-color:$color-styleguide; }
+}
+@include large {
+    .breakpoint-on-large { background-color:$color-styleguide; }
+}
+@include xlarge {
+    .breakpoint-on-xlarge { background-color:$color-styleguide; }
+}
+
+// ----------------------------------------------------------------------------
+// Code blocks for pattern lib
+// ----------------------------------------------------------------------------
+
+.code-container { margin-bottom:$spacing-l }
+
+    .styleguide__code,
+    pre {
+        border-radius:2px;
+        background-color: #555555;
+        border: solid 1px #555555;
+        padding: 1em;
+        overflow: scroll;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    code {
+        border-radius:2px;
+        background-color: #F8FBFC;
+        border: solid 1px #DDE7EB;
+        padding: .25em .5em;
+        margin-left: .25em;
+    }
+
+    pre > code {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .styleguide--html {
+        color: #9DFFE5;
+    }
+
+
+    .styleguide__api { 
+    	padding-top:$spacing-s;
+    	padding-bottom:$spacing-s;
+    	margin-top:$spacing-l;
+    	border-top: 1px solid #ccc;
+    	border-bottom: 1px solid #ccc;
+        background-color:#ddd;
+    }
+ 
+   
+    .styleguide__api__code-view {
+        padding-right:20px;
+        //@extend %cursor-on-hover;
+        //@extend %remove-anchor-decoration;
+        position:relative;
+
+    }
+        .styleguide__api__code-view:after,
+        .styleguide__api__code-view.showhide-active:after {
+            position:absolute;
+            right:0;
+            width:0;
+            height:0;
+            content:"";
+            top:47%;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+
+        .styleguide__api__code-view:after {
+            border-top: 6px solid #236fa6;
+        }
+
+        .styleguide__api__code-view.showhide-active:after {
+            border-bottom: 6px solid #236fa6;
+            border-top: none;
+        }
+
+
+.styleguide__example + h4 {
+    padding-top:$spacing-s;
+    border-top: 1px solid #ccc;
+}
+
+.showhide-hidden { display: none !important; }
+
+.showhide-open { display: block !important; }
+
+
+.showhide-autoheight {
+    transition: height 600ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    overflow: hidden;
+}
+
+    .showhide-autoheight > div {
+        -webkit-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        -moz-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        -ms-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        -o-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+.back-to-top-anchor {
+    background-color: green; 
+    padding:10px 20px;
+}

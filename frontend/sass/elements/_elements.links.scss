@@ -1,0 +1,17 @@
+// ============================================================================
+// Links
+// ============================================================================
+
+a {
+    color: $color-page-links;
+    text-decoration: none;
+    transition: $base-transition;
+}
+//todo look at
+// a {
+//     outline: 0;
+//     text-decoration: none;
+//     color: $base-link-color;
+//     &:hover {
+//         color: darken($base-link-color, 10%);
+//     }

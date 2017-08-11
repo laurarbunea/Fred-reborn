@@ -1,0 +1,65 @@
+{
+    "title": "barebones",
+    "description":"I'm a description",
+    "headline": "Bare bones",
+    "template":"pattern-library/bare-bones.j2",
+    "styleguide" : {
+        "typography" : {
+            "slug":"typography",
+            "title" : "Typography",
+            "blurb" : "Below you can find the main font family and weights used on the site. These are variablized in _settings.global.scss.",
+            "font" : [
+                {
+                    "name" : "Meta Serif",
+                    "description" : "Description here",
+                    "styles": [
+                        "normal",
+                        "bold",
+                        "light",
+                        "italic",
+                        "bold-italic",
+                        "light-italic"
+                    ]
+                }
+            ]
+        },
+        "grid" : {
+            "slug":"grid",
+            "title" : "Grid breakpoints",
+            "blurb" : "Here are the grid breakpoints that are used on the site. These are variablized in _tools.breakpoints.scss.",
+            "breakpoints" : [
+                {
+                    "name" : "x-small",
+                    "px" : " &lt; 480px"
+                },
+                {
+                    "name" : "small",
+                    "px" : "481px - 767px"
+                },
+                {
+                    "name" : "medium",
+                    "px" : "768px - 1000px"
+                },
+                {
+                    "name" : "large",
+                    "px" : "1001px - 1280px"
+                },
+                {
+                    "name" : "x-large",
+                    "px" : "&gt; 1281px"
+                }
+            ]
+        },
+        "themes":{
+            "slug":"themes",
+            "title":"Themes",
+            "blurb":"Here are the different theme classes that are used on the site. These are variablized in _theming.scss.",
+            "classes": [
+                "primary",
+                "secondary",
+                "tertiary"
+           
+            ]
+        }
+    }
+}

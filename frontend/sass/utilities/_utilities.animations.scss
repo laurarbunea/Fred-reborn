@@ -1,0 +1,47 @@
+$durationTransition: 200ms;
+$easingCubic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+@include keyframe(slideInFromRight) {
+    0%{
+        @include vendor(transform, translateX(100%));
+    }
+    100%{
+        @include vendor(transform, translateX(0%));
+    }
+}
+@include keyframe(slideOutToRight) {
+    0%{
+        @include vendor(transform, translateX(0%));
+    }
+    100%{
+        @include vendor(transform, translateX(100%));
+    }
+}
+@include keyframe(fadeIn) {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.will-reveal {
+    @include vendor(animation, slideInFromRight $durationTransition both $easingCubic);
+}
+.will-slidein {
+    @include vendor(animation, slideInFromRight $durationTransition both $easingCubic);
+}
+.will-slideout {
+    @include vendor(animation, slideOutToRight $durationTransition both $easingCubic);
+}
+
+
+.will-fadein {
+    @include vendor(animation, fadeIn $durationTransition both $easingCubic);
+}
+
+.will-fade-in {
+    opacity: 0;
+    animation: fadeIn .8s ease-out .5s forwards;
+}

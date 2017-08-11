@@ -1,0 +1,232 @@
+{% extends "template.j2" %}
+{% set page = title %}
+
+
+{% block content %}
+
+	<div class='[ wrapper ]'>
+
+		<div class='[ section gutters ] t-primary' >
+
+	        <div class='[ grid grid--row-spacing grid--col-spacing ] '>
+
+	            <div class="[ width-2/3 ] ">
+	                <h1>
+	                    {{title}}
+	                </h1>
+
+	                <p>
+	                    {{description}}
+	                </p>
+                    
+                    <a class='btn btn--small' href="#{{ styleguide.typography.slug }}">
+                          {{styleguide.typography.title}}
+                    </a>
+                    <a class='btn btn--small' href="#{{ styleguide.grid.slug }}">
+                          {{styleguide.grid.title}}
+                    </a>
+                    <a class='btn btn--small' href="#{{ styleguide.themes.slug }}">
+                          {{styleguide.themes.title}}
+                    </a>
+
+	                {# //todo not sure who to access this{% for item in styleguide %}
+	                    <a class='btn btn--small' href="#{{ item.slug }}">
+	                     
+	                        {{item.name}}
+	                    </a>
+	                 {% endfor %}#}
+		            </div>
+
+	            <div class="[ width-1/3 ]">
+
+	                <img src='/images/freds-closet.png' alt='' class=''/>
+
+	            </div>
+	        </div>
+	    </div>
+
+	    <!--############### typography section ###############-->
+
+	    <div class='[ section gutters ] t-secondary' id='typography' >
+
+        <div class='[ grid section section--stacked ]'>
+
+            <div class='[ width-full ] u-text-center'>
+
+
+                <h2>
+                    {{styleguide.typography.title }}
+                </h2>
+
+                <p class='u-font-size++'>
+                    {{styleguide.typography.blurb }}
+                </p>
+
+            </div>
+
+        </div>
+
+        {% for item in styleguide.typography.font %}
+            <div class='[ grid grid--middle grid--col-spacing ] '>
+
+                <div class='[ width-full width-1/2@large ]'>
+
+                    <h3>
+                        {{item.name }}
+                    </h3>
+
+                    <p>
+                        {{item.description }}
+                    </p>
+
+                </div>
+
+                <div class='[ width-full width-1/2@large ]'>
+
+                    <div class='[ grid grid--col-spacing grid--row-spacing ] ' >
+
+                        <!--loop over the font styles in the json file -->
+
+                        {% for key in item.styles %}
+
+                             <div class='[ width-full width-1/3@large width-1/2@medium ] '>
+
+                                <div class='swatch u-text-center u-font-size++ ' >
+
+                                    <div class='swatch__top t-tertiary u-{{ key }}' style="font-size:2rem">
+                                        Aa
+                                    </div>
+
+                                    <div class='swatch__bottom t-primary'>
+                                        {{ key }}
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+            </div>
+         {% endfor %}
+
+    </div><!--section ends-->
+
+
+    <!--############### Grid breakpoints section ###############-->
+
+
+    <div class='[ section gutters ] t-primary' id='grid'>
+
+        <div class='[ grid  ]'>
+
+            <div class=' [ width-full ] '>
+
+                <div class='u-text-center section'>
+
+                    <h2>
+                        {{styleguide.grid.title }}
+                    </h2>
+
+                    <p class='u-font-size++'>
+                        {{styleguide.grid.blurb }}
+                    </p>
+
+                </div>
+
+                <div class='[ grid grid--col-spacing grid--row-spacing  ]'>
+
+                    <!--loop over the grid breakpoints in the json file -->
+                    {% for key in styleguide.grid.breakpoints %}
+                        <div class='[ width-1/5@large width-1/2@medium ]'>
+                            <div class='swatch u-text-center'>
+
+                                <div class='swatch__top t-tertiary breakpoint-on-{{ key.name }}' >
+
+                                    <p>{{ key.name }}</p>
+
+                                </div>
+
+                                <div class='swatch__bottom t-secondary'>
+                                    <p>{{ key.px }}</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div><!--section ends-->
+
+
+    <!--############### themes section ###############-->
+
+
+    <div class='[ section gutters ] t-secondary' id='themes'>
+
+        <div class='[ grid section ]'>
+
+            <div class='[ width-full ] u-text-center'>
+
+
+                <h2>
+                    {{styleguide.themes.title }}
+                </h2>
+
+                <p class='u-font-size++'>
+                    {{styleguide.themes.blurb }}
+                </p>
+
+
+            </div>
+
+        </div>
+
+        <div class='[ grid grid--row-spacing grid--col-spacing ]'>
+
+
+            <!--loop over the theme classes documented in the json file-->
+
+            {% for key in styleguide.themes.classes %}
+
+                <div class='[  width-1/4@large width-1/2@medium ]'>
+
+                    <div class='swatch u-text-center '>
+
+                        <div class='swatch__top {{ key }} u-font-size++ t-{{ key }} t-{{ key }}--bg'>
+
+                            Aa <a href=''>a</a>
+
+                        </div>
+
+                        <div class='swatch__bottom t-primary--bg t-{{ key }}'>
+
+                            <p class='u-current-color'>{{ key }}</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div><!--section ends-->
+
+	</div><!--wrapper ends -->
+
+{% endblock %}
+
+

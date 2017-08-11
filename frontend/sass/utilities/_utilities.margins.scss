@@ -1,0 +1,32 @@
+/* SG
+# Utilities/Margins
+
+```
+<div style="background-color:#0F9850">
+	<p style="background-color:#efefef" class="u-mb--">mb--</p>
+	<p style="background-color:#efefef" class="u-mb-">mb-</p>
+	<p style="background-color:#efefef" class="u-mb">mb</p>
+	<p style="background-color:#efefef" class="u-mb+">mb+</p>
+	<p style="background-color:#efefef" class="u-mb++">mb++</p>
+</div>
+```
+*/
+$size-space-default: $base-spacing-unit; 
+
+.u-mb-0 { margin-bottom: 0 !important; }
+.u-mb { margin-bottom: $base-spacing-unit !important;}
+.u-mb\+\+ { margin-bottom: round(2 * $base-spacing-unit) !important; }
+.u-mb-- { margin-bottom: round(.5 * $base-spacing-unit) !important; }
+
+.u-space { margin-bottom: $size-space-default; }
+.u-space\+ { margin-bottom: $size-space-default * 1.5; }
+.u-space\+\+ { margin-bottom: $size-space-default * 2; }
+.u-space\- { margin-bottom: $size-space-default / 1.5; }
+.u-space\-\- { margin-bottom: $size-space-default / 2.5; }
+.u-space\-\-\- { margin-bottom: $size-space-default / 4; }
+
+.u-space-0 { margin-bottom: 0; }
+
+.u-space-right { margin-right: $size-space-default; }
+
+.u-space-default { @include default-space; }

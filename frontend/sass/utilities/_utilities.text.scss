@@ -1,0 +1,50 @@
+/* SG
+# Utilities/Text
+
+```
+<p class="u-text-bold">Bold text</p>
+<p class="u-text-uppercase">Uppercase text</p>
+<p class="u-text-underline">Underlined text</p>
+<p>base paragraph size</p>
+<p class="u-font-size++">large paragraph size</p>
+<p class="u-font-size--">small paragraph size</p>
+<p class="u-big">Big paragraph size</p>
+<p class="u-text-truncate">Here is a large line of text to show that this text is truncated truncated truncated truncated truncated truncated truncated.</p>
+<p class="u-hyphen">Here is a large line of text to show that this text is hyphenated hyphenated hyphenated hyphenated hyphenated hyphenated hyphenated.</p>
+```
+*/
+
+.u-text-uppercase { text-transform: uppercase !important; }
+
+.u-text-underline { text-decoration: underline !important; }
+
+// text aligns
+.u-text-left { text-align: left !important; }
+
+.u-text-right { text-align: right !important; }
+
+.u-text-center { text-align: center !important; }
+
+.u-text-muted { opacity: .75 !important; }
+
+.u-text-center\+\+ { text-align:center; }
+
+
+// * 1. Ensures text doesn't wrap and break your layout
+// * 2. Trigger overflow behavior
+// * 3. Truncate the text
+.u-text-truncate { @include truncate; }
+
+.u-hyphen {
+    @include xsmall {
+        // These are technically the same, but use both
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        // This is the dangerous one in WebKit, as it breaks things wherever
+        word-break: break-all;
+        // Instead use this non-standard one:
+        word-break: break-word;
+        // Adds a hyphen where the word breaks, if supported (No Blink)
+        hyphens: auto;
+    }
+}

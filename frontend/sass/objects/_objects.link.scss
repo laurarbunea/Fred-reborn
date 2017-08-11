@@ -1,0 +1,9 @@
+//link that has no decoration
+.link-clean {
+	&:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+    text-decoration: none;
+}

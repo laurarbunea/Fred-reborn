@@ -1,0 +1,227 @@
+{
+    "api": {
+        "type": "grid",
+        "modifier":["middle", "bottom","center", "table", "justified"],
+        "grid_type":["flex", "float"],
+        "theme": ["primary", "secondary","tertiary"],
+        "width": "1/2 ( if the columns widths are the same",
+        "col_spacing":true,
+        "row_spacing":true,
+        "columns":[
+            {
+                "width":"1/4 ( defines individual column widths)",
+                "theme":["primary", "secondary","tertiary"], 
+                "data":["components in heres"]
+            }
+        ]
+    },
+    "heading":"Grid",
+    "description":"Use the grid system to create page layouts with a series of rows (‘.grid’) and columns.",
+    "examples": [
+        {
+            "title": "Column spacing",
+            "anchor":"column-spacing",
+            "notes":"If you want column spacing you can just add a true next to 'col_spacing' or 'row_spacing'",
+            "example": {
+                "type":"grid",
+                "col_spacing":true,
+                "row_spacing":true,
+                "columns":[
+                    {
+                        "width":"1/4",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]. "
+                    }, 
+                    {
+                        "width":"3/4",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    }
+                ]  
+            } 
+        },
+        {
+            "title": "Column widths",
+            "anchor":"column-widths",
+            "notes":"If your column sizes are the same you can define your column size at the top level under 'width', please see the code below.",
+            "example": {
+                "type":"grid",
+                "width":"1/4",
+                "columns":[
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]. "
+                    }, 
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    },
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    },
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    }
+                ]  
+            }
+        },
+        {
+            "title": "Custom Column widths",
+            "anchor":"custom-column-widths",
+            "notes":"If your column sizes are different you need to define the column width under 'column.width'",
+            "example": {
+                "type":"grid",
+                "columns":[
+                    {
+                        "width":"1/4",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]."
+                    }, 
+                    {
+                        "width":"3/4",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    }
+                ]  
+            } 
+        },
+        {
+            "title": "Grid middle",
+            "anchor":"grid-middle",
+            "notes":"This centres columns vertically within the parent grid.",
+            "example": {
+                "type":"grid",
+                "modifier":"middle",
+                "columns":[
+                    {
+                        "width":"1/4",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]. Here is a long paragraph so you can see how grid middle Vertically centers columns."
+                    }, 
+                    {
+                        "width":"3/4",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    }
+                ]  
+            } 
+        },
+        {
+            "title": "Grid bottom ",
+            "anchor":"grid-bottom",
+            "notes":"This aligns columns vertically with the bottom of the parent grid.",
+            "example": {
+
+                "type":"grid",
+                "modifier":"bottom",
+                "columns":[
+                    {
+                        "width":"1/4",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]. Here is a long paragraph so you can see how grid bottom aligns columns to the bottom of the parent."
+                    }, 
+                    {
+                        "width":"3/4",
+                        "theme":"grid-debug", 
+                        "data":"[ width-3/4 ]"
+                    }
+                ]    
+            } 
+        },
+        {
+            "title": "Grid centre ",
+            "anchor":"grid-center",
+            "notes":"This aligns columns horizontally with the centre of the parent grid. ",
+            "example": {
+                
+                "type":"grid",
+                "modifier":"center",
+                "columns":[
+                    {
+                        "width":"1/2",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/2 ]. Here is a long paragraph so you can see how grid bottom aligns columns to the bottom of the parent."
+                    },
+                    {
+                        "width":"1/2",
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/2 ]"
+                    } 
+                ]     
+            } 
+        },
+        {
+            "title": "Grid justified",
+            "anchor":"grid-justified",
+            "notes":"Evenly distributes columns across the width of the parent grid.",
+            "example": {
+                
+                "type":"grid",
+                "modifier":"justified",
+                "width":"1/4",
+                "columns":[
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    },
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    },
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/4 ]"
+                    }
+                ]    
+            } 
+        },
+        {
+            "title": "Grid table",
+            "anchor":"grid-table",
+            "notes":"This forces columns to occupy the full height of the parent grid. It is only to be used if the columns don't break when resized.",
+            "example": {
+
+                "type":"grid",
+                "modifier":"table",
+                "width":"1/3",
+                "columns":[
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/3 ]. This example needs some really really long text that forces the height of this column to be longer than the other column "
+                    },
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/3 ]"
+                    },
+                    {
+                        "theme":"grid-debug", 
+                        "data":"[ width-1/3 ]"
+                    } 
+                ]
+            } 
+        },
+        {
+            "title": "Grid flip small",
+            "anchor":"grid-flip",
+            "notes":"This modifier swaps the direction of the columns on the small breakpoint. Squish your browser window horizontally to see it in effect. ",
+            "example": {
+
+                "type":"grid",
+                "modifier":"flip-small",
+                "width":"1/2",
+                "columns":[
+                    {
+                        "theme":"grid-debug", 
+                        "data":"a) [ width-1/2 ]"
+                    },
+                    {
+                        "theme":"grid-debug", 
+                        "data":"b) [ width-1/2 ]"
+                    }
+                ]      
+            } 
+        } 
+    ]
+}

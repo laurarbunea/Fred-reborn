@@ -1,0 +1,38 @@
+.u-block { display: block; }
+.u-inline { display: inline; }
+.u-inline-block { display: inline-block; }
+
+.u-flex { display: flex; }
+
+.u-prepend{
+    &:before{
+        content: attr(data-prepend);
+        display: inline-block;
+    }
+}
+
+.u-append{
+    &:after{
+        content: attr(data-append);
+        display: inline-block;
+    }
+}
+
+//responsive helpers 
+ @include medium {
+    .u-append\@medium {
+        &:after{
+            content: attr(data-append-medium);
+            display: inline-block;
+        }
+    }
+}
+
+ @include small {
+    .u-append\@msall {
+        &:after{
+            content: attr(data-append-small);
+            display: inline-block;
+        }
+    }
+}

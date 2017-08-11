@@ -1,0 +1,19 @@
+// ============================================================================
+// Grid justified
+// ============================================================================
+
+.grid--justified,
+.grid--polar {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+
+    > * {
+        text-align: left;
+    }
+
+    &:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+    }
+}

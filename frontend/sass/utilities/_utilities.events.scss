@@ -1,0 +1,5 @@
+// Prevent all user interaction with the element
+.is-disabled {
+    pointer-events: none !important;
+    cursor: default !important;
+}

@@ -1,0 +1,25 @@
+{% if item.external_theme %}
+
+    <div class="t-{{item.external_theme}}">
+
+{% endif %}
+ 	
+	{% if item.wrapper %}
+	<div class='[ wrapper ] {{ item.wrapper_class }}' >
+	{% endif %}
+
+		<div class='[ section{% if item.section_size %}-{{ item.section_size }}{% endif %} gutters{% if item.gutter_size %}-{{ item.section_size }}{% endif %} ] t-{{item.internal_theme}} {{ item.section_class }}' id="{{ item.anchor }}">
+
+		      {{ item|children }}
+
+		</div>
+
+	{% if item.wrapper %}
+	</div>
+	{% endif %}
+
+{% if item.external_theme %}
+
+    </div>
+
+{% endif %}

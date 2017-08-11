@@ -1,0 +1,11 @@
+.split {
+    text-align:left;
+    list-style:none;
+    margin-left:0;
+}
+
+    .split__right {
+        text-align:right;
+        float:right;
+        clear:left;
+    }

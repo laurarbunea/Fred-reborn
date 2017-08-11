@@ -1,0 +1,7 @@
+.u-scrollable-x {
+    @include scroll-overflow(x, y, width);
+}
+
+.u-scrollable-y {
+    @include scroll-overflow(y, x, height);
+}

@@ -1,0 +1,51 @@
+// $size-icon:x;
+
+// $size-icon-xs:x;
+// $size-icon-s:x;
+// $size-icon-l:x;
+// $size-icon-xl:x;
+// $size-icon-double:x;
+// .icon {
+//     display: inline-block;
+//     width: $size-icon;
+//     height: $size-icon;
+//     vertical-align: middle;
+
+//     // Fill use with currentcolor so we can set `color` on the svg element.
+//     > use {
+//         fill: currentcolor;
+//     }
+// }
+
+// 	//todo color utilities or icons
+// 	.icon--white { color: $color-white; }
+// 	.icon--green { color: $color-button-green; }
+// 	.icon--dark-green { color: $color-business-green; }
+// 	.icon--blue { color: $color-button-blue; }
+// 	.icon--grey { color: $color-light-separator; }
+
+// 	.icon\+\+\+ {
+// 	    width: $size-icon-double;
+// 	    height: $size-icon-double;
+// 	}
+
+// 	.icon\+\+ {
+// 	    width: $size-icon-xl;
+// 	    height: $size-icon-xl;
+// 	}
+
+// 	.icon\+ {
+// 	    width: $size-icon-l;
+// 	    height: $size-icon-l;
+// 	}
+
+
+// 	.icon- {
+// 	    width: $size-icon-s;
+// 	    height: $size-icon-s;
+// 	}
+
+// 	.icon-- {
+// 	    width: $size-icon-xs;
+// 	    height: $size-icon-xs;
+// 	}

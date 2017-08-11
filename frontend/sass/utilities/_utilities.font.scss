@@ -1,0 +1,37 @@
+/* SG
+# Utilities/Text
+
+```
+<p class="u-text-bold">Bold text</p>
+<p class="u-text-uppercase">Uppercase text</p>
+<p class="u-text-underline">Underlined text</p>
+<p>base paragraph size</p>
+<p class="u-font-size++">large paragraph size</p>
+<p class="u-font-size--">small paragraph size</p>
+<p class="u-big">Big paragraph size</p>
+<p class="u-text-truncate">Here is a large line of text to show that this text is truncated truncated truncated truncated truncated truncated truncated.</p>
+<p class="u-hyphen">Here is a large line of text to show that this text is hyphenated hyphenated hyphenated hyphenated hyphenated hyphenated hyphenated.</p>
+```
+*/
+
+
+.u-font-bold { font-weight: $font-weight-bold; }
+
+.u-font-size\-\- { font-size: .9em; }
+
+.u-font-size\+\+ { font-size: 1.2em; }
+
+.u-font-big {
+    font-weight: $font-weight-medium;
+    font-size: rem(18);
+
+    @include medium {
+        font-size: rem(21);
+        line-height: 1.1;
+    }
+
+    @include large {
+        font-size: rem(23);
+        line-height: 1.05;
+    }
+}

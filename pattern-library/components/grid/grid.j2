@@ -1,0 +1,13 @@
+<div class='[ grid{% if item.grid_type %}-{{item.grid_type}}{% endif %} {% if item.modifier %}grid--{{item.modifier}}{% endif %} {% if item.col_spacing %}grid--col-spacing{% endif %} {% if item.row_spacing %}grid--row-spacing{% endif %} ]'>
+    
+    {% for column in item.columns %}
+                    
+    <div class="[ {% if item.width %}width-{{item.width}}{% endif %}{% if column.width %}width-{{column.width}}{% endif %} ] {% if column.theme %}t-{{column.theme}}{% endif %} {{column.class}}">  
+       
+        {{ column|children }}
+
+    </div>
+
+    {% endfor %}
+
+</div>

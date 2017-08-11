@@ -1,0 +1,17 @@
+$swatch-radius: 0.5em; 
+
+.swatch {}
+
+	.swatch__bottom {
+		border-bottom-left-radius: $swatch-radius;
+		border-bottom-right-radius: $swatch-radius;
+	}
+
+	.swatch__top {
+		border-top-left-radius: $swatch-radius;
+		border-top-right-radius: $swatch-radius;
+	}
+
+	.swatch__top, .swatch__bottom, .swatch__middle {
+		padding:0.8em;
+	}

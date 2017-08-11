@@ -1,0 +1,21 @@
+// Prevent all user interaction with the element
+.is-disabled {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+.u-transition {
+    transition: $base-transition !important;
+}
+
+.u-img-responsive {
+    max-width: 100%;
+}
+
+.u-round {
+    border-radius: 50%;
+}
+//todo do we want to look at somethgin that strips margins from first or last child
+
+//todo overflow hidden?
+//todo intro ???

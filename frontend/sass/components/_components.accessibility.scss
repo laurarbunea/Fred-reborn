@@ -1,0 +1,41 @@
+/* SG
+# Components/Accesibility
+
+Access keys are a useful navigation mechanism for users who are unable to use a mouse. Display the access keys by using the appropriate modifier and access keys shown below. The full website should include an accessibility page documenting the access keys.
+
+```
+
+```
+*/
+
+.access {
+    width: 0;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.access:focus,
+.access-keys:target {
+    width: auto;
+    height: auto;
+    position: static;
+    overflow: visible;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+.access-keys {
+    background-color: rgb(252, 244, 185);
+}
+
+
+    .access-keys__key {
+        margin-right: .5em;
+        display: inline-block;
+        width: 2.5em;
+    }
+
+
